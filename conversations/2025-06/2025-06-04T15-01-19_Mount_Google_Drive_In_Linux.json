@@ -1,0 +1,1057 @@
+{
+  "title": "Mount Google Drive in Linux",
+  "create_time": 1749074479.93926,
+  "update_time": 1749591962.883975,
+  "mapping": {
+    "af906078-a1b1-4aca-994e-fe351231a6a6": {
+      "id": "af906078-a1b1-4aca-994e-fe351231a6a6",
+      "message": null,
+      "parent": null,
+      "children": [
+        "a2a293db-414c-47bb-9f9a-93f44086cdce"
+      ]
+    },
+    "a2a293db-414c-47bb-9f9a-93f44086cdce": {
+      "id": "a2a293db-414c-47bb-9f9a-93f44086cdce",
+      "message": {
+        "id": "a2a293db-414c-47bb-9f9a-93f44086cdce",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073466.177,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Do you know of any technology that mounts a Google Drive in a Linux container as a file system folder, similar to GDrive on MacOS and Windows"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94aa9c8d487967f3-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null,
+          "shared_conversation_id": "6840bf96-8118-8008-a55b-042860d82a9b"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "af906078-a1b1-4aca-994e-fe351231a6a6",
+      "children": [
+        "b1cbe5e7-e25d-43b6-b546-618fc5b4d3e5"
+      ]
+    },
+    "b1cbe5e7-e25d-43b6-b546-618fc5b4d3e5": {
+      "id": "b1cbe5e7-e25d-43b6-b546-618fc5b4d3e5",
+      "message": {
+        "id": "b1cbe5e7-e25d-43b6-b546-618fc5b4d3e5",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073479.112,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "090bd023-e91c-475f-a544-fcf700c3082a",
+          "request_id": "94aa9c8d487967f3-SJC",
+          "timestamp_": "absolute",
+          "shared_conversation_id": "6840bf96-8118-8008-a55b-042860d82a9b"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a2a293db-414c-47bb-9f9a-93f44086cdce",
+      "children": [
+        "16a45ed3-88ee-47db-a16c-4b8c46c34c83"
+      ]
+    },
+    "16a45ed3-88ee-47db-a16c-4b8c46c34c83": {
+      "id": "16a45ed3-88ee-47db-a16c-4b8c46c34c83",
+      "message": {
+        "id": "16a45ed3-88ee-47db-a16c-4b8c46c34c83",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073467.480092,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes \u2014 there are a few technologies that let you mount Google Drive as a filesystem in Linux containers or VMs, similar to how Google Drive integrates with Finder on macOS or Explorer on Windows. The most notable options are:\n\n---\n\n### 1. **[rclone](https://rclone.org/drive/)** (recommended)\n- **What it is:** A powerful command-line tool to sync and mount cloud storage providers (including Google Drive).\n- **Mount mode:** Use `rclone mount` to mount your Google Drive as a file system folder via FUSE.\n- **Container compatible:** Works in containers with proper FUSE support and permissions.\n- **Pros:**\n  - Supports many cloud providers.\n  - Actively maintained.\n  - Flexible (can mount entire drives, specific folders, etc.).\n- **Cons:**\n  - Needs a token setup via OAuth (one-time or service account).\n\n**Example:**\n```bash\nrclone config # configure Google Drive remote\nrclone mount gdrive: /mnt/gdrive --daemon\n```\n\n---\n\n### 2. **google-drive-ocamlfuse**\n- **What it is:** A FUSE-based file system for Google Drive, written in OCaml.\n- **Mount mode:** Mounts your Google Drive using `google-drive-ocamlfuse ~/gdrive`.\n- **Container compatible:** Needs FUSE and some X11 bits for OAuth login \u2014 not great for headless containers unless tokens are pre-provided.\n- **Status:** Less actively maintained than rclone.\n- **Pros:** Simple mounting once authenticated.\n- **Cons:** Limited features, slower updates, more fiddly setup.\n\n---\n\n### 3. **gcsf (Google Cloud Storage FUSE)** (for Google Cloud Storage, not Drive)\n- **What it is:** FUSE filesystem for Google Cloud Storage (GCS), **not Google Drive**.\n- **Mentioned for clarity**: Sometimes confused with Drive tools \u2014 only use this for GCS buckets.\n\n---\n\n### 4. **DriveFS (Google's own tool \u2014 **_Windows/macOS only_**)**\n- No native support or Linux equivalent for DriveFS exists from Google.\n\n---\n\n### In a Container?\nIf you want to mount Drive *inside a Docker or Kubernetes container*, you'll need to:\n- Run the container with `--cap-add SYS_ADMIN --device /dev/fuse`\n- Mount `/dev/fuse` and potentially allow privileged mode depending on host setup\n- Install `rclone` in the container image\n- Pre-load config or mount host volumes to share OAuth tokens\n\n---\n\nWould you like a Docker example using `rclone mount` inside a container with Google Drive?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "496667df-0f87-464a-84d6-7ca45aa2197c",
+          "request_id": "94aa9c8d487967f3-SJC",
+          "timestamp_": "absolute",
+          "shared_conversation_id": "6840bf96-8118-8008-a55b-042860d82a9b"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b1cbe5e7-e25d-43b6-b546-618fc5b4d3e5",
+      "children": [
+        "4d98556a-2e8c-4bcc-9601-792814c4a777"
+      ]
+    },
+    "4d98556a-2e8c-4bcc-9601-792814c4a777": {
+      "id": "4d98556a-2e8c-4bcc-9601-792814c4a777",
+      "message": {
+        "id": "4d98556a-2e8c-4bcc-9601-792814c4a777",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073548.925,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Absolutely.  Please take care to point out authentication steps"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94aa9e91e9e0aaac-IAD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null,
+          "shared_conversation_id": "6840bf96-8118-8008-a55b-042860d82a9b"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "16a45ed3-88ee-47db-a16c-4b8c46c34c83",
+      "children": [
+        "1dd091f7-44cf-4e04-a628-2bd6a67a5fb2"
+      ]
+    },
+    "1dd091f7-44cf-4e04-a628-2bd6a67a5fb2": {
+      "id": "1dd091f7-44cf-4e04-a628-2bd6a67a5fb2",
+      "message": {
+        "id": "1dd091f7-44cf-4e04-a628-2bd6a67a5fb2",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073549.675728,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Great! Below is a full example of how to use `rclone` to **mount a Google Drive folder inside a Linux container**, along with a clear explanation of the **authentication steps**, which is the most important and finicky part.\n\n---\n\n## \u2705 Overview\nWe\u2019ll:\n1. Configure `rclone` with Google Drive authentication on the host.\n2. Build a Docker container with `rclone` and FUSE support.\n3. Mount Google Drive inside the container using `rclone mount`.\n\n---\n\n## \ud83d\udd10 Step 1: One-Time Host-Side Authentication\n\n`rclone` uses OAuth to access Google Drive. You only need to do this once on the **host**, then copy the config into the container.\n\n### 1. Install rclone on your host:\n```bash\ncurl https://rclone.org/install.sh | sudo bash\n```\n\n### 2. Configure Google Drive remote:\n```bash\nrclone config\n```\n\nFollow the prompts:\n- `n` for new remote\n- Name it e.g. `gdrive`\n- Choose `13` for Google Drive\n- Say `No` to using your own client ID (unless you want to)\n- For authentication, let it open a browser or give you a link\n- Accept default scope (full access)\n\nThis creates a config file at `~/.config/rclone/rclone.conf` that contains OAuth tokens.\n\nYou can verify:\n```bash\nrclone lsd gdrive:\n```\n\n---\n\n## \ud83d\udc33 Step 2: Dockerfile for `rclone + fuse`\n\nHere\u2019s a minimal Dockerfile:\n\n```Dockerfile\nFROM ubuntu:22.04\n\n# Install fuse and rclone\nRUN apt-get update && \\\n    apt-get install -y fuse curl gnupg && \\\n    curl https://rclone.org/install.sh | bash\n\n# Required for fuse\nRUN mkdir /mnt/gdrive\nVOLUME [\"/mnt/gdrive\"]\n\n# Enable fusermount permissions\nRUN chmod +s /bin/fusermount3 || true\n\n# Default command\nCMD [\"sleep\", \"infinity\"]\n```\n\n**Build the image:**\n```bash\ndocker build -t rclone-gdrive .\n```\n\n---\n\n## \u2699\ufe0f Step 3: Run the Container with FUSE + Mount Config\n\nYou\u2019ll need:\n- `--cap-add SYS_ADMIN`\n- `--device /dev/fuse`\n- `--security-opt apparmor:unconfined` (sometimes required)\n- The `rclone.conf` from host mounted inside\n\n```bash\ndocker run -it --rm \\\n  --cap-add SYS_ADMIN \\\n  --device /dev/fuse \\\n  --security-opt apparmor:unconfined \\\n  -v ~/.config/rclone:/root/.config/rclone \\\n  -v /mnt/gdrive:/mnt/gdrive \\\n  rclone-gdrive\n```\n\nInside the container:\n```bash\nrclone mount gdrive: /mnt/gdrive --daemon\n```\n\n\u2705 You now have your Google Drive mounted inside the container at `/mnt/gdrive`.\n\n---\n\n## \ud83d\uded1 Notes and Gotchas\n\n### \ud83d\udd01 Token Expiry\n- The `rclone` config file contains refresh tokens, so it keeps working indefinitely unless revoked.\n\n### \ud83d\udd10 Service Account? (Alternative)\n- Google Drive API supports service accounts **only for Workspace (Enterprise)** domains.\n- You can't use service accounts with personal Gmail for Drive access.\n\n### \u26a0\ufe0f Permissions\n- Make sure `/mnt/gdrive` exists and is writable.\n- In Kubernetes, you'll need to allow FUSE in the container runtime \u2014 possible but more complex (let me know if you want help with that too).\n\n---\n\nWould you like me to turn this into a minimal GitHub repo, Kubernetes `Pod` spec, or Docker Compose setup?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "eb592fd7-1698-45a8-af90-c34bf49ddd51",
+          "request_id": "94aa9e91e9e0aaac-IAD",
+          "timestamp_": "absolute",
+          "shared_conversation_id": "6840bf96-8118-8008-a55b-042860d82a9b"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "4d98556a-2e8c-4bcc-9601-792814c4a777",
+      "children": [
+        "139a72c3-58cd-48d7-8d4a-48ae84778f93"
+      ]
+    },
+    "139a72c3-58cd-48d7-8d4a-48ae84778f93": {
+      "id": "139a72c3-58cd-48d7-8d4a-48ae84778f93",
+      "message": {
+        "id": "139a72c3-58cd-48d7-8d4a-48ae84778f93",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073662.135,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I probably do.  And this is for a Workspace account.  Can we give the service account read-only permissions?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94aaa155ca4e7aca-IAD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null,
+          "shared_conversation_id": "6840bf96-8118-8008-a55b-042860d82a9b"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1dd091f7-44cf-4e04-a628-2bd6a67a5fb2",
+      "children": [
+        "5b9846dd-417e-4ef8-b29f-d47f8c15f6e2"
+      ]
+    },
+    "5b9846dd-417e-4ef8-b29f-d47f8c15f6e2": {
+      "id": "5b9846dd-417e-4ef8-b29f-d47f8c15f6e2",
+      "message": {
+        "id": "5b9846dd-417e-4ef8-b29f-d47f8c15f6e2",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073662.887833,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes \u2014 since you're using a **Google Workspace account**, you can absolutely use a **service account** to access a shared Drive folder **with read-only permissions**, and it\u2019s generally more secure and scalable than OAuth tokens tied to a personal account.\n\nHere\u2019s how to do it:\n\n---\n\n## \u2705 High-Level Plan (with Service Account)\n\n1. **Create a Google Cloud service account**.\n2. **Enable Google Drive API** on the project.\n3. **Download the service account JSON key**.\n4. **Share the Drive folder or My Drive files with the service account's email**.\n5. **Grant read-only access** when sharing.\n6. **Configure `rclone` to use the service account**.\n7. **Mount with `rclone` inside the container**.\n\n---\n\n## \ud83e\uddf1 Step-by-Step: Service Account with Google Drive (Read-only)\n\n### 1. **Create a Google Cloud Service Account**\n- Go to: https://console.cloud.google.com/iam-admin/serviceaccounts\n- Create a service account (e.g., `drive-reader`)\n- Grant no roles unless needed for other APIs (not needed for Drive access itself)\n\n### 2. **Enable Drive API**\n- Go to: https://console.cloud.google.com/apis/library/drive.googleapis.com\n- Enable for your project\n\n### 3. **Create and Download JSON Key**\n- In your service account \u2192 **Keys \u2192 Add Key \u2192 JSON**\n- Save the `.json` file securely\n\n### 4. **Share the Folder or Files with the Service Account**\n- Use the service account email (looks like: `my-svc@my-project.iam.gserviceaccount.com`)\n- Share the Drive folder with it via Google Drive UI\n- Choose **Viewer** (read-only)\n\n> \u2705 You don\u2019t need domain-wide delegation unless you want impersonation. This works via normal sharing.\n\n---\n\n## \ud83d\udee0 Step 5: Configure `rclone` with Service Account\n\nNo need to go through interactive auth.\n\nRun this once on the host:\n\n```bash\nrclone config\n```\n\n- `n` for new remote\n- Name: `gdrive-svc`\n- Storage: `13` (Google Drive)\n- Say **yes** to using a service account file\n- Enter the path to your `.json` key file\n- Scope: usually `drive.readonly`\n- Root folder ID (optional): enter if you want to restrict access to a specific folder\n\nYou can test:\n```bash\nrclone lsd gdrive-svc:\n```\n\n---\n\n## \ud83d\udc33 Docker Changes\n\nYou now mount the service account key JSON file instead of the config. Here's how:\n\n### \ud83d\udd01 Option A: Generate `rclone.conf` on host and mount it in\n(best for simple use)\n\nAfter setup, just bind-mount your `~/.config/rclone` like before:\n```bash\n-v ~/.config/rclone:/root/.config/rclone\n```\n\n### \ud83d\udd01 Option B: Pass the JSON and create config inside the container\n(more portable)\n\nYou can inject the JSON and do:\n```bash\nrclone config create gdrive-svc drive \\\n  scope=drive.readonly \\\n  service_account_file=/secrets/gdrive-key.json\n```\n\nThen:\n```bash\nrclone mount gdrive-svc: /mnt/gdrive --daemon\n```\n\n---\n\n## \u2699\ufe0f Security Note\n\nMake sure to mount the service account JSON as:\n```bash\n-v /host/path/gdrive-key.json:/secrets/gdrive-key.json:ro\n```\n\nDon't bake it into your image.\n\n---\n\n## \u2753Want This as:\n- A GitHub repo with `Dockerfile` and helper scripts?\n- A Kubernetes `Pod` or `Deployment` spec?\n- A Docker Compose setup?\n\nLet me know your target deployment platform and I\u2019ll give you a ready-to-run setup."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "f677a0c9-2b19-4f38-b992-d48b4ed2bddc",
+          "request_id": "94aaa155ca4e7aca-IAD",
+          "timestamp_": "absolute",
+          "shared_conversation_id": "6840bf96-8118-8008-a55b-042860d82a9b"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "139a72c3-58cd-48d7-8d4a-48ae84778f93",
+      "children": [
+        "405a3472-2fef-4ab6-9836-ad8f555d3cf6"
+      ]
+    },
+    "405a3472-2fef-4ab6-9836-ad8f555d3cf6": {
+      "id": "405a3472-2fef-4ab6-9836-ad8f555d3cf6",
+      "message": {
+        "id": "405a3472-2fef-4ab6-9836-ad8f555d3cf6",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073726.861,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I'm  going to use it in a JupyterHub environment, running on GKE"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94aaa2ea2aa6ebe5-IAD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null,
+          "shared_conversation_id": "6840bf96-8118-8008-a55b-042860d82a9b"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "5b9846dd-417e-4ef8-b29f-d47f8c15f6e2",
+      "children": [
+        "db188dc7-b9ad-4b1c-957e-e537e7094d3a"
+      ]
+    },
+    "db188dc7-b9ad-4b1c-957e-e537e7094d3a": {
+      "id": "db188dc7-b9ad-4b1c-957e-e537e7094d3a",
+      "message": {
+        "id": "db188dc7-b9ad-4b1c-957e-e537e7094d3a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073727.547273,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Perfect \u2014 you're running **JupyterHub on GKE**, so here\u2019s a tailored plan for **mounting a Google Drive folder read-only into user pods** using `rclone` + a **Workspace service account**.\n\n---\n\n## \u2705 Deployment Plan Summary (JupyterHub on GKE)\n\nYou\u2019ll:\n1. Create a **service account** and **share the Drive folder**.\n2. Store the service account key in **Kubernetes as a secret**.\n3. Extend the JupyterHub user image with `rclone` + FUSE.\n4. Mount Google Drive into each user\u2019s pod via **`initContainer` + sidecar** or `postStart` hook.\n5. Access the mounted folder at `/mnt/gdrive` or similar inside notebooks.\n\n---\n\n## \ud83e\uddf1 Step-by-Step Details\n\n### 1. \ud83d\udd10 Create Service Account + Share Drive Folder\nAs discussed:\n- Enable Drive API\n- Create JSON key\n- Share target folder with `your-svc@project.iam.gserviceaccount.com` as **Viewer**\n\n### 2. \ud83d\udce6 Store Key in Kubernetes Secret\n\n```bash\nkubectl create secret generic gdrive-service-account \\\n  --from-file=key.json=/path/to/key.json \\\n  -n <your-jupyterhub-namespace>\n```\n\n> Replace `<your-jupyterhub-namespace>` with e.g., `jupyterhub` or `default`.\n\n---\n\n### 3. \ud83e\uddea Test Rclone Config Locally\n\nTo debug easily, use:\n```bash\nrclone config create gdrive-svc drive \\\n  scope=drive.readonly \\\n  service_account_file=/secrets/key.json\n```\n\nYou\u2019ll do the same thing in the pod.\n\n---\n\n### 4. \ud83d\udc33 Extend Your JupyterHub Image with FUSE + rclone\n\nHere\u2019s a `Dockerfile` to base your custom image on:\n\n```Dockerfile\nFROM jupyter/base-notebook\n\nUSER root\n\nRUN apt-get update && \\\n    apt-get install -y fuse && \\\n    curl https://rclone.org/install.sh | bash && \\\n    chmod +s /bin/fusermount3 || true\n\nUSER $NB_UID\n```\n\nThen build & push this to a registry your GKE nodes can access (e.g., Artifact Registry).\n\n---\n\n### 5. \ud83e\uddf7 Modify `singleuser.extraContainers` or `postStart`\n\nIn your **`values.yaml`** for Zero-to-JupyterHub:\n\n```yaml\nsingleuser:\n  image:\n    name: gcr.io/your-project/jupyter-rclone\n    tag: latest\n  extraVolumes:\n    - name: gdrive-secret\n      secret:\n        secretName: gdrive-service-account\n    - name: gdrive-mount\n      emptyDir: {}\n\n  extraVolumeMounts:\n    - name: gdrive-secret\n      mountPath: /secrets\n      readOnly: true\n    - name: gdrive-mount\n      mountPath: /mnt/gdrive\n\n  lifecycleHooks:\n    postStart:\n      exec:\n        command:\n          - \"sh\"\n          - \"-c\"\n          - |\n            mkdir -p /home/jovyan/.config/rclone && \\\n            rclone config create gdrive-svc drive scope=drive.readonly service_account_file=/secrets/key.json && \\\n            rclone mount gdrive-svc: /mnt/gdrive --daemon\n```\n\n> Alternatively: use an `initContainer` or `sidecar` if you want more control, but `postStart` is clean for this use case.\n\n---\n\n## \u2705 End Result\n\nWhen a user logs into JupyterHub:\n- Their pod will mount the Google Drive folder at `/mnt/gdrive`\n- They can **read** files (not write) directly from that shared folder\n- It\u2019s automatic and isolated per user (but you can use a shared config if desired)\n\n---\n\n## \ud83d\udee1\ufe0f Optional: Restrict Which Folder is Mounted\n\nYou can add this to the `rclone config create` step:\n```bash\n... root_folder_id=0A...XYZ\n```\n\nTo only expose a subfolder.\n\nYou can find this ID from the Drive URL:\n```\nhttps://drive.google.com/drive/folders/0A...XYZ\n```\n\n---\n\nWould you like me to output a ready-to-paste `values.yaml` snippet and Dockerfile for a specific JupyterHub base image (e.g., `jupyter/scipy-notebook`)?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "831bd18b-0200-49b1-bfae-3f8c657bc0a7",
+          "request_id": "94aaa2ea2aa6ebe5-IAD",
+          "timestamp_": "absolute",
+          "shared_conversation_id": "6840bf96-8118-8008-a55b-042860d82a9b"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "405a3472-2fef-4ab6-9836-ad8f555d3cf6",
+      "children": [
+        "05b11438-11e9-4255-bec3-165465e8a4c0"
+      ]
+    },
+    "05b11438-11e9-4255-bec3-165465e8a4c0": {
+      "id": "05b11438-11e9-4255-bec3-165465e8a4c0",
+      "message": {
+        "id": "05b11438-11e9-4255-bec3-165465e8a4c0",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073804.644,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I'm going to send this chat to a colleague and he'll work with you on the details."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94aaa4d07dbc67f2-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null,
+          "shared_conversation_id": "6840bf96-8118-8008-a55b-042860d82a9b"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "db188dc7-b9ad-4b1c-957e-e537e7094d3a",
+      "children": [
+        "6dfc7ece-b3a7-40cf-8e90-6d1bf1515596"
+      ]
+    },
+    "6dfc7ece-b3a7-40cf-8e90-6d1bf1515596": {
+      "id": "6dfc7ece-b3a7-40cf-8e90-6d1bf1515596",
+      "message": {
+        "id": "6dfc7ece-b3a7-40cf-8e90-6d1bf1515596",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073805.42228,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Sounds good! I'm ready to pick up where you leave off \u2014 your colleague can just jump in here and continue the conversation.\n\nIf they want to move forward with:\n- a ready-to-use `Dockerfile` for a specific Jupyter image,\n- a full `values.yaml` patch for Zero-to-JupyterHub,\n- or a more advanced setup like a sidecar for shared cache control,\n\n\u2014I\u2019ll help them step by step. Just let me know what base image and whether they want the Drive to be:\n- per-user isolated,\n- shared and read-only,\n- or even exposed through a central gateway.\n\nLooking forward to continuing!"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "63ab9e67-a590-4ff4-a584-2ba73b0c5825",
+          "request_id": "94aaa4d07dbc67f2-SJC",
+          "timestamp_": "absolute",
+          "shared_conversation_id": "6840bf96-8118-8008-a55b-042860d82a9b"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "05b11438-11e9-4255-bec3-165465e8a4c0",
+      "children": [
+        "cfef9113-e091-46f7-8f15-38b6c0c83ccd"
+      ]
+    },
+    "cfef9113-e091-46f7-8f15-38b6c0c83ccd": {
+      "id": "cfef9113-e091-46f7-8f15-38b6c0c83ccd",
+      "message": {
+        "id": "cfef9113-e091-46f7-8f15-38b6c0c83ccd",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073961.966,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Compare and contrast this solution from the one outlined in this pdf"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file-QoDRyGo9brKHEDWGb7vMW3",
+              "size": 3814,
+              "name": "shared-filesystem-jupyterhub.pdf",
+              "mime_type": "application/pdf",
+              "file_token_size": 608
+            }
+          ],
+          "selected_sources": [],
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94aaa89f987a843d-DFW",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null,
+          "shared_conversation_id": "6840c090-4e50-800e-a9dc-bc1ef76d8580"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6dfc7ece-b3a7-40cf-8e90-6d1bf1515596",
+      "children": [
+        "a5bb5364-a344-40da-a104-ae6683ce285c"
+      ]
+    },
+    "a5bb5364-a344-40da-a104-ae6683ce285c": {
+      "id": "a5bb5364-a344-40da-a104-ae6683ce285c",
+      "message": {
+        "id": "a5bb5364-a344-40da-a104-ae6683ce285c",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073973.220162,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "00c5a290-11c0-4857-9344-92daa97ccb61",
+          "request_id": "94aaa89f987a843d-DFW",
+          "timestamp_": "absolute",
+          "shared_conversation_id": "6840c090-4e50-800e-a9dc-bc1ef76d8580"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "cfef9113-e091-46f7-8f15-38b6c0c83ccd",
+      "children": [
+        "ee5bb1d6-94e7-4a48-b9b7-fa08e6e6fa46"
+      ]
+    },
+    "ee5bb1d6-94e7-4a48-b9b7-fa08e6e6fa46": {
+      "id": "ee5bb1d6-94e7-4a48-b9b7-fa08e6e6fa46",
+      "message": {
+        "id": "ee5bb1d6-94e7-4a48-b9b7-fa08e6e6fa46",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1749073973.220226,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "The output of this plugin was redacted."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0,
+        "metadata": {
+          "command": "spinner",
+          "status": "running",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "1aba4a82-fd7c-459c-98f9-67e7367a9063",
+          "request_id": "94aaa89f987a843d-DFW",
+          "timestamp_": "absolute",
+          "shared_conversation_id": "6840c090-4e50-800e-a9dc-bc1ef76d8580"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a5bb5364-a344-40da-a104-ae6683ce285c",
+      "children": [
+        "100e3ec0-d64c-4d0a-9f08-5428e16ea481"
+      ]
+    },
+    "100e3ec0-d64c-4d0a-9f08-5428e16ea481": {
+      "id": "100e3ec0-d64c-4d0a-9f08-5428e16ea481",
+      "message": {
+        "id": "100e3ec0-d64c-4d0a-9f08-5428e16ea481",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1749073973.220288,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "The output of this plugin was redacted."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "5ad38496-a380-4eff-aa9a-db635430ee8c",
+          "request_id": "94aaa89f987a843d-DFW",
+          "timestamp_": "absolute",
+          "shared_conversation_id": "6840c090-4e50-800e-a9dc-bc1ef76d8580"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ee5bb1d6-94e7-4a48-b9b7-fa08e6e6fa46",
+      "children": [
+        "53c00577-797d-40bf-bcb7-9a9bb95f58f3"
+      ]
+    },
+    "53c00577-797d-40bf-bcb7-9a9bb95f58f3": {
+      "id": "53c00577-797d-40bf-bcb7-9a9bb95f58f3",
+      "message": {
+        "id": "53c00577-797d-40bf-bcb7-9a9bb95f58f3",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1749073973.220362,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "The output of this plugin was redacted."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "is_visually_hidden_from_conversation": false,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "944a9282-1a8b-4cea-9edb-718665454a8b",
+          "request_id": "94aaa89f987a843d-DFW",
+          "timestamp_": "absolute",
+          "shared_conversation_id": "6840c090-4e50-800e-a9dc-bc1ef76d8580"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "100e3ec0-d64c-4d0a-9f08-5428e16ea481",
+      "children": [
+        "e6f40075-5a1b-4a80-ab83-9e36e1a932e1"
+      ]
+    },
+    "e6f40075-5a1b-4a80-ab83-9e36e1a932e1": {
+      "id": "e6f40075-5a1b-4a80-ab83-9e36e1a932e1",
+      "message": {
+        "id": "e6f40075-5a1b-4a80-ab83-9e36e1a932e1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073961.709138,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Thanks! Here's a comparison between the two approaches:\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n\ud83d\udcc1 Solution A: Google Drive via rclone (your current approach)  \n\ud83d\udcc4 Solution B: Filestore + NFS (PDF approach)\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n| Feature/Concern                     | A: Google Drive via rclone (service account)                                  | B: Filestore NFS mount (PDF)                                                       |\n|------------------------------------|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|\n| \ud83e\udde9 Storage Backend                 | Google Drive (cloud-based object storage, not POSIX)                           | Google Cloud Filestore (NFS-based POSIX filesystem)                                |\n| \ud83d\udd04 Mount Type                     | FUSE mount via rclone                                                           | Native NFS mount managed via Kubernetes StorageClass                               |\n| \ud83d\udce6 Kubernetes Integration         | Requires custom init/postStart hook or sidecar                                 | Seamless via PersistentVolume + PVC + dynamic provisioning                         |\n| \ud83d\udd10 Auth & Access Control          | Performed via a shared Google Workspace service account                        | Controlled via GCP IAM & Kubernetes RBAC                                           |\n| \ud83d\udc69\u200d\ud83d\udcbb User Access Experience       | Appears as /mnt/gdrive (read-only or read-write based on folder sharing)       | Appears as /home/jovyan/shared (read-write by all users, if chmod 777 is used)     |\n| \ud83d\udc65 Multi-user Concurrency         | Good for read-only use, concurrency limits if write-enabled                    | NFS supports concurrent read/write access                                          |\n| \ud83d\udcda Use Case Fit                   | Great for shared access to curated Drive folders (e.g. datasets, syllabi)      | Better for collaborative, write-heavy workloads (e.g. group projects, scratch dirs)|\n| \ud83d\udd01 Sync/Cache Behavior            | On-demand access, not guaranteed to persist or cache locally                   | Persistent disk \u2014 acts like a normal filesystem                                    |\n| \ud83d\udee0 Maintenance/Setup Complexity   | Requires rclone auth setup, lifecycle hook, FUSE permissions                    | Requires Filestore provisioning + Helm install of NFS provisioner                  |\n| \ud83d\udea8 Resilience to Misuse           | Can be rate-limited or throttled by Google Drive if misused                    | Backed by GCP storage SLA; quota can be expanded                                   |\n| \ud83d\udcc8 Performance                    | Good for small files; larger files might be slower due to Drive API limits     | Consistent POSIX-level performance over internal network                           |\n| \ud83d\udd12 Data Governance                | File access governed by Google Drive sharing                                    | File access governed by Kubernetes volumes and POSIX permissions                   |\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n\ud83e\udde0 Summary:\n\n- \u2705 Choose Solution A (rclone with Google Drive) if:\n  - You want users to access centrally managed Drive folders (datasets, assignments)\n  - You prefer a Google-native sharing model (with folder visibility via Drive UI)\n  - Your use case is read-mostly and you don\u2019t need true POSIX compliance\n\n- \u2705 Choose Solution B (Filestore + NFS) if:\n  - You want a shared writable workspace across user pods (e.g. for collaboration or persistent group data)\n  - You want native file system behavior (locking, fast local reads/writes)\n  - You want GKE-native provisioning and long-term volume persistence\n\n\u2014\n\nWould you like a hybrid recommendation? For example: use rclone-mount for Drive read-only access, and Filestore for collaborative writable space?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "e2dc1907-ded7-4039-8959-2c117a42dc04",
+          "request_id": "94aaa89f987a843d-DFW",
+          "timestamp_": "absolute",
+          "shared_conversation_id": "6840c090-4e50-800e-a9dc-bc1ef76d8580"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "53c00577-797d-40bf-bcb7-9a9bb95f58f3",
+      "children": [
+        "0c835695-1fb4-48ce-9a59-d201bc5d2e64"
+      ]
+    },
+    "0c835695-1fb4-48ce-9a59-d201bc5d2e64": {
+      "id": "0c835695-1fb4-48ce-9a59-d201bc5d2e64",
+      "message": {
+        "id": "0c835695-1fb4-48ce-9a59-d201bc5d2e64",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749074479.339,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "We have a TB or so in GCS and GDrive, mostly read-only, but shared collaborative writable would also be useful.  Please make a hybrid recommendation with all three implementations"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94aab548e82f17ee-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e6f40075-5a1b-4a80-ab83-9e36e1a932e1",
+      "children": [
+        "412af382-d107-40c0-836d-90164905addc"
+      ]
+    },
+    "412af382-d107-40c0-836d-90164905addc": {
+      "id": "412af382-d107-40c0-836d-90164905addc",
+      "message": {
+        "id": "412af382-d107-40c0-836d-90164905addc",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749074491.798243,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "rebase_system_message": true,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "0c835695-1fb4-48ce-9a59-d201bc5d2e64",
+          "request_id": "94aab548e82f17ee-SJC",
+          "timestamp_": "absolute",
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "0c835695-1fb4-48ce-9a59-d201bc5d2e64",
+      "children": [
+        "c1e1d832-69ec-472f-9469-28fe4269abe3"
+      ]
+    },
+    "c1e1d832-69ec-472f-9469-28fe4269abe3": {
+      "id": "c1e1d832-69ec-472f-9469-28fe4269abe3",
+      "message": {
+        "id": "c1e1d832-69ec-472f-9469-28fe4269abe3",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749074491.798451,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "412af382-d107-40c0-836d-90164905addc",
+          "request_id": "94aab548e82f17ee-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "412af382-d107-40c0-836d-90164905addc",
+      "children": [
+        "277fc610-0453-4a51-8c92-1e21bda397fb"
+      ]
+    },
+    "277fc610-0453-4a51-8c92-1e21bda397fb": {
+      "id": "277fc610-0453-4a51-8c92-1e21bda397fb",
+      "message": {
+        "id": "277fc610-0453-4a51-8c92-1e21bda397fb",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749074480.175373,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Thanks for the context. Based on your situation \u2014 you have:\n\n- ~1 TB of mostly read-only data spread across Google Drive and Google Cloud Storage (GCS)\n- a need for occasional collaborative writable storage across JupyterHub users\n- you're running JupyterHub on GKE\n\nHere\u2019s a comprehensive hybrid recommendation that leverages all three technologies efficiently:\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n\ud83c\udf10 HYBRID STORAGE PLAN FOR JUPYTERHUB ON GKE\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n1. \ud83e\udde0 Use GCS + gcsfuse for programmatic access to your cloud buckets (for structured & raw data)\n\n   - Mount via gcsfuse as read-only into each Jupyter pod.\n   - Ideal for storing curated datasets (e.g. preprocessed files, output archives).\n   - High throughput, excellent for parallel reads.\n   - Can be mounted into user containers via initContainer or sidecar.\n   - Enable FUSE in the singleuser containers.\n   - Service account needs roles/storage.objectViewer.\n\n   Example:\n   /mnt/gcs \u2192 bucket gcs://project-data/\n\n2. \ud83d\udcc4 Use Google Drive + rclone for shared Google Workspace Drive access\n\n   - Mount read-only shared Drive folders via rclone using a Workspace service account.\n   - Best for semi-structured documents (e.g. team-curated spreadsheets, research docs).\n   - Use rclone config with service_account_file and mount with postStart hook or sidecar.\n   - Works well for organization-managed, shared reference materials.\n\n   Example:\n   /mnt/drive \u2192 shared folder from drive.google.com\n\n3. \ud83e\uddf7 Use Cloud Filestore + NFS for collaborative read/write among users\n\n   - Provision Filestore instance and NFS mount it as a shared workspace.\n   - Mount as /home/jovyan/shared or /mnt/shared.\n   - Use chmod 777 (or group-permissions) to allow collaboration.\n   - Persistent volume managed by GKE + nfs-subdir-external-provisioner Helm chart.\n   - POSIX-compliant \u2014 ideal for notebooks, team data, intermediate files.\n\n   Example:\n   /mnt/shared \u2192 persistent, writable NFS\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n\ud83d\udce6 Recommended Directory Map (inside each JupyterHub pod)\n\n| Path            | Backing           | Access     | Contents                          |\n|-----------------|-------------------|------------|-----------------------------------|\n| /mnt/gcs        | GCS bucket via gcsfuse | Read-only | Public datasets, pipelines        |\n| /mnt/drive      | Google Drive via rclone | Read-only | Shared Google Drive folders       |\n| /mnt/shared     | Filestore via NFS | Read-write | Team notebooks, scratch space     |\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n\u2705 Benefits of this hybrid model\n\n- Keeps data where it lives (no copying GCS/Drive \u2192 NFS).\n- Centralized access control (IAM for GCS, Drive sharing for rclone, NFS via POSIX).\n- Users get familiar interfaces and logical paths.\n- Improves performance by separating static vs dynamic I/O.\n- Scales independently:\n  - GCS for large datasets\n  - Drive for team docs\n  - Filestore for interactive work\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\nWould you like:\n\n- values.yaml patches for JupyterHub\u2019s Helm chart to mount all 3 into each user\u2019s pod?\n- a Terraform + YAML provisioning setup for the Filestore + GCS buckets?\n- a Dockerfile to build a compatible user image with gcsfuse, rclone, FUSE, etc.?\n\nLet me know how you want to proceed and I\u2019ll prepare the configuration."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "c1e1d832-69ec-472f-9469-28fe4269abe3",
+          "request_id": "94aab548e82f17ee-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c1e1d832-69ec-472f-9469-28fe4269abe3",
+      "children": [
+        "81081ad6-929a-4a76-a04e-7fecaf92e11e"
+      ]
+    },
+    "81081ad6-929a-4a76-a04e-7fecaf92e11e": {
+      "id": "81081ad6-929a-4a76-a04e-7fecaf92e11e",
+      "message": {
+        "id": "81081ad6-929a-4a76-a04e-7fecaf92e11e",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749591927.292,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "The problem we're running into with rclone is that it needs to run as root, but users in a Jupyter docker container run as jovyan.  How do we kick off a root process in a running Jupyter container?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94dc0e4b289dcba7-LAX",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "277fc610-0453-4a51-8c92-1e21bda397fb",
+      "children": [
+        "47d8d8b7-b598-46eb-ba1e-70be524a2d88"
+      ]
+    },
+    "47d8d8b7-b598-46eb-ba1e-70be524a2d88": {
+      "id": "47d8d8b7-b598-46eb-ba1e-70be524a2d88",
+      "message": {
+        "id": "47d8d8b7-b598-46eb-ba1e-70be524a2d88",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749591940.266995,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "rebase_system_message": true,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "81081ad6-929a-4a76-a04e-7fecaf92e11e",
+          "request_id": "94dc0e4b289dcba7-LAX",
+          "timestamp_": "absolute",
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "81081ad6-929a-4a76-a04e-7fecaf92e11e",
+      "children": [
+        "45cc1f74-1d39-42ea-867d-2f556a8ffe43"
+      ]
+    },
+    "45cc1f74-1d39-42ea-867d-2f556a8ffe43": {
+      "id": "45cc1f74-1d39-42ea-867d-2f556a8ffe43",
+      "message": {
+        "id": "45cc1f74-1d39-42ea-867d-2f556a8ffe43",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749591940.26719,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "47d8d8b7-b598-46eb-ba1e-70be524a2d88",
+          "request_id": "94dc0e4b289dcba7-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "47d8d8b7-b598-46eb-ba1e-70be524a2d88",
+      "children": [
+        "0f8bf147-7c3a-4676-a5e6-f28c2415b116"
+      ]
+    },
+    "0f8bf147-7c3a-4676-a5e6-f28c2415b116": {
+      "id": "0f8bf147-7c3a-4676-a5e6-f28c2415b116",
+      "message": {
+        "id": "0f8bf147-7c3a-4676-a5e6-f28c2415b116",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749591928.851313,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "You\u2019re absolutely right \u2014 mounting with rclone requires FUSE and typically needs to run as root (or at least with elevated privileges and access to /dev/fuse), which is a challenge because JupyterHub singleuser containers are designed to run as a non-root user (usually jovyan, UID 1000) for security.\n\nThere are several patterns to solve this, depending on your tolerance for complexity, root access, and container runtime options:\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n\ud83d\udee0\ufe0f Option 1: Use a sidecar container that runs rclone mount as root\n\n\u2705 Cleanest and most secure option under Kubernetes.\n\n- Launch a sidecar container in the same pod (via singleuser.extraContainers)\n- The sidecar runs as root, does the rclone mount to a shared emptyDir volume\n- The main Jupyter container (running as jovyan) sees the mount at /mnt/drive or similar\n\nKubernetes volumes (like emptyDir) are shared across containers in the pod, even if user privileges differ.\n\nExample:\n\nvalues.yaml (simplified):\n\n```yaml\nsingleuser:\n  extraVolumes:\n    - name: gdrive-mount\n      emptyDir: {}\n\n  extraVolumeMounts:\n    - name: gdrive-mount\n      mountPath: /mnt/drive\n\n  extraContainers:\n    - name: gdrive-mounter\n      image: your-registry/rclone-fuse:latest\n      securityContext:\n        privileged: true\n      volumeMounts:\n        - name: gdrive-mount\n          mountPath: /mnt/drive\n        - name: gdrive-secret\n          mountPath: /secrets\n          readOnly: true\n      command:\n        - sh\n        - -c\n        - |\n          rclone config create gdrive drive scope=drive.readonly service_account_file=/secrets/key.json &&\n          rclone mount gdrive: /mnt/drive --allow-other --vfs-cache-mode writes\n```\n\nYou\u2019ll also need to:\n- Set up /dev/fuse via host mounts or add SYS_ADMIN capability\n- Include rclone + fuse in the image\n- Add a serviceAccountFile via secret mount\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n\ud83d\udd01 Option 2: Modify the base user image to allow rclone mount with user permissions\n\nSometimes works with:\n- allow_other in /etc/fuse.conf (must be set as root)\n- running the singleuser container as root, then dropping to jovyan\n\nBut this breaks multi-tenant isolation and is not ideal for production.\n\nIf you really want this:\n\nDockerfile patch:\n\n```Dockerfile\nFROM jupyter/base-notebook\n\nUSER root\nRUN apt-get update && apt-get install -y fuse && \\\n    curl https://rclone.org/install.sh | bash && \\\n    echo \"user_allow_other\" >> /etc/fuse.conf\n\nUSER $NB_UID\n```\n\nIn rclone mount, include:\n\n```bash\nrclone mount gdrive: /mnt/drive --allow-other --vfs-cache-mode writes\n```\n\nBut this still often needs root to invoke rclone mount.\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n\ud83d\udd10 Option 3: Run rclone mount in postStart as root (requires running main container as root)\n\nYou can override the securityContext of the singleuser container to run as root \u2014 risky unless you're in a controlled environment:\n\nvalues.yaml:\n\n```yaml\nsingleuser:\n  securityContext:\n    runAsUser: 0\n    fsGroup: 100\n\n  lifecycleHooks:\n    postStart:\n      exec:\n        command:\n          - sh\n          - -c\n          - |\n            rclone config create gdrive drive scope=drive.readonly service_account_file=/secrets/key.json &&\n            rclone mount gdrive: /mnt/drive --allow-other --daemon\n```\n\nThis works but breaks the isolation and principle of least privilege of JupyterHub.\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n\ud83e\uddfc Recommendation\n\nUse Option 1: sidecar container running rclone mount as root\n\n- Keeps your main Jupyter container unprivileged\n- Sidecar can be minimized (no notebook stack, just rclone + fuse)\n- Avoids Dockerfile hacks\n- Aligns well with Kubernetes pod patterns\n\nWould you like a working example Dockerfile + values.yaml for the rclone sidecar image and config?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "45cc1f74-1d39-42ea-867d-2f556a8ffe43",
+          "request_id": "94dc0e4b289dcba7-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "45cc1f74-1d39-42ea-867d-2f556a8ffe43",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "0f8bf147-7c3a-4676-a5e6-f28c2415b116",
+  "plugin_ids": null,
+  "conversation_id": "6840c22f-9f18-8008-ba1d-ab6007dba7cb",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "6840c22f-9f18-8008-ba1d-ab6007dba7cb"
+}

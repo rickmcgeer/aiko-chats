@@ -1,0 +1,137 @@
+{
+  "title": "URL Parameters in JS",
+  "create_time": 1693321880.640157,
+  "update_time": 1693321895,
+  "mapping": {
+    "2dce6b67-ee33-4d48-ae72-f098f42107a3": {
+      "id": "2dce6b67-ee33-4d48-ae72-f098f42107a3",
+      "message": {
+        "id": "2dce6b67-ee33-4d48-ae72-f098f42107a3",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa13da5-1e3b-4902-81fd-f99d54dc94c2",
+      "children": [
+        "aaa2b976-a492-4b71-9ca7-43972faa97b1"
+      ]
+    },
+    "aaa13da5-1e3b-4902-81fd-f99d54dc94c2": {
+      "id": "aaa13da5-1e3b-4902-81fd-f99d54dc94c2",
+      "message": null,
+      "parent": null,
+      "children": [
+        "2dce6b67-ee33-4d48-ae72-f098f42107a3"
+      ]
+    },
+    "aaa2b976-a492-4b71-9ca7-43972faa97b1": {
+      "id": "aaa2b976-a492-4b71-9ca7-43972faa97b1",
+      "message": {
+        "id": "aaa2b976-a492-4b71-9ca7-43972faa97b1",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1693321880.641287,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "generate javascript code to read paramters from URL"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "2dce6b67-ee33-4d48-ae72-f098f42107a3",
+      "children": [
+        "b9fce09e-ee04-4263-aeac-cc1e43fc93d5"
+      ]
+    },
+    "b9fce09e-ee04-4263-aeac-cc1e43fc93d5": {
+      "id": "b9fce09e-ee04-4263-aeac-cc1e43fc93d5",
+      "message": {
+        "id": "b9fce09e-ee04-4263-aeac-cc1e43fc93d5",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1693321895.144032,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Certainly! Here's an example of JavaScript code that reads parameters from the URL and stores them in an object:\n\n```javascript\nfunction getURLParameters(url) {\n    const queryString = url.split('?')[1];\n    if (!queryString) return {};\n\n    const keyValuePairs = queryString.split('&');\n    const params = {};\n\n    keyValuePairs.forEach(keyValue => {\n        const [key, value] = keyValue.split('=');\n        params[key] = decodeURIComponent(value);\n    });\n\n    return params;\n}\n\nconst currentURL = window.location.href;\nconst parameters = getURLParameters(currentURL);\n\nconsole.log(parameters);\n```\n\nIn this code, the `getURLParameters` function takes a URL as an argument, extracts the query string part, splits it into key-value pairs, and stores them in an object. The `window.location.href` gives you the current URL of the page, and then the `getURLParameters` function is used to extract and decode the parameters.\n\nRemember that this code assumes that the parameters are provided in a standard URL query string format like `?key1=value1&key2=value2`. If your URLs have a different structure, you might need to modify the code accordingly."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              100260
+            ]
+          },
+          "is_complete": true,
+          "message_type": null,
+          "model_slug": "text-davinci-002-render-sha",
+          "parent_id": "aaa2b976-a492-4b71-9ca7-43972faa97b1",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa2b976-a492-4b71-9ca7-43972faa97b1",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "b9fce09e-ee04-4263-aeac-cc1e43fc93d5",
+  "plugin_ids": null,
+  "conversation_id": "2f114ea1-a2f5-4f21-b001-3d27835acbad",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": null,
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "2f114ea1-a2f5-4f21-b001-3d27835acbad"
+}

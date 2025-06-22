@@ -1,0 +1,183 @@
+{
+  "title": "Delete Pods Services Deployments",
+  "create_time": 1748288013.265528,
+  "update_time": 1748291555.431976,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "3813b4d9-f9d7-450e-9394-2df5f4455c9f"
+      ]
+    },
+    "3813b4d9-f9d7-450e-9394-2df5f4455c9f": {
+      "id": "3813b4d9-f9d7-450e-9394-2df5f4455c9f",
+      "message": {
+        "id": "3813b4d9-f9d7-450e-9394-2df5f4455c9f",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "270814fa-0fe5-44f9-9dc2-fa3bd8cfcf38"
+      ]
+    },
+    "270814fa-0fe5-44f9-9dc2-fa3bd8cfcf38": {
+      "id": "270814fa-0fe5-44f9-9dc2-fa3bd8cfcf38",
+      "message": {
+        "id": "270814fa-0fe5-44f9-9dc2-fa3bd8cfcf38",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1748288012.037,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "how can i delete all pods, services, and deployments in a kubernetes namespace, but leave the secrets"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "945fb471380b2aa3-IAD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3813b4d9-f9d7-450e-9394-2df5f4455c9f",
+      "children": [
+        "ed1d7e63-215d-4130-8255-48fb9a3ed4f3"
+      ]
+    },
+    "ed1d7e63-215d-4130-8255-48fb9a3ed4f3": {
+      "id": "ed1d7e63-215d-4130-8255-48fb9a3ed4f3",
+      "message": {
+        "id": "ed1d7e63-215d-4130-8255-48fb9a3ed4f3",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1748288025.202608,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "270814fa-0fe5-44f9-9dc2-fa3bd8cfcf38",
+          "request_id": "945fb471380b2aa3-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "270814fa-0fe5-44f9-9dc2-fa3bd8cfcf38",
+      "children": [
+        "4c9c084b-4411-40ff-8e2d-541b6278e5f3"
+      ]
+    },
+    "4c9c084b-4411-40ff-8e2d-541b6278e5f3": {
+      "id": "4c9c084b-4411-40ff-8e2d-541b6278e5f3",
+      "message": {
+        "id": "4c9c084b-4411-40ff-8e2d-541b6278e5f3",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1748288013.306126,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To delete **all pods, services, and deployments** in a specific Kubernetes namespace **without deleting secrets**, you can use `kubectl delete` with label selectors or resource types.\n\nHere\u2019s a safe and targeted approach:\n\n---\n\n### \ud83d\udd27 **Delete Deployments, Services, and Pods Only**\n```bash\nkubectl delete deployments,services,pods --all -n <namespace>\n```\n\nThis will:\n- Delete **all deployments** in the namespace (which will delete the pods created by them),\n- Delete **all services**, and\n- Delete **any standalone pods**.\n\n**It will NOT delete secrets, configmaps, PVCs, etc.**\n\n---\n\n### \ud83e\uddea Optional: Dry Run First\nTo verify what will be deleted:\n```bash\nkubectl delete deployments,services,pods --all -n <namespace> --dry-run=client -o name\n```\n\n---\n\n### \ud83d\ude80 Bonus: Delete Other Non-Secret Resources (Optional)\nIf you also want to delete other resources (like `replicasets`, `statefulsets`, `daemonsets`, etc.) but still exclude secrets:\n\n```bash\nkubectl api-resources --verbs=delete --namespaced -o name | \\\n  grep -v '^secrets$' | \\\n  xargs -n1 kubectl delete --all -n <namespace>\n```\n\nThis will:\n- Get all namespaced resources that support `delete`,\n- Exclude `secrets`,\n- Delete everything else in that namespace.\n\n\u26a0\ufe0f **Make sure you trust the output** before running this in production.\n\n---\n\nLet me know if you also want to preserve configmaps, PVCs, or other types."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "ed1d7e63-215d-4130-8255-48fb9a3ed4f3",
+          "request_id": "945fb471380b2aa3-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ed1d7e63-215d-4130-8255-48fb9a3ed4f3",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "4c9c084b-4411-40ff-8e2d-541b6278e5f3",
+  "plugin_ids": null,
+  "conversation_id": "6834c20d-15d8-8008-8b8d-2ea4f838bc90",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "6834c20d-15d8-8008-8b8d-2ea4f838bc90"
+}

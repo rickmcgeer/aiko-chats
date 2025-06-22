@@ -1,0 +1,143 @@
+{
+  "title": "Read JWT in Python",
+  "create_time": 1711404252.264132,
+  "update_time": 1711404257.733751,
+  "mapping": {
+    "37aa2303-2746-4ab2-ae39-477283236ce1": {
+      "id": "37aa2303-2746-4ab2-ae39-477283236ce1",
+      "message": {
+        "id": "37aa2303-2746-4ab2-ae39-477283236ce1",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1e858-9807-49d8-b98f-aa902e539a83",
+      "children": [
+        "aaa20936-eda5-4cf2-b129-00a887efdedf"
+      ]
+    },
+    "aaa1e858-9807-49d8-b98f-aa902e539a83": {
+      "id": "aaa1e858-9807-49d8-b98f-aa902e539a83",
+      "message": null,
+      "parent": null,
+      "children": [
+        "37aa2303-2746-4ab2-ae39-477283236ce1"
+      ]
+    },
+    "aaa20936-eda5-4cf2-b129-00a887efdedf": {
+      "id": "aaa20936-eda5-4cf2-b129-00a887efdedf",
+      "message": {
+        "id": "aaa20936-eda5-4cf2-b129-00a887efdedf",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1711404252.264951,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "python code to read a json web token"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "request_id": "86a231ffba7297fa-SJC",
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "37aa2303-2746-4ab2-ae39-477283236ce1",
+      "children": [
+        "25f1c135-06b0-4f92-941c-cc0a1054f442"
+      ]
+    },
+    "25f1c135-06b0-4f92-941c-cc0a1054f442": {
+      "id": "25f1c135-06b0-4f92-941c-cc0a1054f442",
+      "message": {
+        "id": "25f1c135-06b0-4f92-941c-cc0a1054f442",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1711404257.198626,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To read a JSON Web Token (JWT) in Python, you can use the `jwt` library. First, you need to install it using pip if you haven't already:\n\n```\npip install pyjwt\n```\n\nThen you can use the following Python code to decode and read the JWT:\n\n```python\nimport jwt\n\ndef read_jwt(token):\n    try:\n        # Decode the token without verifying the signature\n        decoded_token = jwt.decode(token, options={\"verify_signature\": False})\n        return decoded_token\n    except jwt.ExpiredSignatureError:\n        print(\"Token has expired.\")\n    except jwt.InvalidTokenError:\n        print(\"Invalid token.\")\n\n# Example usage\ntoken = \"your_jwt_here\"\ndecoded_token = read_jwt(token)\nif decoded_token:\n    print(decoded_token)\n```\n\nReplace `\"your_jwt_here\"` with the actual JWT you want to decode. This code will attempt to decode the JWT without verifying the signature. If the token is valid, it will return the decoded content. If the token has expired or is invalid, it will print an appropriate error message."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              100260
+            ]
+          },
+          "citations": [],
+          "gizmo_id": null,
+          "is_complete": true,
+          "message_type": null,
+          "model_slug": "text-davinci-002-render-sha",
+          "default_model_slug": "text-davinci-002-render-sha",
+          "pad": "AAAAAAAAAAAAAAAAAAAAAAAA",
+          "parent_id": "aaa20936-eda5-4cf2-b129-00a887efdedf",
+          "request_id": "86a231ffba7297fa-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa20936-eda5-4cf2-b129-00a887efdedf",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "25f1c135-06b0-4f92-941c-cc0a1054f442",
+  "plugin_ids": null,
+  "conversation_id": "e9e8866b-f072-46a4-8b0f-64e1745c98a9",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "text-davinci-002-render-sha",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "e9e8866b-f072-46a4-8b0f-64e1745c98a9"
+}

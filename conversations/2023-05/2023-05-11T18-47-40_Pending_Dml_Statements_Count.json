@@ -1,0 +1,202 @@
+{
+  "title": "Pending DML statements count.",
+  "create_time": 1683856060.800832,
+  "update_time": 1683856480,
+  "mapping": {
+    "32a42e29-4736-4f3a-89e9-9a9a54c65fe1": {
+      "id": "32a42e29-4736-4f3a-89e9-9a9a54c65fe1",
+      "message": {
+        "id": "32a42e29-4736-4f3a-89e9-9a9a54c65fe1",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1683856060.801094,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1689e-1c73-425b-895e-363b1d1f0e15",
+      "children": [
+        "aaa275fb-e0b7-46b1-8703-e0d054862ed8"
+      ]
+    },
+    "aaa1689e-1c73-425b-895e-363b1d1f0e15": {
+      "id": "aaa1689e-1c73-425b-895e-363b1d1f0e15",
+      "message": null,
+      "parent": null,
+      "children": [
+        "32a42e29-4736-4f3a-89e9-9a9a54c65fe1"
+      ]
+    },
+    "aaa275fb-e0b7-46b1-8703-e0d054862ed8": {
+      "id": "aaa275fb-e0b7-46b1-8703-e0d054862ed8",
+      "message": {
+        "id": "aaa275fb-e0b7-46b1-8703-e0d054862ed8",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1683856060.80257,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "how do i tell how many dml; statements are pending in bigquery"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "32a42e29-4736-4f3a-89e9-9a9a54c65fe1",
+      "children": [
+        "aa6b64ef-833f-42e2-bfc1-598851ef090a"
+      ]
+    },
+    "aa6b64ef-833f-42e2-bfc1-598851ef090a": {
+      "id": "aa6b64ef-833f-42e2-bfc1-598851ef090a",
+      "message": {
+        "id": "aa6b64ef-833f-42e2-bfc1-598851ef090a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1683856070.400485,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "In BigQuery, you can check the number of DML (Data Manipulation Language) statements that are pending by querying the `INFORMATION_SCHEMA.JOBS_BY_PROJECT` table. \n\nHere's an example query that you can use:\n\n```\nSELECT COUNT(*) as num_pending_dml_statements\nFROM `region-us`.INFORMATION_SCHEMA.JOBS_BY_PROJECT\nWHERE job_type = 'DML'\nAND state = 'PENDING'\n```\n\nIn this query, `region-us` is the region where your BigQuery dataset is located. You can replace this with the actual region where your dataset is stored.\n\nThe `COUNT(*)` function returns the number of rows that match the specified conditions in the `WHERE` clause. In this case, it counts the number of rows where the job type is DML and the state is PENDING.\n\nAfter running this query, you will get the number of pending DML statements in your BigQuery project."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "text-davinci-002-render-sha",
+          "finish_details": {
+            "type": "stop",
+            "stop": "<|im_end|>"
+          },
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa275fb-e0b7-46b1-8703-e0d054862ed8",
+      "children": [
+        "aaa2b959-d41c-499b-95e9-9b93a63c4dca"
+      ]
+    },
+    "aaa2b959-d41c-499b-95e9-9b93a63c4dca": {
+      "id": "aaa2b959-d41c-499b-95e9-9b93a63c4dca",
+      "message": {
+        "id": "aaa2b959-d41c-499b-95e9-9b93a63c4dca",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1683856480.190721,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "pandas disable warning"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aa6b64ef-833f-42e2-bfc1-598851ef090a",
+      "children": [
+        "e3d281c1-0634-4f81-818b-199ca1a3a9ac"
+      ]
+    },
+    "e3d281c1-0634-4f81-818b-199ca1a3a9ac": {
+      "id": "e3d281c1-0634-4f81-818b-199ca1a3a9ac",
+      "message": {
+        "id": "e3d281c1-0634-4f81-818b-199ca1a3a9ac",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1683856494.800891,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Pandas may produce warning messages for various reasons, such as when performing operations that may lead to unexpected behavior or when loading data with incompatible types. While it is generally a good practice to address these warnings to ensure the correctness of your code, you can disable them if you wish to suppress the output temporarily. \n\nTo disable warning messages in Pandas, you can use the `warnings` module from the Python standard library. Here's an example code snippet that shows how to do this:\n\n```\nimport warnings\nimport pandas as pd\n\n# Disable all warnings\nwarnings.filterwarnings('ignore')\n\n# Your Pandas code goes here\n\n# Re-enable warnings (optional)\nwarnings.filterwarnings('default')\n```\n\nIn this example, the `warnings.filterwarnings('ignore')` line disables all warning messages in Pandas. You can add this line at the beginning of your code to suppress all warnings produced by Pandas. \n\nAfter your code is executed, you can re-enable warnings by calling `warnings.filterwarnings('default')` to restore the default behavior.\n\nNote that disabling warning messages should be used with caution as it can hide important information about potential issues in your code. It is recommended to address the underlying issues that cause the warnings rather than suppressing them."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "text-davinci-002-render-sha",
+          "finish_details": {
+            "type": "stop",
+            "stop": "<|im_end|>"
+          },
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa2b959-d41c-499b-95e9-9b93a63c4dca",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "e3d281c1-0634-4f81-818b-199ca1a3a9ac",
+  "plugin_ids": null,
+  "conversation_id": "81798675-bb29-43f2-837a-4d3f73a4267c",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": null,
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "81798675-bb29-43f2-837a-4d3f73a4267c"
+}

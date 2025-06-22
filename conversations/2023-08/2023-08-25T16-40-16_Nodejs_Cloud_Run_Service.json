@@ -1,0 +1,210 @@
+{
+  "title": "Node.js Cloud Run Service",
+  "create_time": 1693006816.646324,
+  "update_time": 1693006872,
+  "mapping": {
+    "2b12693e-fa59-43aa-ab02-3804dfae84a6": {
+      "id": "2b12693e-fa59-43aa-ab02-3804dfae84a6",
+      "message": {
+        "id": "2b12693e-fa59-43aa-ab02-3804dfae84a6",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa156d0-50c1-4d6d-bad9-f9fe7de57fbe",
+      "children": [
+        "aaa2d79b-4f1f-432a-b6ae-f7068d8ef614"
+      ]
+    },
+    "aaa156d0-50c1-4d6d-bad9-f9fe7de57fbe": {
+      "id": "aaa156d0-50c1-4d6d-bad9-f9fe7de57fbe",
+      "message": null,
+      "parent": null,
+      "children": [
+        "2b12693e-fa59-43aa-ab02-3804dfae84a6"
+      ]
+    },
+    "aaa2d79b-4f1f-432a-b6ae-f7068d8ef614": {
+      "id": "aaa2d79b-4f1f-432a-b6ae-f7068d8ef614",
+      "message": {
+        "id": "aaa2d79b-4f1f-432a-b6ae-f7068d8ef614",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1693006816.646968,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "nodejs to instantiate a cloud run service"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "2b12693e-fa59-43aa-ab02-3804dfae84a6",
+      "children": [
+        "40ee1516-487a-493f-9cf6-5236ecb6536c"
+      ]
+    },
+    "40ee1516-487a-493f-9cf6-5236ecb6536c": {
+      "id": "40ee1516-487a-493f-9cf6-5236ecb6536c",
+      "message": {
+        "id": "40ee1516-487a-493f-9cf6-5236ecb6536c",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1693006825.376197,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To instantiate a Cloud Run service using Node.js, you'll need to interact with the Google Cloud Platform (GCP) APIs. Specifically, you'll need to use the Google Cloud SDK and the Node.js client libraries for GCP. Below are the general steps to create a Cloud Run service using Node.js:\n\n1. **Set Up Google Cloud SDK:**\n   If you haven't already, install the Google Cloud SDK and authenticate it with your GCP account. You can follow the instructions here: https://cloud.google.com/sdk/docs/install\n\n2. **Install Required Node.js Libraries:**\n   You'll need the `@google-cloud/run` Node.js client library to interact with the Cloud Run service. You can install it using npm or yarn:\n\n   ```bash\n   npm install @google-cloud/run\n   ```\n\n3. **Write Node.js Code:**\n   Create a JavaScript/TypeScript file with the code to create a Cloud Run service. Below is a basic example:\n\n   ```javascript\n   const { CloudRunServiceClient } = require('@google-cloud/run');\n\n   async function createCloudRunService() {\n     const client = new CloudRunServiceClient();\n\n     const location = 'us-central1'; // Replace with your desired location\n     const serviceId = 'my-cloud-run-service'; // Replace with your desired service ID\n     const image = 'gcr.io/my-project/my-image'; // Replace with your Docker image URL\n\n     const service = {\n       apiVersion: 'serving.knative.dev/v1',\n       kind: 'Service',\n       metadata: {\n         name: serviceId,\n         namespace: 'default', // Replace with your desired namespace\n       },\n       spec: {\n         template: {\n           spec: {\n             containers: [\n               {\n                 image,\n               },\n             ],\n           },\n         },\n       },\n     };\n\n     const [operation] = await client.createService({\n       parent: `namespaces/${location}`,\n       serviceId,\n       service,\n     });\n\n     console.log('Creating service...');\n     await operation.promise();\n     console.log('Service created!');\n   }\n\n   createCloudRunService().catch(console.error);\n   ```\n\n4. **Run the Code:**\n   Run your Node.js script using Node.js:\n\n   ```bash\n   node your-script.js\n   ```\n\nThis is a basic example to get you started. You'll need to adjust the `location`, `serviceId`, and `image` values according to your project's needs. Additionally, you might want to handle error cases more robustly and incorporate more advanced features like authentication and environment variables.\n\nRemember that the specifics of the code and libraries might change over time, so always refer to the official documentation for the most up-to-date information:\n\n- Google Cloud Run Node.js Client Library: https://cloud.google.com/run/docs/reference/rest\n- Google Cloud SDK: https://cloud.google.com/sdk\n- Google Cloud Run Documentation: https://cloud.google.com/run/docs"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              100260
+            ]
+          },
+          "is_complete": true,
+          "message_type": null,
+          "model_slug": "text-davinci-002-render-sha",
+          "parent_id": "aaa2d79b-4f1f-432a-b6ae-f7068d8ef614",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa2d79b-4f1f-432a-b6ae-f7068d8ef614",
+      "children": [
+        "aaa2bc90-60cc-46d3-8252-55843c345466"
+      ]
+    },
+    "aaa2bc90-60cc-46d3-8252-55843c345466": {
+      "id": "aaa2bc90-60cc-46d3-8252-55843c345466",
+      "message": {
+        "id": "aaa2bc90-60cc-46d3-8252-55843c345466",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1693006872.554957,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "make the service unauthenticated"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "40ee1516-487a-493f-9cf6-5236ecb6536c",
+      "children": [
+        "e15ed906-c5e9-41a8-8c96-6dead0148436"
+      ]
+    },
+    "e15ed906-c5e9-41a8-8c96-6dead0148436": {
+      "id": "e15ed906-c5e9-41a8-8c96-6dead0148436",
+      "message": {
+        "id": "e15ed906-c5e9-41a8-8c96-6dead0148436",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1693006879.41193,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To make a Google Cloud Run service unauthenticated, you need to adjust the authentication settings for your service. Here's how you can modify the code from the previous example to create an unauthenticated service:\n\n```javascript\nconst { CloudRunServiceClient } = require('@google-cloud/run');\n\nasync function createUnauthenticatedCloudRunService() {\n  const client = new CloudRunServiceClient();\n\n  const location = 'us-central1'; // Replace with your desired location\n  const serviceId = 'my-unauthenticated-cloud-run-service'; // Replace with your desired service ID\n  const image = 'gcr.io/my-project/my-image'; // Replace with your Docker image URL\n\n  const service = {\n    apiVersion: 'serving.knative.dev/v1',\n    kind: 'Service',\n    metadata: {\n      name: serviceId,\n      namespace: 'default', // Replace with your desired namespace\n    },\n    spec: {\n      template: {\n        spec: {\n          containers: [\n            {\n              image,\n            },\n          ],\n        },\n      },\n      authentication: {\n        anonymous: {},\n      },\n    },\n  };\n\n  const [operation] = await client.createService({\n    parent: `namespaces/${location}`,\n    serviceId,\n    service,\n  });\n\n  console.log('Creating unauthenticated service...');\n  await operation.promise();\n  console.log('Unauthenticated service created!');\n}\n\ncreateUnauthenticatedCloudRunService().catch(console.error);\n```\n\nIn this code, the `authentication` field is added to the `spec` section of the service definition. The `anonymous` setting under `authentication` makes the service unauthenticated, allowing anyone to access the service without requiring authentication.\n\nRemember to adjust the values of `location`, `serviceId`, and `image` to match your project's requirements. As always, refer to the latest documentation for the most accurate and up-to-date information:\n\n- Google Cloud Run Node.js Client Library: https://cloud.google.com/run/docs/reference/rest\n- Google Cloud SDK: https://cloud.google.com/sdk\n- Google Cloud Run Documentation: https://cloud.google.com/run/docs"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              100260
+            ]
+          },
+          "is_complete": true,
+          "message_type": null,
+          "model_slug": "text-davinci-002-render-sha",
+          "parent_id": "aaa2bc90-60cc-46d3-8252-55843c345466",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa2bc90-60cc-46d3-8252-55843c345466",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "e15ed906-c5e9-41a8-8c96-6dead0148436",
+  "plugin_ids": null,
+  "conversation_id": "08ab935d-2f6d-459a-b7fe-b93586dc890a",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": null,
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "08ab935d-2f6d-459a-b7fe-b93586dc890a"
+}

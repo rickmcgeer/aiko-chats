@@ -1,0 +1,186 @@
+{
+  "title": "Pretty-print JSON Webpage",
+  "create_time": 1749670247.040011,
+  "update_time": 1749670269.481257,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "4f4f0d8d-2104-49e6-981e-26e0692a799f"
+      ]
+    },
+    "4f4f0d8d-2104-49e6-981e-26e0692a799f": {
+      "id": "4f4f0d8d-2104-49e6-981e-26e0692a799f",
+      "message": {
+        "id": "4f4f0d8d-2104-49e6-981e-26e0692a799f",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "ab10a474-710f-4422-95fb-60e391ea50b2"
+      ]
+    },
+    "ab10a474-710f-4422-95fb-60e391ea50b2": {
+      "id": "ab10a474-710f-4422-95fb-60e391ea50b2",
+      "message": {
+        "id": "ab10a474-710f-4422-95fb-60e391ea50b2",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749670245.652,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I'm trying to pretty-print JSON on a web page.  I tried formatting with dumps on the server side, setting indent=2, but the rendered JSON came out as a single line.  If I had access to the body tag I'd write a simple onLoad() function, but the body tag is in the parent template, which is widely shared with other templates.  Any thoughts?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94e386627e742110-LAX",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "4f4f0d8d-2104-49e6-981e-26e0692a799f",
+      "children": [
+        "6ddbeeec-7e62-490f-8df2-20912ed48931"
+      ]
+    },
+    "6ddbeeec-7e62-490f-8df2-20912ed48931": {
+      "id": "6ddbeeec-7e62-490f-8df2-20912ed48931",
+      "message": {
+        "id": "6ddbeeec-7e62-490f-8df2-20912ed48931",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749670258.98477,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "ab10a474-710f-4422-95fb-60e391ea50b2",
+          "request_id": "94e386627e742110-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ab10a474-710f-4422-95fb-60e391ea50b2",
+      "children": [
+        "f4f6c05b-abb0-4e6e-9d05-411ef47cd90e"
+      ]
+    },
+    "f4f6c05b-abb0-4e6e-9d05-411ef47cd90e": {
+      "id": "f4f6c05b-abb0-4e6e-9d05-411ef47cd90e",
+      "message": {
+        "id": "f4f6c05b-abb0-4e6e-9d05-411ef47cd90e",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749670247.96721,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "You have a few good options, depending on how much control you have over the HTML and JavaScript in your page. The root issue here is that even though `json.dumps(obj, indent=2)` gives you pretty-printed JSON, if you just insert it into HTML without preserving whitespace (e.g., via a `<pre>` tag), the browser collapses it into a single line.\n\nHere are the cleanest options:\n\n---\n\n### \u2705 **Option 1: Use `<pre>` to preserve formatting**\nIf you can wrap your rendered JSON in a `<pre>` tag, whitespace will be preserved automatically:\n\n```html\n<pre>{{ json_data }}</pre>\n```\n\nOn the server:\n\n```python\njson_data = json.dumps(data, indent=2)\nreturn render_template(\"your_template.html\", json_data=json_data)\n```\n\nThis is the **simplest and most reliable** approach.\n\n---\n\n### \u2705 **Option 2: Escape and pretty-print client-side**\nIf the JSON is embedded as a string in a script block or attribute, you can format it dynamically in JavaScript.\n\nExample:\n\n```html\n<pre id=\"json-output\"></pre>\n<script>\n  const rawData = {{ json_data | tojson | safe }};\n  document.getElementById(\"json-output\").textContent = JSON.stringify(rawData, null, 2);\n</script>\n```\n\nThis lets you keep the raw data and format it in the browser without needing to control the `<body onload>`.\n\n---\n\n### \u2705 **Option 3: Use a JS function on DOMContentLoaded**\nIf you can include inline JavaScript, but can't modify `<body>`, use this pattern instead of `onLoad()`:\n\n```html\n<script>\n  document.addEventListener(\"DOMContentLoaded\", () => {\n    const rawData = {{ json_data | tojson | safe }};\n    document.getElementById(\"json-output\").textContent = JSON.stringify(rawData, null, 2);\n  });\n</script>\n```\n\nThis gives you the same effect as `onLoad`, but works even when you can\u2019t touch the `<body>` tag.\n\n---\n\n### \ud83e\uddfc Pro tip: Use `textContent`, not `innerHTML`\nWhen inserting JSON into an element, use `.textContent` to avoid breaking quotes or injecting HTML accidentally.\n\n---\n\nLet me know if you\u2019re using a specific framework (like Flask + Jinja, or Django), and I can tailor this further."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "6ddbeeec-7e62-490f-8df2-20912ed48931",
+          "request_id": "94e386627e742110-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6ddbeeec-7e62-490f-8df2-20912ed48931",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "f4f6c05b-abb0-4e6e-9d05-411ef47cd90e",
+  "plugin_ids": null,
+  "conversation_id": "6849d966-dd2c-8008-a1e5-7920381e589f",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "http://localhost:9999/services/galyleo//publish",
+    "http://localhost:9011"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "6849d966-dd2c-8008-a1e5-7920381e589f"
+}

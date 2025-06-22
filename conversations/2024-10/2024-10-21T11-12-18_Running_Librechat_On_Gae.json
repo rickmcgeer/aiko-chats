@@ -1,0 +1,355 @@
+{
+  "title": "Running LibreChat on GAE",
+  "create_time": 1729534338.474685,
+  "update_time": 1729534869.431045,
+  "mapping": {
+    "b3a224e0-4f32-41a4-8889-4e3d83e766aa": {
+      "id": "b3a224e0-4f32-41a4-8889-4e3d83e766aa",
+      "message": {
+        "id": "b3a224e0-4f32-41a4-8889-4e3d83e766aa",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1b157-8d67-4221-9b40-dcd9a2bc832c",
+      "children": [
+        "aaa293f0-067f-48c0-8937-05ce9ad693aa"
+      ]
+    },
+    "aaa1b157-8d67-4221-9b40-dcd9a2bc832c": {
+      "id": "aaa1b157-8d67-4221-9b40-dcd9a2bc832c",
+      "message": null,
+      "parent": null,
+      "children": [
+        "b3a224e0-4f32-41a4-8889-4e3d83e766aa"
+      ]
+    },
+    "aaa293f0-067f-48c0-8937-05ce9ad693aa": {
+      "id": "aaa293f0-067f-48c0-8937-05ce9ad693aa",
+      "message": {
+        "id": "aaa293f0-067f-48c0-8937-05ce9ad693aa",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1729534338.481183,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "can i run librechat as a google app engine app"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "8d63370d9c2bced9-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b3a224e0-4f32-41a4-8889-4e3d83e766aa",
+      "children": [
+        "bc896ae9-ede7-4115-a488-c47db31e68c4"
+      ]
+    },
+    "bc896ae9-ede7-4115-a488-c47db31e68c4": {
+      "id": "bc896ae9-ede7-4115-a488-c47db31e68c4",
+      "message": {
+        "id": "bc896ae9-ede7-4115-a488-c47db31e68c4",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1729534369.533157,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa293f0-067f-48c0-8937-05ce9ad693aa",
+          "request_id": "8d63370d9c2bced9-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa293f0-067f-48c0-8937-05ce9ad693aa",
+      "children": [
+        "e35a98ee-3f20-4e3d-bddc-26d82acb5a6a"
+      ]
+    },
+    "e35a98ee-3f20-4e3d-bddc-26d82acb5a6a": {
+      "id": "e35a98ee-3f20-4e3d-bddc-26d82acb5a6a",
+      "message": {
+        "id": "e35a98ee-3f20-4e3d-bddc-26d82acb5a6a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1729534369.533301,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, you can run LibreChat on Google App Engine, but you'll need to configure it properly for the platform. LibreChat is typically deployed as a web service, and Google App Engine is well-suited for hosting such services. Here are the general steps you'd follow:\n\n### 1. **Prepare Your LibreChat Codebase**\n   - Download the LibreChat source code from its repository (likely on GitHub).\n   - Make sure the code is structured in a way that fits the App Engine environment, which is often a Flask, Django, or Node.js web app.\n   - If needed, modify the application to be compatible with App Engine's environment, including ensuring that any external dependencies (e.g., for AI models) are either bundled with your application or available as a managed service.\n\n### 2. **Configure the App for App Engine**\n   - Create an `app.yaml` configuration file that specifies how Google App Engine should run your LibreChat app.\n   - Example `app.yaml` for a Python-based LibreChat (using Flask as an example):\n     ```yaml\n     runtime: python39\n     entrypoint: gunicorn -b :$PORT main:app\n\n     handlers:\n     - url: /static\n       static_dir: static\n     - url: /.*\n       script: auto\n\n     env_variables:\n       # Add any environment variables you need, such as API keys or model locations\n     ```\n   - Ensure that your dependencies are listed in a `requirements.txt` file.\n\n### 3. **Handle External AI Models**\n   If LibreChat relies on AI models that need significant compute resources or specialized hardware (like GPUs), App Engine (especially the standard environment) may not be sufficient. In such cases, consider:\n   - Using Google AI Platform or Vertex AI for hosting models.\n   - Offloading compute-heavy tasks to Cloud Functions or Cloud Run, while App Engine handles the web front end.\n\n### 4. **Deploy the App**\n   - Ensure the Google Cloud SDK is installed and authenticated.\n   - Deploy your application by running:\n     ```bash\n     gcloud app deploy\n     ```\n\n### 5. **Test and Monitor**\n   - After deployment, test your LibreChat instance and make sure it\u2019s working as expected.\n   - Use Google Cloud Monitoring to track performance and handle any scaling issues.\n\n### Additional Considerations:\n- **Auto-Scaling:** Google App Engine can automatically scale your application to handle increases in traffic, which might be useful if many users access LibreChat.\n- **Instance Classes:** You may need to choose a more powerful instance class if LibreChat requires significant resources.\n- **Persistent Storage:** If LibreChat needs to store data persistently (e.g., chat logs), consider integrating with Google Cloud Storage or Google Cloud SQL.\n\nWould you like details on setting up any specific part of this process?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": null,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "bc896ae9-ede7-4115-a488-c47db31e68c4",
+          "request_id": "8d63370d9c2bced9-SJC",
+          "timestamp_": "absolute",
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "bc896ae9-ede7-4115-a488-c47db31e68c4",
+      "children": [
+        "aaa2e96b-88bd-4a70-a520-2ee4863c6d8a"
+      ]
+    },
+    "aaa2e96b-88bd-4a70-a520-2ee4863c6d8a": {
+      "id": "aaa2e96b-88bd-4a70-a520-2ee4863c6d8a",
+      "message": {
+        "id": "aaa2e96b-88bd-4a70-a520-2ee4863c6d8a",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1729534832.473941,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "another possibility is to use google kubernetes engine or Cloud Run.  The issue is I want to use Google OAuth, so I need a stable URL for a callback"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "8d63431d2f7fceb5-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e35a98ee-3f20-4e3d-bddc-26d82acb5a6a",
+      "children": [
+        "eac86572-b6ad-41b9-a290-a4762a56f9c5"
+      ]
+    },
+    "eac86572-b6ad-41b9-a290-a4762a56f9c5": {
+      "id": "eac86572-b6ad-41b9-a290-a4762a56f9c5",
+      "message": {
+        "id": "eac86572-b6ad-41b9-a290-a4762a56f9c5",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1729534868.559598,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "User is considering running LibreChat on Google Kubernetes Engine (GKE) or Cloud Run and needs a stable URL for Google OAuth callback."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": null,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa2e96b-88bd-4a70-a520-2ee4863c6d8a",
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "request_id": "8d63431d2f7fceb5-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "bio",
+        "channel": null
+      },
+      "parent": "aaa2e96b-88bd-4a70-a520-2ee4863c6d8a",
+      "children": [
+        "969cd156-4243-4c86-a1fb-0f2b4e4cd0ec"
+      ]
+    },
+    "969cd156-4243-4c86-a1fb-0f2b4e4cd0ec": {
+      "id": "969cd156-4243-4c86-a1fb-0f2b4e4cd0ec",
+      "message": {
+        "id": "969cd156-4243-4c86-a1fb-0f2b4e4cd0ec",
+        "author": {
+          "role": "tool",
+          "name": "bio",
+          "metadata": {}
+        },
+        "create_time": 1729534868.559732,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Model set context updated."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "kwargs": {
+            "message_id": "969cd156-4243-4c86-a1fb-0f2b4e4cd0ec",
+            "pending_message_id": null,
+            "sync_write": false
+          },
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "eac86572-b6ad-41b9-a290-a4762a56f9c5",
+          "request_id": "8d63431d2f7fceb5-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "assistant",
+        "channel": null
+      },
+      "parent": "eac86572-b6ad-41b9-a290-a4762a56f9c5",
+      "children": [
+        "ea270b95-6d07-44f7-8b06-711b463b5fdb"
+      ]
+    },
+    "ea270b95-6d07-44f7-8b06-711b463b5fdb": {
+      "id": "ea270b95-6d07-44f7-8b06-711b463b5fdb",
+      "message": {
+        "id": "ea270b95-6d07-44f7-8b06-711b463b5fdb",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1729534868.559841,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To use Google OAuth with LibreChat on either **Google Kubernetes Engine (GKE)** or **Cloud Run**, both services can provide a stable URL necessary for the OAuth callback.\n\n### **Option 1: Google Kubernetes Engine (GKE)**\n1. **Stable URL with a Load Balancer:**\n   - When deploying LibreChat on GKE, you can expose the application via a Kubernetes Service of type `LoadBalancer`. This will provide a stable external IP address, and by attaching a domain name to it (e.g., using Google Cloud DNS), you can ensure a consistent URL for OAuth callbacks.\n   - Steps:\n     - Create a Load Balancer to expose your LibreChat app to the internet.\n     - Map a domain name (if needed) to this Load Balancer using Google Cloud DNS.\n     - Use this domain as the **callback URL** in your OAuth configuration.\n\n2. **Using Ingress for More Flexibility:**\n   - For more control and stable routing, you can set up an **Ingress** resource in GKE. This will allow you to configure a static IP address and easily manage SSL certificates with tools like **Google Managed SSL**.\n   - The Ingress would route traffic to your application while giving you a consistent URL for OAuth.\n\n### **Option 2: Cloud Run**\n1. **Stable URL with Custom Domain:**\n   - Cloud Run automatically provides a stable URL for your deployed services, which you can configure to use a custom domain.\n   - Cloud Run\u2019s URL for each service is in the format: `https://your-service-id.a.run.app`.\n   - You can map a custom domain (like `https://yourdomain.com`) to the Cloud Run service using **Google Cloud Domains** or **Cloud DNS**.\n   - This URL can then be used as the **callback URL** for Google OAuth.\n\n### OAuth Callback Configuration\nRegardless of whether you use GKE or Cloud Run, the process to set up Google OAuth is similar:\n1. **Register Your App in Google Cloud Console:**\n   - Go to the **APIs & Services** > **Credentials** page.\n   - Set up an OAuth 2.0 Client ID.\n   - Specify your application type as \"Web application.\"\n   - Add your callback URL (e.g., `https://yourdomain.com/oauth2callback`) to the **Authorized redirect URIs**.\n\n2. **Update LibreChat Configuration:**\n   - In LibreChat's OAuth configuration (likely in environment variables or a config file), specify the same callback URL.\n   - Ensure that LibreChat is configured to handle the OAuth flow and accept the callback at that URL.\n\n### Conclusion\n- **GKE** provides more control over infrastructure but may require more setup for stable URLs (via Load Balancers and Ingress).\n- **Cloud Run** simplifies deployment, provides auto-scaling, and gives you a stable URL out of the box, making it easier to manage the OAuth callback URL.\n\nDo you have a preference for GKE or Cloud Run, or would you like help configuring either of these?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": null,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "969cd156-4243-4c86-a1fb-0f2b4e4cd0ec",
+          "request_id": "8d63431d2f7fceb5-SJC",
+          "timestamp_": "absolute",
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "969cd156-4243-4c86-a1fb-0f2b4e4cd0ec",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "ea270b95-6d07-44f7-8b06-711b463b5fdb",
+  "plugin_ids": null,
+  "conversation_id": "67169982-3b3c-8008-8389-63d93b87d6fa",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://yourdomain.com"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "67169982-3b3c-8008-8389-63d93b87d6fa"
+}

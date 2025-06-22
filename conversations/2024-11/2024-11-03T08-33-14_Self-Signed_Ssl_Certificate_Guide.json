@@ -1,0 +1,186 @@
+{
+  "title": "Self-Signed SSL Certificate Guide",
+  "create_time": 1730651594.453575,
+  "update_time": 1730651630.668057,
+  "mapping": {
+    "aaa17e90-e978-449e-8205-37b17803bd3c": {
+      "id": "aaa17e90-e978-449e-8205-37b17803bd3c",
+      "message": null,
+      "parent": null,
+      "children": [
+        "beff99b2-789a-4e8d-9921-07d3c9824cc2"
+      ]
+    },
+    "beff99b2-789a-4e8d-9921-07d3c9824cc2": {
+      "id": "beff99b2-789a-4e8d-9921-07d3c9824cc2",
+      "message": {
+        "id": "beff99b2-789a-4e8d-9921-07d3c9824cc2",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa17e90-e978-449e-8205-37b17803bd3c",
+      "children": [
+        "aaa23398-f6c6-4d18-a1ef-5ae09a071f49"
+      ]
+    },
+    "aaa23398-f6c6-4d18-a1ef-5ae09a071f49": {
+      "id": "aaa23398-f6c6-4d18-a1ef-5ae09a071f49",
+      "message": {
+        "id": "aaa23398-f6c6-4d18-a1ef-5ae09a071f49",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1730651594.45635,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "how do i issue a self-signed certificate for a site i own"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "8dcdc3cfcd5815b0-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "beff99b2-789a-4e8d-9921-07d3c9824cc2",
+      "children": [
+        "8fd69065-41e6-4b33-a443-a12b3e982dcb"
+      ]
+    },
+    "8fd69065-41e6-4b33-a443-a12b3e982dcb": {
+      "id": "8fd69065-41e6-4b33-a443-a12b3e982dcb",
+      "message": {
+        "id": "8fd69065-41e6-4b33-a443-a12b3e982dcb",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1730651629.443915,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa23398-f6c6-4d18-a1ef-5ae09a071f49",
+          "request_id": "8dcdc3cfcd5815b0-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa23398-f6c6-4d18-a1ef-5ae09a071f49",
+      "children": [
+        "fea9e5ed-2260-4e92-bed0-980a8f5e9f0f"
+      ]
+    },
+    "fea9e5ed-2260-4e92-bed0-980a8f5e9f0f": {
+      "id": "fea9e5ed-2260-4e92-bed0-980a8f5e9f0f",
+      "message": {
+        "id": "fea9e5ed-2260-4e92-bed0-980a8f5e9f0f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1730651629.44401,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Creating a self-signed certificate for your site involves generating a certificate and private key that can be used to encrypt connections to your site. Keep in mind that while a self-signed certificate will work for development or internal testing, most browsers will flag it as \"not secure\" because it's not signed by a trusted Certificate Authority (CA). Here\u2019s a basic guide to issuing a self-signed certificate:\n\n### Step 1: Install OpenSSL\nMost operating systems come with OpenSSL pre-installed. If you don't have it, install it using your package manager:\n- **Ubuntu/Debian**: `sudo apt update && sudo apt install openssl`\n- **macOS**: Pre-installed on recent macOS versions\n- **Windows**: Download from [OpenSSL\u2019s website](https://www.openssl.org/) and follow the installation instructions.\n\n### Step 2: Generate the Private Key\nRun the following command to create a private key. You can specify the bit size; 2048 bits is standard for most cases.\n\n```bash\nopenssl genrsa -out mysite.key 2048\n```\n\nThis will create a private key file called `mysite.key`. Make sure to keep this key secure, as it\u2019s essential for establishing the encrypted connection.\n\n### Step 3: Generate the Certificate Signing Request (CSR)\nCreate a CSR, which includes details about your site, like its domain name. You'll be asked to fill in some information, such as the Common Name (CN), which should be the domain name of your site.\n\n```bash\nopenssl req -new -key mysite.key -out mysite.csr\n```\n\nYou\u2019ll be prompted to enter details like:\n\n- **Country Name (2 letter code)**: For example, `US`\n- **State or Province Name**: Full state name, like `California`\n- **Locality Name**: Your city, e.g., `San Francisco`\n- **Organization Name**: Your organization or company name\n- **Organizational Unit Name**: Your department, e.g., `IT`\n- **Common Name**: Your domain name, e.g., `www.mysite.com`\n- **Email Address**: Contact email for this certificate\n\n### Step 4: Generate the Self-Signed Certificate\nNow, create a self-signed certificate using the private key and CSR. You can set the validity period in days with the `-days` option (e.g., 365 days).\n\n```bash\nopenssl x509 -req -days 365 -in mysite.csr -signkey mysite.key -out mysite.crt\n```\n\nThis will generate a certificate file called `mysite.crt` which, along with `mysite.key`, forms your self-signed SSL certificate.\n\n### Step 5: Configure Your Web Server to Use the Certificate\nDepending on your web server, you\u2019ll need to configure it to use your new certificate.\n\n#### For Nginx\nEdit your Nginx configuration file:\n\n```nginx\nserver {\n    listen 443 ssl;\n    server_name mysite.com;\n\n    ssl_certificate /path/to/mysite.crt;\n    ssl_certificate_key /path/to/mysite.key;\n\n    # other configuration settings\n}\n```\n\nAfter making these changes, restart Nginx:\n\n```bash\nsudo systemctl restart nginx\n```\n\n#### For Apache\nEdit your Apache configuration file, typically found in `/etc/apache2/sites-available/your_site.conf`:\n\n```apache\n<VirtualHost *:443>\n    ServerName mysite.com\n\n    SSLEngine on\n    SSLCertificateFile /path/to/mysite.crt\n    SSLCertificateKeyFile /path/to/mysite.key\n\n    # other configuration settings\n</VirtualHost>\n```\n\nThen, enable the SSL module and restart Apache:\n\n```bash\nsudo a2enmod ssl\nsudo systemctl restart apache2\n```\n\n### Final Note\nYour self-signed certificate is ready for testing or internal use. However, if you plan to deploy to a public site, it's recommended to get a free certificate from [Let's Encrypt](https://letsencrypt.org/), which is trusted by browsers and will prevent security warnings for users."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": null,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "8fd69065-41e6-4b33-a443-a12b3e982dcb",
+          "request_id": "8dcdc3cfcd5815b0-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8fd69065-41e6-4b33-a443-a12b3e982dcb",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "fea9e5ed-2260-4e92-bed0-980a8f5e9f0f",
+  "plugin_ids": null,
+  "conversation_id": "6727a5ca-4f84-8008-ad47-1442dfcbe4e6",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://letsencrypt.org/",
+    "https://www.openssl.org/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "6727a5ca-4f84-8008-ad47-1442dfcbe4e6"
+}

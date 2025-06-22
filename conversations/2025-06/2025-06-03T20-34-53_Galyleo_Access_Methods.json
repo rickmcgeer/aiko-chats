@@ -1,0 +1,432 @@
+{
+  "title": "Galyleo Access Methods",
+  "create_time": 1749008093.16103,
+  "update_time": 1749009943.096476,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "f0bbc62f-8f46-43bc-8103-a3a786c186f1"
+      ]
+    },
+    "f0bbc62f-8f46-43bc-8103-a3a786c186f1": {
+      "id": "f0bbc62f-8f46-43bc-8103-a3a786c186f1",
+      "message": {
+        "id": "f0bbc62f-8f46-43bc-8103-a3a786c186f1",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "90223a9a-d4d6-42f9-8b2f-9ae1b8e845a2"
+      ]
+    },
+    "90223a9a-d4d6-42f9-8b2f-9ae1b8e845a2": {
+      "id": "90223a9a-d4d6-42f9-8b2f-9ae1b8e845a2",
+      "message": {
+        "id": "90223a9a-d4d6-42f9-8b2f-9ae1b8e845a2",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749008089.41,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Access to the Galyleo service is with Hub credentials (log in to the parent JupyterHub and the user is automatically logged into the Galyleo Service).  API access, including from notebooks, is via API tokens.  API tokens can be obtained from the Admin menu of the Jupyter Hub and are in the GALYLEO_API_TOKEN environment variable in Galyleo Servers.  Expand to a paragraph on each method of obtaining access."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94a46083285acbaa-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f0bbc62f-8f46-43bc-8103-a3a786c186f1",
+      "children": [
+        "7a0736a6-0c2b-4bbf-97a8-c03b15770c3c"
+      ]
+    },
+    "7a0736a6-0c2b-4bbf-97a8-c03b15770c3c": {
+      "id": "7a0736a6-0c2b-4bbf-97a8-c03b15770c3c",
+      "message": {
+        "id": "7a0736a6-0c2b-4bbf-97a8-c03b15770c3c",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749008099.002656,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "90223a9a-d4d6-42f9-8b2f-9ae1b8e845a2",
+          "request_id": "94a46083285acbaa-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "90223a9a-d4d6-42f9-8b2f-9ae1b8e845a2",
+      "children": [
+        "e2ef31ac-2543-442f-837e-a330fd4fdfd8"
+      ]
+    },
+    "e2ef31ac-2543-442f-837e-a330fd4fdfd8": {
+      "id": "e2ef31ac-2543-442f-837e-a330fd4fdfd8",
+      "message": {
+        "id": "e2ef31ac-2543-442f-837e-a330fd4fdfd8",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749008093.297088,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Sure, here\u2019s an expanded version with a paragraph on each method of obtaining access:\n\n---\n\n**Access via JupyterHub Login**  \nUsers gain access to the Galyleo Service through single sign-on using their JupyterHub credentials. When a user logs into the parent JupyterHub instance, they are automatically authenticated for the Galyleo Service without needing to re-enter credentials. This seamless login experience is managed through the integration of JupyterHub\u2019s authentication system with the Galyleo Service, ensuring that all user sessions are securely tied to their JupyterHub identity. This method is ideal for interactive use within the Jupyter ecosystem and ensures consistent user identity across services.\n\n**Access via API Tokens**  \nFor programmatic access, such as from scripts or notebooks, the Galyleo Service supports authentication via API tokens. These tokens can be generated through the Admin menu of the JupyterHub interface, where users with appropriate privileges can create and manage tokens for themselves or others. Once generated, tokens are securely made available in the environment of Galyleo Servers via the `GALYLEO_API_TOKEN` environment variable. This allows notebooks and other automated clients to authenticate and interact with the Galyleo API without manual credential entry, enabling robust, secure access for automation and integration purposes."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "7a0736a6-0c2b-4bbf-97a8-c03b15770c3c",
+          "request_id": "94a46083285acbaa-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7a0736a6-0c2b-4bbf-97a8-c03b15770c3c",
+      "children": [
+        "52c286b6-f6f4-4cb7-996f-1494ea19f82b"
+      ]
+    },
+    "52c286b6-f6f4-4cb7-996f-1494ea19f82b": {
+      "id": "52c286b6-f6f4-4cb7-996f-1494ea19f82b",
+      "message": {
+        "id": "52c286b6-f6f4-4cb7-996f-1494ea19f82b",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749009688.497,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "The Galyleo service makes Galyleo table data available for all applications that require data, through the same REST protocol Galyleo dashboards use.  Write three sentences on this."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94a487896c7e5397-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e2ef31ac-2543-442f-837e-a330fd4fdfd8",
+      "children": [
+        "536aa8dc-6d8d-4de6-b5e2-65fbec402c2f"
+      ]
+    },
+    "536aa8dc-6d8d-4de6-b5e2-65fbec402c2f": {
+      "id": "536aa8dc-6d8d-4de6-b5e2-65fbec402c2f",
+      "message": {
+        "id": "536aa8dc-6d8d-4de6-b5e2-65fbec402c2f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749009693.465916,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "The Galyleo Service exposes table data through a standardized REST API, making it accessible not only to Galyleo dashboards but to any external application that requires data. This consistent interface allows developers to build custom tools, integrations, or analytics pipelines using the same endpoints that power the dashboards. By leveraging a unified protocol, the service ensures reliable, real-time access to structured data across diverse environments."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "52c286b6-f6f4-4cb7-996f-1494ea19f82b",
+          "request_id": "94a487896c7e5397-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "52c286b6-f6f4-4cb7-996f-1494ea19f82b",
+      "children": [
+        "b34b80e6-1e5f-4752-ab80-1959a34da73f"
+      ]
+    },
+    "b34b80e6-1e5f-4752-ab80-1959a34da73f": {
+      "id": "b34b80e6-1e5f-4752-ab80-1959a34da73f",
+      "message": {
+        "id": "b34b80e6-1e5f-4752-ab80-1959a34da73f",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749009777.285,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "It allows fine-grained publication and sharing on either a list of email addresses, hub-wide access, or public access, for both data tables and dashboards.  Expand to three sentences"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94a489b44da65397-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "536aa8dc-6d8d-4de6-b5e2-65fbec402c2f",
+      "children": [
+        "c56f212f-50b5-4a48-89f6-77281417271a"
+      ]
+    },
+    "c56f212f-50b5-4a48-89f6-77281417271a": {
+      "id": "c56f212f-50b5-4a48-89f6-77281417271a",
+      "message": {
+        "id": "c56f212f-50b5-4a48-89f6-77281417271a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749009781.588663,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "The Galyleo Service supports fine-grained control over data and dashboard sharing, enabling users to tailor access to their needs. Resources can be shared with specific individuals by listing email addresses, made available to all users of the parent JupyterHub (hub-wide access), or published publicly for unrestricted access. This flexible sharing model ensures that sensitive data remains protected while still allowing broad collaboration and dissemination when appropriate."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "b34b80e6-1e5f-4752-ab80-1959a34da73f",
+          "request_id": "94a489b44da65397-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b34b80e6-1e5f-4752-ab80-1959a34da73f",
+      "children": [
+        "1a7b47e6-6d16-4e4d-84f6-65e8718152c6"
+      ]
+    },
+    "1a7b47e6-6d16-4e4d-84f6-65e8718152c6": {
+      "id": "1a7b47e6-6d16-4e4d-84f6-65e8718152c6",
+      "message": {
+        "id": "1a7b47e6-6d16-4e4d-84f6-65e8718152c6",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749009929.088,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "It  allows seamless access for publishing and access.  Publishing is simply sharing with the PUBLIC; access is through standard web protocols, so interacting with a dashboard is just viewing a web page, and accessing and querying data is through the Simple Data Transfer Protocol.  Expand to three sentences on each point."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94a48d691f445397-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c56f212f-50b5-4a48-89f6-77281417271a",
+      "children": [
+        "2fb78fad-5151-4edb-9a8f-f2e106868a25"
+      ]
+    },
+    "2fb78fad-5151-4edb-9a8f-f2e106868a25": {
+      "id": "2fb78fad-5151-4edb-9a8f-f2e106868a25",
+      "message": {
+        "id": "2fb78fad-5151-4edb-9a8f-f2e106868a25",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749009932.261869,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "**Seamless Publishing**  \nThe Galyleo Service makes publishing as simple as designating a resource\u2014whether a data table or dashboard\u2014as shared with the public. Once marked public, the resource is instantly accessible without requiring authentication or a JupyterHub login. This streamlined approach makes it easy to disseminate insights and visualizations broadly, whether for internal stakeholders or external audiences.\n\n**Seamless Access**  \nAccessing Galyleo dashboards is as straightforward as opening a standard web page in a browser. There's no need for special software or plugins\u2014users can interact with dashboards using familiar web technologies. For data access and queries, applications use the Simple Data Transfer Protocol (SDTP), a lightweight REST-based API designed for ease of integration with scripts, notebooks, and external systems."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "1a7b47e6-6d16-4e4d-84f6-65e8718152c6",
+          "request_id": "94a48d691f445397-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1a7b47e6-6d16-4e4d-84f6-65e8718152c6",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "2fb78fad-5151-4edb-9a8f-f2e106868a25",
+  "plugin_ids": null,
+  "conversation_id": "683fbedc-cb90-8008-883d-bcee30c93205",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "683fbedc-cb90-8008-883d-bcee30c93205"
+}

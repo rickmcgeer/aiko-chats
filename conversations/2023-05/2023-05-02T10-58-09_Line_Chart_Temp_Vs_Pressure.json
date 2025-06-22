@@ -1,0 +1,133 @@
+{
+  "title": "Line Chart: Temp vs Pressure.",
+  "create_time": 1683050289.765496,
+  "update_time": 1683050345,
+  "mapping": {
+    "32125e57-5061-4d58-b814-3cf75fa241ad": {
+      "id": "32125e57-5061-4d58-b814-3cf75fa241ad",
+      "message": {
+        "id": "32125e57-5061-4d58-b814-3cf75fa241ad",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1683050289.766593,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1c767-8c29-4c16-8eee-a6fa90c776bc",
+      "children": [
+        "aaa25962-6d98-4eae-a140-9e5a94c34e3e"
+      ]
+    },
+    "aaa1c767-8c29-4c16-8eee-a6fa90c776bc": {
+      "id": "aaa1c767-8c29-4c16-8eee-a6fa90c776bc",
+      "message": null,
+      "parent": null,
+      "children": [
+        "32125e57-5061-4d58-b814-3cf75fa241ad"
+      ]
+    },
+    "aaa25962-6d98-4eae-a140-9e5a94c34e3e": {
+      "id": "aaa25962-6d98-4eae-a140-9e5a94c34e3e",
+      "message": {
+        "id": "aaa25962-6d98-4eae-a140-9e5a94c34e3e",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1683050289.767018,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "show me the chartjs code for a line chart for temperature vs pressure"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "32125e57-5061-4d58-b814-3cf75fa241ad",
+      "children": [
+        "8b7542ef-91db-425e-b59b-c1d409bac3b5"
+      ]
+    },
+    "8b7542ef-91db-425e-b59b-c1d409bac3b5": {
+      "id": "8b7542ef-91db-425e-b59b-c1d409bac3b5",
+      "message": {
+        "id": "8b7542ef-91db-425e-b59b-c1d409bac3b5",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1683050345.940815,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "\n\nSure, here is a sample code for creating a Line Chart using Chart.js library for temperature vs pressure:\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\t<title>Line Chart - Temperature vs Pressure</title>\n\t<script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>\n</head>\n<body>\n\t<div style=\"width: 80%\">\n\t\t<canvas id=\"myChart\"></canvas>\n\t</div>\n\t\n\t<script>\n\t\tvar ctx = document.getElementById('myChart').getContext('2d');\n\t\tvar myChart = new Chart(ctx, {\n\t\t\ttype: 'line',\n\t\t\tdata: {\n\t\t\t\tlabels: ['January', 'February', 'March', 'April', 'May', 'June'],\n\t\t\t\tdatasets: [{\n\t\t\t\t\tlabel: 'Temperature (\u00b0C)',\n\t\t\t\t\tdata: [15, 18, 20, 23, 26, 29],\n\t\t\t\t\tborderColor: 'rgba(255, 99, 132, 1)',\n\t\t\t\t\tborderWidth: 2,\n\t\t\t\t\tfill: false\n\t\t\t\t}, {\n\t\t\t\t\tlabel: 'Pressure (hPa)',\n\t\t\t\t\tdata: [1013, 1011, 1010, 1009, 1008, 1007],\n\t\t\t\t\tborderColor: 'rgba(54, 162, 235, 1)',\n\t\t\t\t\tborderWidth: 2,\n\t\t\t\t\tfill: false\n\t\t\t\t}]\n\t\t\t},\n\t\t\toptions: {\n\t\t\t\tscales: {\n\t\t\t\t\tyAxes: [{\n\t\t\t\t\t\tticks: {\n\t\t\t\t\t\t\tbeginAtZero: true\n\t\t\t\t\t\t}\n\t\t\t\t\t}]\n\t\t\t\t}\n\t\t\t}\n\t\t});\n\t</script>\n</body>\n</html>\n```\n\nThis code creates a Line Chart with two datasets: Temperature (in degrees Celsius) and Pressure (in hectopascals). The chart displays the data for the months of January through June. The y-axis is scaled to begin at zero. You can customize the labels and data to fit your needs."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "text-davinci-002-render-sha",
+          "finish_details": {
+            "type": "stop",
+            "stop": "<|im_end|>"
+          },
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa25962-6d98-4eae-a140-9e5a94c34e3e",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "8b7542ef-91db-425e-b59b-c1d409bac3b5",
+  "plugin_ids": null,
+  "conversation_id": "626f4e6a-4943-40fc-b206-e6c2b44d7b50",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": null,
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "626f4e6a-4943-40fc-b206-e6c2b44d7b50"
+}

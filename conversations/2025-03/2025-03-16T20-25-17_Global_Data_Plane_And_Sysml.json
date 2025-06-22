@@ -1,0 +1,488 @@
+{
+  "title": "Global Data Plane and SysML",
+  "create_time": 1742181917.819716,
+  "update_time": 1742183548.606534,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "fc8e760b-9b73-4e93-b813-7e592efe810d"
+      ]
+    },
+    "fc8e760b-9b73-4e93-b813-7e592efe810d": {
+      "id": "fc8e760b-9b73-4e93-b813-7e592efe810d",
+      "message": {
+        "id": "fc8e760b-9b73-4e93-b813-7e592efe810d",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "0b385d92-64a4-47fb-8539-27989b5d242f"
+      ]
+    },
+    "0b385d92-64a4-47fb-8539-27989b5d242f": {
+      "id": "0b385d92-64a4-47fb-8539-27989b5d242f",
+      "message": {
+        "id": "0b385d92-64a4-47fb-8539-27989b5d242f",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1742181914.826,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I need some talking points about how the Global data plane, a universal data connector which makes all data look like tables, works with SysML descriptions in model-based systems engineering"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "921961d8edd77eb4-SEA",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "fc8e760b-9b73-4e93-b813-7e592efe810d",
+      "children": [
+        "19647da6-0001-4d04-8220-2e51d532e890"
+      ]
+    },
+    "19647da6-0001-4d04-8220-2e51d532e890": {
+      "id": "19647da6-0001-4d04-8220-2e51d532e890",
+      "message": {
+        "id": "19647da6-0001-4d04-8220-2e51d532e890",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1742181929.83918,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "0b385d92-64a4-47fb-8539-27989b5d242f",
+          "request_id": "921961d8edd77eb4-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "0b385d92-64a4-47fb-8539-27989b5d242f",
+      "children": [
+        "d0ab93a0-e0fe-4c8f-8003-a9d03deec982"
+      ]
+    },
+    "d0ab93a0-e0fe-4c8f-8003-a9d03deec982": {
+      "id": "d0ab93a0-e0fe-4c8f-8003-a9d03deec982",
+      "message": {
+        "id": "d0ab93a0-e0fe-4c8f-8003-a9d03deec982",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1742181917.853218,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Here are some talking points that connect the **Global Data Plane** (GDP) with **SysML** in the context of **model-based systems engineering (MBSE):**\n\n### 1. **Universal Data Connector for SysML Models**  \n- The Global Data Plane acts as a **universal data connector** that makes diverse data sources (structured and unstructured) appear as tables.  \n- SysML models define the **structure, behavior, and relationships** of complex systems.  \n- GDP allows SysML models to integrate with live data from various sources (e.g., databases, sensors, simulation outputs) by presenting them as accessible tables.  \n\n---\n\n### 2. **Enabling Real-Time Model Updates**  \n- SysML models are typically built on static data sets.  \n- GDP allows SysML models to be dynamically updated with real-time data streams.  \n- This ensures that models reflect the current state of the system and operational environment.  \n\n---\n\n### 3. **Bridging the Gap Between Models and Data**  \n- SysML defines system states and interactions, but actual system performance data resides in external sources.  \n- GDP allows SysML models to query and integrate live data directly, ensuring consistency between the model and the system.  \n- Example: A SysML-defined simulation block can pull real-time telemetry data through GDP.  \n\n---\n\n### 4. **Simplifying Data Access and Transformation**  \n- GDP abstracts away data access complexity by exposing all data sources as tables using a common query language (e.g., SQL).  \n- SysML tools can directly query the GDP for relevant data without needing custom data parsers or connectors.  \n- This reduces the time and effort required to integrate new data sources into SysML models.  \n\n---\n\n### 5. **Supporting Model Validation and Verification**  \n- GDP enables SysML models to validate their predicted behavior against real-world data.  \n- Engineers can create SysML test cases that pull real-time data through the GDP to check if the system behaves as modeled.  \n- Example: A SysML requirement block could query GDP to validate whether system performance meets defined thresholds.  \n\n---\n\n### 6. **Enhancing Traceability and Consistency**  \n- GDP ensures that data used across SysML models remains consistent and traceable.  \n- Changes in underlying data are reflected in SysML models automatically.  \n- This supports better configuration management and impact analysis.  \n\n---\n\n### 7. **Facilitating Cross-Domain Integration**  \n- SysML models often span multiple engineering domains (e.g., mechanical, electrical, software).  \n- GDP enables data from different domains to be unified and accessed uniformly within SysML models.  \n- Example: A system state change in the mechanical domain can trigger behavior changes in the software domain through a common GDP-based data layer.  \n\n---\n\n### 8. **Enabling Digital Twins and Simulation**  \n- SysML models serve as a blueprint for digital twins.  \n- GDP provides the real-time data feed needed to make digital twins reflect actual system state.  \n- Engineers can simulate \"what-if\" scenarios by using GDP to inject different data sets into SysML-based simulations.  \n\n---\n\nWould you like to focus more on any of these points?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "19647da6-0001-4d04-8220-2e51d532e890",
+          "request_id": "921961d8edd77eb4-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "19647da6-0001-4d04-8220-2e51d532e890",
+      "children": [
+        "9c138251-42c5-45a8-9678-3866e611fafe"
+      ]
+    },
+    "9c138251-42c5-45a8-9678-3866e611fafe": {
+      "id": "9c138251-42c5-45a8-9678-3866e611fafe",
+      "message": {
+        "id": "9c138251-42c5-45a8-9678-3866e611fafe",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1742183535.112,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "describe how a jupyterhub, with integrated vscode and RStudio, and the ability to run any REST-accessible containerized service  as an external service, can be used in a model-based systems engineering environment"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "canvas": {
+            "user_created_textdocs": [
+              {
+                "user_created_temp_textdoc_id": "temp-td-user:1742183446197",
+                "type": "document",
+                "title": "Global Data Plane and SysML Integration",
+                "content": "Here are some talking points that connect the **Global Data Plane** (GDP) with **SysML** in the context of **model-based systems engineering (MBSE):**\n\n### 1. **Universal Data Connector for SysML Models**  \n- The Global Data Plane acts as a **universal data connector** that makes diverse data sources (structured and unstructured) appear as tables.  \n- SysML models define the **structure, behavior, and relationships** of complex systems.  \n- GDP allows SysML models to integrate with live data from various sources (e.g., databases, sensors, simulation outputs) by presenting them as accessible tables.  \n\n---\n\n### 2. **Enabling Real-Time Model Updates**  \n- SysML models are typically built on static data sets.  \n- GDP allows SysML models to be dynamically updated with real-time data streams.  \n- This ensures that models reflect the current state of the system and operational environment.  \n\n---\n\n### 3. **Bridging the Gap Between Models and Data**  \n- SysML defines system states and interactions, but actual system performance data resides in external sources.  \n- GDP allows SysML models to query and integrate live data directly, ensuring consistency between the model and the system.  \n- Example: A SysML-defined simulation block can pull real-time telemetry data through GDP.  \n\n---\n\n### 4. **Simplifying Data Access and Transformation**  \n- GDP abstracts away data access complexity by exposing all data sources as tables using a common query language (e.g., SQL).  \n- SysML tools can directly query the GDP for relevant data without needing custom data parsers or connectors.  \n- This reduces the time and effort required to integrate new data sources into SysML models.  \n\n---\n\n### 5. **Supporting Model Validation and Verification**  \n- GDP enables SysML models to validate their predicted behavior against real-world data.  \n- Engineers can create SysML test cases that pull real-time data through the GDP to check if the system behaves as modeled.  \n- Example: A SysML requirement block could query GDP to validate whether system performance meets defined thresholds.  \n\n---\n\n### 6. **Enhancing Traceability and Consistency**  \n- GDP ensures that data used across SysML models remains consistent and traceable.  \n- Changes in underlying data are reflected in SysML models automatically.  \n- This supports better configuration management and impact analysis.  \n\n---\n\n### 7. **Facilitating Cross-Domain Integration**  \n- SysML models often span multiple engineering domains (e.g., mechanical, electrical, software).  \n- GDP enables data from different domains to be unified and accessed uniformly within SysML models.  \n- Example: A system state change in the mechanical domain can trigger behavior changes in the software domain through a common GDP-based data layer.  \n\n---\n\n### 8. **Enabling Digital Twins and Simulation**  \n- SysML models serve as a blueprint for digital twins.  \n- GDP provides the real-time data feed needed to make digital twins reflect actual system state.  \n- Engineers can simulate \"what-if\" scenarios by using GDP to inject different data sets into SysML-based simulations.  \n\n---\n\nWould you like to focus more on any of these points?",
+                "create_source": "message"
+              }
+            ]
+          },
+          "request_id": "9219896779a4cbac-SEA",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d0ab93a0-e0fe-4c8f-8003-a9d03deec982",
+      "children": [
+        "be3b3e77-ccb6-47e4-b0a0-de93bcf055ed"
+      ]
+    },
+    "be3b3e77-ccb6-47e4-b0a0-de93bcf055ed": {
+      "id": "be3b3e77-ccb6-47e4-b0a0-de93bcf055ed",
+      "message": {
+        "id": "be3b3e77-ccb6-47e4-b0a0-de93bcf055ed",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1742183547.697369,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "rebase_system_message": true,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "9c138251-42c5-45a8-9678-3866e611fafe",
+          "request_id": "9219896779a4cbac-SEA",
+          "timestamp_": "absolute",
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9c138251-42c5-45a8-9678-3866e611fafe",
+      "children": [
+        "c53a7401-60d0-4c34-83a3-95a194421828"
+      ]
+    },
+    "c53a7401-60d0-4c34-83a3-95a194421828": {
+      "id": "c53a7401-60d0-4c34-83a3-95a194421828",
+      "message": {
+        "id": "c53a7401-60d0-4c34-83a3-95a194421828",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1742183547.697451,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "canvas": {
+            "user_created_temp_textdoc_id": "temp-td-user:1742183446197",
+            "textdoc_id": "67d79c7235108191919a493f8d9546a0",
+            "textdoc_type": "document",
+            "version": 1,
+            "create_source": "message"
+          },
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "be3b3e77-ccb6-47e4-b0a0-de93bcf055ed",
+          "request_id": "9219896779a4cbac-SEA",
+          "timestamp_": "absolute",
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "be3b3e77-ccb6-47e4-b0a0-de93bcf055ed",
+      "children": [
+        "af7879b9-44e5-4179-8e1b-61ef5677c079"
+      ]
+    },
+    "af7879b9-44e5-4179-8e1b-61ef5677c079": {
+      "id": "af7879b9-44e5-4179-8e1b-61ef5677c079",
+      "message": {
+        "id": "af7879b9-44e5-4179-8e1b-61ef5677c079",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1742183547.697497,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "exclusive_key": "canvas://67d79c7235108191919a493f8d9546a0",
+          "canvas": {
+            "textdoc_id": "67d79c7235108191919a493f8d9546a0",
+            "textdoc_type": "document",
+            "version": 1
+          },
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "c53a7401-60d0-4c34-83a3-95a194421828",
+          "request_id": "9219896779a4cbac-SEA",
+          "timestamp_": "absolute",
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c53a7401-60d0-4c34-83a3-95a194421828",
+      "children": [
+        "365130fa-9e67-4ffe-b8c9-8203320d78fd"
+      ]
+    },
+    "365130fa-9e67-4ffe-b8c9-8203320d78fd": {
+      "id": "365130fa-9e67-4ffe-b8c9-8203320d78fd",
+      "message": {
+        "id": "365130fa-9e67-4ffe-b8c9-8203320d78fd",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1742183538.587042,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "{\"updates\":[{\"pattern\":\".*\",\"replacement\":\"Here are some talking points that connect the **Global Data Plane** (GDP) with **SysML** in the context of **model-based systems engineering (MBSE):**\\n\\n### 1. **Universal Data Connector for SysML Models**  \\n- The Global Data Plane acts as a **universal data connector** that makes diverse data sources (structured and unstructured) appear as tables.  \\n- SysML models define the **structure, behavior, and relationships** of complex systems.  \\n- GDP allows SysML models to integrate with live data from various sources (e.g., databases, sensors, simulation outputs) by presenting them as accessible tables.  \\n\\n---\\n\\n### 2. **Enabling Real-Time Model Updates**  \\n- SysML models are typically built on static data sets.  \\n- GDP allows SysML models to be dynamically updated with real-time data streams.  \\n- This ensures that models reflect the current state of the system and operational environment.  \\n\\n---\\n\\n### 3. **Bridging the Gap Between Models and Data**  \\n- SysML defines system states and interactions, but actual system performance data resides in external sources.  \\n- GDP allows SysML models to query and integrate live data directly, ensuring consistency between the model and the system.  \\n- Example: A SysML-defined simulation block can pull real-time telemetry data through GDP.  \\n\\n---\\n\\n### 4. **Simplifying Data Access and Transformation**  \\n- GDP abstracts away data access complexity by exposing all data sources as tables using a common query language (e.g., SQL).  \\n- SysML tools can directly query the GDP for relevant data without needing custom data parsers or connectors.  \\n- This reduces the time and effort required to integrate new data sources into SysML models.  \\n\\n---\\n\\n### 5. **Supporting Model Validation and Verification**  \\n- GDP enables SysML models to validate their predicted behavior against real-world data.  \\n- Engineers can create SysML test cases that pull real-time data through the GDP to check if the system behaves as modeled.  \\n- Example: A SysML requirement block could query GDP to validate whether system performance meets defined thresholds.  \\n\\n---\\n\\n### 6. **Enhancing Traceability and Consistency**  \\n- GDP ensures that data used across SysML models remains consistent and traceable.  \\n- Changes in underlying data are reflected in SysML models automatically.  \\n- This supports better configuration management and impact analysis.  \\n\\n---\\n\\n### 7. **Facilitating Cross-Domain Integration**  \\n- SysML models often span multiple engineering domains (e.g., mechanical, electrical, software).  \\n- GDP enables data from different domains to be unified and accessed uniformly within SysML models.  \\n- Example: A system state change in the mechanical domain can trigger behavior changes in the software domain through a common GDP-based data layer.  \\n\\n---\\n\\n### 8. **Enabling Digital Twins and Simulation**  \\n- SysML models serve as a blueprint for digital twins.  \\n- GDP provides the real-time data feed needed to make digital twins reflect actual system state.  \\n- Engineers can simulate \\\"what-if\\\" scenarios by using GDP to inject different data sets into SysML-based simulations.  \\n\\n---\\n\\n### 9. **JupyterHub, VSCode, and RStudio for Model-Based Systems Engineering**  \\n- A JupyterHub deployment with integrated **VSCode** and **RStudio** provides a powerful environment for MBSE.  \\n- Engineers can develop, test, and refine SysML models and supporting data analysis in a unified workspace.  \\n- **VSCode** supports writing code to interface with GDP, while **RStudio** enables statistical analysis and visualization of SysML data.  \\n\\n---\\n\\n### 10. **Running External Services Through REST-Accessible Containers**  \\n- JupyterHub can interface with REST-accessible containerized services to extend MBSE capabilities.  \\n- Engineers can define SysML-based workflows that trigger and consume results from external simulations or processing pipelines.  \\n- Example: A SysML-based simulation could trigger a containerized AI model through a REST call and incorporate the results into the system model via GDP.  \\n\\n---\"}]}"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "af7879b9-44e5-4179-8e1b-61ef5677c079",
+          "request_id": "9219896779a4cbac-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "canmore.update_textdoc",
+        "channel": null
+      },
+      "parent": "af7879b9-44e5-4179-8e1b-61ef5677c079",
+      "children": [
+        "c970fdfc-cb1d-4d6d-b087-37e3c0d2f0fc"
+      ]
+    },
+    "c970fdfc-cb1d-4d6d-b087-37e3c0d2f0fc": {
+      "id": "c970fdfc-cb1d-4d6d-b087-37e3c0d2f0fc",
+      "message": {
+        "id": "c970fdfc-cb1d-4d6d-b087-37e3c0d2f0fc",
+        "author": {
+          "role": "tool",
+          "name": "canmore.update_textdoc",
+          "metadata": {}
+        },
+        "create_time": 1742183547.69758,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Successfully updated text document with textdoc_id '67d79c7235108191919a493f8d9546a0'"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0,
+        "metadata": {
+          "canvas": {
+            "textdoc_id": "67d79c7235108191919a493f8d9546a0",
+            "textdoc_type": "document",
+            "version": 2,
+            "from_version": 1
+          },
+          "command": "update_textdoc",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "365130fa-9e67-4ffe-b8c9-8203320d78fd",
+          "request_id": "9219896779a4cbac-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "365130fa-9e67-4ffe-b8c9-8203320d78fd",
+      "children": [
+        "981dfaf1-6a2f-4373-bff6-fdf5e7ae2f00"
+      ]
+    },
+    "981dfaf1-6a2f-4373-bff6-fdf5e7ae2f00": {
+      "id": "981dfaf1-6a2f-4373-bff6-fdf5e7ae2f00",
+      "message": {
+        "id": "981dfaf1-6a2f-4373-bff6-fdf5e7ae2f00",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1742183546.898378,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I've added sections on how JupyterHub, with integrated VSCode and RStudio, and REST-accessible containerized services can enhance model-based systems engineering with SysML and the Global Data Plane. Let me know if you'd like to adjust any details!"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "c970fdfc-cb1d-4d6d-b087-37e3c0d2f0fc",
+          "request_id": "9219896779a4cbac-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c970fdfc-cb1d-4d6d-b087-37e3c0d2f0fc",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "981dfaf1-6a2f-4373-bff6-fdf5e7ae2f00",
+  "plugin_ids": null,
+  "conversation_id": "67d7961d-a9a4-8008-8a27-f085d6fbe54d",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "67d7961d-a9a4-8008-8a27-f085d6fbe54d"
+}

@@ -1,0 +1,271 @@
+{
+  "title": "Croquet application main routine.",
+  "create_time": 1682531074.207738,
+  "update_time": 1682531138,
+  "mapping": {
+    "0c16eb3e-9861-476d-827e-44e65412ac83": {
+      "id": "0c16eb3e-9861-476d-827e-44e65412ac83",
+      "message": {
+        "id": "10838020-d0d9-42ba-9259-2840cfb211a1",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1682531138.683077,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c5b0c253-d373-4626-a907-85392157ce48",
+      "children": [
+        "9765da30-54c3-4458-a0d9-7f7ce13c901f"
+      ]
+    },
+    "c5b0c253-d373-4626-a907-85392157ce48": {
+      "id": "c5b0c253-d373-4626-a907-85392157ce48",
+      "message": null,
+      "parent": null,
+      "children": [
+        "0c16eb3e-9861-476d-827e-44e65412ac83"
+      ]
+    },
+    "9765da30-54c3-4458-a0d9-7f7ce13c901f": {
+      "id": "9765da30-54c3-4458-a0d9-7f7ce13c901f",
+      "message": {
+        "id": "9765da30-54c3-4458-a0d9-7f7ce13c901f",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1682531074.210004,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Where is the main routine for a Croquet application?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "0c16eb3e-9861-476d-827e-44e65412ac83",
+      "children": [
+        "ff6d0af0-69c5-4021-89dd-3108bfd00787"
+      ]
+    },
+    "ff6d0af0-69c5-4021-89dd-3108bfd00787": {
+      "id": "ff6d0af0-69c5-4021-89dd-3108bfd00787",
+      "message": {
+        "id": "ff6d0af0-69c5-4021-89dd-3108bfd00787",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1682531094.311471,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "The main routine for a Croquet application is typically located in the \"croquet.st\" or \"croquet-dev.st\" file, depending on whether you are using the released version or the development version of the Croquet SDK.\n\nThis file contains the initialization code that sets up the Croquet environment and starts the application. It typically creates an instance of the \"CroquetWorld\" class, which represents the virtual world in which the application will run, and then starts the main event loop using the \"CroquetWorld run\" method.\n\nFrom there, the application can create and add various objects to the world, such as user interfaces, 3D models, and other interactive elements. These objects can then communicate with each other and with the outside world using Croquet's built-in messaging system, which is based on the Publish-Subscribe pattern.\n\nOverall, the main routine for a Croquet application serves as the entry point for the application and sets up the basic infrastructure needed to create a rich and immersive virtual experience."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "text-davinci-002-render-sha",
+          "finish_details": {
+            "type": "stop",
+            "stop": "<|im_end|>"
+          },
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9765da30-54c3-4458-a0d9-7f7ce13c901f",
+      "children": [
+        "6be18362-edd0-464f-b308-2539b1ee3875"
+      ]
+    },
+    "6be18362-edd0-464f-b308-2539b1ee3875": {
+      "id": "6be18362-edd0-464f-b308-2539b1ee3875",
+      "message": {
+        "id": "6be18362-edd0-464f-b308-2539b1ee3875",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1682531110.187436,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Is Croquet written in Smalltalk?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ff6d0af0-69c5-4021-89dd-3108bfd00787",
+      "children": [
+        "b4d7bef6-3449-4241-90ef-1cf33e05d7b6"
+      ]
+    },
+    "b4d7bef6-3449-4241-90ef-1cf33e05d7b6": {
+      "id": "b4d7bef6-3449-4241-90ef-1cf33e05d7b6",
+      "message": {
+        "id": "b4d7bef6-3449-4241-90ef-1cf33e05d7b6",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1682531126.757563,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, Croquet is written in Smalltalk, a powerful object-oriented programming language that was created in the 1970s. The Croquet SDK is built on top of the Squeak Smalltalk system, which provides a modern, open-source implementation of Smalltalk that is optimized for interactive development and dynamic programming.\n\nOne of the key advantages of using Smalltalk for Croquet is that it provides a highly dynamic and flexible environment for building complex applications. Smalltalk's object-oriented model allows developers to create modular, reusable components that can be easily combined and extended, while its interactive development tools make it easy to experiment and prototype new ideas in real-time.\n\nOverall, Smalltalk's unique combination of simplicity, flexibility, and interactivity has made it a popular choice for building a wide range of software systems, including Croquet and other immersive 3D environments."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "text-davinci-002-render-sha",
+          "finish_details": {
+            "type": "stop",
+            "stop": "<|im_end|>"
+          },
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6be18362-edd0-464f-b308-2539b1ee3875",
+      "children": [
+        "cd1415a9-e4a4-45b0-8c0e-933fe7ea392a"
+      ]
+    },
+    "cd1415a9-e4a4-45b0-8c0e-933fe7ea392a": {
+      "id": "cd1415a9-e4a4-45b0-8c0e-933fe7ea392a",
+      "message": {
+        "id": "cd1415a9-e4a4-45b0-8c0e-933fe7ea392a",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1682531138.683215,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "What is a VRSE file?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b4d7bef6-3449-4241-90ef-1cf33e05d7b6",
+      "children": [
+        "4c56fe8a-faf3-4744-b41e-b693addcf80d"
+      ]
+    },
+    "4c56fe8a-faf3-4744-b41e-b693addcf80d": {
+      "id": "4c56fe8a-faf3-4744-b41e-b693addcf80d",
+      "message": {
+        "id": "4c56fe8a-faf3-4744-b41e-b693addcf80d",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1682531145.461034,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I'm sorry, but I am not familiar with a file format called VRSE. It is possible that this file format is specific to a particular software application or system. \n\nIf you could provide more context about where you encountered the VRSE file and what software or system it is associated with, I may be able to provide more information."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "text-davinci-002-render-sha",
+          "finish_details": {
+            "type": "stop",
+            "stop": "<|im_end|>"
+          },
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "cd1415a9-e4a4-45b0-8c0e-933fe7ea392a",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "4c56fe8a-faf3-4744-b41e-b693addcf80d",
+  "plugin_ids": null,
+  "conversation_id": "7bc72f1d-2536-46c9-90c8-30067b1b16bd",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": null,
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "7bc72f1d-2536-46c9-90c8-30067b1b16bd"
+}

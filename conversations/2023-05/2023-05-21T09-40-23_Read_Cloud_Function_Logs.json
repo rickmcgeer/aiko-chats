@@ -1,0 +1,133 @@
+{
+  "title": "Read Cloud Function Logs",
+  "create_time": 1684687223.987193,
+  "update_time": 1684687236,
+  "mapping": {
+    "b204b325-2a6b-4ccc-9049-08c0b9b93d28": {
+      "id": "b204b325-2a6b-4ccc-9049-08c0b9b93d28",
+      "message": {
+        "id": "b204b325-2a6b-4ccc-9049-08c0b9b93d28",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1684687223.987456,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1e3c9-324b-4587-adcf-52c71f8a0519",
+      "children": [
+        "aaa2f569-2075-4c53-abf2-97678e4f34e0"
+      ]
+    },
+    "aaa1e3c9-324b-4587-adcf-52c71f8a0519": {
+      "id": "aaa1e3c9-324b-4587-adcf-52c71f8a0519",
+      "message": null,
+      "parent": null,
+      "children": [
+        "b204b325-2a6b-4ccc-9049-08c0b9b93d28"
+      ]
+    },
+    "aaa2f569-2075-4c53-abf2-97678e4f34e0": {
+      "id": "aaa2f569-2075-4c53-abf2-97678e4f34e0",
+      "message": {
+        "id": "aaa2f569-2075-4c53-abf2-97678e4f34e0",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1684687223.992527,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Python code to read logs from a specific Google Cloud function"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b204b325-2a6b-4ccc-9049-08c0b9b93d28",
+      "children": [
+        "ebc52440-dbf6-4c16-969a-772e98fe557a"
+      ]
+    },
+    "ebc52440-dbf6-4c16-969a-772e98fe557a": {
+      "id": "ebc52440-dbf6-4c16-969a-772e98fe557a",
+      "message": {
+        "id": "ebc52440-dbf6-4c16-969a-772e98fe557a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1684687236.8131,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To read logs from a specific Google Cloud Function using Python, you can utilize the Cloud Logging API and the `google-cloud-logging` library. Here's an example code snippet that demonstrates how to achieve this:\n\n```python\nfrom google.cloud import logging\n\ndef read_cloud_function_logs(project_id, function_name):\n    # Initialize the Cloud Logging client\n    client = logging.Client(project=project_id)\n\n    # Construct the log name for the Cloud Function\n    log_name = \"projects/{}/logs/{}\".format(project_id, function_name)\n\n    # Query the logs for the Cloud Function\n    logs = client.list_entries(filter_='logName=\"{}\"'.format(log_name))\n\n    # Print the log entries\n    for log in logs:\n        print(log.payload)\n\n# Set your project ID and Cloud Function name\nproject_id = \"your-project-id\"\nfunction_name = \"your-cloud-function-name\"\n\n# Call the function to read logs\nread_cloud_function_logs(project_id, function_name)\n```\n\nMake sure you have the `google-cloud-logging` library installed before running the code. You can install it using `pip`:\n\n```\npip install google-cloud-logging\n```\n\nRemember to replace `\"your-project-id\"` with your actual project ID and `\"your-cloud-function-name\"` with the name of your specific Cloud Function."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "text-davinci-002-render-sha",
+          "finish_details": {
+            "type": "stop",
+            "stop": "<|diff_marker|>"
+          },
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa2f569-2075-4c53-abf2-97678e4f34e0",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "ebc52440-dbf6-4c16-969a-772e98fe557a",
+  "plugin_ids": null,
+  "conversation_id": "695db31b-ea7c-4b69-af65-8923741884d9",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": null,
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "695db31b-ea7c-4b69-af65-8923741884d9"
+}

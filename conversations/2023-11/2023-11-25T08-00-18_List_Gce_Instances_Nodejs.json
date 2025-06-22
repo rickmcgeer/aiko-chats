@@ -1,0 +1,429 @@
+{
+  "title": "List GCE instances Node.js",
+  "create_time": 1700928018.790132,
+  "update_time": 1700948765.703235,
+  "mapping": {
+    "524392bf-d67a-483c-828b-b4bd5c3ecdcb": {
+      "id": "524392bf-d67a-483c-828b-b4bd5c3ecdcb",
+      "message": {
+        "id": "524392bf-d67a-483c-828b-b4bd5c3ecdcb",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1dd0e-d306-40a8-8f3b-68eb25be4e8f",
+      "children": [
+        "aaa21e9f-543a-4b60-80d1-6e51543afee1"
+      ]
+    },
+    "aaa1dd0e-d306-40a8-8f3b-68eb25be4e8f": {
+      "id": "aaa1dd0e-d306-40a8-8f3b-68eb25be4e8f",
+      "message": null,
+      "parent": null,
+      "children": [
+        "524392bf-d67a-483c-828b-b4bd5c3ecdcb"
+      ]
+    },
+    "aaa21e9f-543a-4b60-80d1-6e51543afee1": {
+      "id": "aaa21e9f-543a-4b60-80d1-6e51543afee1",
+      "message": {
+        "id": "aaa21e9f-543a-4b60-80d1-6e51543afee1",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1700928018.790656,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "google compute engine nodejs client list instances"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "524392bf-d67a-483c-828b-b4bd5c3ecdcb",
+      "children": [
+        "afedba5b-317e-4935-a20c-eea2503e5a3f"
+      ]
+    },
+    "afedba5b-317e-4935-a20c-eea2503e5a3f": {
+      "id": "afedba5b-317e-4935-a20c-eea2503e5a3f",
+      "message": {
+        "id": "afedba5b-317e-4935-a20c-eea2503e5a3f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1700928024.692985,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To list instances in Google Compute Engine using the Node.js client library, you can use the `compute.instances.list` method. Here's a basic example:\n\nFirst, make sure you have the `google-cloud` npm package installed:\n\n```bash\nnpm install @google-cloud/compute\n```\n\nThen, you can use the following Node.js code to list instances:\n\n```javascript\nconst { Compute } = require('@google-cloud/compute');\nconst compute = new Compute();\n\nasync function listInstances() {\n  const projectId = 'YOUR_PROJECT_ID'; // Replace with your project ID\n\n  // Get the default zone for the specified project\n  const [zones] = await compute.getZones({ projectId });\n  const zone = zones[0].name;\n\n  // List the instances in the specified project and zone\n  const [instances] = await compute.getVMs({ projectId, zone });\n\n  console.log('Instances:');\n  instances.forEach(instance => {\n    console.log(`- ${instance.name}`);\n  });\n}\n\nlistInstances();\n```\n\nReplace `'YOUR_PROJECT_ID'` with your actual Google Cloud project ID. This code retrieves the default zone for the specified project and then lists the instances in that project and zone.\n\nMake sure your Google Cloud credentials are set up properly. You can either set the `GOOGLE_APPLICATION_CREDENTIALS` environment variable to the path of your service account key file or use `compute.auth` to authenticate programmatically.\n\n```javascript\n// Authenticate programmatically (if not using GOOGLE_APPLICATION_CREDENTIALS)\nawait compute.auth.getClient();\n```\n\nRemember to handle errors and edge cases appropriately in a production environment."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              100260
+            ]
+          },
+          "is_complete": true,
+          "message_type": null,
+          "model_slug": "text-davinci-002-render-sha",
+          "parent_id": "aaa21e9f-543a-4b60-80d1-6e51543afee1",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa21e9f-543a-4b60-80d1-6e51543afee1",
+      "children": [
+        "aaa2327b-8874-42dc-833d-e76715c3de64"
+      ]
+    },
+    "aaa2327b-8874-42dc-833d-e76715c3de64": {
+      "id": "aaa2327b-8874-42dc-833d-e76715c3de64",
+      "message": {
+        "id": "aaa2327b-8874-42dc-833d-e76715c3de64",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1700937314.223222,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "start a vm with a specific image"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "afedba5b-317e-4935-a20c-eea2503e5a3f",
+      "children": [
+        "fd498875-3b6e-4b1a-a647-fc35d7f1df43"
+      ]
+    },
+    "fd498875-3b6e-4b1a-a647-fc35d7f1df43": {
+      "id": "fd498875-3b6e-4b1a-a647-fc35d7f1df43",
+      "message": {
+        "id": "fd498875-3b6e-4b1a-a647-fc35d7f1df43",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1700937323.604999,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To start a VM with a specific image using the Google Cloud Compute Engine Node.js client library, you can use the `compute.instances.insert` method. Here's a basic example:\n\nFirst, make sure you have the `google-cloud` npm package installed:\n\n```bash\nnpm install @google-cloud/compute\n```\n\nThen, you can use the following Node.js code to start a VM with a specific image:\n\n```javascript\nconst { Compute } = require('@google-cloud/compute');\nconst compute = new Compute();\n\nasync function startVM() {\n  const projectId = 'YOUR_PROJECT_ID'; // Replace with your project ID\n  const zone = 'us-central1-a'; // Replace with your desired zone\n  const vmName = 'my-vm'; // Replace with your desired VM name\n  const machineType = 'n1-standard-1'; // Replace with your desired machine type\n  const sourceImage = 'projects/debian-cloud/global/images/debian-9-stretch-v20220329'; // Replace with your desired image\n\n  // Define the VM configuration\n  const vmConfig = {\n    project: projectId,\n    zone: zone,\n    resource: {\n      name: vmName,\n      machineType: `zones/${zone}/machineTypes/${machineType}`,\n      disks: [\n        {\n          boot: true,\n          initializeParams: {\n            sourceImage: sourceImage,\n          },\n        },\n      ],\n      networkInterfaces: [\n        {\n          network: 'global/networks/default',\n          accessConfigs: [\n            {\n              name: 'external-nat',\n              type: 'ONE_TO_ONE_NAT',\n            },\n          ],\n        },\n      ],\n    },\n  };\n\n  // Start the VM\n  const [vm] = await compute.createVM(vmConfig);\n\n  console.log(`VM ${vm.name} created.`);\n}\n\nstartVM();\n```\n\nReplace the placeholder values with your actual project ID, desired zone, VM name, machine type, and source image. The `sourceImage` should be in the format `'projects/PROJECT_ID/global/images/IMAGE_NAME'`.\n\nMake sure your Google Cloud credentials are set up properly. You can either set the `GOOGLE_APPLICATION_CREDENTIALS` environment variable to the path of your service account key file or use `compute.auth` to authenticate programmatically.\n\n```javascript\n// Authenticate programmatically (if not using GOOGLE_APPLICATION_CREDENTIALS)\nawait compute.auth.getClient();\n```\n\nThis code creates a VM with the specified configuration, including the specified image, and starts the VM. Remember to handle errors and edge cases appropriately in a production environment."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              100260
+            ]
+          },
+          "is_complete": true,
+          "message_type": null,
+          "model_slug": "text-davinci-002-render-sha",
+          "parent_id": "aaa2327b-8874-42dc-833d-e76715c3de64",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa2327b-8874-42dc-833d-e76715c3de64",
+      "children": [
+        "aaa2cbe7-e414-444a-b131-3b0ccbdec120"
+      ]
+    },
+    "aaa2cbe7-e414-444a-b131-3b0ccbdec120": {
+      "id": "aaa2cbe7-e414-444a-b131-3b0ccbdec120",
+      "message": {
+        "id": "aaa2cbe7-e414-444a-b131-3b0ccbdec120",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1700937859.994213,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "gcloud list all resources in a project"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "fd498875-3b6e-4b1a-a647-fc35d7f1df43",
+      "children": [
+        "18858a78-8ab0-40e7-a1ba-0d66e319ff22"
+      ]
+    },
+    "18858a78-8ab0-40e7-a1ba-0d66e319ff22": {
+      "id": "18858a78-8ab0-40e7-a1ba-0d66e319ff22",
+      "message": {
+        "id": "18858a78-8ab0-40e7-a1ba-0d66e319ff22",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1700937865.372626,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To list all resources in a Google Cloud project using the `gcloud` command-line tool, you can use various commands depending on the type of resource you want to list. Here are some examples for common resource types:\n\n### List Compute Engine Instances:\n\n```bash\ngcloud compute instances list --project=YOUR_PROJECT_ID\n```\n\nReplace `YOUR_PROJECT_ID` with your actual Google Cloud project ID.\n\n### List Cloud Storage Buckets:\n\n```bash\ngcloud storage buckets list --project=YOUR_PROJECT_ID\n```\n\n### List BigQuery Datasets:\n\n```bash\ngcloud beta bigquery datasets list --project=YOUR_PROJECT_ID\n```\n\n### List Cloud SQL Instances:\n\n```bash\ngcloud sql instances list --project=YOUR_PROJECT_ID\n```\n\n### List Cloud Pub/Sub Topics:\n\n```bash\ngcloud pubsub topics list --project=YOUR_PROJECT_ID\n```\n\nThese are just a few examples, and you can adapt the commands based on the specific resource type you are interested in. You can explore the available resource types and their corresponding `gcloud` commands in the official documentation: [gcloud Command-Line Tool Overview](https://cloud.google.com/sdk/gcloud/reference).\n\nRemember that you need to have the Google Cloud SDK installed and configured on your local machine, and you should have the appropriate permissions to list resources in the project."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              100260
+            ]
+          },
+          "is_complete": true,
+          "message_type": null,
+          "model_slug": "text-davinci-002-render-sha",
+          "parent_id": "aaa2cbe7-e414-444a-b131-3b0ccbdec120",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa2cbe7-e414-444a-b131-3b0ccbdec120",
+      "children": [
+        "aaa2f0d4-2c80-41e8-99ab-b443c3d370bc"
+      ]
+    },
+    "aaa2f0d4-2c80-41e8-99ab-b443c3d370bc": {
+      "id": "aaa2f0d4-2c80-41e8-99ab-b443c3d370bc",
+      "message": {
+        "id": "aaa2f0d4-2c80-41e8-99ab-b443c3d370bc",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1700937900.535565,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "gcloud list resource hierarchy"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "18858a78-8ab0-40e7-a1ba-0d66e319ff22",
+      "children": [
+        "5a91c334-c46f-447e-ba64-2094a97a0b98"
+      ]
+    },
+    "5a91c334-c46f-447e-ba64-2094a97a0b98": {
+      "id": "5a91c334-c46f-447e-ba64-2094a97a0b98",
+      "message": {
+        "id": "5a91c334-c46f-447e-ba64-2094a97a0b98",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1700937904.384775,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To list the resource hierarchy in Google Cloud using the `gcloud` command-line tool, you can use the `gcloud resource-manager folders list` command. This command lists all folders in your organization along with their associated IDs.\n\nHere is an example command:\n\n```bash\ngcloud resource-manager folders list --organization=YOUR_ORGANIZATION_ID\n```\n\nReplace `YOUR_ORGANIZATION_ID` with your actual Google Cloud organization ID.\n\nIf you want to list projects in a folder, you can use the following command:\n\n```bash\ngcloud projects list --filter=\"parent.id=YOUR_FOLDER_ID\"\n```\n\nReplace `YOUR_FOLDER_ID` with the ID of the folder you are interested in.\n\nPlease note that the `gcloud resource-manager` commands provide information about the organization, folders, and projects, which represent the basic resource hierarchy in Google Cloud. Depending on your specific use case, you might also want to explore other resource types and their hierarchy, such as resources within Compute Engine, Cloud Storage, etc., using specific commands for those resource types."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              100260
+            ]
+          },
+          "is_complete": true,
+          "message_type": null,
+          "model_slug": "text-davinci-002-render-sha",
+          "parent_id": "aaa2f0d4-2c80-41e8-99ab-b443c3d370bc",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa2f0d4-2c80-41e8-99ab-b443c3d370bc",
+      "children": [
+        "aaa28ba2-b7c8-403d-ac3a-dcb10f1f0fbb"
+      ]
+    },
+    "aaa28ba2-b7c8-403d-ac3a-dcb10f1f0fbb": {
+      "id": "aaa28ba2-b7c8-403d-ac3a-dcb10f1f0fbb",
+      "message": {
+        "id": "aaa28ba2-b7c8-403d-ac3a-dcb10f1f0fbb",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1700948759.492212,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I switched to a new branch on git and it automatically stashed my changes.  how do I recover them?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "5a91c334-c46f-447e-ba64-2094a97a0b98",
+      "children": [
+        "cde3ac81-7ad6-4267-8e8b-8c2a2378352d"
+      ]
+    },
+    "cde3ac81-7ad6-4267-8e8b-8c2a2378352d": {
+      "id": "cde3ac81-7ad6-4267-8e8b-8c2a2378352d",
+      "message": {
+        "id": "cde3ac81-7ad6-4267-8e8b-8c2a2378352d",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1700948765.699924,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "If you switched to a new branch in Git and your changes were automatically stashed, you can recover them using the following steps:\n\n1. **List Stashes:**\n   \n   To see a list of your stashes, you can use the following command:\n\n   ```bash\n   git stash list\n   ```\n\n   This will display a list of stashes along with a unique identifier (stash@{n}).\n\n2. **Apply Stash:**\n\n   If you want to apply the changes from the latest stash, you can use the following command:\n\n   ```bash\n   git stash apply\n   ```\n\n   If you have multiple stashes and want to apply a specific one, you can specify the stash using its identifier:\n\n   ```bash\n   git stash apply stash@{n}\n   ```\n\n3. **Discard Stash:**\n\n   After applying the stash, Git keeps the stash in the list. If you want to remove it from the stash list, you can use the following command:\n\n   ```bash\n   git stash drop\n   ```\n\n   If you applied a specific stash, you can drop it by specifying its identifier:\n\n   ```bash\n   git stash drop stash@{n}\n   ```\n\n   If you want to apply and drop in one command, you can use:\n\n   ```bash\n   git stash pop\n   ```\n\n   or\n\n   ```bash\n   git stash pop stash@{n}\n   ```\n\nRemember that applying a stash may result in conflicts if changes in the stash conflict with changes in your working directory or the branch you switched to. Git will mark the conflicting files, and you'll need to resolve the conflicts manually.\n\nIf you want to keep the changes in the stash but also keep them in the stash list, you can use `git stash branch <new-branch-name>` to create a new branch and apply the stash to it in one step. This is useful when you want to switch to a new branch and apply stashed changes simultaneously."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              100260
+            ]
+          },
+          "is_complete": true,
+          "message_type": null,
+          "model_slug": "text-davinci-002-render-sha",
+          "parent_id": "aaa28ba2-b7c8-403d-ac3a-dcb10f1f0fbb",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa28ba2-b7c8-403d-ac3a-dcb10f1f0fbb",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "cde3ac81-7ad6-4267-8e8b-8c2a2378352d",
+  "plugin_ids": null,
+  "conversation_id": "38b6ce2f-9dea-4118-a138-d9589e5be7e4",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": null,
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "38b6ce2f-9dea-4118-a138-d9589e5be7e4"
+}

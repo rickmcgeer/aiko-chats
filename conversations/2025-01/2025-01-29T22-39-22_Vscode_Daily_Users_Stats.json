@@ -1,0 +1,5030 @@
+{
+  "title": "VSCode daily users stats",
+  "create_time": 1738219162.757618,
+  "update_time": 1738219362.052305,
+  "mapping": {
+    "aaa13a2a-efe3-4178-acdc-e0248bcabca2": {
+      "id": "aaa13a2a-efe3-4178-acdc-e0248bcabca2",
+      "message": null,
+      "parent": null,
+      "children": [
+        "efc8cd82-b486-47e6-be01-88640c3edf73"
+      ]
+    },
+    "efc8cd82-b486-47e6-be01-88640c3edf73": {
+      "id": "efc8cd82-b486-47e6-be01-88640c3edf73",
+      "message": {
+        "id": "efc8cd82-b486-47e6-be01-88640c3edf73",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa13a2a-efe3-4178-acdc-e0248bcabca2",
+      "children": [
+        "aaa25cc2-b1cb-4b04-bfd7-141bb619e43f"
+      ]
+    },
+    "aaa25cc2-b1cb-4b04-bfd7-141bb619e43f": {
+      "id": "aaa25cc2-b1cb-4b04-bfd7-141bb619e43f",
+      "message": {
+        "id": "aaa25cc2-b1cb-4b04-bfd7-141bb619e43f",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1738219162.76025,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "how many active daily users of vscode are there"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "909f76e5ee61e9e4-IAD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "efc8cd82-b486-47e6-be01-88640c3edf73",
+      "children": [
+        "f103b414-36cd-427f-9e0f-a0ffbcb6aef7"
+      ]
+    },
+    "f103b414-36cd-427f-9e0f-a0ffbcb6aef7": {
+      "id": "f103b414-36cd-427f-9e0f-a0ffbcb6aef7",
+      "message": {
+        "id": "f103b414-36cd-427f-9e0f-a0ffbcb6aef7",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1738219166.04805,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa25cc2-b1cb-4b04-bfd7-141bb619e43f",
+          "request_id": "909f76e5ee61e9e4-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa25cc2-b1cb-4b04-bfd7-141bb619e43f",
+      "children": [
+        "9024cd55-0cff-4461-87cb-0bb050c63397"
+      ]
+    },
+    "9024cd55-0cff-4461-87cb-0bb050c63397": {
+      "id": "9024cd55-0cff-4461-87cb-0bb050c63397",
+      "message": {
+        "id": "9024cd55-0cff-4461-87cb-0bb050c63397",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1738219166.048143,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "unknown",
+          "response_format_name": null,
+          "text": "search(\"how many active daily users of vscode are there\")"
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "is_complete": true,
+          "finish_details": {
+            "type": "stop"
+          },
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "f103b414-36cd-427f-9e0f-a0ffbcb6aef7",
+          "request_id": "909f76e5ee61e9e4-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "web",
+        "channel": null
+      },
+      "parent": "f103b414-36cd-427f-9e0f-a0ffbcb6aef7",
+      "children": [
+        "a0e86ab0-ac60-4410-83a8-248931f0acc3"
+      ]
+    },
+    "a0e86ab0-ac60-4410-83a8-248931f0acc3": {
+      "id": "a0e86ab0-ac60-4410-83a8-248931f0acc3",
+      "message": {
+        "id": "a0e86ab0-ac60-4410-83a8-248931f0acc3",
+        "author": {
+          "role": "tool",
+          "name": "web",
+          "metadata": {}
+        },
+        "create_time": 1738219166.048199,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "unknown",
+          "response_format_name": null,
+          "text": ""
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "search",
+          "status": "finished",
+          "is_complete": true,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "9024cd55-0cff-4461-87cb-0bb050c63397",
+          "request_id": "909f76e5ee61e9e4-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "assistant",
+        "channel": null
+      },
+      "parent": "9024cd55-0cff-4461-87cb-0bb050c63397",
+      "children": [
+        "de7d993a-e6b3-4f82-b2c7-1e80fba3659c"
+      ]
+    },
+    "de7d993a-e6b3-4f82-b2c7-1e80fba3659c": {
+      "id": "de7d993a-e6b3-4f82-b2c7-1e80fba3659c",
+      "message": {
+        "id": "de7d993a-e6b3-4f82-b2c7-1e80fba3659c",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {
+            "real_author": "tool:web"
+          }
+        },
+        "create_time": 1738219166.048252,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "\ue203As of early 2021, Visual Studio Code (VS Code) had approximately 14 million monthly active users.\ue204 \ue200cite\ue202turn0search1\ue201 \ue203While more recent official statistics are not readily available,\ue204 \ue203VS Code's popularity has likely continued to grow,\ue204 \ue203given its widespread adoption and the active community contributing to its development.\ue204 \ue203However, specific figures for daily active users are not publicly disclosed by Microsoft.\ue204\ue206 "
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "search_source": "composer_auto",
+          "client_reported_search_source": "composer_auto",
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "visualstudio.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://code.visualstudio.com/blogs/2017/11/16/connect",
+                  "title": "Visual Studio Code at Connect(); 2017",
+                  "snippet": "More than 2,600,000 people use VS Code every month, up by over 160% in the last year. 1.0 image. We have come a long way and a big reason is the ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "content_type": null,
+                  "pub_date": 1510704000,
+                  "attributions": null,
+                  "attribution": "code.visualstudio.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://code.visualstudio.com/blogs/2020/06/09/go-extension",
+                  "title": "Visual Studio Code Go extension joins the Go project",
+                  "snippet": "For many of our 11 million users, VS Code is their primary code editor, as is the case for 41% of developers that are working with Go ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "content_type": null,
+                  "pub_date": 1591660800,
+                  "attributions": null,
+                  "attribution": "code.visualstudio.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "techtarget.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.techtarget.com/searchsoftwarequality/news/252496429/Microsoft-VS-Code-Winning-developer-mindshare",
+                  "title": "Microsoft VS Code: Winning developer mindshare - TechTarget",
+                  "snippet": "The tool now has 14 million monthly active users, Microsoft said. \"People think VS Code was an overnight success, but it was 10 years in the ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "content_type": null,
+                  "pub_date": 1613433600,
+                  "attributions": null,
+                  "attribution": "techtarget.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "stackoverflow.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://stackoverflow.com/questions/73193077/how-do-i-track-daily-code-metrics-on-visual-studio-code",
+                  "title": "How do I track daily code metrics on Visual Studio Code? [closed]",
+                  "snippet": "I am looking for any extension on visual studio code for tracking how many lines I have written by day, maybe export this information to a file.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "content_type": null,
+                  "pub_date": 1659312000,
+                  "attributions": null,
+                  "attribution": "stackoverflow.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "visualstudiomagazine.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://visualstudiomagazine.com/articles/2023/03/09/vs-code-profiles.aspx",
+                  "title": "Hands-On with Profiles: 'One of the All-Time Most Requested VS ...",
+                  "snippet": "In a larger-than-normal Patch Tuesday, Microsoft warned of a \"critical\" vulnerability in Visual Studio that should be fixed immediately if ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "content_type": null,
+                  "pub_date": 1678320000,
+                  "attributions": null,
+                  "attribution": "visualstudiomagazine.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://visualstudiomagazine.com/articles/2021/01/13/wakatime-vs-code.aspx",
+                  "title": "Time Tracker Says VS Code Is No. 1 Editor for Devs, Some Working ...",
+                  "snippet": "Visual Studio Code is by far the top editor/IDE used by its coders, some of whom are hacking away for more than 15 hours per day.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "content_type": null,
+                  "pub_date": 1610496000,
+                  "attributions": null,
+                  "attribution": "visualstudiomagazine.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "venturebeat.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://venturebeat.com/business/microsoft-releases-visual-studio-code-1-0-as-the-code-editor-passes-500000-monthly-active-users/",
+                  "title": "Microsoft releases Visual Studio Code 1.0 as the code editor passes ...",
+                  "snippet": "The cross-platform application now has more than 500,000 monthly active users, after launching last year. More than 1,000 extensions have become ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "content_type": null,
+                  "pub_date": 1460592000,
+                  "attributions": null,
+                  "attribution": "venturebeat.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "patchmypc.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://patchmypc.com/forum/index.php?topic=5463.0",
+                  "title": "Visual Studio Code v1.65.2 (x64) - Patch My PC",
+                  "snippet": "This isn't a huge issue for me because I use Visual Studio Code daily and I check for updates to VS code constantly.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "content_type": null,
+                  "pub_date": 1647302400,
+                  "attributions": null,
+                  "attribution": "patchmypc.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "shiftmag.dev",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://shiftmag.dev/vs-code-171/",
+                  "title": "Why VS Code remains a developer favorite, year after year - ShiftMag",
+                  "snippet": "The fact that it's free motivates many users to contribute to its database of code and extensions and actively participate in its evolution.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "content_type": null,
+                  "pub_date": 1682380800,
+                  "attributions": null,
+                  "attribution": "shiftmag.dev"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "jit.io",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.jit.io/blog/vscode-extensions-for-2023",
+                  "title": "Top 20 Best VScode Extensions for 2025 - Jit.io",
+                  "snippet": "With nearly 75% of the market share and 14 million users, VSCode is the most popular IDE available. And because generic, out-of-the-box VSCode doesn't feel ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "jit.io"
+                }
+              ]
+            }
+          ],
+          "safe_urls": [
+            "https://www.techtarget.com/searchsoftwarequality/news/252496429/Microsoft-VS-Code-Winning-developer-mindshare?utm_source=chatgpt.com"
+          ],
+          "message_locale": "en-US",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "a0e86ab0-ac60-4410-83a8-248931f0acc3",
+          "image_results": [],
+          "content_references": [
+            {
+              "matched_text": "\ue203",
+              "start_idx": 0,
+              "end_idx": 1,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 98,
+              "end_idx": 99,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search1\ue201",
+              "start_idx": 100,
+              "end_idx": 119,
+              "refs": [],
+              "alt": "([techtarget.com](https://www.techtarget.com/searchsoftwarequality/news/252496429/Microsoft-VS-Code-Winning-developer-mindshare?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Microsoft VS Code: Winning developer mindshare - TechTarget",
+                  "url": "https://www.techtarget.com/searchsoftwarequality/news/252496429/Microsoft-VS-Code-Winning-developer-mindshare?utm_source=chatgpt.com",
+                  "pub_date": 1613433600,
+                  "snippet": "The tool now has 14 million monthly active users, Microsoft said. \"People think VS Code was an overnight success, but it was 10 years in the ...",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "hue": null,
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    }
+                  ],
+                  "attributions": null,
+                  "attribution": "techtarget.com"
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 120,
+              "end_idx": 121,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 185,
+              "end_idx": 186,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 187,
+              "end_idx": 188,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 238,
+              "end_idx": 239,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 240,
+              "end_idx": 241,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 328,
+              "end_idx": 329,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 330,
+              "end_idx": 331,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 420,
+              "end_idx": 421,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 421,
+              "end_idx": 422,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": " ",
+              "start_idx": 422,
+              "end_idx": 422,
+              "refs": [],
+              "alt": "",
+              "prompt_text": null,
+              "type": "sources_footnote",
+              "sources": [
+                {
+                  "title": "Microsoft VS Code: Winning developer mindshare - TechTarget",
+                  "url": "https://www.techtarget.com/searchsoftwarequality/news/252496429/Microsoft-VS-Code-Winning-developer-mindshare?utm_source=chatgpt.com",
+                  "attribution": "techtarget.com"
+                }
+              ],
+              "has_images": false
+            }
+          ],
+          "citations": [
+            {
+              "start_ix": 0,
+              "end_ix": 1,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 98,
+              "end_ix": 99,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 100,
+              "end_ix": 119,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 120,
+              "end_ix": 121,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 185,
+              "end_ix": 186,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 187,
+              "end_ix": 188,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 238,
+              "end_ix": 239,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 240,
+              "end_ix": 241,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 328,
+              "end_ix": 329,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 330,
+              "end_ix": 331,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 420,
+              "end_ix": 421,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 421,
+              "end_ix": 422,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 422,
+              "end_ix": 422,
+              "invalid_reason": "Unsupported, please upgrade"
+            }
+          ],
+          "request_id": "909f76e5ee61e9e4-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a0e86ab0-ac60-4410-83a8-248931f0acc3",
+      "children": [
+        "aaa2ce67-7703-4c08-bfd1-da5e73810dc3"
+      ]
+    },
+    "aaa2ce67-7703-4c08-bfd1-da5e73810dc3": {
+      "id": "aaa2ce67-7703-4c08-bfd1-da5e73810dc3",
+      "message": {
+        "id": "aaa2ce67-7703-4c08-bfd1-da5e73810dc3",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1738219196.859566,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "how about RStudio and Jupyter Notebooks"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "909f77ba2f372f64-LAX",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "de7d993a-e6b3-4f82-b2c7-1e80fba3659c",
+      "children": [
+        "6046df6a-6906-4fef-a865-98a658fdd1a2"
+      ]
+    },
+    "6046df6a-6906-4fef-a865-98a658fdd1a2": {
+      "id": "6046df6a-6906-4fef-a865-98a658fdd1a2",
+      "message": {
+        "id": "6046df6a-6906-4fef-a865-98a658fdd1a2",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1738219205.838422,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "unknown",
+          "response_format_name": null,
+          "text": "search(\"how about RStudio and Jupyter Notebooks\")"
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "is_complete": true,
+          "finish_details": {
+            "type": "stop"
+          },
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa2ce67-7703-4c08-bfd1-da5e73810dc3",
+          "request_id": "909f77ba2f372f64-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "web",
+        "channel": null
+      },
+      "parent": "aaa2ce67-7703-4c08-bfd1-da5e73810dc3",
+      "children": [
+        "fdbd6852-59e1-4996-80d0-e18edd175003"
+      ]
+    },
+    "fdbd6852-59e1-4996-80d0-e18edd175003": {
+      "id": "fdbd6852-59e1-4996-80d0-e18edd175003",
+      "message": {
+        "id": "fdbd6852-59e1-4996-80d0-e18edd175003",
+        "author": {
+          "role": "tool",
+          "name": "web",
+          "metadata": {}
+        },
+        "create_time": 1738219205.838606,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "unknown",
+          "response_format_name": null,
+          "text": ""
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "search",
+          "status": "finished",
+          "is_complete": true,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "6046df6a-6906-4fef-a865-98a658fdd1a2",
+          "request_id": "909f77ba2f372f64-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "assistant",
+        "channel": null
+      },
+      "parent": "6046df6a-6906-4fef-a865-98a658fdd1a2",
+      "children": [
+        "fd4692f1-b6ce-4b74-a72c-c68f7fb056b1"
+      ]
+    },
+    "fd4692f1-b6ce-4b74-a72c-c68f7fb056b1": {
+      "id": "fd4692f1-b6ce-4b74-a72c-c68f7fb056b1",
+      "message": {
+        "id": "fd4692f1-b6ce-4b74-a72c-c68f7fb056b1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {
+            "real_author": "tool:web"
+          }
+        },
+        "create_time": 1738219205.838693,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "\ue203Determining the exact number of daily active users for RStudio and Jupyter Notebooks is challenging, as neither platform publicly discloses comprehensive usage statistics.\ue204\ue206\n\n**RStudio**: \ue203While specific user counts are not available, RStudio is widely utilized within the R programming community.\ue204 \ue203The platform offers tools like RStudio Connect and Posit Workbench, which include features for administrators to monitor user activity within their organizations.\ue204 \ue203However, these metrics are specific to individual deployments and do not provide a global user count.\ue204 \ue200cite\ue202turn0search4\ue201\ue206\n\n**Jupyter Notebooks**: \ue203Similarly, Jupyter does not publish aggregate data on its user base.\ue204 \ue203The decentralized nature of Jupyter's deployment\u2014ranging from personal installations to large-scale institutional setups\u2014makes it difficult to ascertain total user numbers.\ue204 \ue203Recent developments, such as the addition of active user metrics in JupyterHub 3.1, enable administrators to track daily, weekly, and monthly active users within their own JupyterHub instances.\ue204 \ue203These metrics are accessible via the Prometheus interface and are valuable for managing individual deployments.\ue204 \ue200cite\ue202turn0search1\ue201\ue206\n\n\ue203In summary, while both RStudio and Jupyter Notebooks are integral to data analysis workflows across various sectors, precise figures on their daily active users are not publicly available due to the decentralized and varied nature of their deployments.\ue204\ue206 "
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "search_source": "composer_auto",
+          "client_reported_search_source": "composer_auto",
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "posit.co",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://posit.co/blog/introducing-rstudio-team/",
+                  "title": "Introducing RStudio Team - Posit",
+                  "snippet": "RStudio Team is a new bundled offering from RStudio that combines RStudio Server Pro, RStudio Connect, and RStudio Package Manager products.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "content_type": null,
+                  "pub_date": 1557360000,
+                  "attributions": null,
+                  "attribution": "posit.co"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://posit.co/blog/track-shiny-app-use-server-api/",
+                  "title": "Track Shiny App User Activity With the RStudio Connect Server API",
+                  "snippet": "Using the RStudio Connect Server API, you can extend Connect to see advanced usage metrics to answer important questions and focus your data science work.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "content_type": null,
+                  "pub_date": 1648598400,
+                  "attributions": null,
+                  "attribution": "posit.co"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://support.posit.co/hc/en-us/articles/360007435274-Counting-Named-Users-in-Posit-Connect-and-Posit-Workbench-RStudio-Server-Pro",
+                  "title": "Counting Named Users in Posit Connect and Posit Workbench ...",
+                  "snippet": "At the bottom of this page is information on the number of current named users and total available named users. (If you are using a license with ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "content_type": null,
+                  "pub_date": 1670457600,
+                  "attributions": null,
+                  "attribution": "support.posit.co"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://posit.co/download/rstudio-desktop/",
+                  "title": "RStudio Desktop - Posit",
+                  "snippet": "The RStudio integrated development environment (IDE) is a set of tools built to help you be more productive with R and Python.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 12
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "posit.co"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "jupyter.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://blog.jupyter.org/accurately-counting-daily-weekly-monthly-active-users-on-jupyterhub-6fbec6c6ce2f",
+                  "title": "Accurately counting Daily, Weekly & Monthly active users on ...",
+                  "snippet": "This Pull Request adds daily, weekly, and monthly active user metrics to JupyterHub, accessible via the prometheus interface by hitting the /metrics URL on ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "content_type": null,
+                  "pub_date": 1679875200,
+                  "attributions": null,
+                  "attribution": "blog.jupyter.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://discourse.jupyter.org/t/any-recent-usage-polling-on-jupyter-lab-vs-notebook-usage/4344",
+                  "title": "Any recent usage polling on Jupyter Lab vs. Notebook usage?",
+                  "snippet": "The results are pretty comparable to our 3:1 preference for classic Jupyter Notebooks: 13% of users use \u201cNotebooks\u201d vs 4% for JupyterLab. But ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "content_type": null,
+                  "pub_date": 1589155200,
+                  "attributions": null,
+                  "attribution": "discourse.jupyter.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://discourse.jupyter.org/t/need-an-online-jupyter-notebook-environment/8503",
+                  "title": "Need an online Jupyter Notebook Environment - JupyterHub",
+                  "snippet": "Does anyone have any suggestions for an online environment where we can run jupyter notebook IPYNB document files that connect to our Mysql database.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 15
+                  },
+                  "content_type": null,
+                  "pub_date": 1616630400,
+                  "attributions": null,
+                  "attribution": "discourse.jupyter.org"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "stackoverflow.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://stackoverflow.com/questions/48750055/how-to-run-a-jupyter-notebook-with-python-code-automatically-on-a-daily-basis",
+                  "title": "How to run a Jupyter notebook with Python code automatically on a ...",
+                  "snippet": "Try the SeekWell Chrome Extension. It lets you schedule notebooks to run weekly, daily, hourly or every 5 minutes, right from Jupyter Notebooks.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "content_type": null,
+                  "pub_date": 1518393600,
+                  "attributions": null,
+                  "attribution": "stackoverflow.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://stackoverflow.com/questions/15351405/fresh-new-session-for-rstudio-server",
+                  "title": "Fresh new session for rstudio-server - Stack Overflow",
+                  "snippet": "I just want to kill the session and start a new fresh session of rstudio-server, but so far the only way I have found which does this is to reisub my ubuntu ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 18
+                  },
+                  "content_type": null,
+                  "pub_date": 1363046400,
+                  "attributions": null,
+                  "attribution": "stackoverflow.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "reddit.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.reddit.com/r/Python/comments/t0h763/jupyter_notebooks_help_me_understand_the_need/",
+                  "title": "Jupyter Notebooks - Help me understand the need : r/Python - Reddit",
+                  "snippet": "What I find useful about Jupyter is that you can calculate time consuming datasets and stuff only once, and leave the results readily accessible ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "content_type": null,
+                  "pub_date": 1645660800,
+                  "attributions": null,
+                  "attribution": "reddit.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.reddit.com/r/Rlanguage/comments/12xfrct/do_you_use_rstudio_and_if_so_why/",
+                  "title": "Do you use RStudio and if so, why? : r/Rlanguage - Reddit",
+                  "snippet": "I've used R and RStudio daily at work for the past 7 years or so and not paid for anything. Also, fwiw, I don't use Tableau, but Looker instead, ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "content_type": null,
+                  "pub_date": 1682294400,
+                  "attributions": null,
+                  "attribution": "reddit.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.reddit.com/r/RStudio/",
+                  "title": "r/RStudio - Reddit",
+                  "snippet": "r/RStudio: A place for users of R and RStudio to exchange tips and knowledge about the various applications of R and RStudio in any discipline.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 14
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "reddit.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "daily.dev",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://daily.dev/blog/r-community-and-resources",
+                  "title": "R Community and Resources - Daily.dev",
+                  "snippet": "Discover the vibrant R community, key platforms, learning resources, events, getting help, special interest groups, contributions, and more.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "content_type": null,
+                  "pub_date": 1712966400,
+                  "attributions": null,
+                  "attribution": "daily.dev"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "dailydoseofds.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://blog.dailydoseofds.com/p/6-coolest-jupyter-hacks-that-90-users",
+                  "title": "6 Coolest Jupyter Hacks That 90% Users Are Consistently Ignoring",
+                  "snippet": "#1) Retrieve a cell's output in Jupyter \u00b7 #2) Enrich the default preview of a DataFrame \u00b7 #3) Generate helpful hints as you write Pandas code \u00b7 #4) ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "content_type": null,
+                  "pub_date": 1699574400,
+                  "attributions": null,
+                  "attribution": "blog.dailydoseofds.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "rstudio.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://dailies.rstudio.com/",
+                  "title": "RStudio Latest Builds",
+                  "snippet": "Daily builds are intended for testing purposes, and are not recommended for general use. For stable builds, please visit posit.co.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "dailies.rstudio.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "jetbrains.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://blog.jetbrains.com/datalore/2020/12/17/we-downloaded-10-000-000-jupyter-notebooks-from-github-this-is-what-we-learned/",
+                  "title": "We Downloaded 10000000 Jupyter Notebooks From Github",
+                  "snippet": "In this article, I'll walk through the process of backtesting a daily Dow Jones mean reversion strategy using Python in Datalore notebooks.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "content_type": null,
+                  "pub_date": 1608163200,
+                  "attributions": null,
+                  "attribution": "blog.jetbrains.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "github.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://gist.github.com/parente/facb555dfbae28e817e0",
+                  "title": "Estimate of Jupyter Notebooks on GitHub",
+                  "snippet": "This notebook shows the historical count and future estimate of the number of *.ipynb files on GitHub. The daily count comes from executing the query extension: ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 13
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "gist.github.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "r-project.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.r-project.org/",
+                  "title": "The R Project for Statistical Computing",
+                  "snippet": "R is a free software environment for statistical computing and graphics. It compiles and runs on a wide variety of UNIX platforms, Windows and MacOS.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 16
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "r-project.org"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "medium.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://medium.com/%40yuvipanda/prometheus-metrics-from-jupyter-notebooks-8ffc8e5d0319",
+                  "title": "Prometheus metrics from Jupyter Notebooks | by yuvipanda - Medium",
+                  "snippet": "Prometheus metrics were added to JupyterHub a while ago, and BinderHub had them from the beginning. These metrics are amazingly useful in running MyBinder.org.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 17
+                  },
+                  "content_type": null,
+                  "pub_date": 1528848000,
+                  "attributions": null,
+                  "attribution": "medium.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "lakefs.io",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://lakefs.io/blog/jupyter-notebook-10-alternatives-2023/",
+                  "title": "Jupyter Notebook & 10 Alternatives: Data Notebook Review 2025",
+                  "snippet": "Jupyter Notebook is a popular data project tool, some users may find that it lacks the capabilities they need, such as real-time collaboration, code completion ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 19
+                  },
+                  "content_type": null,
+                  "pub_date": 1737700798.314703,
+                  "attributions": null,
+                  "attribution": "lakefs.io"
+                }
+              ]
+            }
+          ],
+          "safe_urls": [
+            "https://support.posit.co/hc/en-us/articles/360007435274-Counting-Named-Users-in-Posit-Connect-and-Posit-Workbench-RStudio-Server-Pro?utm_source=chatgpt.com",
+            "https://blog.jupyter.org/accurately-counting-daily-weekly-monthly-active-users-on-jupyterhub-6fbec6c6ce2f?utm_source=chatgpt.com"
+          ],
+          "message_locale": "en-US",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "fdbd6852-59e1-4996-80d0-e18edd175003",
+          "image_results": [],
+          "content_references": [
+            {
+              "matched_text": "\ue203",
+              "start_idx": 0,
+              "end_idx": 1,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 172,
+              "end_idx": 173,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 173,
+              "end_idx": 174,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 189,
+              "end_idx": 190,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 298,
+              "end_idx": 299,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 300,
+              "end_idx": 301,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 463,
+              "end_idx": 464,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 465,
+              "end_idx": 466,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 567,
+              "end_idx": 568,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search4\ue201",
+              "start_idx": 569,
+              "end_idx": 588,
+              "refs": [],
+              "alt": "([support.posit.co](https://support.posit.co/hc/en-us/articles/360007435274-Counting-Named-Users-in-Posit-Connect-and-Posit-Workbench-RStudio-Server-Pro?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Counting Named Users in Posit Connect and Posit Workbench ...",
+                  "url": "https://support.posit.co/hc/en-us/articles/360007435274-Counting-Named-Users-in-Posit-Connect-and-Posit-Workbench-RStudio-Server-Pro?utm_source=chatgpt.com",
+                  "pub_date": 1670457600,
+                  "snippet": "At the bottom of this page is information on the number of current named users and total available named users. (If you are using a license with ...",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "hue": null,
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    }
+                  ],
+                  "attributions": null,
+                  "attribution": "support.posit.co"
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 588,
+              "end_idx": 589,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 614,
+              "end_idx": 615,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 683,
+              "end_idx": 684,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 685,
+              "end_idx": 686,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 858,
+              "end_idx": 859,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 860,
+              "end_idx": 861,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 1054,
+              "end_idx": 1055,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 1056,
+              "end_idx": 1057,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 1168,
+              "end_idx": 1169,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search1\ue201",
+              "start_idx": 1170,
+              "end_idx": 1189,
+              "refs": [],
+              "alt": "([blog.jupyter.org](https://blog.jupyter.org/accurately-counting-daily-weekly-monthly-active-users-on-jupyterhub-6fbec6c6ce2f?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Accurately counting Daily, Weekly & Monthly active users on ...",
+                  "url": "https://blog.jupyter.org/accurately-counting-daily-weekly-monthly-active-users-on-jupyterhub-6fbec6c6ce2f?utm_source=chatgpt.com",
+                  "pub_date": 1679875200,
+                  "snippet": "This Pull Request adds daily, weekly, and monthly active user metrics to JupyterHub, accessible via the prometheus interface by hitting the /metrics URL on ...",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "hue": null,
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    }
+                  ],
+                  "attributions": null,
+                  "attribution": "blog.jupyter.org"
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 1189,
+              "end_idx": 1190,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 1192,
+              "end_idx": 1193,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 1445,
+              "end_idx": 1446,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 1446,
+              "end_idx": 1447,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": " ",
+              "start_idx": 1447,
+              "end_idx": 1447,
+              "refs": [],
+              "alt": "",
+              "prompt_text": null,
+              "type": "sources_footnote",
+              "sources": [
+                {
+                  "title": "Counting Named Users in Posit Connect and Posit Workbench ...",
+                  "url": "https://support.posit.co/hc/en-us/articles/360007435274-Counting-Named-Users-in-Posit-Connect-and-Posit-Workbench-RStudio-Server-Pro?utm_source=chatgpt.com",
+                  "attribution": "support.posit.co"
+                },
+                {
+                  "title": "Accurately counting Daily, Weekly & Monthly active users on ...",
+                  "url": "https://blog.jupyter.org/accurately-counting-daily-weekly-monthly-active-users-on-jupyterhub-6fbec6c6ce2f?utm_source=chatgpt.com",
+                  "attribution": "blog.jupyter.org"
+                }
+              ],
+              "has_images": false
+            }
+          ],
+          "citations": [
+            {
+              "start_ix": 0,
+              "end_ix": 1,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 172,
+              "end_ix": 173,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 173,
+              "end_ix": 174,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 189,
+              "end_ix": 190,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 298,
+              "end_ix": 299,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 300,
+              "end_ix": 301,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 463,
+              "end_ix": 464,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 465,
+              "end_ix": 466,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 567,
+              "end_ix": 568,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 569,
+              "end_ix": 588,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 588,
+              "end_ix": 589,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 614,
+              "end_ix": 615,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 683,
+              "end_ix": 684,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 685,
+              "end_ix": 686,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 858,
+              "end_ix": 859,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 860,
+              "end_ix": 861,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1054,
+              "end_ix": 1055,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1056,
+              "end_ix": 1057,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1168,
+              "end_ix": 1169,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1170,
+              "end_ix": 1189,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1189,
+              "end_ix": 1190,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1192,
+              "end_ix": 1193,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1445,
+              "end_ix": 1446,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1446,
+              "end_ix": 1447,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1447,
+              "end_ix": 1447,
+              "invalid_reason": "Unsupported, please upgrade"
+            }
+          ],
+          "request_id": "909f77ba2f372f64-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "fdbd6852-59e1-4996-80d0-e18edd175003",
+      "children": [
+        "aaa2ffeb-01d9-45b5-9946-78172d589f1a"
+      ]
+    },
+    "aaa2ffeb-01d9-45b5-9946-78172d589f1a": {
+      "id": "aaa2ffeb-01d9-45b5-9946-78172d589f1a",
+      "message": {
+        "id": "aaa2ffeb-01d9-45b5-9946-78172d589f1a",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1738219229.536895,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Anaconda said 34 million for Jupyter.  Can you find that from conda?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "909f78872bf60fb9-IAD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "fd4692f1-b6ce-4b74-a72c-c68f7fb056b1",
+      "children": [
+        "463a4d99-660f-47c9-bfad-01a6e0fc7d11"
+      ]
+    },
+    "463a4d99-660f-47c9-bfad-01a6e0fc7d11": {
+      "id": "463a4d99-660f-47c9-bfad-01a6e0fc7d11",
+      "message": {
+        "id": "463a4d99-660f-47c9-bfad-01a6e0fc7d11",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1738219236.285429,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "unknown",
+          "response_format_name": null,
+          "text": "search(\"Anaconda said 34 million for Jupyter.  Can you find that from conda?\")"
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "is_complete": true,
+          "finish_details": {
+            "type": "stop"
+          },
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa2ffeb-01d9-45b5-9946-78172d589f1a",
+          "request_id": "909f78872bf60fb9-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "web",
+        "channel": null
+      },
+      "parent": "aaa2ffeb-01d9-45b5-9946-78172d589f1a",
+      "children": [
+        "ddf12710-7486-4e65-b16e-fce4a4597f21"
+      ]
+    },
+    "ddf12710-7486-4e65-b16e-fce4a4597f21": {
+      "id": "ddf12710-7486-4e65-b16e-fce4a4597f21",
+      "message": {
+        "id": "ddf12710-7486-4e65-b16e-fce4a4597f21",
+        "author": {
+          "role": "tool",
+          "name": "web",
+          "metadata": {}
+        },
+        "create_time": 1738219236.285526,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "unknown",
+          "response_format_name": null,
+          "text": ""
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "search",
+          "status": "finished",
+          "is_complete": true,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "463a4d99-660f-47c9-bfad-01a6e0fc7d11",
+          "request_id": "909f78872bf60fb9-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "assistant",
+        "channel": null
+      },
+      "parent": "463a4d99-660f-47c9-bfad-01a6e0fc7d11",
+      "children": [
+        "43cc4e67-57c9-41e3-9554-d23777e3ba0a"
+      ]
+    },
+    "43cc4e67-57c9-41e3-9554-d23777e3ba0a": {
+      "id": "43cc4e67-57c9-41e3-9554-d23777e3ba0a",
+      "message": {
+        "id": "43cc4e67-57c9-41e3-9554-d23777e3ba0a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {
+            "real_author": "tool:web"
+          }
+        },
+        "create_time": 1738219236.285581,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "\ue203Anaconda, Inc. reported surpassing 30 million users in 2022.\ue204 \ue200cite\ue202turn0search4\ue201 \ue203By 2024, their user base had grown to 45 million.\ue204 \ue200cite\ue202turn0search20\ue201 \ue203While these figures encompass all Anaconda users, a significant portion likely utilizes Jupyter Notebooks, given their integration within the Anaconda distribution.\ue204 \ue203However, specific statistics detailing the number of Jupyter Notebook users within the Anaconda ecosystem are not publicly disclosed.\ue204\ue206\n\n\ue203For more granular insights, the `condastats` tool can be employed to analyze package download statistics from Anaconda's repositories.\ue204 \ue203This tool provides data on the frequency of package downloads, which can serve as an indirect indicator of usage trends.\ue204 \ue200cite\ue202turn0search5\ue201 \ue203Nonetheless, it's important to note that download counts do not equate to active user numbers, as they may include multiple downloads by the same user or downloads that are not actively utilized.\ue204\ue206\n\n\ue203In summary, while precise figures for Jupyter Notebook users within the Anaconda platform are not available, the overall growth of Anaconda's user base suggests a corresponding increase in Jupyter Notebook adoption.\ue204\ue206 "
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "search_source": "composer_auto",
+          "client_reported_search_source": "composer_auto",
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "wikipedia.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://en.wikipedia.org/wiki/Anaconda_%28Python_distribution%29",
+                  "title": "Anaconda (Python distribution) - Wikipedia",
+                  "snippet": "In 2024, Anaconda's user base reached 45 million users and Barry Libert was named company CEO, after serving on Anaconda's board of directors.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "en.wikipedia.org"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "anaconda.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://anaconda.org/conda-forge/statistics",
+                  "title": "Statistics | Anaconda.org",
+                  "snippet": "Info: This package contains files in non-standard labels. win-32 v1.0.3.5; win-64 v1.0.3.5; linux ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "anaconda.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://anaconda.org/anaconda/statistics",
+                  "title": "Statistics | Anaconda.org",
+                  "snippet": "conda install. To install this package run one of the following: conda install anaconda::statistics. Description. A port of Python 3.4 statistics module to ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "anaconda.org"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "youtube.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.youtube.com/watch?v=A18OSK0qMhM",
+                  "title": "How Anaconda Grew to 40 Million Users Globally! #shorts #saas",
+                  "snippet": "Peter Wang is the co-founder and Chief AI & Innovation Officer of Anaconda, a platform that offers essential open-source Python packages for ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "content_type": null,
+                  "pub_date": 1733184000,
+                  "attributions": null,
+                  "attribution": "youtube.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.youtube.com/watch?v=gQvezM34eII",
+                  "title": "How do I download Anaconda and Jupyter on Windows 10?",
+                  "snippet": "Learn how to download and install Anaconda and Jupyter Notebook on Windows 10 with this step-by-step guide. Anaconda is a comprehensive data ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "content_type": null,
+                  "pub_date": 1693526400,
+                  "attributions": null,
+                  "attribution": "youtube.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.youtube.com/watch?v=WcDaZ67TVRo",
+                  "title": "Data Analysis with Python for Excel Users - Full Course - YouTube",
+                  "snippet": "... users Datasets ... Jupyter Notebook with Anaconda \u2328\ufe0f (0:03:53) Jupyter Notebook Interface \u2328\ufe0f (0:13:56) Cell Types and Cell Mode \u2328\ufe0f (0:21:34) ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 16
+                  },
+                  "content_type": null,
+                  "pub_date": 1637712000,
+                  "attributions": null,
+                  "attribution": "youtube.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "anaconda.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.anaconda.com/blog/introducing-python-training-and-cloud-hosted-notebooks-from-anaconda",
+                  "title": "Introducing Data Science Training and Cloud-Hosted\u2026 - Anaconda",
+                  "snippet": "This year, Anaconda surpassed a milestone\u2014we now have over 30 million users worldwide. We watched our community grow as Python became the ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "content_type": null,
+                  "pub_date": 1665964800,
+                  "attributions": null,
+                  "attribution": "anaconda.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.anaconda.com/blog/get-python-package-download-statistics-with-condastats",
+                  "title": "Get Python Package Download Statistics with Condastats - Anaconda",
+                  "snippet": "Condastats is built on top of this public Anaconda package data and returns monthly package download statistics.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "content_type": null,
+                  "pub_date": 1575244800,
+                  "attributions": null,
+                  "attribution": "anaconda.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://enterprise-docs.anaconda.com/en/5.6.2/data-science-workflows/data/stats.html",
+                  "title": "Using statistics \u2014 Anaconda documentation",
+                  "snippet": "Anaconda Enterprise supports statistical work using the R language and Python libraries such as NumPy, SciPy, Pandas, Statsmodels, and scikit-learn.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "enterprise-docs.anaconda.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "reddit.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.reddit.com/r/Python/comments/15b6j1n/my_firm_is_afraid_of_anacondajupyter_notebook/",
+                  "title": "My firm is afraid of Anaconda/Jupyter Notebook : r/Python - Reddit",
+                  "snippet": "My training has been on how to actually use Python for data science by coding in Anaconda/Jupyter notebooks. And not on what anaconda/Jupyter is from an IT ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "content_type": null,
+                  "pub_date": 1690416000,
+                  "attributions": null,
+                  "attribution": "reddit.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "geeksforgeeks.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.geeksforgeeks.org/how-to-install-stats-in-anaconda/",
+                  "title": "How to Install stats in Anaconda - GeeksforGeeks",
+                  "snippet": "Step 1: Open the Anaconda Prompt \u00b7 Step 2: Create the New Environment (Optional) \u00b7 Step 3: Acitvate the environment \u00b7 Step 4: Install the stats.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "content_type": null,
+                  "pub_date": 1723420800,
+                  "attributions": null,
+                  "attribution": "geeksforgeeks.org"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "stackoverflow.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://stackoverflow.com/questions/42516279/default-notebooks-directory-for-jupyter-launched-from-anaconda-navigator",
+                  "title": "notebooks' directory for Jupyter launched from Anaconda Navigator",
+                  "snippet": "Here is how I was able to change the Jupyter default directory on Windows 7: Check to see if you have a .jupyter directory in C:\\Users\\your_username.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "content_type": null,
+                  "pub_date": 1488240000,
+                  "attributions": null,
+                  "attribution": "stackoverflow.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "github.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://gist.github.com/mariusvniekerk/eff538447e79d5c42c3abfc8d7d815f3",
+                  "title": "Conda-forge download stats - GitHub Gist",
+                  "snippet": "Conda-Forge Download Statistics\u00b6. This notebook demonstrates how to load and use Conda-forge package data. For more details, see the Github repository.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "gist.github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/conda-forge/statistics-feedstock",
+                  "title": "conda-forge/statistics-feedstock - GitHub",
+                  "snippet": "A conda-smithy repository for statistics. Contribute to conda-forge/statistics-feedstock development by creating an account on GitHub.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 13
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/jupyter/notebook/issues/2130",
+                  "title": "Jupyter notebook does not launch \u00b7 Issue #2130 - GitHub",
+                  "snippet": "After the conda installation, the Jupyter notebook does not start. There is a command window, which shows up for 1-2 seconds but disappears.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 14
+                  },
+                  "content_type": null,
+                  "pub_date": 1486080000,
+                  "attributions": null,
+                  "attribution": "github.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "jupyter.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://discourse.jupyter.org/t/jupyter-notebook-browser-page-not-loading/8296",
+                  "title": "Jupyter notebook browser page not loading",
+                  "snippet": "When I try to open jupyter in a browser tab I cannot connect, the page remains blank with the little 'loading' icon on the browser tab spining indefinitely.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 12
+                  },
+                  "content_type": null,
+                  "pub_date": 1615420800,
+                  "attributions": null,
+                  "attribution": "discourse.jupyter.org"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "weecology.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://wiki.weecology.org/docs/computers-and-programming/statistics-for-software-downloads/",
+                  "title": "Statistics for Software Use | Weecology Wiki",
+                  "snippet": "Conda. Install the condastats package conda install -c conda-forge condastats; From the command line run a version of the following command.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 15
+                  },
+                  "content_type": null,
+                  "pub_date": 1714867200,
+                  "attributions": null,
+                  "attribution": "wiki.weecology.org"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "bioconda.github.io",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://bioconda.github.io/recipes/assembly-stats/README.html",
+                  "title": "Package Recipe 'assembly-stats' \u2014 Bioconda documentation",
+                  "snippet": "Get assembly statistics from FASTA and FASTQ files (downloads) docker_assembly-stats Installation You need a conda-compatible package manager.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 17
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "bioconda.github.io"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "anaconda.cloud",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://community.anaconda.cloud/t/cannot-open-jupyter-notebook-on-macbook/53484",
+                  "title": "Cannot open Jupyter Notebook on MacBook - Anaconda Community",
+                  "snippet": "I installed Anaconda and tried to open Jupyter Notebook in the navigator. But failed. Could anyone help me please? Thanks a million.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 18
+                  },
+                  "content_type": null,
+                  "pub_date": 1680566400,
+                  "attributions": null,
+                  "attribution": "community.anaconda.cloud"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "statsmodels.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.statsmodels.org/stable/install.html",
+                  "title": "Installing statsmodels - statsmodels 0.14.4",
+                  "snippet": "The easiest way to install statsmodels is to install it as part of the Anaconda distribution, a cross-platform distribution for data analysis and scientific ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 19
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "statsmodels.org"
+                }
+              ]
+            }
+          ],
+          "safe_urls": [
+            "https://www.anaconda.com/blog/get-python-package-download-statistics-with-condastats?utm_source=chatgpt.com",
+            "https://www.anaconda.com/blog/introducing-python-training-and-cloud-hosted-notebooks-from-anaconda?utm_source=chatgpt.com",
+            "https://en.wikipedia.org/wiki/Anaconda_%28Python_distribution%29?utm_source=chatgpt.com"
+          ],
+          "message_locale": "en-US",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "ddf12710-7486-4e65-b16e-fce4a4597f21",
+          "image_results": [],
+          "content_references": [
+            {
+              "matched_text": "\ue203",
+              "start_idx": 0,
+              "end_idx": 1,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 61,
+              "end_idx": 62,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search4\ue201",
+              "start_idx": 63,
+              "end_idx": 82,
+              "refs": [],
+              "alt": "([anaconda.com](https://www.anaconda.com/blog/introducing-python-training-and-cloud-hosted-notebooks-from-anaconda?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Introducing Data Science Training and Cloud-Hosted\u2026 - Anaconda",
+                  "url": "https://www.anaconda.com/blog/introducing-python-training-and-cloud-hosted-notebooks-from-anaconda?utm_source=chatgpt.com",
+                  "pub_date": 1665964800,
+                  "snippet": "This year, Anaconda surpassed a milestone\u2014we now have over 30 million users worldwide. We watched our community grow as Python became the ...",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "hue": null,
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    }
+                  ],
+                  "attributions": null,
+                  "attribution": "anaconda.com"
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 83,
+              "end_idx": 84,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 133,
+              "end_idx": 134,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search20\ue201",
+              "start_idx": 135,
+              "end_idx": 155,
+              "refs": [],
+              "alt": "([en.wikipedia.org](https://en.wikipedia.org/wiki/Anaconda_%28Python_distribution%29?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Anaconda (Python distribution)",
+                  "url": "https://en.wikipedia.org/wiki/Anaconda_%28Python_distribution%29?utm_source=chatgpt.com",
+                  "pub_date": 1737720898,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "hue": null,
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 20
+                    }
+                  ],
+                  "attributions": null,
+                  "attribution": "en.wikipedia.org"
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 156,
+              "end_idx": 157,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 321,
+              "end_idx": 322,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 323,
+              "end_idx": 324,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 457,
+              "end_idx": 458,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 458,
+              "end_idx": 459,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 461,
+              "end_idx": 462,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 596,
+              "end_idx": 597,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 598,
+              "end_idx": 599,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 719,
+              "end_idx": 720,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search5\ue201",
+              "start_idx": 721,
+              "end_idx": 740,
+              "refs": [],
+              "alt": "([anaconda.com](https://www.anaconda.com/blog/get-python-package-download-statistics-with-condastats?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Get Python Package Download Statistics with Condastats - Anaconda",
+                  "url": "https://www.anaconda.com/blog/get-python-package-download-statistics-with-condastats?utm_source=chatgpt.com",
+                  "pub_date": 1575244800,
+                  "snippet": "Condastats is built on top of this public Anaconda package data and returns monthly package download statistics.",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "hue": null,
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    }
+                  ],
+                  "attributions": null,
+                  "attribution": "anaconda.com"
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 741,
+              "end_idx": 742,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 937,
+              "end_idx": 938,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 938,
+              "end_idx": 939,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 941,
+              "end_idx": 942,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 1157,
+              "end_idx": 1158,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 1158,
+              "end_idx": 1159,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": " ",
+              "start_idx": 1159,
+              "end_idx": 1159,
+              "refs": [],
+              "alt": "",
+              "prompt_text": null,
+              "type": "sources_footnote",
+              "sources": [
+                {
+                  "title": "Introducing Data Science Training and Cloud-Hosted\u2026 - Anaconda",
+                  "url": "https://www.anaconda.com/blog/introducing-python-training-and-cloud-hosted-notebooks-from-anaconda?utm_source=chatgpt.com",
+                  "attribution": "anaconda.com"
+                },
+                {
+                  "title": "Anaconda (Python distribution)",
+                  "url": "https://en.wikipedia.org/wiki/Anaconda_%28Python_distribution%29?utm_source=chatgpt.com",
+                  "attribution": "en.wikipedia.org"
+                }
+              ],
+              "has_images": false
+            }
+          ],
+          "citations": [
+            {
+              "start_ix": 0,
+              "end_ix": 1,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 61,
+              "end_ix": 62,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 63,
+              "end_ix": 82,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 83,
+              "end_ix": 84,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 133,
+              "end_ix": 134,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 135,
+              "end_ix": 155,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 156,
+              "end_ix": 157,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 321,
+              "end_ix": 322,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 323,
+              "end_ix": 324,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 457,
+              "end_ix": 458,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 458,
+              "end_ix": 459,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 461,
+              "end_ix": 462,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 596,
+              "end_ix": 597,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 598,
+              "end_ix": 599,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 719,
+              "end_ix": 720,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 721,
+              "end_ix": 740,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 741,
+              "end_ix": 742,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 937,
+              "end_ix": 938,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 938,
+              "end_ix": 939,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 941,
+              "end_ix": 942,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1157,
+              "end_ix": 1158,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1158,
+              "end_ix": 1159,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1159,
+              "end_ix": 1159,
+              "invalid_reason": "Unsupported, please upgrade"
+            }
+          ],
+          "request_id": "909f78872bf60fb9-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ddf12710-7486-4e65-b16e-fce4a4597f21",
+      "children": [
+        "aaa26cd9-0427-43b9-9825-a120b034debe"
+      ]
+    },
+    "aaa26cd9-0427-43b9-9825-a120b034debe": {
+      "id": "aaa26cd9-0427-43b9-9825-a120b034debe",
+      "message": {
+        "id": "aaa26cd9-0427-43b9-9825-a120b034debe",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1738219282.135124,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Do you have acess to github stats"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "909f79cecf6df7cf-LAX",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "43cc4e67-57c9-41e3-9554-d23777e3ba0a",
+      "children": [
+        "2d99a47e-54bd-4c0e-8bec-1f13bfd5bde0"
+      ]
+    },
+    "2d99a47e-54bd-4c0e-8bec-1f13bfd5bde0": {
+      "id": "2d99a47e-54bd-4c0e-8bec-1f13bfd5bde0",
+      "message": {
+        "id": "2d99a47e-54bd-4c0e-8bec-1f13bfd5bde0",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1738219286.940642,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "unknown",
+          "response_format_name": null,
+          "text": "search(\"Do you have acess to github stats\")"
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "is_complete": true,
+          "finish_details": {
+            "type": "stop"
+          },
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa26cd9-0427-43b9-9825-a120b034debe",
+          "request_id": "909f79cecf6df7cf-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "web",
+        "channel": null
+      },
+      "parent": "aaa26cd9-0427-43b9-9825-a120b034debe",
+      "children": [
+        "70ad54f2-be92-4966-b26c-18f6d1348778"
+      ]
+    },
+    "70ad54f2-be92-4966-b26c-18f6d1348778": {
+      "id": "70ad54f2-be92-4966-b26c-18f6d1348778",
+      "message": {
+        "id": "70ad54f2-be92-4966-b26c-18f6d1348778",
+        "author": {
+          "role": "tool",
+          "name": "web",
+          "metadata": {}
+        },
+        "create_time": 1738219286.940767,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "unknown",
+          "response_format_name": null,
+          "text": ""
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "search",
+          "status": "finished",
+          "is_complete": true,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "2d99a47e-54bd-4c0e-8bec-1f13bfd5bde0",
+          "request_id": "909f79cecf6df7cf-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "assistant",
+        "channel": null
+      },
+      "parent": "2d99a47e-54bd-4c0e-8bec-1f13bfd5bde0",
+      "children": [
+        "2bd78841-bc78-49d0-81fa-fcfd6855744e"
+      ]
+    },
+    "2bd78841-bc78-49d0-81fa-fcfd6855744e": {
+      "id": "2bd78841-bc78-49d0-81fa-fcfd6855744e",
+      "message": {
+        "id": "2bd78841-bc78-49d0-81fa-fcfd6855744e",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {
+            "real_author": "tool:web"
+          }
+        },
+        "create_time": 1738219286.940835,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "\ue203Yes, I have access to various GitHub statistics.\ue204 \ue203As of January 2023, GitHub reported having over 100 million developers and more than 420 million repositories, including at least 28 million public repositories.\ue204 \ue200cite\ue202turn0search13\ue201\ue206\n\n\ue203For individual repositories, GitHub provides REST API endpoints that allow users to fetch data visualizing different types of repository activity, such as commit counts, code frequency, and participation.\ue204 \ue200cite\ue202turn0search3\ue201\ue206\n\n\ue203Additionally, tools like GitHub Stats offer advanced repository statistics, charts, and insights by appending `-stats` to any GitHub repository URL.\ue204 \ue200cite\ue202turn0search2\ue201\ue206\n\n\ue203These resources can help you analyze specific repositories or overall platform usage.\ue204\ue206 "
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "search_source": "composer_auto",
+          "client_reported_search_source": "composer_auto",
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "kinsta.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://kinsta.com/blog/github-statistics/",
+                  "title": "Key GitHub Statistics in 2025 (Users, Employees, and Trends) - Kinsta",
+                  "snippet": "Around 1.5 percent of internet users visit GitHub. \u00b7 It gets around 14 million visitors and 96,419,713 page impressions per day. \u00b7 The majority of ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "content_type": null,
+                  "pub_date": 1680652800,
+                  "attributions": null,
+                  "attribution": "kinsta.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "inclind.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.inclind.com/news/github-statistics-trends",
+                  "title": "GitHub Statistics & Trends | 2024 Numbers - Inclind, Inc.",
+                  "snippet": "GitHub is incredibly popular, with approximately 100 million developers using it in countries ranging from the United States to France and Indonesia.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "content_type": null,
+                  "pub_date": 1708300800,
+                  "attributions": null,
+                  "attribution": "inclind.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "github-stats.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://github-stats.com/",
+                  "title": "GitHub Stats",
+                  "snippet": "Just add -stats to any GitHub repository URL to get advanced repository statistics, charts, and insights from GithubTracker. https://github.com/nuxt/nuxt https ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "github-stats.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "github.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://docs.github.com/en/rest/metrics/statistics",
+                  "title": "REST API endpoints for repository statistics - GitHub Docs",
+                  "snippet": "About repository statistics. You can use the REST API to fetch the data that GitHub uses for visualizing different types of repository activity.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "docs.github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://docs.github.com/billing/managing-billing-for-github-actions/viewing-your-github-actions-usage",
+                  "title": "Viewing your GitHub Actions usage",
+                  "snippet": "Anyone can view GitHub Actions usage for their own personal account. Under \"Usage this month\", in the \"Actions\" section, view details of your minutes used.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "docs.github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/apps/desktop/usage-data",
+                  "title": "GitHub Desktop usage reporting",
+                  "snippet": "GitHub is where people build software. More than 100 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/jstrieb/github-stats",
+                  "title": "jstrieb/github-stats",
+                  "snippet": "This project aims to collect a variety of profile and repository statistics using the GitHub API. It then generates images that can be displayed in repository ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "github.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "graphite.dev",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://graphite.dev/guides/github-statistics-and-analytics",
+                  "title": "A deep dive into GitHub statistics and analytics topics - Graphite.dev",
+                  "snippet": "GitHub repository analytics, user stats, and usage statistics provide valuable insights into codebase health, team productivity, and developer engagement.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "graphite.dev"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "coolest-gadgets.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.coolest-gadgets.com/github-statistics/",
+                  "title": "GitHub Statistics By Developers, Git Pushes and Facts [2024*]",
+                  "snippet": "The total user share in GitHub was 22.31% in the United States of America, resulting in 218.64 million, of which desktop and mobile users accounted for 63.32% ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "coolest-gadgets.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "umich.edu",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://teamdynamix.umich.edu/TDClient/210/DepressionCenter/KB/ArticleDet?ID=12311",
+                  "title": "Gathering GitHub Usage and Web Traffic Data - TeamDynamix",
+                  "snippet": "This article explores a solution for capturing GitHub usage data on a daily basis and storing it into CSV, JSON or a database for future analysis.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "teamdynamix.umich.edu"
+                }
+              ]
+            }
+          ],
+          "safe_urls": [
+            "https://docs.github.com/en/rest/metrics/statistics?utm_source=chatgpt.com",
+            "https://en.wikipedia.org/wiki/GitHub?utm_source=chatgpt.com",
+            "https://github-stats.com/?utm_source=chatgpt.com"
+          ],
+          "message_locale": "en-US",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "70ad54f2-be92-4966-b26c-18f6d1348778",
+          "image_results": [],
+          "content_references": [
+            {
+              "matched_text": "\ue203",
+              "start_idx": 0,
+              "end_idx": 1,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 49,
+              "end_idx": 50,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 51,
+              "end_idx": 52,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 213,
+              "end_idx": 214,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search13\ue201",
+              "start_idx": 215,
+              "end_idx": 235,
+              "refs": [],
+              "alt": "([en.wikipedia.org](https://en.wikipedia.org/wiki/GitHub?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "GitHub",
+                  "url": "https://en.wikipedia.org/wiki/GitHub?utm_source=chatgpt.com",
+                  "pub_date": 1737286391,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "hue": null,
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 13
+                    }
+                  ],
+                  "attributions": null,
+                  "attribution": "en.wikipedia.org"
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 235,
+              "end_idx": 236,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 238,
+              "end_idx": 239,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 443,
+              "end_idx": 444,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search3\ue201",
+              "start_idx": 445,
+              "end_idx": 464,
+              "refs": [],
+              "alt": "([docs.github.com](https://docs.github.com/en/rest/metrics/statistics?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "REST API endpoints for repository statistics - GitHub Docs",
+                  "url": "https://docs.github.com/en/rest/metrics/statistics?utm_source=chatgpt.com",
+                  "pub_date": null,
+                  "snippet": "About repository statistics. You can use the REST API to fetch the data that GitHub uses for visualizing different types of repository activity.",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "hue": null,
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    }
+                  ],
+                  "attributions": null,
+                  "attribution": "docs.github.com"
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 464,
+              "end_idx": 465,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 467,
+              "end_idx": 468,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 616,
+              "end_idx": 617,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search2\ue201",
+              "start_idx": 618,
+              "end_idx": 637,
+              "refs": [],
+              "alt": "([github-stats.com](https://github-stats.com/?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "GitHub Stats",
+                  "url": "https://github-stats.com/?utm_source=chatgpt.com",
+                  "pub_date": null,
+                  "snippet": "Just add -stats to any GitHub repository URL to get advanced repository statistics, charts, and insights from GithubTracker. https://github.com/nuxt/nuxt https ...",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "hue": null,
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    }
+                  ],
+                  "attributions": null,
+                  "attribution": "github-stats.com"
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 637,
+              "end_idx": 638,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 640,
+              "end_idx": 641,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 726,
+              "end_idx": 727,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 727,
+              "end_idx": 728,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": " ",
+              "start_idx": 728,
+              "end_idx": 728,
+              "refs": [],
+              "alt": "",
+              "prompt_text": null,
+              "type": "sources_footnote",
+              "sources": [
+                {
+                  "title": "GitHub",
+                  "url": "https://en.wikipedia.org/wiki/GitHub?utm_source=chatgpt.com",
+                  "attribution": "en.wikipedia.org"
+                },
+                {
+                  "title": "REST API endpoints for repository statistics - GitHub Docs",
+                  "url": "https://docs.github.com/en/rest/metrics/statistics?utm_source=chatgpt.com",
+                  "attribution": "docs.github.com"
+                },
+                {
+                  "title": "GitHub Stats",
+                  "url": "https://github-stats.com/?utm_source=chatgpt.com",
+                  "attribution": "github-stats.com"
+                }
+              ],
+              "has_images": false
+            }
+          ],
+          "citations": [
+            {
+              "start_ix": 0,
+              "end_ix": 1,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 49,
+              "end_ix": 50,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 51,
+              "end_ix": 52,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 213,
+              "end_ix": 214,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 215,
+              "end_ix": 235,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 235,
+              "end_ix": 236,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 238,
+              "end_ix": 239,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 443,
+              "end_ix": 444,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 445,
+              "end_ix": 464,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 464,
+              "end_ix": 465,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 467,
+              "end_ix": 468,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 616,
+              "end_ix": 617,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 618,
+              "end_ix": 637,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 637,
+              "end_ix": 638,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 640,
+              "end_ix": 641,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 726,
+              "end_ix": 727,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 727,
+              "end_ix": 728,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 728,
+              "end_ix": 728,
+              "invalid_reason": "Unsupported, please upgrade"
+            }
+          ],
+          "request_id": "909f79cecf6df7cf-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "70ad54f2-be92-4966-b26c-18f6d1348778",
+      "children": [
+        "aaa21c02-996c-4c05-a61b-e9827e966102"
+      ]
+    },
+    "aaa21c02-996c-4c05-a61b-e9827e966102": {
+      "id": "aaa21c02-996c-4c05-a61b-e9827e966102",
+      "message": {
+        "id": "aaa21c02-996c-4c05-a61b-e9827e966102",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1738219302.655553,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "OK.  How many updates were there in 2024 to Jupyter repositories"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "909f7a4ff8010925-LAX",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "2bd78841-bc78-49d0-81fa-fcfd6855744e",
+      "children": [
+        "734ec88a-dcaa-4c5a-9c0b-442e5eead53a"
+      ]
+    },
+    "734ec88a-dcaa-4c5a-9c0b-442e5eead53a": {
+      "id": "734ec88a-dcaa-4c5a-9c0b-442e5eead53a",
+      "message": {
+        "id": "734ec88a-dcaa-4c5a-9c0b-442e5eead53a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1738219308.928093,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "unknown",
+          "response_format_name": null,
+          "text": "search(\"OK.  How many updates were there in 2024 to Jupyter repositories\")"
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "is_complete": true,
+          "finish_details": {
+            "type": "stop"
+          },
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa21c02-996c-4c05-a61b-e9827e966102",
+          "request_id": "909f7a4ff8010925-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "web",
+        "channel": null
+      },
+      "parent": "aaa21c02-996c-4c05-a61b-e9827e966102",
+      "children": [
+        "a40b7390-7b9e-4974-ac0f-11e1b6de07e4"
+      ]
+    },
+    "a40b7390-7b9e-4974-ac0f-11e1b6de07e4": {
+      "id": "a40b7390-7b9e-4974-ac0f-11e1b6de07e4",
+      "message": {
+        "id": "a40b7390-7b9e-4974-ac0f-11e1b6de07e4",
+        "author": {
+          "role": "tool",
+          "name": "web",
+          "metadata": {}
+        },
+        "create_time": 1738219308.928347,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "unknown",
+          "response_format_name": null,
+          "text": ""
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "search",
+          "status": "finished",
+          "is_complete": true,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "734ec88a-dcaa-4c5a-9c0b-442e5eead53a",
+          "request_id": "909f7a4ff8010925-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "assistant",
+        "channel": null
+      },
+      "parent": "734ec88a-dcaa-4c5a-9c0b-442e5eead53a",
+      "children": [
+        "f43056e3-a169-46ee-ac21-ef8701272390"
+      ]
+    },
+    "f43056e3-a169-46ee-ac21-ef8701272390": {
+      "id": "f43056e3-a169-46ee-ac21-ef8701272390",
+      "message": {
+        "id": "f43056e3-a169-46ee-ac21-ef8701272390",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {
+            "real_author": "tool:web"
+          }
+        },
+        "create_time": 1738219308.92842,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "\ue203Determining the exact number of updates to Jupyter-related repositories in 2024 is challenging due to the decentralized nature of open-source development and the vast number of repositories involved.\ue204 \ue203However, GitHub's 2024 Octoverse report provides some relevant insights:\ue204\ue206\n\n- **Overall Contributions**: \ue203Developers made 4.3 billion contributions across more than 181 million private repositories in 2024.\ue204 \ue200cite\ue202turn0search0\ue201\ue206\n\n- **Jupyter Notebooks Usage**: \ue203Since 2022, Jupyter Notebooks usage on GitHub has spiked more than 170%, and since last year, usage has increased by 92%.\ue204 \ue203This surge indicates a significant increase in activity related to Jupyter Notebooks, which are often central to data science and machine learning projects.\ue204 \ue200cite\ue202turn0search0\ue201\ue206\n\n\ue203While these statistics don't provide a precise count of updates to Jupyter repositories in 2024, they highlight a substantial growth in contributions and usage, suggesting increased activity in Jupyter-related projects during that period.\ue204\ue206 "
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "search_source": "composer_auto",
+          "client_reported_search_source": "composer_auto",
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "github.blog",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://github.blog/news-insights/octoverse/octoverse-2024/",
+                  "title": "Octoverse: AI leads Python to top language as the number of global ...",
+                  "snippet": "More than 82% of GitHub contributions are made to private repositories. Developers made 4.3 billion contributions across more than 181 million ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "content_type": null,
+                  "pub_date": 1730160000,
+                  "attributions": null,
+                  "attribution": "github.blog"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "stackoverflow.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://stackoverflow.com/questions/1828874/generating-statistics-from-git-repository",
+                  "title": "Generating statistics from Git repository [closed] - Stack Overflow",
+                  "snippet": "I'm looking for some good tools/scripts that allow me to generate a few statistics from a git repository.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "content_type": null,
+                  "pub_date": 1259625600,
+                  "attributions": null,
+                  "attribution": "stackoverflow.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "github.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/mackelab/data_literacy_notebooks",
+                  "title": "Jupyter notebooks for the Data Literacy Lecture 2024/2025 - GitHub",
+                  "snippet": "This repository contains notebooks to reproduce the plots and analyses shown in the lecture. The data analyzed are from the National Health and Nutrition ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/anuraghazra/github-readme-stats/issues/3718",
+                  "title": "Discrepancy in Total Commits Count for 2024 #3718 - GitHub",
+                  "snippet": "The total commits count for the year 2024 on my GitHub Readme Stats card is displaying as 591 commits, whereas I have actually made only 118 commits.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "content_type": null,
+                  "pub_date": 1712534400,
+                  "attributions": null,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://octoverse.github.com/",
+                  "title": "Octoverse 2024: The state of open source | The State of the ... - GitHub",
+                  "snippet": "In this year's Octoverse report, we study how public and open source activity on GitHub shows how AI is expanding as the global developer community surges in ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "octoverse.github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/parente/nbestimate",
+                  "title": "parente/nbestimate: Estimate of Public Jupyter Notebooks on GitHub",
+                  "snippet": "Estimate of Public Jupyter Notebooks on GitHub. Data Collection History. Assumptions. That the result is not inflated due to GitHub forks.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "github.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "kdnuggets.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.kdnuggets.com/10-github-repositories-to-master-statistics",
+                  "title": "10 GitHub Repositories to Master Statistics - KDnuggets",
+                  "snippet": "We will explore 10 GitHub repositories to help you master statistics. These repositories include code examples, books, Python libraries, guides, documentations ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "content_type": null,
+                  "pub_date": 1722902400,
+                  "attributions": null,
+                  "attribution": "kdnuggets.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "analyticsvidhya.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.analyticsvidhya.com/blog/2024/08/github-repositories-to-master-statistics/",
+                  "title": "Top 10 GitHub Repositories to Master Statistics - Analytics Vidhya",
+                  "snippet": "Discover the top 10 GitHub repositories to master statistics, from foundational concepts to advanced techniques, perfect for all levels.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "content_type": null,
+                  "pub_date": 1723507200,
+                  "attributions": null,
+                  "attribution": "analyticsvidhya.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "medium.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://medium.com/coinmonks/git-and-github-for-data-science-tracking-python-jupyter-notebooks-d167392d4d7f",
+                  "title": "Git and GitHub for Data Science: Tracking Python Jupyter Notebooks",
+                  "snippet": "1. Creating a New Git Repository \u00b7 2. Creating a Jupyter Notebook \u00b7 3. Adding Notebooks to Git \u00b7 4. Committing Changes \u00b7 5. Creating a GitHub ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "content_type": null,
+                  "pub_date": 1696809600,
+                  "attributions": null,
+                  "attribution": "medium.com"
+                }
+              ]
+            }
+          ],
+          "safe_urls": [
+            "https://github.blog/news-insights/octoverse/octoverse-2024/?utm_source=chatgpt.com"
+          ],
+          "message_locale": "en-US",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "a40b7390-7b9e-4974-ac0f-11e1b6de07e4",
+          "image_results": [],
+          "content_references": [
+            {
+              "matched_text": "\ue203",
+              "start_idx": 0,
+              "end_idx": 1,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 200,
+              "end_idx": 201,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 202,
+              "end_idx": 203,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 275,
+              "end_idx": 276,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 276,
+              "end_idx": 277,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 308,
+              "end_idx": 309,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 409,
+              "end_idx": 410,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search0\ue201",
+              "start_idx": 411,
+              "end_idx": 430,
+              "refs": [],
+              "alt": "([github.blog](https://github.blog/news-insights/octoverse/octoverse-2024/?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Octoverse: AI leads Python to top language as the number of global ...",
+                  "url": "https://github.blog/news-insights/octoverse/octoverse-2024/?utm_source=chatgpt.com",
+                  "pub_date": 1730160000,
+                  "snippet": "More than 82% of GitHub contributions are made to private repositories. Developers made 4.3 billion contributions across more than 181 million ...",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "hue": null,
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    }
+                  ],
+                  "attributions": null,
+                  "attribution": "github.blog"
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 430,
+              "end_idx": 431,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 464,
+              "end_idx": 465,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 586,
+              "end_idx": 587,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 588,
+              "end_idx": 589,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 745,
+              "end_idx": 746,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search0\ue201",
+              "start_idx": 747,
+              "end_idx": 766,
+              "refs": [],
+              "alt": "([github.blog](https://github.blog/news-insights/octoverse/octoverse-2024/?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Octoverse: AI leads Python to top language as the number of global ...",
+                  "url": "https://github.blog/news-insights/octoverse/octoverse-2024/?utm_source=chatgpt.com",
+                  "pub_date": 1730160000,
+                  "snippet": "More than 82% of GitHub contributions are made to private repositories. Developers made 4.3 billion contributions across more than 181 million ...",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "hue": null,
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    }
+                  ],
+                  "attributions": null,
+                  "attribution": "github.blog"
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 766,
+              "end_idx": 767,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 769,
+              "end_idx": 770,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 1008,
+              "end_idx": 1009,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 1009,
+              "end_idx": 1010,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": " ",
+              "start_idx": 1010,
+              "end_idx": 1010,
+              "refs": [],
+              "alt": "",
+              "prompt_text": null,
+              "type": "sources_footnote",
+              "sources": [
+                {
+                  "title": "Octoverse: AI leads Python to top language as the number of global ...",
+                  "url": "https://github.blog/news-insights/octoverse/octoverse-2024/?utm_source=chatgpt.com",
+                  "attribution": "github.blog"
+                }
+              ],
+              "has_images": false
+            }
+          ],
+          "citations": [
+            {
+              "start_ix": 0,
+              "end_ix": 1,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 200,
+              "end_ix": 201,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 202,
+              "end_ix": 203,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 275,
+              "end_ix": 276,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 276,
+              "end_ix": 277,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 308,
+              "end_ix": 309,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 409,
+              "end_ix": 410,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 411,
+              "end_ix": 430,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 430,
+              "end_ix": 431,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 464,
+              "end_ix": 465,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 586,
+              "end_ix": 587,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 588,
+              "end_ix": 589,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 745,
+              "end_ix": 746,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 747,
+              "end_ix": 766,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 766,
+              "end_ix": 767,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 769,
+              "end_ix": 770,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1008,
+              "end_ix": 1009,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1009,
+              "end_ix": 1010,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1010,
+              "end_ix": 1010,
+              "invalid_reason": "Unsupported, please upgrade"
+            }
+          ],
+          "request_id": "909f7a4ff8010925-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a40b7390-7b9e-4974-ac0f-11e1b6de07e4",
+      "children": [
+        "aaa2dd12-c92f-4a32-bc50-f3e5c0dcee8b"
+      ]
+    },
+    "aaa2dd12-c92f-4a32-bc50-f3e5c0dcee8b": {
+      "id": "aaa2dd12-c92f-4a32-bc50-f3e5c0dcee8b",
+      "message": {
+        "id": "aaa2dd12-c92f-4a32-bc50-f3e5c0dcee8b",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1738219354.322802,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Just look at updates to the repos in the jupyter organization on github"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "909f7b92f941e9e1-LAX",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f43056e3-a169-46ee-ac21-ef8701272390",
+      "children": [
+        "cfeef4fd-d915-4a22-b50c-e20dfed4bb50"
+      ]
+    },
+    "cfeef4fd-d915-4a22-b50c-e20dfed4bb50": {
+      "id": "cfeef4fd-d915-4a22-b50c-e20dfed4bb50",
+      "message": {
+        "id": "cfeef4fd-d915-4a22-b50c-e20dfed4bb50",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1738219361.499977,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "unknown",
+          "response_format_name": null,
+          "text": "search(\"Just look at updates to the repos in the jupyter organization on github\")"
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "is_complete": true,
+          "finish_details": {
+            "type": "stop"
+          },
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa2dd12-c92f-4a32-bc50-f3e5c0dcee8b",
+          "request_id": "909f7b92f941e9e1-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "web",
+        "channel": null
+      },
+      "parent": "aaa2dd12-c92f-4a32-bc50-f3e5c0dcee8b",
+      "children": [
+        "084dd61c-73b6-42f9-81eb-dcdb4ddb6ce3"
+      ]
+    },
+    "084dd61c-73b6-42f9-81eb-dcdb4ddb6ce3": {
+      "id": "084dd61c-73b6-42f9-81eb-dcdb4ddb6ce3",
+      "message": {
+        "id": "084dd61c-73b6-42f9-81eb-dcdb4ddb6ce3",
+        "author": {
+          "role": "tool",
+          "name": "web",
+          "metadata": {}
+        },
+        "create_time": 1738219361.500158,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "unknown",
+          "response_format_name": null,
+          "text": ""
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "search",
+          "status": "finished",
+          "is_complete": true,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "cfeef4fd-d915-4a22-b50c-e20dfed4bb50",
+          "request_id": "909f7b92f941e9e1-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "assistant",
+        "channel": null
+      },
+      "parent": "cfeef4fd-d915-4a22-b50c-e20dfed4bb50",
+      "children": [
+        "3ec95b4f-d283-4fe6-a712-7a5b4add0816"
+      ]
+    },
+    "3ec95b4f-d283-4fe6-a712-7a5b4add0816": {
+      "id": "3ec95b4f-d283-4fe6-a712-7a5b4add0816",
+      "message": {
+        "id": "3ec95b4f-d283-4fe6-a712-7a5b4add0816",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {
+            "real_author": "tool:web"
+          }
+        },
+        "create_time": 1738219361.500269,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "\ue203Determining the exact number of updates to all repositories within the Jupyter GitHub organization in 2024 is challenging due to the multitude of repositories and the lack of aggregated commit data.\ue204 However, we can examine the activity in some of the primary repositories:\ue206\n\n- **jupyter/notebook**: \ue203This repository had several commits throughout 2024, including updates like publishing version 7.2.0a0 on March 29, 2024, and version 7.2.0b0 on April 12, 2024.\ue204 \ue200cite\ue202turn0search0\ue201\ue206\n\n- **jupyterlab/jupyterlab**: \ue203The JupyterLab repository also saw consistent activity in 2024, with numerous commits reflecting ongoing development and improvements.\ue204 \ue200cite\ue202turn0search6\ue201\ue206\n\n\ue203For a comprehensive count of commits across all repositories in the Jupyter organization for 2024, one would need to aggregate data from each repository individually.\ue204 \ue203This can be achieved by utilizing GitHub's API to programmatically retrieve commit histories for each repository and summing them for the desired timeframe.\ue204 \ue203As of now, there isn't a built-in feature on GitHub to provide this aggregate data directly.\ue204 \ue200cite\ue202turn0search1\ue201\ue206\n\n\ue203In summary, while specific aggregated data isn't readily available, individual repositories within the Jupyter organization have demonstrated active development throughout 2024.\ue204\ue206 "
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "search_source": "composer_auto",
+          "client_reported_search_source": "composer_auto",
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "github.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/jupyter/notebook/commits?after=d78c4e77193cdd4676d1ed1aa8b77bf0cbb4e3f8+34",
+                  "title": "Commits \u00b7 jupyter/notebook \u00b7 GitHub",
+                  "snippet": "Commits on Mar 29, 2024 \u00b7 Publish 7.2.0a0 \u00b7 Update to JupyterLab 4.2.0a2 (#7307) \u00b7 Ignore links to GitHub user and organisation profiles (#7308).",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/jupyter/notebook/commits?before=368080f53a260176fba1b9ec9c164242d669c7a1+35",
+                  "title": "Commits \u00b7 jupyter/notebook \u00b7 GitHub",
+                  "snippet": "Commit History \u00b7 Commits on May 28, 2024 \u00b7 Commits on May 21, 2024 \u00b7 Commits on May 16, 2024 \u00b7 Commits on May 14, 2024 \u00b7 Commits on May 13, 2024 \u00b7 Commits on May 7, ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/ipython",
+                  "title": "IPython - GitHub",
+                  "snippet": "Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/jupyterlab/jupyterlab/commits?after=ae123cb82015540804964f76ba4e56f21799ea27+244",
+                  "title": "Commits \u00b7 jupyterlab/jupyterlab - GitHub",
+                  "snippet": "JupyterLab computational environment. Contribute to jupyterlab/jupyterlab development by creating an account on GitHub.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "github.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "stackoverflow.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://stackoverflow.com/questions/78665399/how-to-find-all-the-commits-of-an-organization-in-github",
+                  "title": "How to find all the commits of an organization in github?",
+                  "snippet": "I want to find the total of all the repos without looping through and summing all of them. Is there a faster way to get the total commits of an organization.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "content_type": null,
+                  "pub_date": 1719273600,
+                  "attributions": null,
+                  "attribution": "stackoverflow.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "jupyter.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://discourse.jupyter.org/t/updating-binder-from-changes-on-github/7731",
+                  "title": "Updating binder from changes on github - Jupyter Community Forum",
+                  "snippet": "The binder link button gives you a link to the github commit used to launch your binder, the idea being that it's fully reproducible.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "content_type": null,
+                  "pub_date": 1611964800,
+                  "attributions": null,
+                  "attribution": "discourse.jupyter.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://discourse.jupyter.org/t/how-to-version-control-jupyter-notebooks/566",
+                  "title": "How to Version Control Jupyter Notebooks",
+                  "snippet": "I using GitHub, I'd highly suggest ReviewNB. It allows you to see notebook diff for any commit or pull request. But that's a GitHub plugin and ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "content_type": null,
+                  "pub_date": 1553212800,
+                  "attributions": null,
+                  "attribution": "discourse.jupyter.org"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "reddit.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.reddit.com/r/datascience/comments/1av71k9/how_to_version_control_jupyter_notebook/",
+                  "title": "How to version control Jupyter notebook? : r/datascience - Reddit",
+                  "snippet": "You need to use a git repository. Gitea is a good one if you want a local repo. Otherwise use GitHub for versioning your notebook files.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "content_type": null,
+                  "pub_date": 1708387200,
+                  "attributions": null,
+                  "attribution": "reddit.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "youtube.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.youtube.com/watch?v=-lGj7YGwnqc",
+                  "title": "How to Add Jupyter Notebook to Github (2025) - YouTube",
+                  "snippet": "In this video I show you how to Add Jupyter Notebook to Github 2025 Do you want to know how to share jupyter notebook on github 2025?",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "content_type": null,
+                  "pub_date": 1708387200,
+                  "attributions": null,
+                  "attribution": "youtube.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "cu-esiil.github.io",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://cu-esiil.github.io/Innovation-Summit-2024_1_Climate-extremes-and-natural-disasters/resources/github_basics/",
+                  "title": "Github - ESIIL Innovation Summit 2024 Group 1 - GitHub Pages",
+                  "snippet": "You can start using it to clone repositories, make changes, commit, and sync with the remote repositories on GitHub. 1. Download GitHub for JupyterHub cloud ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "content_type": null,
+                  "pub_date": null,
+                  "attributions": null,
+                  "attribution": "cu-esiil.github.io"
+                }
+              ]
+            }
+          ],
+          "safe_urls": [
+            "https://stackoverflow.com/questions/78665399/how-to-find-all-the-commits-of-an-organization-in-github?utm_source=chatgpt.com",
+            "https://github.com/jupyter/notebook/commits?after=d78c4e77193cdd4676d1ed1aa8b77bf0cbb4e3f8+34&utm_source=chatgpt.com",
+            "https://github.com/jupyterlab/jupyterlab/commits?after=ae123cb82015540804964f76ba4e56f21799ea27+244&utm_source=chatgpt.com"
+          ],
+          "message_locale": "en-US",
+          "image_results": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "084dd61c-73b6-42f9-81eb-dcdb4ddb6ce3",
+          "content_references": [
+            {
+              "matched_text": "\ue203",
+              "start_idx": 0,
+              "end_idx": 1,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 199,
+              "end_idx": 200,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 274,
+              "end_idx": 275,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 301,
+              "end_idx": 302,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 462,
+              "end_idx": 463,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search0\ue201",
+              "start_idx": 464,
+              "end_idx": 483,
+              "refs": [],
+              "alt": "([github.com](https://github.com/jupyter/notebook/commits?after=d78c4e77193cdd4676d1ed1aa8b77bf0cbb4e3f8+34&utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Commits \u00b7 jupyter/notebook \u00b7 GitHub",
+                  "url": "https://github.com/jupyter/notebook/commits?after=d78c4e77193cdd4676d1ed1aa8b77bf0cbb4e3f8+34&utm_source=chatgpt.com",
+                  "pub_date": null,
+                  "snippet": "Commits on Mar 29, 2024 \u00b7 Publish 7.2.0a0 \u00b7 Update to JupyterLab 4.2.0a2 (#7307) \u00b7 Ignore links to GitHub user and organisation profiles (#7308).",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "hue": null,
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    }
+                  ],
+                  "attributions": null,
+                  "attribution": "github.com"
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 483,
+              "end_idx": 484,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 515,
+              "end_idx": 516,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 650,
+              "end_idx": 651,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search6\ue201",
+              "start_idx": 652,
+              "end_idx": 671,
+              "refs": [],
+              "alt": "([github.com](https://github.com/jupyterlab/jupyterlab/commits?after=ae123cb82015540804964f76ba4e56f21799ea27+244&utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Commits \u00b7 jupyterlab/jupyterlab - GitHub",
+                  "url": "https://github.com/jupyterlab/jupyterlab/commits?after=ae123cb82015540804964f76ba4e56f21799ea27+244&utm_source=chatgpt.com",
+                  "pub_date": null,
+                  "snippet": "JupyterLab computational environment. Contribute to jupyterlab/jupyterlab development by creating an account on GitHub.",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "hue": null,
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    }
+                  ],
+                  "attributions": null,
+                  "attribution": "github.com"
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 671,
+              "end_idx": 672,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 674,
+              "end_idx": 675,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 841,
+              "end_idx": 842,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 843,
+              "end_idx": 844,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 1000,
+              "end_idx": 1001,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 1002,
+              "end_idx": 1003,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 1095,
+              "end_idx": 1096,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search1\ue201",
+              "start_idx": 1097,
+              "end_idx": 1116,
+              "refs": [],
+              "alt": "([stackoverflow.com](https://stackoverflow.com/questions/78665399/how-to-find-all-the-commits-of-an-organization-in-github?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "How to find all the commits of an organization in github?",
+                  "url": "https://stackoverflow.com/questions/78665399/how-to-find-all-the-commits-of-an-organization-in-github?utm_source=chatgpt.com",
+                  "pub_date": 1719273600,
+                  "snippet": "I want to find the total of all the repos without looping through and summing all of them. Is there a faster way to get the total commits of an organization.",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "hue": null,
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    }
+                  ],
+                  "attributions": null,
+                  "attribution": "stackoverflow.com"
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 1116,
+              "end_idx": 1117,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue203",
+              "start_idx": 1119,
+              "end_idx": 1120,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue204",
+              "start_idx": 1297,
+              "end_idx": 1298,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": "\ue206",
+              "start_idx": 1298,
+              "end_idx": 1299,
+              "refs": [
+                "hidden"
+              ],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": false
+            },
+            {
+              "matched_text": " ",
+              "start_idx": 1299,
+              "end_idx": 1299,
+              "refs": [],
+              "alt": "",
+              "prompt_text": null,
+              "type": "sources_footnote",
+              "sources": [
+                {
+                  "title": "Commits \u00b7 jupyter/notebook \u00b7 GitHub",
+                  "url": "https://github.com/jupyter/notebook/commits?after=d78c4e77193cdd4676d1ed1aa8b77bf0cbb4e3f8+34&utm_source=chatgpt.com",
+                  "attribution": "github.com"
+                },
+                {
+                  "title": "How to find all the commits of an organization in github?",
+                  "url": "https://stackoverflow.com/questions/78665399/how-to-find-all-the-commits-of-an-organization-in-github?utm_source=chatgpt.com",
+                  "attribution": "stackoverflow.com"
+                }
+              ],
+              "has_images": false
+            }
+          ],
+          "citations": [
+            {
+              "start_ix": 0,
+              "end_ix": 1,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 199,
+              "end_ix": 200,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 274,
+              "end_ix": 275,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 301,
+              "end_ix": 302,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 462,
+              "end_ix": 463,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 464,
+              "end_ix": 483,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 483,
+              "end_ix": 484,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 515,
+              "end_ix": 516,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 650,
+              "end_ix": 651,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 652,
+              "end_ix": 671,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 671,
+              "end_ix": 672,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 674,
+              "end_ix": 675,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 841,
+              "end_ix": 842,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 843,
+              "end_ix": 844,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1000,
+              "end_ix": 1001,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1002,
+              "end_ix": 1003,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1095,
+              "end_ix": 1096,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1097,
+              "end_ix": 1116,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1116,
+              "end_ix": 1117,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1119,
+              "end_ix": 1120,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1297,
+              "end_ix": 1298,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1298,
+              "end_ix": 1299,
+              "invalid_reason": "Unsupported, please upgrade"
+            },
+            {
+              "start_ix": 1299,
+              "end_ix": 1299,
+              "invalid_reason": "Unsupported, please upgrade"
+            }
+          ],
+          "request_id": "909f7b92f941e9e1-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "084dd61c-73b6-42f9-81eb-dcdb4ddb6ce3",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "3ec95b4f-d283-4fe6-a712-7a5b4add0816",
+  "plugin_ids": null,
+  "conversation_id": "679b1e9a-a04c-8008-8033-92da27551f73",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://docs.github.com/en/rest/metrics/statistics?utm_source=chatgpt.com",
+    "https://github.com/jupyterlab/jupyterlab/commits?after=ae123cb82015540804964f76ba4e56f21799ea27+244&utm_source=chatgpt.com",
+    "https://en.wikipedia.org/wiki/GitHub?utm_source=chatgpt.com",
+    "https://github-stats.com/?utm_source=chatgpt.com",
+    "https://www.techtarget.com/searchsoftwarequality/news/252496429/Microsoft-VS-Code-Winning-developer-mindshare?utm_source=chatgpt.com",
+    "https://support.posit.co/hc/en-us/articles/360007435274-Counting-Named-Users-in-Posit-Connect-and-Posit-Workbench-RStudio-Server-Pro?utm_source=chatgpt.com",
+    "https://www.anaconda.com/blog/introducing-python-training-and-cloud-hosted-notebooks-from-anaconda?utm_source=chatgpt.com",
+    "https://blog.jupyter.org/accurately-counting-daily-weekly-monthly-active-users-on-jupyterhub-6fbec6c6ce2f?utm_source=chatgpt.com",
+    "https://en.wikipedia.org/wiki/Anaconda_%28Python_distribution%29?utm_source=chatgpt.com",
+    "https://www.anaconda.com/blog/get-python-package-download-statistics-with-condastats?utm_source=chatgpt.com",
+    "https://github.blog/news-insights/octoverse/octoverse-2024/?utm_source=chatgpt.com",
+    "https://stackoverflow.com/questions/78665399/how-to-find-all-the-commits-of-an-organization-in-github?utm_source=chatgpt.com",
+    "https://github.com/jupyter/notebook/commits?after=d78c4e77193cdd4676d1ed1aa8b77bf0cbb4e3f8+34&utm_source=chatgpt.com"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "679b1e9a-a04c-8008-8033-92da27551f73"
+}

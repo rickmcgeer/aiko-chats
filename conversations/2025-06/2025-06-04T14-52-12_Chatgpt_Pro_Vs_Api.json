@@ -1,0 +1,273 @@
+{
+  "title": "ChatGPT Pro vs API",
+  "create_time": 1749073932.292588,
+  "update_time": 1749074026.20899,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "a1b559a8-700c-489c-8817-d0df9a302d5d"
+      ]
+    },
+    "a1b559a8-700c-489c-8817-d0df9a302d5d": {
+      "id": "a1b559a8-700c-489c-8817-d0df9a302d5d",
+      "message": {
+        "id": "a1b559a8-700c-489c-8817-d0df9a302d5d",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "10ca6811-e11d-4a77-9c82-10563d6db6d9"
+      ]
+    },
+    "10ca6811-e11d-4a77-9c82-10563d6db6d9": {
+      "id": "10ca6811-e11d-4a77-9c82-10563d6db6d9",
+      "message": {
+        "id": "10ca6811-e11d-4a77-9c82-10563d6db6d9",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073931.686,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hey, if I get ChatGPT Pro, can I write my own applications over it or is it a siloed chat application?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94aaa7eaab3b2511-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a1b559a8-700c-489c-8817-d0df9a302d5d",
+      "children": [
+        "3ac60ec9-aa91-492a-a3c0-d5e78488b6f1"
+      ]
+    },
+    "3ac60ec9-aa91-492a-a3c0-d5e78488b6f1": {
+      "id": "3ac60ec9-aa91-492a-a3c0-d5e78488b6f1",
+      "message": {
+        "id": "3ac60ec9-aa91-492a-a3c0-d5e78488b6f1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073944.197325,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "10ca6811-e11d-4a77-9c82-10563d6db6d9",
+          "request_id": "94aaa7eaab3b2511-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "10ca6811-e11d-4a77-9c82-10563d6db6d9",
+      "children": [
+        "e98708b8-fe22-4474-a5a0-a94924ab4315"
+      ]
+    },
+    "e98708b8-fe22-4474-a5a0-a94924ab4315": {
+      "id": "e98708b8-fe22-4474-a5a0-a94924ab4315",
+      "message": {
+        "id": "e98708b8-fe22-4474-a5a0-a94924ab4315",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073932.541691,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Great question \u2014 here's the breakdown:\n\n### With **ChatGPT Pro**, you get access to:\n- **GPT-4o** (the newest and most capable model).\n- Advanced tools like **code interpreter**, **image input**, **file uploads**, **browsing**, and **DALL\u00b7E image generation** \u2014 all within the **ChatGPT interface**.\n\nBut **ChatGPT Pro itself** is still a **chat interface**, not an API \u2014 so you can\u2019t directly build custom applications **on top of ChatGPT Pro**. It's a siloed product in that sense.\n\n---\n\n### If you want to **build your own applications**, you have two main paths:\n\n#### 1. **Use the OpenAI API** (https://platform.openai.com)\n- Full access to GPT models (like GPT-4o) via REST APIs.\n- You can integrate it into **your own apps, servers, tools, bots, UIs**, etc.\n- Charged **per usage** (tokens), not with a flat monthly rate.\n- This is the right option for **custom applications**.\n\n#### 2. **Use the ChatGPT app to prototype logic** and **port it to your code**\n- Many people experiment in ChatGPT Pro and then translate the logic to their own code via the API.\n\n---\n\n### Summary:\n| Feature                          | ChatGPT Pro             | OpenAI API Platform         |\n|----------------------------------|--------------------------|-----------------------------|\n| Chat UI with tools               | \u2705                       | \u274c                          |\n| Write own custom app             | \u274c                       | \u2705                          |\n| Integrate into your software     | \u274c                       | \u2705                          |\n| Flat monthly fee ($20/mo)        | \u2705                       | \u274c (pay-as-you-go)          |\n| API access for custom workflows  | \u274c                       | \u2705                          |\n\nIf you're looking to **embed GPT into your own software**, go with the **OpenAI API platform**. If you just want the best interactive assistant, go with **ChatGPT Pro**.\n\nWant help picking which GPT model fits your app best?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "3ac60ec9-aa91-492a-a3c0-d5e78488b6f1",
+          "request_id": "94aaa7eaab3b2511-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3ac60ec9-aa91-492a-a3c0-d5e78488b6f1",
+      "children": [
+        "d957b81c-058a-4d52-959f-e3f52368faef"
+      ]
+    },
+    "d957b81c-058a-4d52-959f-e3f52368faef": {
+      "id": "d957b81c-058a-4d52-959f-e3f52368faef",
+      "message": {
+        "id": "d957b81c-058a-4d52-959f-e3f52368faef",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749074011.074,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yeah.  The goal is to search the materials science literature to look for molecules with specific properties"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94aaa9da5c38ebe7-IAD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e98708b8-fe22-4474-a5a0-a94924ab4315",
+      "children": [
+        "55f50315-ba0e-4c30-b996-23541cb9567b"
+      ]
+    },
+    "55f50315-ba0e-4c30-b996-23541cb9567b": {
+      "id": "55f50315-ba0e-4c30-b996-23541cb9567b",
+      "message": {
+        "id": "55f50315-ba0e-4c30-b996-23541cb9567b",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749074011.834065,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Perfect \u2014 that\u2019s a great use case for the **OpenAI API**, not ChatGPT Pro.\n\n---\n\n### \u2705 Here's what you *can* do with the **OpenAI API**:\nYou can build a custom application that:\n\n1. **Ingests and parses scientific literature** (papers, patents, etc.)\n2. **Extracts structured information** about molecules:  \n   \u2013 chemical structure  \n   \u2013 synthesis pathway  \n   \u2013 properties (optical, electrical, mechanical, etc.)  \n   \u2013 conditions (e.g., temperature, pressure)  \n3. **Lets users ask natural-language questions** like:  \n   \u201cFind organic semiconductors with a bandgap between 1.2 and 1.5 eV\u201d  \n4. **Ranks or filters results** based on user needs.\n\n---\n\n### \ud83d\udd27 Tech stack recommendation:\n\n- **PDF parsing**: Use [`pdfplumber`](https://github.com/jsvine/pdfplumber), [`PyMuPDF`](https://github.com/pymupdf/PyMuPDF), or [`Grobid`](https://github.com/kermitt2/grobid) for scientific PDFs.\n- **Embedding-based search**: Use **OpenAI\u2019s `text-embedding-3-small` or `text-embedding-3-large`**, store embeddings in **FAISS**, **Weaviate**, or **Qdrant**.\n- **Large-context GPT-4o** or **GPT-4-turbo**: For reading and summarizing long papers or answering compound queries.\n- **Chemistry-specific tools**:  \n   \u2013 [RDKit](https://www.rdkit.org/) for chemical structure parsing and matching  \n   \u2013 [PubChem](https://pubchem.ncbi.nlm.nih.gov/) or [ChEMBL](https://www.ebi.ac.uk/chembl/) for known properties\n\n---\n\n### \ud83d\ude80 Example workflow:\n\n1. **Load and parse PDFs** \u2192 Extract paragraphs, tables, figures\n2. **Chunk and embed** each section \u2192 Store in a vector DB\n3. **User enters a query** \u2192 Embed the query and do similarity search\n4. **Use GPT-4o** with retrieved context to extract or reason over data\n5. **(Optional)**: Automatically structure results in a database or export format\n\n---\n\n### If you want to go deeper:\n- I can help you sketch the system architecture\n- Write initial code snippets (e.g., vector search + GPT queries)\n- Or help pick between open-source LLMs if you want to avoid usage fees\n\nWould you like a sample system diagram or code to get started?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "d957b81c-058a-4d52-959f-e3f52368faef",
+          "request_id": "94aaa9da5c38ebe7-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d957b81c-058a-4d52-959f-e3f52368faef",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "55f50315-ba0e-4c30-b996-23541cb9567b",
+  "plugin_ids": null,
+  "conversation_id": "6840c00c-0cfc-8008-88db-79a4892c3b08",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://github.com/pymupdf/PyMuPDF",
+    "https://github.com/kermitt2/grobid",
+    "https://www.rdkit.org/",
+    "https://pubchem.ncbi.nlm.nih.gov/",
+    "https://github.com/jsvine/pdfplumber",
+    "https://platform.openai.com"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "6840c00c-0cfc-8008-88db-79a4892c3b08"
+}

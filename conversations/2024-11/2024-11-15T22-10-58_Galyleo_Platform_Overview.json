@@ -1,0 +1,346 @@
+{
+  "title": "Galyleo Platform Overview",
+  "create_time": 1731737458.140465,
+  "update_time": 1731738070.035761,
+  "mapping": {
+    "aaa16fc8-c2cc-488f-8a90-bfc6c665b3d8": {
+      "id": "aaa16fc8-c2cc-488f-8a90-bfc6c665b3d8",
+      "message": null,
+      "parent": null,
+      "children": [
+        "ce17f318-58e6-4d9d-8350-df758f767e8b"
+      ]
+    },
+    "ce17f318-58e6-4d9d-8350-df758f767e8b": {
+      "id": "ce17f318-58e6-4d9d-8350-df758f767e8b",
+      "message": {
+        "id": "ce17f318-58e6-4d9d-8350-df758f767e8b",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa16fc8-c2cc-488f-8a90-bfc6c665b3d8",
+      "children": [
+        "aaa2aa08-0930-4d2e-812b-2d44845f983a"
+      ]
+    },
+    "aaa2aa08-0930-4d2e-812b-2d44845f983a": {
+      "id": "aaa2aa08-0930-4d2e-812b-2d44845f983a",
+      "message": {
+        "id": "aaa2aa08-0930-4d2e-812b-2d44845f983a",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1731737458.146538,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "engageLively was formed to eliminate the \"IT Tax\" -- the amount of time, money, and effort enterprises spend acquiring, configuring, managing, and maintaining IT resources, as opposed to using them.  As a result, our Galyleo platform is completely turnkey -- up an running in ten minutes, available from anywhere through a web browser.  Expand this into an \"About us\" website page"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "8e355226dac467f4-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ce17f318-58e6-4d9d-8350-df758f767e8b",
+      "children": [
+        "16b15cf6-834f-4f33-90d5-05288f3223a9"
+      ]
+    },
+    "16b15cf6-834f-4f33-90d5-05288f3223a9": {
+      "id": "16b15cf6-834f-4f33-90d5-05288f3223a9",
+      "message": {
+        "id": "16b15cf6-834f-4f33-90d5-05288f3223a9",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1731737462.631392,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa2aa08-0930-4d2e-812b-2d44845f983a",
+          "request_id": "8e355226dac467f4-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa2aa08-0930-4d2e-812b-2d44845f983a",
+      "children": [
+        "a88f6ef0-ed80-46a4-989a-cb15d16e68cf"
+      ]
+    },
+    "a88f6ef0-ed80-46a4-989a-cb15d16e68cf": {
+      "id": "a88f6ef0-ed80-46a4-989a-cb15d16e68cf",
+      "message": {
+        "id": "a88f6ef0-ed80-46a4-989a-cb15d16e68cf",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1731737462.631589,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "# About Us  \n\nAt **engageLively**, we are on a mission to eliminate the \"IT Tax\"\u2014the unnecessary time, money, and effort enterprises expend on acquiring, configuring, managing, and maintaining IT resources. We believe technology should empower businesses, not burden them.  \n\nThat\u2019s why we created the **Galyleo Platform**: a truly turnkey solution that lets organizations focus on their goals instead of grappling with complex IT infrastructure. Within just **ten minutes**, Galyleo is fully operational, accessible from anywhere via a simple web browser. No lengthy deployments. No hidden hurdles. Just immediate value, designed to work seamlessly from day one.  \n\nOur commitment goes beyond technology. At engageLively, we aim to provide solutions that are as intuitive as they are powerful. We envision a world where innovation drives business outcomes, and technology serves as a catalyst\u2014not a cost.  \n\nJoin us in redefining how enterprises leverage IT, and let\u2019s unlock the full potential of your organization together.  \n\n"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "16b15cf6-834f-4f33-90d5-05288f3223a9",
+          "request_id": "8e355226dac467f4-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "16b15cf6-834f-4f33-90d5-05288f3223a9",
+      "children": [
+        "aaa2373f-f523-4535-b7cd-e45ce5381681"
+      ]
+    },
+    "aaa2373f-f523-4535-b7cd-e45ce5381681": {
+      "id": "aaa2373f-f523-4535-b7cd-e45ce5381681",
+      "message": {
+        "id": "aaa2373f-f523-4535-b7cd-e45ce5381681",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1731738039.51787,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "open-source projects get better at the speed of the community, whereas closed-source projects get better at the speed of the vendor -- and the community is much faster and more creative.  That's why Galyleo is 100% open-source, and always will be -- we want to offer our customers the very best the world has to offer.  Expand"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "8e3560562ca61574-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a88f6ef0-ed80-46a4-989a-cb15d16e68cf",
+      "children": [
+        "a09fc3cb-24b5-4d25-aa97-dc931b9d18ad"
+      ]
+    },
+    "a09fc3cb-24b5-4d25-aa97-dc931b9d18ad": {
+      "id": "a09fc3cb-24b5-4d25-aa97-dc931b9d18ad",
+      "message": {
+        "id": "a09fc3cb-24b5-4d25-aa97-dc931b9d18ad",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1731738044.861904,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "### Why Open Source Matters to Us  \n\nAt **engageLively**, we believe in the transformative power of open-source development. Open-source projects evolve at the speed of the community\u2014unleashing the creativity, innovation, and collaboration of a global network of contributors. This pace far outstrips the progress of closed-source projects, which are limited by the resources and vision of a single vendor.  \n\nThis is why our **Galyleo Platform** is, and always will be, **100% open-source**. By embracing open source, we invite the collective ingenuity of developers, designers, and users worldwide to continually enhance and refine our platform. The result? A solution that reflects the very best ideas, tools, and practices the global community has to offer.  \n\nOpen source isn\u2019t just a development model for us\u2014it\u2019s a philosophy. It ensures transparency, fosters trust, and empowers our customers to benefit from an ecosystem that\u2019s constantly improving, adapting, and innovating.  \n\nWhen you choose Galyleo, you\u2019re not just choosing a platform\u2014you\u2019re becoming part of a dynamic community that\u2019s reshaping the way technology supports business. Together, we\u2019re building the future, faster and better than ever before.  "
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa2373f-f523-4535-b7cd-e45ce5381681",
+          "request_id": "8e3560562ca61574-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa2373f-f523-4535-b7cd-e45ce5381681",
+      "children": [
+        "aaa2d926-dbbd-48a3-acad-ea9cee231223"
+      ]
+    },
+    "aaa2d926-dbbd-48a3-acad-ea9cee231223": {
+      "id": "aaa2d926-dbbd-48a3-acad-ea9cee231223",
+      "message": {
+        "id": "aaa2d926-dbbd-48a3-acad-ea9cee231223",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1731738062.084226,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Format that in HTML"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "8e3560e5edda6800-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a09fc3cb-24b5-4d25-aa97-dc931b9d18ad",
+      "children": [
+        "f3339575-7d3e-4476-8ecd-5f8ed9b2b916"
+      ]
+    },
+    "f3339575-7d3e-4476-8ecd-5f8ed9b2b916": {
+      "id": "f3339575-7d3e-4476-8ecd-5f8ed9b2b916",
+      "message": {
+        "id": "f3339575-7d3e-4476-8ecd-5f8ed9b2b916",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1731738069.343904,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```html\n<section id=\"why-open-source\">\n  <h2>Why Open Source Matters to Us</h2>\n  <p>\n    At <strong>engageLively</strong>, we believe in the transformative power of open-source development. \n    Open-source projects evolve at the speed of the community\u2014unleashing the creativity, innovation, and \n    collaboration of a global network of contributors. This pace far outstrips the progress of closed-source \n    projects, which are limited by the resources and vision of a single vendor.\n  </p>\n  <p>\n    This is why our <strong>Galyleo Platform</strong> is, and always will be, <strong>100% open-source</strong>. \n    By embracing open source, we invite the collective ingenuity of developers, designers, and users worldwide \n    to continually enhance and refine our platform. The result? A solution that reflects the very best ideas, \n    tools, and practices the global community has to offer.\n  </p>\n  <p>\n    Open source isn\u2019t just a development model for us\u2014it\u2019s a philosophy. It ensures transparency, fosters trust, \n    and empowers our customers to benefit from an ecosystem that\u2019s constantly improving, adapting, and innovating.\n  </p>\n  <p>\n    When you choose Galyleo, you\u2019re not just choosing a platform\u2014you\u2019re becoming part of a dynamic community \n    that\u2019s reshaping the way technology supports business. Together, we\u2019re building the future, faster and better \n    than ever before.\n  </p>\n</section>\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa2d926-dbbd-48a3-acad-ea9cee231223",
+          "request_id": "8e3560e5edda6800-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa2d926-dbbd-48a3-acad-ea9cee231223",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "f3339575-7d3e-4476-8ecd-5f8ed9b2b916",
+  "plugin_ids": null,
+  "conversation_id": "67383771-ca08-8008-84de-a9bb6e291066",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "67383771-ca08-8008-84de-a9bb6e291066"
+}

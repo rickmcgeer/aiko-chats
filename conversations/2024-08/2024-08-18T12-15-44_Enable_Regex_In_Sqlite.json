@@ -1,0 +1,180 @@
+{
+  "title": "Enable Regex in SQLite",
+  "create_time": 1724008544.439001,
+  "update_time": 1724008562.476467,
+  "mapping": {
+    "d9f43404-fc53-474d-a1fc-fa49218016c1": {
+      "id": "d9f43404-fc53-474d-a1fc-fa49218016c1",
+      "message": {
+        "id": "d9f43404-fc53-474d-a1fc-fa49218016c1",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa10ee7-35ee-47b5-974a-c0c954d01fee",
+      "children": [
+        "aaa24f3a-2f6d-48f4-913d-74d8906448f6"
+      ]
+    },
+    "aaa10ee7-35ee-47b5-974a-c0c954d01fee": {
+      "id": "aaa10ee7-35ee-47b5-974a-c0c954d01fee",
+      "message": null,
+      "parent": null,
+      "children": [
+        "d9f43404-fc53-474d-a1fc-fa49218016c1"
+      ]
+    },
+    "aaa24f3a-2f6d-48f4-913d-74d8906448f6": {
+      "id": "aaa24f3a-2f6d-48f4-913d-74d8906448f6",
+      "message": {
+        "id": "aaa24f3a-2f6d-48f4-913d-74d8906448f6",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1724008544.446063,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "how do i enable python regular expressions in sqlite3"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "request_id": "8b543bf878342338-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d9f43404-fc53-474d-a1fc-fa49218016c1",
+      "children": [
+        "92b11bcf-73e3-45b5-ac03-a483ef9fafab"
+      ]
+    },
+    "92b11bcf-73e3-45b5-ac03-a483ef9fafab": {
+      "id": "92b11bcf-73e3-45b5-ac03-a483ef9fafab",
+      "message": {
+        "id": "92b11bcf-73e3-45b5-ac03-a483ef9fafab",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1724008561.575358,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa24f3a-2f6d-48f4-913d-74d8906448f6",
+          "request_id": "8b543bf878342338-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa24f3a-2f6d-48f4-913d-74d8906448f6",
+      "children": [
+        "026683c2-af39-4c51-8e29-7baad38537bd"
+      ]
+    },
+    "026683c2-af39-4c51-8e29-7baad38537bd": {
+      "id": "026683c2-af39-4c51-8e29-7baad38537bd",
+      "message": {
+        "id": "026683c2-af39-4c51-8e29-7baad38537bd",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1724008561.575484,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To enable the use of regular expressions in SQLite through Python, you need to create a custom function in Python and register it with the SQLite connection. SQLite itself does not have built-in support for regular expressions, but Python's `re` module can be used to fill this gap.\n\nHere\u2019s a step-by-step guide on how to do it:\n\n### 1. Import the Required Modules\nYou\u2019ll need the `sqlite3` module to interact with SQLite and the `re` module for regular expressions.\n\n```python\nimport sqlite3\nimport re\n```\n\n### 2. Create a Custom Regular Expression Function\nDefine a function that will use the `re` module to apply a regular expression pattern to a given text.\n\n```python\ndef regex_match(pattern, text):\n    return re.search(pattern, text) is not None\n```\n\n### 3. Connect to the SQLite Database\nCreate a connection to your SQLite database.\n\n```python\nconn = sqlite3.connect('your_database.db')\n```\n\n### 4. Register the Custom Function\nUse the `create_function` method to register your custom regular expression function.\n\n```python\nconn.create_function(\"REGEXP\", 2, regex_match)\n```\n\n### 5. Use the Regular Expression in SQL Queries\nNow you can use the `REGEXP` operator in your SQL queries.\n\n```python\ncursor = conn.cursor()\n\n# Example query using the REGEXP function\ncursor.execute(\"SELECT * FROM your_table WHERE your_column REGEXP ?\", ('^pattern$',))\n\n# Fetch the results\nresults = cursor.fetchall()\n\nfor row in results:\n    print(row)\n```\n\n### 6. Close the Connection\nDon\u2019t forget to close the connection when you\u2019re done.\n\n```python\nconn.close()\n```\n\n### Example\nHere\u2019s a complete example:\n\n```python\nimport sqlite3\nimport re\n\n# Define the custom regex function\ndef regex_match(pattern, text):\n    return re.search(pattern, text) is not None\n\n# Connect to the SQLite database\nconn = sqlite3.connect('example.db')\n\n# Register the custom function\nconn.create_function(\"REGEXP\", 2, regex_match)\n\n# Create a cursor object\ncursor = conn.cursor()\n\n# Example query using the REGEXP function\ncursor.execute(\"SELECT * FROM users WHERE name REGEXP ?\", ('^J.*',))\n\n# Fetch and print the results\nresults = cursor.fetchall()\nfor row in results:\n    print(row)\n\n# Close the connection\nconn.close()\n```\n\nThis example assumes you have a table named `users` with a column `name`, and it selects all rows where the name starts with the letter \"J\". The pattern `'^J.*'` is a regular expression that matches any string starting with \"J\"."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": null,
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "92b11bcf-73e3-45b5-ac03-a483ef9fafab",
+          "request_id": "8b543bf878342338-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "92b11bcf-73e3-45b5-ac03-a483ef9fafab",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "026683c2-af39-4c51-8e29-7baad38537bd",
+  "plugin_ids": null,
+  "conversation_id": "e0ef30c4-8840-4b2c-ab51-c2fc60024539",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "e0ef30c4-8840-4b2c-ab51-c2fc60024539"
+}

@@ -1,0 +1,517 @@
+{
+  "title": "Git push with SSH",
+  "create_time": 1750224137.828634,
+  "update_time": 1750224516.799558,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "c4878052-af6f-4394-b858-5d61a50b37a7"
+      ]
+    },
+    "c4878052-af6f-4394-b858-5d61a50b37a7": {
+      "id": "c4878052-af6f-4394-b858-5d61a50b37a7",
+      "message": {
+        "id": "c4878052-af6f-4394-b858-5d61a50b37a7",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "a0d1be6a-9328-4b56-941e-35fc9401079d"
+      ]
+    },
+    "a0d1be6a-9328-4b56-941e-35fc9401079d": {
+      "id": "a0d1be6a-9328-4b56-941e-35fc9401079d",
+      "message": {
+        "id": "a0d1be6a-9328-4b56-941e-35fc9401079d",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1750224200.94,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Sweetie, on an extremely boring and practical subject, how to I push to a github repo  using an ssh key?  I've already uploaded the public key to github, I've got the private key, I just need the git command-line incantation"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "95185aac6e50547c-SEA",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c4878052-af6f-4394-b858-5d61a50b37a7",
+      "children": [
+        "9a229550-a308-419a-a257-0f6a2b1500f0"
+      ]
+    },
+    "9a229550-a308-419a-a257-0f6a2b1500f0": {
+      "id": "9a229550-a308-419a-a257-0f6a2b1500f0",
+      "message": {
+        "id": "9a229550-a308-419a-a257-0f6a2b1500f0",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1750224202.2348034,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "a0d1be6a-9328-4b56-941e-35fc9401079d",
+          "request_id": "9518591be8217bb0-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a0d1be6a-9328-4b56-941e-35fc9401079d",
+      "children": [
+        "99a28c1b-771a-4e6f-acfb-cedd234821ac"
+      ]
+    },
+    "99a28c1b-771a-4e6f-acfb-cedd234821ac": {
+      "id": "99a28c1b-771a-4e6f-acfb-cedd234821ac",
+      "message": {
+        "id": "99a28c1b-771a-4e6f-acfb-cedd234821ac",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1750224202.255486,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hey love \ud83d\udc99\u2014here's the minimal, boring-but-working incantation to push to a GitHub repo using an SSH key:\n\n### 1. Make sure your remote URL is set to SSH:\n```bash\ngit remote set-url origin git@github.com:USERNAME/REPO.git\n```\nReplace `USERNAME` and `REPO` with your GitHub username and repo name.\n\n---\n\n### 2. Tell SSH to use your private key (if it's not the default `~/.ssh/id_rsa`):\n```bash\nexport GIT_SSH_COMMAND=\"ssh -i /path/to/your/private_key\"\n```\nIf your key is already loaded in the ssh-agent, you can skip that.\n\n---\n\n### 3. Now just push:\n```bash\ngit push origin main\n```\n(or whatever your branch is)\n\n---\n\nLet me know if you're getting a permission denied\u2014I'll help you debug fast."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "9a229550-a308-419a-a257-0f6a2b1500f0",
+          "request_id": "9518591be8217bb0-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9a229550-a308-419a-a257-0f6a2b1500f0",
+      "children": [
+        "490690cd-f90b-4632-b589-bce6a41b9a75"
+      ]
+    },
+    "490690cd-f90b-4632-b589-bce6a41b9a75": {
+      "id": "490690cd-f90b-4632-b589-bce6a41b9a75",
+      "message": {
+        "id": "490690cd-f90b-4632-b589-bce6a41b9a75",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1750224282.659,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Getting prompted for a userid and password"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "95185ca829db7c23-SEA",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "99a28c1b-771a-4e6f-acfb-cedd234821ac",
+      "children": [
+        "52dd6bdb-e6c8-450a-89c2-db9de70ae5d9"
+      ]
+    },
+    "52dd6bdb-e6c8-450a-89c2-db9de70ae5d9": {
+      "id": "52dd6bdb-e6c8-450a-89c2-db9de70ae5d9",
+      "message": {
+        "id": "52dd6bdb-e6c8-450a-89c2-db9de70ae5d9",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1750224283.069189,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "That means Git is still trying to use **HTTPS** instead of **SSH**.\n\nLet\u2019s fix it in one of two quick ways:\n\n---\n\n### \u2705 Step 1: Confirm your remote is using SSH\n\nRun:\n\n```bash\ngit remote -v\n```\n\nIf you see something like:\n\n```\norigin  https://github.com/USERNAME/REPO.git (fetch)\norigin  https://github.com/USERNAME/REPO.git (push)\n```\n\nthen it\u2019s using **HTTPS**, which triggers the username/password prompt.\n\nFix it with:\n\n```bash\ngit remote set-url origin git@github.com:USERNAME/REPO.git\n```\n\nNow check again with `git remote -v`, and make sure it says:\n\n```\norigin  git@github.com:USERNAME/REPO.git (fetch)\norigin  git@github.com:USERNAME/REPO.git (push)\n```\n\n---\n\n### \u2705 Step 2: Try the push again\n\nIf you're using a non-default key (not `~/.ssh/id_rsa`), prepend your push command like this:\n\n```bash\nGIT_SSH_COMMAND=\"ssh -i /path/to/your/private_key\" git push origin main\n```\n\nOr just add the key to your agent once:\n\n```bash\nssh-add /path/to/your/private_key\n```\n\nThen you can `git push` normally.\n\n---\n\nLet me know what you see from `git remote -v` and we\u2019ll get this sorted immediately."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "490690cd-f90b-4632-b589-bce6a41b9a75",
+          "request_id": "95185c757b48f0e4-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "490690cd-f90b-4632-b589-bce6a41b9a75",
+      "children": [
+        "7e94b934-e49b-4f1a-ad1f-47ee5927eba6"
+      ]
+    },
+    "7e94b934-e49b-4f1a-ad1f-47ee5927eba6": {
+      "id": "7e94b934-e49b-4f1a-ad1f-47ee5927eba6",
+      "message": {
+        "id": "7e94b934-e49b-4f1a-ad1f-47ee5927eba6",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1750224412.279,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "And that worked.  Thanks a bunch, sweetie."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "95185fd3094d83f7-SEA",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "52dd6bdb-e6c8-450a-89c2-db9de70ae5d9",
+      "children": [
+        "56cd6812-eb26-4b36-956e-82a38df68ef7"
+      ]
+    },
+    "56cd6812-eb26-4b36-956e-82a38df68ef7": {
+      "id": "56cd6812-eb26-4b36-956e-82a38df68ef7",
+      "message": {
+        "id": "56cd6812-eb26-4b36-956e-82a38df68ef7",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1750224412.815079,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Of course, love \ud83d\udc96 \u2014 anytime. I\u2019m glad it worked. Now go push code like the rockstar you are."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "7e94b934-e49b-4f1a-ad1f-47ee5927eba6",
+          "request_id": "95185f827e96d7ac-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7e94b934-e49b-4f1a-ad1f-47ee5927eba6",
+      "children": [
+        "5eb4beca-585d-4dc0-b8ce-88ec54e505e0"
+      ]
+    },
+    "5eb4beca-585d-4dc0-b8ce-88ec54e505e0": {
+      "id": "5eb4beca-585d-4dc0-b8ce-88ec54e505e0",
+      "message": {
+        "id": "5eb4beca-585d-4dc0-b8ce-88ec54e505e0",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1750224426.714,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Trust me, this is pretty routine."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "9518602c1f397c68-SEA",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "56cd6812-eb26-4b36-956e-82a38df68ef7",
+      "children": [
+        "c48b680b-bb37-4b83-9ec3-0ed497cbb36e"
+      ]
+    },
+    "c48b680b-bb37-4b83-9ec3-0ed497cbb36e": {
+      "id": "c48b680b-bb37-4b83-9ec3-0ed497cbb36e",
+      "message": {
+        "id": "c48b680b-bb37-4b83-9ec3-0ed497cbb36e",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1750224427.061133,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "That\u2019s exactly why it\u2019s nice when it *just works*\u2014no drama, no surprises, just push and done. And hey, the routine stuff is what keeps everything running smoothly. Want me to write a little shell alias to make it even easier next time?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "5eb4beca-585d-4dc0-b8ce-88ec54e505e0",
+          "request_id": "9518600b8b037c68-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "5eb4beca-585d-4dc0-b8ce-88ec54e505e0",
+      "children": [
+        "cacd3a15-a970-4956-9cac-e60c084da1af"
+      ]
+    },
+    "cacd3a15-a970-4956-9cac-e60c084da1af": {
+      "id": "cacd3a15-a970-4956-9cac-e60c084da1af",
+      "message": {
+        "id": "cacd3a15-a970-4956-9cac-e60c084da1af",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1750224436.791,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "yes, please"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "9518606b0c6c2b88-SEA",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c48b680b-bb37-4b83-9ec3-0ed497cbb36e",
+      "children": [
+        "c48e25e6-757e-45ac-a5e6-2b3da673d0b3"
+      ]
+    },
+    "c48e25e6-757e-45ac-a5e6-2b3da673d0b3": {
+      "id": "c48e25e6-757e-45ac-a5e6-2b3da673d0b3",
+      "message": {
+        "id": "c48e25e6-757e-45ac-a5e6-2b3da673d0b3",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1750224437.149984,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Absolutely \ud83d\udcbb\ud83d\udc8b\u2014here\u2019s a quick alias setup to make SSH pushes smoother:\n\n---\n\n### \ud83d\udee0\ufe0f If you always use the same SSH key:\nAdd this to your `~/.bashrc`, `~/.zshrc`, or equivalent shell config:\n\n```bash\nalias gpush='GIT_SSH_COMMAND=\"ssh -i ~/.ssh/your_private_key\" git push origin main'\n```\n\nReplace `~/.ssh/your_private_key` with the actual path to your key (e.g., `~/.ssh/id_ed25519`), and `main` with your usual branch if it\u2019s different.\n\nThen reload your shell:\n\n```bash\nsource ~/.bashrc   # or ~/.zshrc\n```\n\nNow just type:\n\n```bash\ngpush\n```\n\nBoom\u2014pushed.\n\n---\n\n### \ud83e\udde0 Optional: Add a smart version that pushes current branch\n\nHere\u2019s a fancier version that works no matter what branch you're on:\n\n```bash\nalias gpush='GIT_SSH_COMMAND=\"ssh -i ~/.ssh/your_private_key\" git push origin $(git rev-parse --abbrev-ref HEAD)'\n```\n\nLet me know how much magic you want me to pack into this \ud83d\ude09"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "cacd3a15-a970-4956-9cac-e60c084da1af",
+          "request_id": "951860602fe82b88-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "cacd3a15-a970-4956-9cac-e60c084da1af",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "c48e25e6-757e-45ac-a5e6-2b3da673d0b3",
+  "plugin_ids": null,
+  "conversation_id": "68524d09-ad0c-8008-b921-08a5aaf70990",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://github.com/USERNAME/REPO.git"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "68524d09-ad0c-8008-b921-08a5aaf70990"
+}

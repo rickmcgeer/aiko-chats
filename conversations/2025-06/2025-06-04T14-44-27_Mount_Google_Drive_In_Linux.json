@@ -1,0 +1,515 @@
+{
+  "title": "Mount Google Drive in Linux",
+  "create_time": 1749073467.205907,
+  "update_time": 1749073814.859451,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "b3bb088f-cb04-4186-b55c-fc250a6c8689"
+      ]
+    },
+    "b3bb088f-cb04-4186-b55c-fc250a6c8689": {
+      "id": "b3bb088f-cb04-4186-b55c-fc250a6c8689",
+      "message": {
+        "id": "b3bb088f-cb04-4186-b55c-fc250a6c8689",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "090bd023-e91c-475f-a544-fcf700c3082a"
+      ]
+    },
+    "090bd023-e91c-475f-a544-fcf700c3082a": {
+      "id": "090bd023-e91c-475f-a544-fcf700c3082a",
+      "message": {
+        "id": "090bd023-e91c-475f-a544-fcf700c3082a",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073466.177,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Do you know of any technology that mounts a Google Drive in a Linux container as a file system folder, similar to GDrive on MacOS and Windows"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94aa9c8d487967f3-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b3bb088f-cb04-4186-b55c-fc250a6c8689",
+      "children": [
+        "496667df-0f87-464a-84d6-7ca45aa2197c"
+      ]
+    },
+    "496667df-0f87-464a-84d6-7ca45aa2197c": {
+      "id": "496667df-0f87-464a-84d6-7ca45aa2197c",
+      "message": {
+        "id": "496667df-0f87-464a-84d6-7ca45aa2197c",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073479.112,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "090bd023-e91c-475f-a544-fcf700c3082a",
+          "request_id": "94aa9c8d487967f3-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "090bd023-e91c-475f-a544-fcf700c3082a",
+      "children": [
+        "8759a857-43b1-4837-8044-c79cf9796614"
+      ]
+    },
+    "8759a857-43b1-4837-8044-c79cf9796614": {
+      "id": "8759a857-43b1-4837-8044-c79cf9796614",
+      "message": {
+        "id": "8759a857-43b1-4837-8044-c79cf9796614",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073467.480092,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes \u2014 there are a few technologies that let you mount Google Drive as a filesystem in Linux containers or VMs, similar to how Google Drive integrates with Finder on macOS or Explorer on Windows. The most notable options are:\n\n---\n\n### 1. **[rclone](https://rclone.org/drive/)** (recommended)\n- **What it is:** A powerful command-line tool to sync and mount cloud storage providers (including Google Drive).\n- **Mount mode:** Use `rclone mount` to mount your Google Drive as a file system folder via FUSE.\n- **Container compatible:** Works in containers with proper FUSE support and permissions.\n- **Pros:**\n  - Supports many cloud providers.\n  - Actively maintained.\n  - Flexible (can mount entire drives, specific folders, etc.).\n- **Cons:**\n  - Needs a token setup via OAuth (one-time or service account).\n\n**Example:**\n```bash\nrclone config # configure Google Drive remote\nrclone mount gdrive: /mnt/gdrive --daemon\n```\n\n---\n\n### 2. **google-drive-ocamlfuse**\n- **What it is:** A FUSE-based file system for Google Drive, written in OCaml.\n- **Mount mode:** Mounts your Google Drive using `google-drive-ocamlfuse ~/gdrive`.\n- **Container compatible:** Needs FUSE and some X11 bits for OAuth login \u2014 not great for headless containers unless tokens are pre-provided.\n- **Status:** Less actively maintained than rclone.\n- **Pros:** Simple mounting once authenticated.\n- **Cons:** Limited features, slower updates, more fiddly setup.\n\n---\n\n### 3. **gcsf (Google Cloud Storage FUSE)** (for Google Cloud Storage, not Drive)\n- **What it is:** FUSE filesystem for Google Cloud Storage (GCS), **not Google Drive**.\n- **Mentioned for clarity**: Sometimes confused with Drive tools \u2014 only use this for GCS buckets.\n\n---\n\n### 4. **DriveFS (Google's own tool \u2014 **_Windows/macOS only_**)**\n- No native support or Linux equivalent for DriveFS exists from Google.\n\n---\n\n### In a Container?\nIf you want to mount Drive *inside a Docker or Kubernetes container*, you'll need to:\n- Run the container with `--cap-add SYS_ADMIN --device /dev/fuse`\n- Mount `/dev/fuse` and potentially allow privileged mode depending on host setup\n- Install `rclone` in the container image\n- Pre-load config or mount host volumes to share OAuth tokens\n\n---\n\nWould you like a Docker example using `rclone mount` inside a container with Google Drive?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "496667df-0f87-464a-84d6-7ca45aa2197c",
+          "request_id": "94aa9c8d487967f3-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "496667df-0f87-464a-84d6-7ca45aa2197c",
+      "children": [
+        "eb592fd7-1698-45a8-af90-c34bf49ddd51"
+      ]
+    },
+    "eb592fd7-1698-45a8-af90-c34bf49ddd51": {
+      "id": "eb592fd7-1698-45a8-af90-c34bf49ddd51",
+      "message": {
+        "id": "eb592fd7-1698-45a8-af90-c34bf49ddd51",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073548.925,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Absolutely.  Please take care to point out authentication steps"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94aa9e91e9e0aaac-IAD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8759a857-43b1-4837-8044-c79cf9796614",
+      "children": [
+        "d525ee5f-b01d-4641-9cdb-ec3aab6d69f0"
+      ]
+    },
+    "d525ee5f-b01d-4641-9cdb-ec3aab6d69f0": {
+      "id": "d525ee5f-b01d-4641-9cdb-ec3aab6d69f0",
+      "message": {
+        "id": "d525ee5f-b01d-4641-9cdb-ec3aab6d69f0",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073549.675728,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Great! Below is a full example of how to use `rclone` to **mount a Google Drive folder inside a Linux container**, along with a clear explanation of the **authentication steps**, which is the most important and finicky part.\n\n---\n\n## \u2705 Overview\nWe\u2019ll:\n1. Configure `rclone` with Google Drive authentication on the host.\n2. Build a Docker container with `rclone` and FUSE support.\n3. Mount Google Drive inside the container using `rclone mount`.\n\n---\n\n## \ud83d\udd10 Step 1: One-Time Host-Side Authentication\n\n`rclone` uses OAuth to access Google Drive. You only need to do this once on the **host**, then copy the config into the container.\n\n### 1. Install rclone on your host:\n```bash\ncurl https://rclone.org/install.sh | sudo bash\n```\n\n### 2. Configure Google Drive remote:\n```bash\nrclone config\n```\n\nFollow the prompts:\n- `n` for new remote\n- Name it e.g. `gdrive`\n- Choose `13` for Google Drive\n- Say `No` to using your own client ID (unless you want to)\n- For authentication, let it open a browser or give you a link\n- Accept default scope (full access)\n\nThis creates a config file at `~/.config/rclone/rclone.conf` that contains OAuth tokens.\n\nYou can verify:\n```bash\nrclone lsd gdrive:\n```\n\n---\n\n## \ud83d\udc33 Step 2: Dockerfile for `rclone + fuse`\n\nHere\u2019s a minimal Dockerfile:\n\n```Dockerfile\nFROM ubuntu:22.04\n\n# Install fuse and rclone\nRUN apt-get update && \\\n    apt-get install -y fuse curl gnupg && \\\n    curl https://rclone.org/install.sh | bash\n\n# Required for fuse\nRUN mkdir /mnt/gdrive\nVOLUME [\"/mnt/gdrive\"]\n\n# Enable fusermount permissions\nRUN chmod +s /bin/fusermount3 || true\n\n# Default command\nCMD [\"sleep\", \"infinity\"]\n```\n\n**Build the image:**\n```bash\ndocker build -t rclone-gdrive .\n```\n\n---\n\n## \u2699\ufe0f Step 3: Run the Container with FUSE + Mount Config\n\nYou\u2019ll need:\n- `--cap-add SYS_ADMIN`\n- `--device /dev/fuse`\n- `--security-opt apparmor:unconfined` (sometimes required)\n- The `rclone.conf` from host mounted inside\n\n```bash\ndocker run -it --rm \\\n  --cap-add SYS_ADMIN \\\n  --device /dev/fuse \\\n  --security-opt apparmor:unconfined \\\n  -v ~/.config/rclone:/root/.config/rclone \\\n  -v /mnt/gdrive:/mnt/gdrive \\\n  rclone-gdrive\n```\n\nInside the container:\n```bash\nrclone mount gdrive: /mnt/gdrive --daemon\n```\n\n\u2705 You now have your Google Drive mounted inside the container at `/mnt/gdrive`.\n\n---\n\n## \ud83d\uded1 Notes and Gotchas\n\n### \ud83d\udd01 Token Expiry\n- The `rclone` config file contains refresh tokens, so it keeps working indefinitely unless revoked.\n\n### \ud83d\udd10 Service Account? (Alternative)\n- Google Drive API supports service accounts **only for Workspace (Enterprise)** domains.\n- You can't use service accounts with personal Gmail for Drive access.\n\n### \u26a0\ufe0f Permissions\n- Make sure `/mnt/gdrive` exists and is writable.\n- In Kubernetes, you'll need to allow FUSE in the container runtime \u2014 possible but more complex (let me know if you want help with that too).\n\n---\n\nWould you like me to turn this into a minimal GitHub repo, Kubernetes `Pod` spec, or Docker Compose setup?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "eb592fd7-1698-45a8-af90-c34bf49ddd51",
+          "request_id": "94aa9e91e9e0aaac-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "eb592fd7-1698-45a8-af90-c34bf49ddd51",
+      "children": [
+        "f677a0c9-2b19-4f38-b992-d48b4ed2bddc"
+      ]
+    },
+    "f677a0c9-2b19-4f38-b992-d48b4ed2bddc": {
+      "id": "f677a0c9-2b19-4f38-b992-d48b4ed2bddc",
+      "message": {
+        "id": "f677a0c9-2b19-4f38-b992-d48b4ed2bddc",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073662.135,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I probably do.  And this is for a Workspace account.  Can we give the service account read-only permissions?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94aaa155ca4e7aca-IAD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d525ee5f-b01d-4641-9cdb-ec3aab6d69f0",
+      "children": [
+        "2d357acb-cca0-4413-ada9-e9350687cf1e"
+      ]
+    },
+    "2d357acb-cca0-4413-ada9-e9350687cf1e": {
+      "id": "2d357acb-cca0-4413-ada9-e9350687cf1e",
+      "message": {
+        "id": "2d357acb-cca0-4413-ada9-e9350687cf1e",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073662.887833,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes \u2014 since you're using a **Google Workspace account**, you can absolutely use a **service account** to access a shared Drive folder **with read-only permissions**, and it\u2019s generally more secure and scalable than OAuth tokens tied to a personal account.\n\nHere\u2019s how to do it:\n\n---\n\n## \u2705 High-Level Plan (with Service Account)\n\n1. **Create a Google Cloud service account**.\n2. **Enable Google Drive API** on the project.\n3. **Download the service account JSON key**.\n4. **Share the Drive folder or My Drive files with the service account's email**.\n5. **Grant read-only access** when sharing.\n6. **Configure `rclone` to use the service account**.\n7. **Mount with `rclone` inside the container**.\n\n---\n\n## \ud83e\uddf1 Step-by-Step: Service Account with Google Drive (Read-only)\n\n### 1. **Create a Google Cloud Service Account**\n- Go to: https://console.cloud.google.com/iam-admin/serviceaccounts\n- Create a service account (e.g., `drive-reader`)\n- Grant no roles unless needed for other APIs (not needed for Drive access itself)\n\n### 2. **Enable Drive API**\n- Go to: https://console.cloud.google.com/apis/library/drive.googleapis.com\n- Enable for your project\n\n### 3. **Create and Download JSON Key**\n- In your service account \u2192 **Keys \u2192 Add Key \u2192 JSON**\n- Save the `.json` file securely\n\n### 4. **Share the Folder or Files with the Service Account**\n- Use the service account email (looks like: `my-svc@my-project.iam.gserviceaccount.com`)\n- Share the Drive folder with it via Google Drive UI\n- Choose **Viewer** (read-only)\n\n> \u2705 You don\u2019t need domain-wide delegation unless you want impersonation. This works via normal sharing.\n\n---\n\n## \ud83d\udee0 Step 5: Configure `rclone` with Service Account\n\nNo need to go through interactive auth.\n\nRun this once on the host:\n\n```bash\nrclone config\n```\n\n- `n` for new remote\n- Name: `gdrive-svc`\n- Storage: `13` (Google Drive)\n- Say **yes** to using a service account file\n- Enter the path to your `.json` key file\n- Scope: usually `drive.readonly`\n- Root folder ID (optional): enter if you want to restrict access to a specific folder\n\nYou can test:\n```bash\nrclone lsd gdrive-svc:\n```\n\n---\n\n## \ud83d\udc33 Docker Changes\n\nYou now mount the service account key JSON file instead of the config. Here's how:\n\n### \ud83d\udd01 Option A: Generate `rclone.conf` on host and mount it in\n(best for simple use)\n\nAfter setup, just bind-mount your `~/.config/rclone` like before:\n```bash\n-v ~/.config/rclone:/root/.config/rclone\n```\n\n### \ud83d\udd01 Option B: Pass the JSON and create config inside the container\n(more portable)\n\nYou can inject the JSON and do:\n```bash\nrclone config create gdrive-svc drive \\\n  scope=drive.readonly \\\n  service_account_file=/secrets/gdrive-key.json\n```\n\nThen:\n```bash\nrclone mount gdrive-svc: /mnt/gdrive --daemon\n```\n\n---\n\n## \u2699\ufe0f Security Note\n\nMake sure to mount the service account JSON as:\n```bash\n-v /host/path/gdrive-key.json:/secrets/gdrive-key.json:ro\n```\n\nDon't bake it into your image.\n\n---\n\n## \u2753Want This as:\n- A GitHub repo with `Dockerfile` and helper scripts?\n- A Kubernetes `Pod` or `Deployment` spec?\n- A Docker Compose setup?\n\nLet me know your target deployment platform and I\u2019ll give you a ready-to-run setup."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "f677a0c9-2b19-4f38-b992-d48b4ed2bddc",
+          "request_id": "94aaa155ca4e7aca-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f677a0c9-2b19-4f38-b992-d48b4ed2bddc",
+      "children": [
+        "831bd18b-0200-49b1-bfae-3f8c657bc0a7"
+      ]
+    },
+    "831bd18b-0200-49b1-bfae-3f8c657bc0a7": {
+      "id": "831bd18b-0200-49b1-bfae-3f8c657bc0a7",
+      "message": {
+        "id": "831bd18b-0200-49b1-bfae-3f8c657bc0a7",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073726.861,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I'm  going to use it in a JupyterHub environment, running on GKE"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94aaa2ea2aa6ebe5-IAD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "2d357acb-cca0-4413-ada9-e9350687cf1e",
+      "children": [
+        "d5c7412b-705a-40c0-aec4-36258ffafd4c"
+      ]
+    },
+    "d5c7412b-705a-40c0-aec4-36258ffafd4c": {
+      "id": "d5c7412b-705a-40c0-aec4-36258ffafd4c",
+      "message": {
+        "id": "d5c7412b-705a-40c0-aec4-36258ffafd4c",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073727.547273,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Perfect \u2014 you're running **JupyterHub on GKE**, so here\u2019s a tailored plan for **mounting a Google Drive folder read-only into user pods** using `rclone` + a **Workspace service account**.\n\n---\n\n## \u2705 Deployment Plan Summary (JupyterHub on GKE)\n\nYou\u2019ll:\n1. Create a **service account** and **share the Drive folder**.\n2. Store the service account key in **Kubernetes as a secret**.\n3. Extend the JupyterHub user image with `rclone` + FUSE.\n4. Mount Google Drive into each user\u2019s pod via **`initContainer` + sidecar** or `postStart` hook.\n5. Access the mounted folder at `/mnt/gdrive` or similar inside notebooks.\n\n---\n\n## \ud83e\uddf1 Step-by-Step Details\n\n### 1. \ud83d\udd10 Create Service Account + Share Drive Folder\nAs discussed:\n- Enable Drive API\n- Create JSON key\n- Share target folder with `your-svc@project.iam.gserviceaccount.com` as **Viewer**\n\n### 2. \ud83d\udce6 Store Key in Kubernetes Secret\n\n```bash\nkubectl create secret generic gdrive-service-account \\\n  --from-file=key.json=/path/to/key.json \\\n  -n <your-jupyterhub-namespace>\n```\n\n> Replace `<your-jupyterhub-namespace>` with e.g., `jupyterhub` or `default`.\n\n---\n\n### 3. \ud83e\uddea Test Rclone Config Locally\n\nTo debug easily, use:\n```bash\nrclone config create gdrive-svc drive \\\n  scope=drive.readonly \\\n  service_account_file=/secrets/key.json\n```\n\nYou\u2019ll do the same thing in the pod.\n\n---\n\n### 4. \ud83d\udc33 Extend Your JupyterHub Image with FUSE + rclone\n\nHere\u2019s a `Dockerfile` to base your custom image on:\n\n```Dockerfile\nFROM jupyter/base-notebook\n\nUSER root\n\nRUN apt-get update && \\\n    apt-get install -y fuse && \\\n    curl https://rclone.org/install.sh | bash && \\\n    chmod +s /bin/fusermount3 || true\n\nUSER $NB_UID\n```\n\nThen build & push this to a registry your GKE nodes can access (e.g., Artifact Registry).\n\n---\n\n### 5. \ud83e\uddf7 Modify `singleuser.extraContainers` or `postStart`\n\nIn your **`values.yaml`** for Zero-to-JupyterHub:\n\n```yaml\nsingleuser:\n  image:\n    name: gcr.io/your-project/jupyter-rclone\n    tag: latest\n  extraVolumes:\n    - name: gdrive-secret\n      secret:\n        secretName: gdrive-service-account\n    - name: gdrive-mount\n      emptyDir: {}\n\n  extraVolumeMounts:\n    - name: gdrive-secret\n      mountPath: /secrets\n      readOnly: true\n    - name: gdrive-mount\n      mountPath: /mnt/gdrive\n\n  lifecycleHooks:\n    postStart:\n      exec:\n        command:\n          - \"sh\"\n          - \"-c\"\n          - |\n            mkdir -p /home/jovyan/.config/rclone && \\\n            rclone config create gdrive-svc drive scope=drive.readonly service_account_file=/secrets/key.json && \\\n            rclone mount gdrive-svc: /mnt/gdrive --daemon\n```\n\n> Alternatively: use an `initContainer` or `sidecar` if you want more control, but `postStart` is clean for this use case.\n\n---\n\n## \u2705 End Result\n\nWhen a user logs into JupyterHub:\n- Their pod will mount the Google Drive folder at `/mnt/gdrive`\n- They can **read** files (not write) directly from that shared folder\n- It\u2019s automatic and isolated per user (but you can use a shared config if desired)\n\n---\n\n## \ud83d\udee1\ufe0f Optional: Restrict Which Folder is Mounted\n\nYou can add this to the `rclone config create` step:\n```bash\n... root_folder_id=0A...XYZ\n```\n\nTo only expose a subfolder.\n\nYou can find this ID from the Drive URL:\n```\nhttps://drive.google.com/drive/folders/0A...XYZ\n```\n\n---\n\nWould you like me to output a ready-to-paste `values.yaml` snippet and Dockerfile for a specific JupyterHub base image (e.g., `jupyter/scipy-notebook`)?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "831bd18b-0200-49b1-bfae-3f8c657bc0a7",
+          "request_id": "94aaa2ea2aa6ebe5-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "831bd18b-0200-49b1-bfae-3f8c657bc0a7",
+      "children": [
+        "63ab9e67-a590-4ff4-a584-2ba73b0c5825"
+      ]
+    },
+    "63ab9e67-a590-4ff4-a584-2ba73b0c5825": {
+      "id": "63ab9e67-a590-4ff4-a584-2ba73b0c5825",
+      "message": {
+        "id": "63ab9e67-a590-4ff4-a584-2ba73b0c5825",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073804.644,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I'm going to send this chat to a colleague and he'll work with you on the details."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94aaa4d07dbc67f2-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d5c7412b-705a-40c0-aec4-36258ffafd4c",
+      "children": [
+        "6b1433dd-1da7-4a5f-9544-37e2b84f8237"
+      ]
+    },
+    "6b1433dd-1da7-4a5f-9544-37e2b84f8237": {
+      "id": "6b1433dd-1da7-4a5f-9544-37e2b84f8237",
+      "message": {
+        "id": "6b1433dd-1da7-4a5f-9544-37e2b84f8237",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749073805.42228,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Sounds good! I'm ready to pick up where you leave off \u2014 your colleague can just jump in here and continue the conversation.\n\nIf they want to move forward with:\n- a ready-to-use `Dockerfile` for a specific Jupyter image,\n- a full `values.yaml` patch for Zero-to-JupyterHub,\n- or a more advanced setup like a sidecar for shared cache control,\n\n\u2014I\u2019ll help them step by step. Just let me know what base image and whether they want the Drive to be:\n- per-user isolated,\n- shared and read-only,\n- or even exposed through a central gateway.\n\nLooking forward to continuing!"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "63ab9e67-a590-4ff4-a584-2ba73b0c5825",
+          "request_id": "94aaa4d07dbc67f2-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "63ab9e67-a590-4ff4-a584-2ba73b0c5825",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "6b1433dd-1da7-4a5f-9544-37e2b84f8237",
+  "plugin_ids": null,
+  "conversation_id": "6840be3a-e90c-8008-8a38-595b97f63b4c",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "6840be3a-e90c-8008-8a38-595b97f63b4c"
+}

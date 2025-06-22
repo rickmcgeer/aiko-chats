@@ -1,0 +1,266 @@
+{
+  "title": "Gzipped Parquet in BigQuery",
+  "create_time": 1729383304.640109,
+  "update_time": 1729383340.619697,
+  "mapping": {
+    "35056ab8-7359-446c-895f-426b50ab63d1": {
+      "id": "35056ab8-7359-446c-895f-426b50ab63d1",
+      "message": {
+        "id": "35056ab8-7359-446c-895f-426b50ab63d1",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1b4a3-3007-4214-93cf-31f081fa54ae",
+      "children": [
+        "aaa29faf-5213-4b78-a849-01ca1ed7c2b6"
+      ]
+    },
+    "aaa1b4a3-3007-4214-93cf-31f081fa54ae": {
+      "id": "aaa1b4a3-3007-4214-93cf-31f081fa54ae",
+      "message": null,
+      "parent": null,
+      "children": [
+        "35056ab8-7359-446c-895f-426b50ab63d1"
+      ]
+    },
+    "aaa29faf-5213-4b78-a849-01ca1ed7c2b6": {
+      "id": "aaa29faf-5213-4b78-a849-01ca1ed7c2b6",
+      "message": {
+        "id": "aaa29faf-5213-4b78-a849-01ca1ed7c2b6",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1729383304.645267,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Can I use gzipped parquet files in a BigQuery external table"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "8d54cfb4aef217e8-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "35056ab8-7359-446c-895f-426b50ab63d1",
+      "children": [
+        "af50d682-da06-4b4c-a393-e20e90da3656"
+      ]
+    },
+    "af50d682-da06-4b4c-a393-e20e90da3656": {
+      "id": "af50d682-da06-4b4c-a393-e20e90da3656",
+      "message": {
+        "id": "af50d682-da06-4b4c-a393-e20e90da3656",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1729383316.514279,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa29faf-5213-4b78-a849-01ca1ed7c2b6",
+          "request_id": "8d54cfb4aef217e8-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa29faf-5213-4b78-a849-01ca1ed7c2b6",
+      "children": [
+        "394d3210-b390-4e00-825d-d1ac28afc422"
+      ]
+    },
+    "394d3210-b390-4e00-825d-d1ac28afc422": {
+      "id": "394d3210-b390-4e00-825d-d1ac28afc422",
+      "message": {
+        "id": "394d3210-b390-4e00-825d-d1ac28afc422",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1729383316.514463,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, BigQuery supports reading **gzipped Parquet files** in external tables. When creating an external table in BigQuery that points to a Parquet file stored in Google Cloud Storage (GCS), BigQuery can handle compressed files, including those compressed with **gzip**.\n\nTo use gzipped Parquet files in a BigQuery external table, follow these steps:\n\n1. **Upload the gzipped Parquet files** to a Google Cloud Storage (GCS) bucket.\n2. When you define your external table in BigQuery, specify the location of the files in the GCS bucket.\n3. BigQuery will automatically decompress the Parquet files as it reads them.\n\nHere\u2019s an example of how you might define an external table:\n\n```sql\nCREATE OR REPLACE EXTERNAL TABLE `your_project.your_dataset.your_external_table`\nOPTIONS (\n  format = 'PARQUET',\n  uris = ['gs://your-bucket/path-to-your-file/file-*.parquet.gz']\n);\n```\n\n### Key Points:\n- The `format` option is set to `'PARQUET'`.\n- You can use a wildcard (`*`) to match multiple files in the GCS path.\n- BigQuery will transparently handle the decompression, so you don't need to decompress the files yourself.\n\nLet me know if you need further assistance!"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": null,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "af50d682-da06-4b4c-a393-e20e90da3656",
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "request_id": "8d54cfb4aef217e8-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "af50d682-da06-4b4c-a393-e20e90da3656",
+      "children": [
+        "aaa2a760-0e32-448b-bbe1-f73318301c09"
+      ]
+    },
+    "aaa2a760-0e32-448b-bbe1-f73318301c09": {
+      "id": "aaa2a760-0e32-448b-bbe1-f73318301c09",
+      "message": {
+        "id": "aaa2a760-0e32-448b-bbe1-f73318301c09",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1729383337.287582,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "what is the typical suffix for parquet files"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "8d54d080b80f17e8-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "394d3210-b390-4e00-825d-d1ac28afc422",
+      "children": [
+        "9ca84455-ba85-44d4-8236-14bb7a6e7d77"
+      ]
+    },
+    "9ca84455-ba85-44d4-8236-14bb7a6e7d77": {
+      "id": "9ca84455-ba85-44d4-8236-14bb7a6e7d77",
+      "message": {
+        "id": "9ca84455-ba85-44d4-8236-14bb7a6e7d77",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1729383340.104876,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "The typical suffix for Parquet files is **`.parquet`**.\n\nFor example:\n- `datafile.parquet`\n- `2024-10-19-data.parquet`\n\nIf the Parquet file is compressed, the suffix might include the compression format as well. For instance, gzipped Parquet files are typically named like this:\n- `datafile.parquet.gz`\n\nWhile `.parquet` is the standard file extension for Parquet format files, the compression suffix (`.gz` for gzip) can be added if applicable."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": null,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa2a760-0e32-448b-bbe1-f73318301c09",
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "request_id": "8d54d080b80f17e8-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa2a760-0e32-448b-bbe1-f73318301c09",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "9ca84455-ba85-44d4-8236-14bb7a6e7d77",
+  "plugin_ids": null,
+  "conversation_id": "67144b88-7438-8008-8733-2372d8f5ce88",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "67144b88-7438-8008-8733-2372d8f5ce88"
+}

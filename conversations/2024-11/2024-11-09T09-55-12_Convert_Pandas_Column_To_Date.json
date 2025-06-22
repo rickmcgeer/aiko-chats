@@ -1,0 +1,182 @@
+{
+  "title": "Convert pandas column to date",
+  "create_time": 1731174912.200633,
+  "update_time": 1731174918.218865,
+  "mapping": {
+    "aaa102c8-ff5b-464a-9205-8ae8eae00b1d": {
+      "id": "aaa102c8-ff5b-464a-9205-8ae8eae00b1d",
+      "message": null,
+      "parent": null,
+      "children": [
+        "fca0a54d-eb29-414d-9f4d-c04307a31764"
+      ]
+    },
+    "fca0a54d-eb29-414d-9f4d-c04307a31764": {
+      "id": "fca0a54d-eb29-414d-9f4d-c04307a31764",
+      "message": {
+        "id": "fca0a54d-eb29-414d-9f4d-c04307a31764",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa102c8-ff5b-464a-9205-8ae8eae00b1d",
+      "children": [
+        "aaa2415c-1f20-49c4-ba95-3f547202d8d8"
+      ]
+    },
+    "aaa2415c-1f20-49c4-ba95-3f547202d8d8": {
+      "id": "aaa2415c-1f20-49c4-ba95-3f547202d8d8",
+      "message": {
+        "id": "aaa2415c-1f20-49c4-ba95-3f547202d8d8",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1731174912.204291,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I want to convert a pandas column to a date, not datetime.  How do i do this?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "8dffac1fbd002554-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "fca0a54d-eb29-414d-9f4d-c04307a31764",
+      "children": [
+        "abf736d3-d79c-4de3-bfc5-ca0cda844d40"
+      ]
+    },
+    "abf736d3-d79c-4de3-bfc5-ca0cda844d40": {
+      "id": "abf736d3-d79c-4de3-bfc5-ca0cda844d40",
+      "message": {
+        "id": "abf736d3-d79c-4de3-bfc5-ca0cda844d40",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1731174917.307422,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa2415c-1f20-49c4-ba95-3f547202d8d8",
+          "request_id": "8dffac1fbd002554-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa2415c-1f20-49c4-ba95-3f547202d8d8",
+      "children": [
+        "06391259-abd9-42cd-8234-bafd5faac5f1"
+      ]
+    },
+    "06391259-abd9-42cd-8234-bafd5faac5f1": {
+      "id": "06391259-abd9-42cd-8234-bafd5faac5f1",
+      "message": {
+        "id": "06391259-abd9-42cd-8234-bafd5faac5f1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1731174917.307573,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To convert a pandas column to a date (without the time part), you can use the `.dt.date` accessor after converting the column to `datetime` format with `pd.to_datetime`. Here\u2019s how to do it:\n\n```python\nimport pandas as pd\n\n# Sample data\ndf = pd.DataFrame({'date_column': ['2023-11-01', '2024-01-15', '2025-06-10']})\n\n# Convert to datetime first\ndf['date_column'] = pd.to_datetime(df['date_column'])\n\n# Extract just the date part\ndf['date_column'] = df['date_column'].dt.date\n\nprint(df)\n```\n\nThis will give you a column where each entry is a Python `date` object, rather than a `datetime`. Note that this approach doesn\u2019t alter the display format in DataFrame outputs but changes the type to date-only."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "abf736d3-d79c-4de3-bfc5-ca0cda844d40",
+          "request_id": "8dffac1fbd002554-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "abf736d3-d79c-4de3-bfc5-ca0cda844d40",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "06391259-abd9-42cd-8234-bafd5faac5f1",
+  "plugin_ids": null,
+  "conversation_id": "672fa200-08d4-8008-bf9d-ba3f200f1999",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "672fa200-08d4-8008-bf9d-ba3f200f1999"
+}

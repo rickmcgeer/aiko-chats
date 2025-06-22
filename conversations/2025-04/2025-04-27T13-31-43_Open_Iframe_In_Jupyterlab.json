@@ -1,0 +1,185 @@
+{
+  "title": "Open iframe in JupyterLab",
+  "create_time": 1745785903.906788,
+  "update_time": 1745785919.612656,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "cee32117-db8b-4122-9f43-3f2b6f1820df"
+      ]
+    },
+    "cee32117-db8b-4122-9f43-3f2b6f1820df": {
+      "id": "cee32117-db8b-4122-9f43-3f2b6f1820df",
+      "message": {
+        "id": "cee32117-db8b-4122-9f43-3f2b6f1820df",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "932892ec-d288-47e2-b9c0-d60f12f10c34"
+      ]
+    },
+    "932892ec-d288-47e2-b9c0-d60f12f10c34": {
+      "id": "932892ec-d288-47e2-b9c0-d60f12f10c34",
+      "message": {
+        "id": "932892ec-d288-47e2-b9c0-d60f12f10c34",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1745785902.323,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "JupyterLab open an iframe in a panel in response to a command"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "937115c87ff6e9e4-SLC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "cee32117-db8b-4122-9f43-3f2b6f1820df",
+      "children": [
+        "925b2853-4f6b-4405-84c9-3992b58328b5"
+      ]
+    },
+    "925b2853-4f6b-4405-84c9-3992b58328b5": {
+      "id": "925b2853-4f6b-4405-84c9-3992b58328b5",
+      "message": {
+        "id": "925b2853-4f6b-4405-84c9-3992b58328b5",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1745785915.951569,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o-mini",
+          "default_model_slug": "auto",
+          "parent_id": "932892ec-d288-47e2-b9c0-d60f12f10c34",
+          "request_id": "937115c87ff6e9e4-SLC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "932892ec-d288-47e2-b9c0-d60f12f10c34",
+      "children": [
+        "393bac64-7c92-4ab3-a341-4f90bcbe7673"
+      ]
+    },
+    "393bac64-7c92-4ab3-a341-4f90bcbe7673": {
+      "id": "393bac64-7c92-4ab3-a341-4f90bcbe7673",
+      "message": {
+        "id": "393bac64-7c92-4ab3-a341-4f90bcbe7673",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1745785904.04116,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To open an iframe in a panel in JupyterLab in response to a command, you can create a custom extension that uses the JupyterLab API to define the command and panel, and then dynamically open the iframe in that panel when the command is triggered.\n\nHere\u2019s a simple outline of how you might structure this in your JupyterLab extension:\n\n### 1. Define the Command\n\nIn your `index.ts` or main extension file, you can define a command that, when triggered, will open the iframe in a new panel.\n\n```typescript\nimport {\n  JupyterFrontEnd,\n  JupyterFrontEndPlugin,\n} from '@jupyterlab/application';\nimport { CommandRegistry } from '@phosphor/commands';\nimport { Widget } from '@phosphor/widgets';\nimport { IFrame } from '@jupyterlab/apputils';\n\nconst iframeCommand: JupyterFrontEndPlugin<void> = {\n  id: 'iframe-command',\n  autoStart: true,\n  activate: (app: JupyterFrontEnd) => {\n    const { commands } = app;\n    commands.addCommand('iframe-command:open', {\n      label: 'Open Iframe in Panel',\n      execute: () => {\n        openIframePanel(app);\n      },\n    });\n  },\n};\n\nfunction openIframePanel(app: JupyterFrontEnd) {\n  const iframeWidget = new IFrame();\n  iframeWidget.url = 'https://your-iframe-url.com'; // Replace with your iframe URL\n\n  // Create a new panel and add the iframe widget\n  const panel = app.shell.add(iframeWidget, 'main');\n  panel.title.label = 'Iframe Panel';\n  panel.title.closable = true;\n}\n\nexport default iframeCommand;\n```\n\n### 2. Register the Command\n\nEnsure that you register your command in the extension's main plugin file:\n\n```typescript\nimport iframeCommand from './iframe-command';\n\nconst extension: JupyterFrontEndPlugin<void> = {\n  id: 'your-extension-id',\n  autoStart: true,\n  activate: (app: JupyterFrontEnd) => {\n    app.commands.addCommand('iframe-command:open', {\n      label: 'Open Iframe in Panel',\n      execute: () => {\n        openIframePanel(app);\n      },\n    });\n  },\n};\n\nexport default extension;\n```\n\n### 3. Bind the Command to a Button or Keybinding\n\nIf you want to trigger the command with a button or keybinding, you can add that to the UI in your extension as well.\n\nFor a button:\n```typescript\nconst button = new Widget();\nbutton.node.textContent = 'Open Iframe';\nbutton.node.onclick = () => app.commands.execute('iframe-command:open');\n```\n\nFor a keybinding, you can add a keybinding in the `activate` function:\n```typescript\napp.commands.addKeyBinding({\n  command: 'iframe-command:open',\n  keys: ['Ctrl Shift I'],\n  selector: 'body',\n});\n```\n\n### 4. Install and Build the Extension\n\nMake sure to install the necessary dependencies and build your extension with `npm run build` or `yarn build`, depending on your setup.\n\n### Result\nThis will open the iframe in a new panel within JupyterLab when the command `iframe-command:open` is executed. You can trigger this command with a button, keybinding, or by any other UI interaction you prefer.\n\nLet me know if you need more details on any step!"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o-mini",
+          "default_model_slug": "auto",
+          "parent_id": "925b2853-4f6b-4405-84c9-3992b58328b5",
+          "request_id": "937115c87ff6e9e4-SLC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "925b2853-4f6b-4405-84c9-3992b58328b5",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "393bac64-7c92-4ab3-a341-4f90bcbe7673",
+  "plugin_ids": null,
+  "conversation_id": "680e942f-8550-8008-9d3b-0068b6b199b7",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://your-iframe-url.com"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "680e942f-8550-8008-9d3b-0068b6b199b7"
+}

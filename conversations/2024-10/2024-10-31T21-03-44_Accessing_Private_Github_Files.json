@@ -1,0 +1,185 @@
+{
+  "title": "Accessing Private GitHub Files",
+  "create_time": 1730433824.022561,
+  "update_time": 1730433843.589696,
+  "mapping": {
+    "aaa1d841-8d7e-4e62-ad09-ecbf4c5c4cb7": {
+      "id": "aaa1d841-8d7e-4e62-ad09-ecbf4c5c4cb7",
+      "message": null,
+      "parent": null,
+      "children": [
+        "6fb0bc33-acc6-4bab-9a47-691f25f0ae06"
+      ]
+    },
+    "6fb0bc33-acc6-4bab-9a47-691f25f0ae06": {
+      "id": "6fb0bc33-acc6-4bab-9a47-691f25f0ae06",
+      "message": {
+        "id": "6fb0bc33-acc6-4bab-9a47-691f25f0ae06",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1d841-8d7e-4e62-ad09-ecbf4c5c4cb7",
+      "children": [
+        "aaa2a2cf-01a7-4494-9d84-405ae67259e6"
+      ]
+    },
+    "aaa2a2cf-01a7-4494-9d84-405ae67259e6": {
+      "id": "aaa2a2cf-01a7-4494-9d84-405ae67259e6",
+      "message": {
+        "id": "aaa2a2cf-01a7-4494-9d84-405ae67259e6",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1730433824.025774,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I want to write python code to access a file in a private github repo"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "8db8ff26be3a1749-SJC",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6fb0bc33-acc6-4bab-9a47-691f25f0ae06",
+      "children": [
+        "7032a8f9-07fd-4977-bf90-d10bed2d135e"
+      ]
+    },
+    "7032a8f9-07fd-4977-bf90-d10bed2d135e": {
+      "id": "7032a8f9-07fd-4977-bf90-d10bed2d135e",
+      "message": {
+        "id": "7032a8f9-07fd-4977-bf90-d10bed2d135e",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1730433838.597919,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "aaa2a2cf-01a7-4494-9d84-405ae67259e6",
+          "request_id": "8db8ff26be3a1749-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa2a2cf-01a7-4494-9d84-405ae67259e6",
+      "children": [
+        "3100dbf4-d569-4395-813c-d63f1556a01f"
+      ]
+    },
+    "3100dbf4-d569-4395-813c-d63f1556a01f": {
+      "id": "3100dbf4-d569-4395-813c-d63f1556a01f",
+      "message": {
+        "id": "3100dbf4-d569-4395-813c-d63f1556a01f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1730433838.598013,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To access a file in a private GitHub repository with Python, you'll need to authenticate using a personal access token (PAT) or OAuth token. Here\u2019s a simple example using Python\u2019s `requests` library:\n\n1. **Create a Personal Access Token** (PAT) if you haven\u2019t already. Go to your GitHub settings under \"Developer settings\" > \"Personal access tokens\" and create a token with `repo` permissions.\n\n2. **Install the `requests` library** if you haven\u2019t done so:\n   ```bash\n   pip install requests\n   ```\n\n3. **Access the file** in the private repository using the token.\n\nHere\u2019s the code:\n\n```python\nimport requests\n\n# Replace these with your details\nGITHUB_TOKEN = 'your_personal_access_token'\nREPO_OWNER = 'repo_owner_username'\nREPO_NAME = 'repo_name'\nFILE_PATH = 'path/to/your/file.txt'\nBRANCH = 'main'  # Replace with the branch name if it's different\n\n# GitHub API URL for the file\nurl = f\"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/{FILE_PATH}?ref={BRANCH}\"\n\n# Headers for authentication\nheaders = {\n    \"Authorization\": f\"token {GITHUB_TOKEN}\",\n    \"Accept\": \"application/vnd.github.v3.raw\"\n}\n\n# Make the request\nresponse = requests.get(url, headers=headers)\n\n# Check if the request was successful\nif response.status_code == 200:\n    file_content = response.text\n    print(\"File content:\")\n    print(file_content)\nelse:\n    print(f\"Failed to fetch file. Status code: {response.status_code}\")\n    print(\"Response:\", response.json())\n```\n\n### Explanation\n\n- **`GITHUB_TOKEN`**: Set your GitHub PAT here.\n- **`url`**: This is the GitHub API endpoint to fetch the contents of a file.\n- **`headers`**: The `Authorization` header includes your token for authentication.\n- **`response.status_code`**: If it\u2019s 200, the request was successful, and you can read the file's content from `response.text`.\n\nThis method fetches the raw content of the file, which you can then manipulate as needed."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": null,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "7032a8f9-07fd-4977-bf90-d10bed2d135e",
+          "request_id": "8db8ff26be3a1749-SJC",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7032a8f9-07fd-4977-bf90-d10bed2d135e",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "3100dbf4-d569-4395-813c-d63f1556a01f",
+  "plugin_ids": null,
+  "conversation_id": "6724531f-e2e0-8008-a501-020a225ea142",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/{FILE_PATH}?ref={BRANCH"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "6724531f-e2e0-8008-a501-020a225ea142"
+}

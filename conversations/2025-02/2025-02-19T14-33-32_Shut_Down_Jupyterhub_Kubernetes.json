@@ -1,0 +1,182 @@
+{
+  "title": "Shut down JupyterHub Kubernetes",
+  "create_time": 1740004412.735158,
+  "update_time": 1740004435.86298,
+  "mapping": {
+    "aaa1ad94-f91c-46c9-92b2-655019d5298c": {
+      "id": "aaa1ad94-f91c-46c9-92b2-655019d5298c",
+      "message": null,
+      "parent": null,
+      "children": [
+        "04bed085-f5ac-48c5-8c91-7060032bf266"
+      ]
+    },
+    "04bed085-f5ac-48c5-8c91-7060032bf266": {
+      "id": "04bed085-f5ac-48c5-8c91-7060032bf266",
+      "message": {
+        "id": "04bed085-f5ac-48c5-8c91-7060032bf266",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1ad94-f91c-46c9-92b2-655019d5298c",
+      "children": [
+        "cf5cca6e-7812-4a78-b317-3587c52a8800"
+      ]
+    },
+    "cf5cca6e-7812-4a78-b317-3587c52a8800": {
+      "id": "cf5cca6e-7812-4a78-b317-3587c52a8800",
+      "message": {
+        "id": "cf5cca6e-7812-4a78-b317-3587c52a8800",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740004412.738735,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I'm running a jupyterhub ousing kubernetes on wsl2. how do i shut it down"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "9149b819ccde5233-LAX",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "04bed085-f5ac-48c5-8c91-7060032bf266",
+      "children": [
+        "7c81d4df-64e0-4961-8912-47b6b2e67f2e"
+      ]
+    },
+    "7c81d4df-64e0-4961-8912-47b6b2e67f2e": {
+      "id": "7c81d4df-64e0-4961-8912-47b6b2e67f2e",
+      "message": {
+        "id": "7c81d4df-64e0-4961-8912-47b6b2e67f2e",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740004421.105799,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "cf5cca6e-7812-4a78-b317-3587c52a8800",
+          "request_id": "9149b819ccde5233-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "cf5cca6e-7812-4a78-b317-3587c52a8800",
+      "children": [
+        "2e9abdd2-8724-46d7-b180-0070377b1bad"
+      ]
+    },
+    "2e9abdd2-8724-46d7-b180-0070377b1bad": {
+      "id": "2e9abdd2-8724-46d7-b180-0070377b1bad",
+      "message": {
+        "id": "2e9abdd2-8724-46d7-b180-0070377b1bad",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740004421.105925,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To shut down your **JupyterHub running on Kubernetes** on **WSL2**, the approach depends on how you deployed it. Since you're using **Zero to JupyterHub**, you likely used **Helm** for the deployment. Here\u2019s how to shut it down:\n\n### **1. Delete the Helm Release (Recommended)**\nIf you deployed JupyterHub using Helm, you can delete the Helm release:\n\n```bash\nhelm uninstall <release-name> -n <namespace>\n```\n\n- Replace `<release-name>` with the name of your Helm release (commonly `jupyterhub`).\n- Replace `<namespace>` with the Kubernetes namespace you used (commonly `jupyterhub`).\n\nFor example:\n```bash\nhelm uninstall jupyterhub -n jupyterhub\n```\n\nThis stops JupyterHub and deletes the associated Kubernetes resources but **retains persistent volumes** unless you manually delete them.\n\n---\n\n### **2. Stop the Kubernetes Cluster (If Using `kind` or `minikube`)**\nDepending on how you created your Kubernetes cluster:\n\n#### **If using `kind` (Kubernetes IN Docker):**\n```bash\nkind delete cluster\n```\n\n#### **If using `minikube`:**\n```bash\nminikube stop\n```\n\n---\n\n### **3. Shut Down WSL2 Itself (Optional)**\nIf you want to shut down WSL2 entirely:\n```bash\nwsl --shutdown\n```\n\n---\n\n### **4. Verify JupyterHub is Stopped**\nCheck if the pods are still running:\n```bash\nkubectl get pods -n jupyterhub\n```\nIf all pods are gone, JupyterHub is successfully stopped.\n\n---\n\nLet me know if you run into any issues!"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "7c81d4df-64e0-4961-8912-47b6b2e67f2e",
+          "request_id": "9149b819ccde5233-LAX",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7c81d4df-64e0-4961-8912-47b6b2e67f2e",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "2e9abdd2-8724-46d7-b180-0070377b1bad",
+  "plugin_ids": null,
+  "conversation_id": "67b65c3c-8784-8008-9ae9-0b7f0cca0a52",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "67b65c3c-8784-8008-9ae9-0b7f0cca0a52"
+}

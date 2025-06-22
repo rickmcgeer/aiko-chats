@@ -1,0 +1,183 @@
+{
+  "title": "Google Cloud Function Logs",
+  "create_time": 1738801028.10696,
+  "update_time": 1738801035.103075,
+  "mapping": {
+    "aaa12bf5-67e6-4d6d-ab79-a459e68f7902": {
+      "id": "aaa12bf5-67e6-4d6d-ab79-a459e68f7902",
+      "message": null,
+      "parent": null,
+      "children": [
+        "153f004e-32f4-4e43-b848-016bd2f705c2"
+      ]
+    },
+    "153f004e-32f4-4e43-b848-016bd2f705c2": {
+      "id": "153f004e-32f4-4e43-b848-016bd2f705c2",
+      "message": {
+        "id": "153f004e-32f4-4e43-b848-016bd2f705c2",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa12bf5-67e6-4d6d-ab79-a459e68f7902",
+      "children": [
+        "5fc41b2c-3723-4001-bc66-460232871abb"
+      ]
+    },
+    "5fc41b2c-3723-4001-bc66-460232871abb": {
+      "id": "5fc41b2c-3723-4001-bc66-460232871abb",
+      "message": {
+        "id": "5fc41b2c-3723-4001-bc66-460232871abb",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1738801028.111317,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "find the log entries for a google cloud function python api"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "90d6f4961bf2965b-ATL",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "153f004e-32f4-4e43-b848-016bd2f705c2",
+      "children": [
+        "50f38379-b6c7-487b-872f-73410034d119"
+      ]
+    },
+    "50f38379-b6c7-487b-872f-73410034d119": {
+      "id": "50f38379-b6c7-487b-872f-73410034d119",
+      "message": {
+        "id": "50f38379-b6c7-487b-872f-73410034d119",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1738801033.421253,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "5fc41b2c-3723-4001-bc66-460232871abb",
+          "request_id": "90d6f4961bf2965b-ATL",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "5fc41b2c-3723-4001-bc66-460232871abb",
+      "children": [
+        "5f7f16ff-3fa4-4d82-8dab-32a9338378be"
+      ]
+    },
+    "5f7f16ff-3fa4-4d82-8dab-32a9338378be": {
+      "id": "5f7f16ff-3fa4-4d82-8dab-32a9338378be",
+      "message": {
+        "id": "5f7f16ff-3fa4-4d82-8dab-32a9338378be",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1738801033.421374,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To find log entries for a Google Cloud Function running a Python API, follow these steps:\n\n### Using Google Cloud Console:\n1. **Go to the Logs Explorer**:\n   - Open [Google Cloud Console](https://console.cloud.google.com/).\n   - Navigate to **Logging** \u2192 **Logs Explorer**.\n   - In the **Query Builder**, set:\n     - **Resource Type**: `Cloud Function`\n     - **Function Name**: Select your function.\n     - **Severity**: (Optional) Filter by error levels like ERROR or INFO.\n   - Click **Run Query** to view logs.\n\n2. **View Logs in Cloud Functions UI**:\n   - Open **Cloud Functions** from the console.\n   - Click on your function.\n   - Go to the **Logs** tab.\n\n### Using Google Cloud CLI:\nRun the following command to fetch logs for your Cloud Function:\n\n```sh\ngcloud functions logs read FUNCTION_NAME --region=REGION\n```\nReplace:\n- `FUNCTION_NAME` with the actual name of your function.\n- `REGION` with the region where your function is deployed.\n\nFor example:\n\n```sh\ngcloud functions logs read my-function --region=us-central1\n```\n\n### Using Python to Fetch Logs:\nIf you want to fetch logs programmatically, use the `google-cloud-logging` library:\n\n```python\nfrom google.cloud import logging\n\nclient = logging.Client()\nlogger = client.list_entries()\n\nfor entry in logger:\n    print(entry)\n```\n\nLet me know if you need more filtering options!"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002,
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "50f38379-b6c7-487b-872f-73410034d119",
+          "request_id": "90d6f4961bf2965b-ATL",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "50f38379-b6c7-487b-872f-73410034d119",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "5f7f16ff-3fa4-4d82-8dab-32a9338378be",
+  "plugin_ids": null,
+  "conversation_id": "67a3ff83-b6dc-8008-8c8b-bc08c7a7b82e",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "67a3ff83-b6dc-8008-8c8b-bc08c7a7b82e"
+}

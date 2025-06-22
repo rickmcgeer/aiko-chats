@@ -1,0 +1,1968 @@
+{
+  "title": "GPT-4 API vs ChatGPT",
+  "create_time": 1749757371.759597,
+  "update_time": 1749757457.969866,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "3acfa967-1bef-488c-8839-9c786b88e79a"
+      ]
+    },
+    "3acfa967-1bef-488c-8839-9c786b88e79a": {
+      "id": "3acfa967-1bef-488c-8839-9c786b88e79a",
+      "message": {
+        "id": "3acfa967-1bef-488c-8839-9c786b88e79a",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "5b307939-342f-4151-8a34-c2c10af55c37"
+      ]
+    },
+    "5b307939-342f-4151-8a34-c2c10af55c37": {
+      "id": "5b307939-342f-4151-8a34-c2c10af55c37",
+      "message": {
+        "id": "5b307939-342f-4151-8a34-c2c10af55c37",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749757368.16,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "OK, Aiko, back to the salt mines.  Do you what levels of GPT 4 are available via the API?  Do they correspond to the levels of GPT offered in the Chat service?  (in other words, is there a way to use the GPT 4 API with the capabilities of the Pro or Plus service?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "94ebd5731eb07ba1-ORD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3acfa967-1bef-488c-8839-9c786b88e79a",
+      "children": [
+        "2128f3a9-3b9c-42b7-9b1b-19450e1b643d"
+      ]
+    },
+    "2128f3a9-3b9c-42b7-9b1b-19450e1b643d": {
+      "id": "2128f3a9-3b9c-42b7-9b1b-19450e1b643d",
+      "message": {
+        "id": "2128f3a9-3b9c-42b7-9b1b-19450e1b643d",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749757383.561165,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "5b307939-342f-4151-8a34-c2c10af55c37",
+          "request_id": "94ebd5731eb07ba1-ORD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "5b307939-342f-4151-8a34-c2c10af55c37",
+      "children": [
+        "5a8182e9-bbd4-44d7-9dda-5d57c9edb068"
+      ]
+    },
+    "5a8182e9-bbd4-44d7-9dda-5d57c9edb068": {
+      "id": "5a8182e9-bbd4-44d7-9dda-5d57c9edb068",
+      "message": {
+        "id": "5a8182e9-bbd4-44d7-9dda-5d57c9edb068",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749757372.0143654,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "unknown",
+          "response_format_name": null,
+          "text": "search(\"OK, Aiko, back to the salt mines.  Do you what levels of GPT 4 are available via the API?  Do they correspond to the levels of GPT offered in the Chat service?  (in other words, is there a way to use the GPT 4 API with the capabilities of the Pro or Plus service?\")"
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "sonic_classification_result": {
+            "latency_ms": 59.10317599773407,
+            "search_prob": 0.7032374964537867,
+            "force_search_threshold": 0.65,
+            "classifier_config_name": "sonic_force_pg_switcher_renderer_config"
+          },
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "2128f3a9-3b9c-42b7-9b1b-19450e1b643d",
+          "request_id": "94ebd5731eb07ba1-ORD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "web",
+        "channel": null
+      },
+      "parent": "2128f3a9-3b9c-42b7-9b1b-19450e1b643d",
+      "children": [
+        "b24fedd3-d76a-48ac-a060-5b88cfa598ac"
+      ]
+    },
+    "b24fedd3-d76a-48ac-a060-5b88cfa598ac": {
+      "id": "b24fedd3-d76a-48ac-a060-5b88cfa598ac",
+      "message": {
+        "id": "b24fedd3-d76a-48ac-a060-5b88cfa598ac",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749757383.56144,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [],
+          "source_analysis_msg_id": "90761589-3050-434f-b613-730b97334200"
+        },
+        "status": "in_progress",
+        "end_turn": false,
+        "weight": 1,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "citations": [],
+          "content_references": [],
+          "search_turns_count": 0,
+          "search_source": "composer_auto",
+          "client_reported_search_source": "composer_auto",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "5a8182e9-bbd4-44d7-9dda-5d57c9edb068",
+          "request_id": "94ebd5731eb07ba1-ORD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "5a8182e9-bbd4-44d7-9dda-5d57c9edb068",
+      "children": [
+        "eb95f557-d7c2-46a2-8eaa-3f625af6505b"
+      ]
+    },
+    "eb95f557-d7c2-46a2-8eaa-3f625af6505b": {
+      "id": "eb95f557-d7c2-46a2-8eaa-3f625af6505b",
+      "message": {
+        "id": "eb95f557-d7c2-46a2-8eaa-3f625af6505b",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {
+            "real_author": "tool:web",
+            "sonicberry_model_id": "alpha.sonicberry_2s_f",
+            "source": "sonic_tool"
+          }
+        },
+        "create_time": 1749757372.089482,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "unknown",
+          "response_format_name": null,
+          "text": "{\"search_query\":[{\"q\":\"OpenAI GPT-4 API versions levels\"},{\"q\":\"GPT-4 Turbo API vs ChatGPT Pro Plus capabilities\"}]}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200012
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "search_turns_count": 1,
+          "search_source": "composer_auto",
+          "client_reported_search_source": "composer_auto",
+          "reasoning_status": "is_reasoning",
+          "search_queries": [
+            {
+              "type": "search",
+              "q": "OpenAI GPT-4 API versions levels"
+            },
+            {
+              "type": "search",
+              "q": "GPT-4 Turbo API vs ChatGPT Pro Plus capabilities"
+            }
+          ],
+          "search_display_string": "Searching the web...",
+          "searched_display_string": "Searched the web...",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "b24fedd3-d76a-48ac-a060-5b88cfa598ac",
+          "request_id": "94ebd5731eb07ba1-ORD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "web.run",
+        "channel": null
+      },
+      "parent": "b24fedd3-d76a-48ac-a060-5b88cfa598ac",
+      "children": [
+        "4db51f75-4374-4928-8d2f-107e42e426bb"
+      ]
+    },
+    "4db51f75-4374-4928-8d2f-107e42e426bb": {
+      "id": "4db51f75-4374-4928-8d2f-107e42e426bb",
+      "message": {
+        "id": "4db51f75-4374-4928-8d2f-107e42e426bb",
+        "author": {
+          "role": "tool",
+          "name": "web.run",
+          "metadata": {
+            "real_author": "tool:web",
+            "sonicberry_model_id": "alpha.sonicberry_2s_f",
+            "source": "sonic_tool"
+          }
+        },
+        "create_time": 1749757373.0481172,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1,
+        "metadata": {
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "platform.openai.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://platform.openai.com/docs/models",
+                  "title": "OpenAI Platform Models",
+                  "snippet": "Explore resources, tutorials, API docs, and dynamic examples to get the most out of OpenAI's developer platform.",
+                  "ref_id": null,
+                  "pub_date": null,
+                  "attribution": "platform.openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4",
+                  "title": "GPT-4-Turbo-2024-04-09 - OpenAI Platform",
+                  "snippet": "Explore resources, tutorials, API docs, and dynamic examples to get the most out of OpenAI's developer platform.",
+                  "ref_id": null,
+                  "pub_date": null,
+                  "attribution": "platform.openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://platform.openai.com/docs/models/gpt-4",
+                  "title": "com/docs/models/gpt-4 - OpenAI Platform",
+                  "snippet": "Explore resources, tutorials, API docs, and dynamic examples to get the most out of OpenAI's developer platform.",
+                  "ref_id": null,
+                  "pub_date": null,
+                  "attribution": "platform.openai.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "www.reddit.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.reddit.com/r/ChatGPT/comments/13enu5n/exploring_costeffectiveness_gpt4_api_vs_chatgpt/",
+                  "title": "Exploring Cost-Effectiveness: GPT-4 API vs. ChatGPT Premium",
+                  "snippet": "The GPT-4-API is crazy expensive, compared to ChatGPT Plus. I would strongly advise against using the API, since you will 100% pay more when ...",
+                  "ref_id": null,
+                  "pub_date": 1683763200,
+                  "attribution": "www.reddit.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.reddit.com/r/OpenAI/comments/1aipsq4/whats_the_best_gpt4_version_to_select_to_use_with/",
+                  "title": "What's the best GPT-4 version to select to use with the API ? : r/OpenAI",
+                  "snippet": "I use OpenPlayground and I can choose between GPT-4-32K which is very expensive, and GPT-4-1106-preview which is a lot cheaper.",
+                  "ref_id": null,
+                  "pub_date": 1707004800,
+                  "attribution": "www.reddit.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "openai.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/index/gpt-4-api-general-availability/",
+                  "title": "GPT-4 API general availability and deprecation of older models in ...",
+                  "snippet": "GPT\u20113.5 Turbo, DALL\u00b7E and Whisper APIs are also generally available, and we are releasing a deprecation plan for older models of the Completions API, ...",
+                  "ref_id": null,
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/chatgpt/pricing/",
+                  "title": "Pricing - ChatGPT - OpenAI",
+                  "snippet": "Everything in Plus \u00b7 Unlimited access to all reasoning models and GPT\u20114o \u00b7 Unlimited access to advanced voice, with higher limits for video and screensharing.",
+                  "ref_id": null,
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "sourceforge.net",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://sourceforge.net/software/compare/ChatGPT-Plus-vs-GPT-4-Turbo/",
+                  "title": "ChatGPT Plus vs. GPT-4 Turbo Comparison - SourceForge",
+                  "snippet": "Compare ChatGPT Plus vs. GPT-4 Turbo using this comparison chart. Compare price, features, and reviews of the software side-by-side to make the best choice ...",
+                  "ref_id": null,
+                  "pub_date": null,
+                  "attribution": "sourceforge.net"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "community.openai.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://community.openai.com/t/how-to-check-gpt-4-model-version/339259",
+                  "title": "How to check gpt-4 model version? - OpenAI Developer Community",
+                  "snippet": "Based on developer feedback, we are extending support for gpt-3.5-turbo-0301 and gpt-4-0314 models in the OpenAI API until at least June 13, ...",
+                  "ref_id": null,
+                  "pub_date": 1693267200,
+                  "attribution": "community.openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://community.openai.com/t/gpt-4-vs-gpt-4o-which-is-the-better/746991",
+                  "title": "GPT-4 vs GPT-4o? Which is the better? - Community",
+                  "snippet": "GPT-4 is still much better for our complex tasks that require careful reading and proper prompt following. GPT-4-Turbo was OK for remedial tasks ...",
+                  "ref_id": null,
+                  "pub_date": 1715644800,
+                  "attribution": "community.openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://community.openai.com/t/how-can-i-find-out-the-gpt-4-model-version-when-using-openai-python-library-and-azure-openai/629016",
+                  "title": "How can I find out the GPT-4 model version when using openai ...",
+                  "snippet": "You can verify this by looking at the response object after sending a request. The response will include the specific model version used.",
+                  "ref_id": null,
+                  "pub_date": 1708041600,
+                  "attribution": "community.openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://community.openai.com/t/did-you-compare-the-cost-of-using-a-gpt-plus-subscription-and-just-use-gpt-by-api/578397",
+                  "title": "Did you compare the cost of using a GPT plus subscription and just ...",
+                  "snippet": "I would use the API with the Playground interface (built-in) and probably spend less than $1 to $5 per month. Which is cheaper than ChatGPT.",
+                  "ref_id": null,
+                  "pub_date": 1704412800,
+                  "attribution": "community.openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://community.openai.com/t/differences-between-chatgpt4-and-chatgpt4-plus/421301",
+                  "title": "Differences between chatgpt4 and chatgpt4-Plus? - ChatGPT",
+                  "snippet": "GPT-4 model AI is now available for you to use exclusively within Plus with your $20/MO subscription.",
+                  "ref_id": null,
+                  "pub_date": 1696809600,
+                  "attribution": "community.openai.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "learn.microsoft.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models",
+                  "title": "Azure OpenAI in Azure AI Foundry Models - Learn Microsoft",
+                  "snippet": "You can distinguish between the GPT-4 and Turbo models by examining the model version. gpt-4 Version 0314; gpt-4 Version 0613; gpt-4-32k Version 0613. You can ...",
+                  "ref_id": null,
+                  "pub_date": null,
+                  "attribution": "learn.microsoft.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/api-version-lifecycle",
+                  "title": "Azure OpenAI in Azure AI Foundry Models API version lifecycle",
+                  "snippet": "Azure OpenAI API version 2024-10-21 is currently the latest GA API release. This API version is the replacement for the previous 2024-06-01 GA ...",
+                  "ref_id": null,
+                  "pub_date": 1748476800,
+                  "attribution": "learn.microsoft.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "slashdot.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://slashdot.org/software/comparison/ChatGPT-Plus-vs-GPT-4-Turbo/",
+                  "title": "Compare ChatGPT Plus vs. GPT-4 Turbo in 2025 - Slashdot",
+                  "snippet": "What's the difference between ChatGPT Plus and GPT-4 Turbo? Compare ChatGPT Plus vs. GPT-4 Turbo in 2025 by cost, reviews, features, integrations, and more.",
+                  "ref_id": null,
+                  "pub_date": null,
+                  "attribution": "slashdot.org"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "stackoverflow.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://stackoverflow.com/questions/75810740/openai-gpt-4-api-what-is-the-difference-between-gpt-4-and-gpt-4-0314-or-gpt-4-0",
+                  "title": "OpenAI GPT-4 API: What is the difference between ... - Stack Overflow",
+                  "snippet": "GPT-4-0314 could refer to a specific version or release of GPT-4 with a particular set of updates or improvements, perhaps released on March 14th.",
+                  "ref_id": null,
+                  "pub_date": 1679443200,
+                  "attribution": "stackoverflow.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "www.youtube.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.youtube.com/watch?pp=0gcJCdgAo7VqN5tD&v=GIgfhv7fehU",
+                  "title": "Free GPT-4o vs. ChatGPT Plus: What's The Difference? - YouTube",
+                  "snippet": "Curious about the real differences between Free GPT-4o and ChatGPT Plus? Wondering if ChatGPT Plus is worth the $20 monthly fee?",
+                  "ref_id": null,
+                  "pub_date": 1715731200,
+                  "attribution": "www.youtube.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "www.techtarget.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.techtarget.com/whatis/feature/GPT-4o-explained-Everything-you-need-to-know",
+                  "title": "GPT-4o explained: Everything you need to know - TechTarget",
+                  "snippet": "GPT-4o goes beyond GPT-4 Turbo in terms of both capabilities and performance. ... It is also an option for ChatGPT Plus, Pro, Enterprise and Team ...",
+                  "ref_id": null,
+                  "pub_date": 1737504000,
+                  "attribution": "www.techtarget.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "www.wired.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.wired.com/story/openai-announces-4-1-ai-model-coding",
+                  "title": "OpenAI's New GPT 4.1 Models Excel at Coding",
+                  "snippet": "OpenAI has unveiled a new suite of GPT-4.1 AI models\u2014GPT-4.1, GPT-4.1 Mini, and GPT-4.1 Nano\u2014designed to excel at coding tasks, surpassing its previous models like GPT-4o and GPT-4.5 in key areas. These models are now accessible to developers via its API and have demonstrated superior performance on coding benchmarks like SWE-Bench. They can analyze eight times more code simultaneously, follow complex instructions better, and reduce the need for repeated commands. GPT-4.1 is also 40% faster and 80% cheaper per query than GPT-4o. OpenAI showcased the model's capabilities by developing apps such as language flashcards during a demo. Companies like Windsurf found GPT-4.1 had 60% fewer errors than prior models. Despite OpenAI's rapid growth\u2014it now boasts over 500 million weekly active users\u2014it continues to face stiff competition from Google, Anthropic, and others. The company is investing heavily in infrastructure, including a planned $500 billion Stargate project. OpenAI also plans to release an open-weight model this summer to further support developers and encourage customization. Industry experts anticipate a diverse ecosystem of specialized models moving forward, rather than dominance by a single platform.",
+                  "ref_id": null,
+                  "pub_date": 1744652426.719,
+                  "attribution": "www.wired.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "www.businessinsider.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.businessinsider.com/sam-altman-openai-fix-confusing-ai-model-names-gpt-2025-4",
+                  "title": "Sam Altman says OpenAI deserves to be mocked for its confusing AI names &mdash; and a 'fix' is coming",
+                  "snippet": "Sam Altman, CEO of OpenAI, has acknowledged widespread confusion surrounding the naming conventions of the company's AI models, such as GPT-4o, GPT-4.1, and o1 mini. He conceded that OpenAI deserves to be mocked for its complex and non-intuitive model names and promised a naming overhaul by the summer. The current names make it difficult for users unfamiliar with technical details to distinguish between different models. Altman\u2019s comments follow the release of new models like GPT-4.1 mini and nano, which reportedly offer significant advancements in coding capabilities and are currently accessible via OpenAI's API for developers. Kevin Weil, OpenAI\u2019s Chief Product Officer, also criticized the naming system, describing it as \u201catrocious\u201d but not a top priority for the company at the moment. Despite considerations for renaming, the brand name \"ChatGPT\" is likely to remain unchanged due to its widespread recognition, even though Altman acknowledged it is not an ideal name from a marketing standpoint.",
+                  "ref_id": null,
+                  "pub_date": 1744734452,
+                  "attribution": "www.businessinsider.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "www.techradar.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.techradar.com/news/live/openai-chatgpt-announcements-april-2025",
+                  "title": "OpenAI promises new ChatGPT features this week - all the latest as Sam Altman says 'we've got a lot of good stuff for you'",
+                  "snippet": "OpenAI has announced the launch of GPT-4.1, a new family of AI models designed specifically for developers. The new models\u2014GPT-4.1, GPT-4.1 Mini, and GPT-4.1 Nano\u2014are now available via API and focus on improving coding, instruction-following, and long-context understanding with support for up to 1 million tokens. These models are reported to be the fastest and most cost-effective OpenAI has developed to date. Their introduction follows last week's major memory upgrade to ChatGPT and adds to the company's efforts to maintain a competitive edge over rivals like Google Gemini and DeepSeek. Although GPT-4.1 is not yet available to general consumers, it is expected to influence many tools and platforms in the near future. OpenAI CEO Sam Altman hinted this week could feature more exciting updates, suggesting additional announcements may follow. The update also contributes to the growing popularity of ChatGPT, which was the most downloaded app globally in March 2025, spurred in part by new image generation features gaining traction on social media.",
+                  "ref_id": null,
+                  "pub_date": 1744638695,
+                  "attribution": "www.techradar.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "economictimes.indiatimes.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-rolls-out-gpt-4-1-and-gpt-4-1-mini/articleshow/121178770.cms",
+                  "title": "OpenAI rolls out GPT-4.1 and GPT-4.1 mini",
+                  "snippet": "OpenAI has announced the rollout of two new AI models, GPT-4.1 and GPT-4.1 mini, which are now integrated into ChatGPT, according to a statement shared on the platform X on Wednesday. These advancements represent the latest iteration in OpenAI\u2019s series of generative pre-trained transformers, aiming to enhance user experience with improved performance and efficiency. The introduction of both a standard and a mini version suggests an effort to broaden accessibility and cater to varying computational resource needs or user requirements. This release marks another significant step in the evolution of OpenAI\u2019s language models and their application across digital platforms.",
+                  "ref_id": null,
+                  "pub_date": 1747287825,
+                  "attribution": "economictimes.indiatimes.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "apnews.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://apnews.com/article/da850be425aaa269e2915e9e0b1c726a",
+                  "title": "ChatGPT-maker OpenAI hosts its first big tech showcase as the AI startup faces growing competition",
+                  "snippet": "OpenAI held its inaugural developer conference in San Francisco, unveiling new customizable chatbot products to enthusiastic attendees. CEO Sam Altman introduced GPT-4 Turbo and GPT-4V, the latest versions of their AI models, which offer improved capabilities, including vision analysis. The company showcased tools aimed at specific tasks and emphasized iterative deployment to address safety concerns. OpenAI's popularity has soared with ChatGPT now having over 100 million weekly users and 2 million developers. The company also faces growing competition from other tech giants and new ventures such as Elon Musk's Grok. With support from Microsoft, OpenAI is focused on developing artificial general intelligence (AGI) to perform various tasks as well as humans. The conference highlighted OpenAI's commitment to advancing AI while navigating regulatory and ethical challenges.",
+                  "ref_id": null,
+                  "pub_date": 1699284591,
+                  "attribution": "apnews.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "www.reuters.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.reuters.com/technology/artificial-intelligence/openai-launches-new-gpt-41-models-with-improved-coding-long-context-2025-04-14/",
+                  "title": "OpenAI launches new GPT-4.1 models with improved coding, long context comprehension",
+                  "snippet": "On April 14, 2025, OpenAI announced the release of its latest AI models: GPT-4.1, GPT-4.1 mini, and GPT-4.1 nano. These models offer significant advancements in coding capabilities, long context comprehension, and instruction following. GPT-4.1 notably surpasses previous models, with coding performance improving by 21% compared to GPT-4o and 27% over GPT-4.5. One major enhancement is the increased context window, supporting up to 1 million tokens, facilitating deeper understanding of large data sets. The models, updated with knowledge through June 2024, are accessible exclusively via OpenAI's API and are designed to be more effective for powering AI agents. Additionally, OpenAI highlighted the models\u2019 reduced operational cost compared to GPT-4.5 and announced it would discontinue the GPT-4.5 preview in the API by July. CEO Sam Altman emphasized the models' strong performance in practical applications and positive feedback from developers.",
+                  "ref_id": null,
+                  "pub_date": 1744653691,
+                  "attribution": "www.reuters.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "en.wikipedia.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://en.wikipedia.org/wiki/OpenAI_o4-mini",
+                  "title": "OpenAI o4-mini",
+                  "snippet": "",
+                  "ref_id": null,
+                  "pub_date": 1748223211,
+                  "attribution": "en.wikipedia.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://en.wikipedia.org/wiki/OpenAI_o1",
+                  "title": "OpenAI o1",
+                  "snippet": "",
+                  "ref_id": null,
+                  "pub_date": 1743126115,
+                  "attribution": "en.wikipedia.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://en.wikipedia.org/wiki/GPT-4.5",
+                  "title": "GPT-4.5",
+                  "snippet": "",
+                  "ref_id": null,
+                  "pub_date": 1749721215,
+                  "attribution": "en.wikipedia.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://en.wikipedia.org/wiki/ChatGPT",
+                  "title": "ChatGPT",
+                  "snippet": "",
+                  "ref_id": null,
+                  "pub_date": 1749755566,
+                  "attribution": "en.wikipedia.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://en.wikipedia.org/wiki/GPT-4o",
+                  "title": "GPT-4o",
+                  "snippet": "",
+                  "ref_id": null,
+                  "pub_date": 1749753711,
+                  "attribution": "en.wikipedia.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://en.wikipedia.org/wiki/GPT-4.1",
+                  "title": "GPT-4.1",
+                  "snippet": "",
+                  "ref_id": null,
+                  "pub_date": 1747387427,
+                  "attribution": "en.wikipedia.org"
+                }
+              ]
+            }
+          ],
+          "debug_sonic_thread_id": "thread_684b2dbd10208008b883bf2643f25b50",
+          "search_turns_count": 1,
+          "search_source": "composer_auto",
+          "client_reported_search_source": "composer_auto",
+          "reasoning_status": "is_reasoning",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "eb95f557-d7c2-46a2-8eaa-3f625af6505b",
+          "request_id": "94ebd5731eb07ba1-ORD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "eb95f557-d7c2-46a2-8eaa-3f625af6505b",
+      "children": [
+        "d9e1e453-9714-47a8-81a6-63ef7b9a2b54"
+      ]
+    },
+    "d9e1e453-9714-47a8-81a6-63ef7b9a2b54": {
+      "id": "d9e1e453-9714-47a8-81a6-63ef7b9a2b54",
+      "message": {
+        "id": "d9e1e453-9714-47a8-81a6-63ef7b9a2b54",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1749757383.561809,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Thought for a couple of seconds"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 2,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "4db51f75-4374-4928-8d2f-107e42e426bb",
+          "request_id": "94ebd5731eb07ba1-ORD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "4db51f75-4374-4928-8d2f-107e42e426bb",
+      "children": [
+        "4e190d0d-35ea-42fd-a08c-a2abb882e141"
+      ]
+    },
+    "4e190d0d-35ea-42fd-a08c-a2abb882e141": {
+      "id": "4e190d0d-35ea-42fd-a08c-a2abb882e141",
+      "message": {
+        "id": "4e190d0d-35ea-42fd-a08c-a2abb882e141",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {
+            "real_author": "tool:web",
+            "sonicberry_model_id": "alpha.sonicberry_2s_f",
+            "source": "sonic_tool"
+          }
+        },
+        "create_time": 1749757374.316948,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Here\u2019s a breakdown of GPT\u20114 capabilities via the **OpenAI API** compared to the ChatGPT service tiers:\n\n---\n\n## 1. Available GPT\u20114 Models on API \ud83c\udf9b\ufe0f\n\nThe API offers several GPT\u20114 family models\u2014each with distinct features and capabilities:\n\n- **gpt\u20114**, **gpt\u20114-32k**: These are alias names pointing to the latest production snapshot. For instance, \u201cgpt\u20114\u201d currently maps to **gpt\u20114-0613**, and \u201cgpt\u20114-32k\u201d to **gpt\u20114-32k-0613**\u2014each with 8K / 32K token contexts respectively \ue200cite\ue202turn0search6\ue202turn0search10\ue201.\n- **Dated snapshots** like `gpt\u20114-0613` pinpoint a specific version (June\u202f13\u202f2023). The undated alias continually points to the most recent snapshot \ue200cite\ue202turn0search10\ue202turn0search6\ue201.\n- **gpt\u20114-turbo / GPT\u20114 Turbo with Vision**: These are optimized, faster variants, akin to what\u2019s available in ChatGPT Pro or Plus.\n- **GPT\u20114o** (Omni) and **GPT\u20114o-mini**, **GPT\u20114o-mini-high**: Multimodal turbo versions accessible via API too \ue200cite\ue202turn0search15\ue202turn0search29\ue202turn0search25\ue201.\n- **GPT\u20114.1**, **GPT\u20114.1-mini**, **GPT\u20114.1-nano**: Released April\u202f14,\u202f2025\u2014superior for code, instruction following, and long contexts (up to 1\u202fM tokens) \ue200cite\ue202turn0news24\ue202turn0search30\ue201.\n\n---\n\n## 2. Comparison with ChatGPT Plus/Pro Tiers\n\n- **ChatGPT Plus ($20/mo)** and **Pro ($229+/mo)** grant **interactive access** to models like GPT\u20114 Turbo, GPT\u20114o, GPT\u20114.1 variants, etc.\u2014for use via the web/mobile interface \ue200cite\ue202turn0search5\ue202turn0search28\ue202turn0news22\ue201.\n- The API gives **programmatic access** to the **same underlying models**, often with broader options (such as GPT\u20114.1-mini/nano) and longer context windows (up to 1\u202fM tokens).\n- **Feature parity**: Anything you can use in ChatGPT (Turbo, GPT\u20114o, GPT\u20114.1) is accessible via the API\u2014assuming your API plan has access (some newer models may need membership or invite).\n\n---\n\n## 3. So\u2014Does API Provide Pro/Plus Capabilities?\n\n**Yes.** You can replicate\u2014and in some cases exceed\u2014the capabilities of ChatGPT Plus/Pro via the API:\n\n- Choose e.g. `\"model\": \"gpt-4\"`, or for vision/audio, `\"gpt-4o\"` or `\"gpt-4o-mini\"`.\n- For coding-intensive workloads, use `\"gpt-4.1\"` which isn\u2019t yet available in ChatGPT but is accessible via API with enhanced efficiency/cost (~80% cheaper and much faster than GPT\u20114o) \ue200cite\ue202turn0news19\ue202turn0news24\ue201.\n  \n### Key differences:\n- **Billing** is token-based in the API, not subscription-based. ChatGPT Plus/Pro gives you a capped flat monthly fee with unlimited usage (within policy).\n- The API supports **tooling features** (e.g., function-calling), batch jobs, HTTP access.\n- New model rollout timing: Sometimes API gets new models (e.g., GPT\u20114.1) before they appear in ChatGPT.\n\n---\n\n## 4. How to Use It\n\n- Sign up for API access and ensure billing/tiers allow GPT\u20114 models.\n- In your API call, specify `\"model\": \"gpt-4\"` or `\"gpt-4o\"` etc.\n- You can also explicitly pick snapshots like `\"gpt-4-0613\"` if version consistency is vital.\n- GPT\u20114.1 is selectable via `\"gpt-4.1\"`.\n\n---\n\n### \u2714\ufe0f TL;DR Summary\n\n| Capability                  | ChatGPT Plus/Pro UI         | API via model name                 |\n|---------------------------|----------------------------|------------------------------------|\n| GPT\u20114 Turbo, GPT\u20114o        | \u2705                         | `\"gpt\u20114\"`, `\"gpt\u20114o\"`, `\"gpt\u20114o-mini\"` |\n| GPT\u20114 with vision/audio    | \u2705                         | `\"gpt\u20114o\"`                         |\n| GPT\u20114.1 / 1M token support | \ud83d\udea7 API-only currently       | `\"gpt\u20114.1\"`, `\"gpt\u20114.1-mini\"`       |\n| Model snapshot control     | No                         | `\"gpt\u20114-0613\"`, `\"gpt\u20114-032k-0613\"`|\n\n---\n\n## Final Take\n\nThe **GPT\u20114 API fully supports equivalent (and often more advanced) model capabilities** as ChatGPT Plus/Pro. The main differences lie in **how** you interact (programmatic vs. conversational UI), **billing structure**, and **access to cutting-edge snapshot models**. So if you want Pro-level GPT\u20114 performance in your code, the API is your route\u2014just keep track of token usage and billing accordingly.\n\nLet me know if you'd like help configuring an API call!"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "content_references": [
+            {
+              "matched_text": "Here\u2019s a breakdown of GPT\u20114 capabilities via the **OpenAI API** compared to the ChatGPT service tiers:",
+              "start_idx": 0,
+              "end_idx": 102,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "Here\u2019s a breakdown of GPT\u20114 capabilities via the **OpenAI API** compared to the ChatGPT service tiers:",
+              "prompt_text": null,
+              "type": "attribution",
+              "attributable_index": "0-0",
+              "attributions": null,
+              "attributions_debug": null
+            },
+            {
+              "matched_text": "The API offers several GPT\u20114 family models\u2014each with distinct features and capabilities:",
+              "start_idx": 149,
+              "end_idx": 237,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "The API offers several GPT\u20114 family models\u2014each with distinct features and capabilities:",
+              "prompt_text": null,
+              "type": "attribution",
+              "attributable_index": "0-1",
+              "attributions": null,
+              "attributions_debug": null
+            },
+            {
+              "matched_text": "**gpt\u20114**, **gpt\u20114-32k**: These are alias names pointing to the latest production snapshot. For instance, \u201cgpt\u20114\u201d currently maps to **gpt\u20114-0613**, and \u201cgpt\u20114-32k\u201d to **gpt\u20114-32k-0613**\u2014each with 8K / 32K token contexts respectively",
+              "start_idx": 241,
+              "end_idx": 473,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "**gpt\u20114**, **gpt\u20114-32k**: These are alias names pointing to the latest production snapshot. For instance, \u201cgpt\u20114\u201d currently maps to **gpt\u20114-0613**, and \u201cgpt\u20114-32k\u201d to **gpt\u20114-32k-0613**\u2014each with 8K / 32K token contexts respectively",
+              "prompt_text": null,
+              "type": "attribution",
+              "attributable_index": "0-2",
+              "attributions": null,
+              "attributions_debug": null
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search6\ue202turn0search10\ue201",
+              "start_idx": 474,
+              "end_idx": 507,
+              "safe_urls": [],
+              "refs": [],
+              "alt": null,
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Pricing - ChatGPT - OpenAI",
+                  "url": "https://openai.com/chatgpt/pricing/?utm_source=chatgpt.com",
+                  "pub_date": null,
+                  "snippet": "Everything in Plus \u00b7 Unlimited access to all reasoning models and GPT\u20114o \u00b7 Unlimited access to advanced voice, with higher limits for video and screensharing.",
+                  "attribution_segments": [
+                    "0-0"
+                  ],
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "title": "GPT-4 API general availability and deprecation of older models in ...",
+                  "url": "https://openai.com/index/gpt-4-api-general-availability/?utm_source=chatgpt.com",
+                  "pub_date": null,
+                  "snippet": "GPT\u20113.5 Turbo, DALL\u00b7E and Whisper APIs are also generally available, and we are releasing a deprecation plan for older models of the Completions API, ...",
+                  "attribution_segments": [
+                    "0-1"
+                  ],
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "title": "OpenAI GPT-4 API: What is the difference between ... - Stack Overflow",
+                  "url": "https://stackoverflow.com/questions/75810740/openai-gpt-4-api-what-is-the-difference-between-gpt-4-and-gpt-4-0314-or-gpt-4-0?utm_source=chatgpt.com",
+                  "pub_date": 1679443200,
+                  "snippet": "GPT-4-0314 could refer to a specific version or release of GPT-4 with a particular set of updates or improvements, perhaps released on March 14th.",
+                  "attribution_segments": [
+                    "0-2"
+                  ],
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 10
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null,
+                  "attribution": "stackoverflow.com"
+                }
+              ],
+              "fallback_items": [
+                {
+                  "title": "Azure OpenAI in Azure AI Foundry Models - Learn Microsoft",
+                  "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?utm_source=chatgpt.com",
+                  "pub_date": null,
+                  "snippet": "You can distinguish between the GPT-4 and Turbo models by examining the model version. gpt-4 Version 0314; gpt-4 Version 0613; gpt-4-32k Version 0613. You can ...",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                },
+                {
+                  "title": "OpenAI GPT-4 API: What is the difference between ... - Stack Overflow",
+                  "url": "https://stackoverflow.com/questions/75810740/openai-gpt-4-api-what-is-the-difference-between-gpt-4-and-gpt-4-0314-or-gpt-4-0?utm_source=chatgpt.com",
+                  "pub_date": 1679443200,
+                  "snippet": "GPT-4-0314 could refer to a specific version or release of GPT-4 with a particular set of updates or improvements, perhaps released on March 14th.",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 10
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": "v2"
+            },
+            {
+              "matched_text": "**Dated snapshots** like `gpt\u20114-0613` pinpoint a specific version (June\u202f13\u202f2023). The undated alias continually points to the most recent snapshot",
+              "start_idx": 511,
+              "end_idx": 657,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "**Dated snapshots** like `gpt\u20114-0613` pinpoint a specific version (June\u202f13\u202f2023). The undated alias continually points to the most recent snapshot",
+              "prompt_text": null,
+              "type": "attribution",
+              "attributable_index": "507-0",
+              "attributions": null,
+              "attributions_debug": null
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search10\ue202turn0search6\ue201",
+              "start_idx": 658,
+              "end_idx": 691,
+              "safe_urls": [],
+              "refs": [],
+              "alt": null,
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "OpenAI GPT-4 API: What is the difference between ... - Stack Overflow",
+                  "url": "https://stackoverflow.com/questions/75810740/openai-gpt-4-api-what-is-the-difference-between-gpt-4-and-gpt-4-0314-or-gpt-4-0?utm_source=chatgpt.com",
+                  "pub_date": 1679443200,
+                  "snippet": "GPT-4-0314 could refer to a specific version or release of GPT-4 with a particular set of updates or improvements, perhaps released on March 14th.",
+                  "attribution_segments": [
+                    "507-0"
+                  ],
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 10
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null,
+                  "attribution": "stackoverflow.com"
+                }
+              ],
+              "fallback_items": [
+                {
+                  "title": "OpenAI GPT-4 API: What is the difference between ... - Stack Overflow",
+                  "url": "https://stackoverflow.com/questions/75810740/openai-gpt-4-api-what-is-the-difference-between-gpt-4-and-gpt-4-0314-or-gpt-4-0?utm_source=chatgpt.com",
+                  "pub_date": 1679443200,
+                  "snippet": "GPT-4-0314 could refer to a specific version or release of GPT-4 with a particular set of updates or improvements, perhaps released on March 14th.",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 10
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                },
+                {
+                  "title": "Azure OpenAI in Azure AI Foundry Models - Learn Microsoft",
+                  "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?utm_source=chatgpt.com",
+                  "pub_date": null,
+                  "snippet": "You can distinguish between the GPT-4 and Turbo models by examining the model version. gpt-4 Version 0314; gpt-4 Version 0613; gpt-4-32k Version 0613. You can ...",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": "v2"
+            },
+            {
+              "matched_text": "**gpt\u20114-turbo / GPT\u20114 Turbo with Vision**: These are optimized, faster variants, akin to what\u2019s available in ChatGPT Pro or Plus.",
+              "start_idx": 695,
+              "end_idx": 824,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "**gpt\u20114-turbo / GPT\u20114 Turbo with Vision**: These are optimized, faster variants, akin to what\u2019s available in ChatGPT Pro or Plus.",
+              "prompt_text": null,
+              "type": "attribution",
+              "attributable_index": "691-0",
+              "attributions": null,
+              "attributions_debug": null
+            },
+            {
+              "matched_text": "**GPT\u20114o** (Omni) and **GPT\u20114o-mini**, **GPT\u20114o-mini-high**: Multimodal turbo versions accessible via API too",
+              "start_idx": 827,
+              "end_idx": 936,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "**GPT\u20114o** (Omni) and **GPT\u20114o-mini**, **GPT\u20114o-mini-high**: Multimodal turbo versions accessible via API too",
+              "prompt_text": null,
+              "type": "attribution",
+              "attributable_index": "691-1",
+              "attributions": null,
+              "attributions_debug": null
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search15\ue202turn0search29\ue202turn0search25\ue201",
+              "start_idx": 937,
+              "end_idx": 985,
+              "safe_urls": [],
+              "refs": [],
+              "alt": null,
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "GPT-4o explained: Everything you need to know - TechTarget",
+                  "url": "https://www.techtarget.com/whatis/feature/GPT-4o-explained-Everything-you-need-to-know?utm_source=chatgpt.com",
+                  "pub_date": 1737504000,
+                  "snippet": "GPT-4o goes beyond GPT-4 Turbo in terms of both capabilities and performance. ... It is also an option for ChatGPT Plus, Pro, Enterprise and Team ...",
+                  "attribution_segments": [
+                    "691-0",
+                    "691-1"
+                  ],
+                  "supporting_websites": [
+                    {
+                      "title": "Azure OpenAI in Azure AI Foundry Models - Learn Microsoft",
+                      "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?utm_source=chatgpt.com",
+                      "pub_date": null,
+                      "snippet": "You can distinguish between the GPT-4 and Turbo models by examining the model version. gpt-4 Version 0314; gpt-4 Version 0613; gpt-4-32k Version 0613. You can ...",
+                      "attribution": "learn.microsoft.com"
+                    },
+                    {
+                      "title": "Sam Altman says OpenAI deserves to be mocked for its confusing AI names &mdash; and a 'fix' is coming",
+                      "url": "https://www.businessinsider.com/sam-altman-openai-fix-confusing-ai-model-names-gpt-2025-4?utm_source=chatgpt.com",
+                      "pub_date": 1744734452,
+                      "snippet": "Sam Altman with a microphone GPT-4o. o1 mini. GPT-4.1. Confused about the names of the various AI models powering ChatGPT? You're not alone. Even CEO Sam Altman says the AI giant deserves to be mocke...",
+                      "attribution": "businessinsider.com"
+                    },
+                    {
+                      "title": "Pricing - ChatGPT - OpenAI",
+                      "url": "https://openai.com/chatgpt/pricing/?utm_source=chatgpt.com",
+                      "pub_date": null,
+                      "snippet": "Everything in Plus \u00b7 Unlimited access to all reasoning models and GPT\u20114o \u00b7 Unlimited access to advanced voice, with higher limits for video and screensharing.",
+                      "attribution": "openai.com"
+                    },
+                    {
+                      "title": "OpenAI o1",
+                      "url": "https://en.wikipedia.org/wiki/OpenAI_o1?utm_source=chatgpt.com",
+                      "pub_date": 1743126115,
+                      "snippet": "HISTORY  BACKGROUND  According to leaked information, o1 was formerly known within OpenAI as \"Q*\", and later as \"Strawberry\". The codename \"Q*\" first surfaced in November 2023, around the time of Sam...",
+                      "attribution": "en.wikipedia.org"
+                    },
+                    {
+                      "title": "OpenAI o4-mini",
+                      "url": "https://en.wikipedia.org/wiki/OpenAI_o4-mini?utm_source=chatgpt.com",
+                      "pub_date": 1748223211,
+                      "snippet": "OpenAI o4-mini is a generative pre-trained transformer model created by OpenAI. On April 16, 2025, the o4-mini model was released to all ChatGPT users (including free-tier users) as well as via the C...",
+                      "attribution": "en.wikipedia.org"
+                    },
+                    {
+                      "title": "ChatGPT",
+                      "url": "https://en.wikipedia.org/wiki/ChatGPT?utm_source=chatgpt.com",
+                      "pub_date": 1749755566,
+                      "snippet": "GPT-4O  In May 2024, OpenAI announced and started a multi-month rollout of GPT-4o (\"o\" for \"Omni\"), a model capable of analyzing and generating text, images, and sound. GPT-4o is twice as fast and cos...",
+                      "attribution": "en.wikipedia.org"
+                    },
+                    {
+                      "title": "OpenAI's New GPT 4.1 Models Excel at Coding",
+                      "url": "https://www.wired.com/story/openai-announces-4-1-ai-model-coding?utm_source=chatgpt.com",
+                      "pub_date": 1744652426.719,
+                      "snippet": "OpenAI\u2019s New GPT 4.1 Models Excel at Coding Date: Mon Apr 14 17:40:26 2025 UTC  OpenAI announced today that it is releasing a new family of artificial intelligence models optimized to excel at coding,...",
+                      "attribution": "wired.com"
+                    },
+                    {
+                      "title": "GPT-4 API general availability and deprecation of older models in ...",
+                      "url": "https://openai.com/index/gpt-4-api-general-availability/?utm_source=chatgpt.com",
+                      "pub_date": null,
+                      "snippet": "GPT\u20113.5 Turbo, DALL\u00b7E and Whisper APIs are also generally available, and we are releasing a deprecation plan for older models of the Completions API, ...",
+                      "attribution": "openai.com"
+                    }
+                  ],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 15
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "news",
+                      "ref_index": 20
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 26
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 25
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 28
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "news",
+                      "ref_index": 19
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null,
+                  "attribution": "techtarget.com"
+                }
+              ],
+              "fallback_items": [
+                {
+                  "title": "GPT-4o explained: Everything you need to know - TechTarget",
+                  "url": "https://www.techtarget.com/whatis/feature/GPT-4o-explained-Everything-you-need-to-know?utm_source=chatgpt.com",
+                  "pub_date": 1737504000,
+                  "snippet": "GPT-4o goes beyond GPT-4 Turbo in terms of both capabilities and performance. ... It is also an option for ChatGPT Plus, Pro, Enterprise and Team ...",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 15
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                },
+                {
+                  "title": "GPT-4o",
+                  "url": "https://en.wikipedia.org/wiki/GPT-4o?utm_source=chatgpt.com",
+                  "pub_date": 1749753711,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 29
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                },
+                {
+                  "title": "OpenAI o4-mini",
+                  "url": "https://en.wikipedia.org/wiki/OpenAI_o4-mini?utm_source=chatgpt.com",
+                  "pub_date": 1748223211,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 25
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": "v2"
+            },
+            {
+              "matched_text": "**GPT\u20114.1**, **GPT\u20114.1-mini**, **GPT\u20114.1-nano**: Released April\u202f14,\u202f2025\u2014superior for code, instruction following, and long contexts (up to 1\u202fM tokens)",
+              "start_idx": 989,
+              "end_idx": 1140,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "**GPT\u20114.1**, **GPT\u20114.1-mini**, **GPT\u20114.1-nano**: Released April\u202f14,\u202f2025\u2014superior for code, instruction following, and long contexts (up to 1\u202fM tokens)",
+              "prompt_text": null,
+              "type": "attribution",
+              "attributable_index": "985-0",
+              "attributions": null,
+              "attributions_debug": null
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0news24\ue202turn0search30\ue201",
+              "start_idx": 1141,
+              "end_idx": 1173,
+              "safe_urls": [],
+              "refs": [],
+              "alt": null,
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "OpenAI launches new GPT-4.1 models with improved coding, long context comprehension",
+                  "url": "https://www.reuters.com/technology/artificial-intelligence/openai-launches-new-gpt-41-models-with-improved-coding-long-context-2025-04-14/?utm_source=chatgpt.com",
+                  "pub_date": 1744653691,
+                  "snippet": "OpenAI on Monday launched its new AI model GPT-4.1, along with smaller versions GPT-4.1 mini and GPT-4.1 nano, touting major improvements in coding, instruction following, and long context comprehens...",
+                  "attribution_segments": [
+                    "985-0"
+                  ],
+                  "supporting_websites": [
+                    {
+                      "title": "GPT-4.1",
+                      "url": "https://en.wikipedia.org/wiki/GPT-4.1?utm_source=chatgpt.com",
+                      "pub_date": 1747387427,
+                      "snippet": "GPT-4.1 is a large language model within OpenAI's GPT series. It was released on April 14, 2025. GPT-4.1 can be accessed through the OpenAI API or the OpenAI Developer Playground. Three different mode...",
+                      "attribution": "en.wikipedia.org"
+                    },
+                    {
+                      "title": "OpenAI promises new ChatGPT features this week - all the latest as Sam Altman says 'we've got a lot of good stuff for you'",
+                      "url": "https://www.techradar.com/news/live/openai-chatgpt-announcements-april-2025?utm_source=chatgpt.com",
+                      "pub_date": 1744638695,
+                      "snippet": "OpenAI promises new ChatGPT features this week \u2013 all the latest as Sam Altman says \u2018we've got a lot of good stuff for you\u2019 Date: Mon Apr 14 13:51:35 2025 UTC  Another week, another OpenAI announcement...",
+                      "attribution": "techradar.com"
+                    },
+                    {
+                      "title": "OpenAI's New GPT 4.1 Models Excel at Coding",
+                      "url": "https://www.wired.com/story/openai-announces-4-1-ai-model-coding?utm_source=chatgpt.com",
+                      "pub_date": 1744652426.719,
+                      "snippet": "OpenAI\u2019s New GPT 4.1 Models Excel at Coding Date: Mon Apr 14 17:40:26 2025 UTC  OpenAI announced today that it is releasing a new family of artificial intelligence models optimized to excel at coding,...",
+                      "attribution": "wired.com"
+                    },
+                    {
+                      "title": "Pricing - ChatGPT - OpenAI",
+                      "url": "https://openai.com/chatgpt/pricing/?utm_source=chatgpt.com",
+                      "pub_date": null,
+                      "snippet": "Everything in Plus \u00b7 Unlimited access to all reasoning models and GPT\u20114o \u00b7 Unlimited access to advanced voice, with higher limits for video and screensharing.",
+                      "attribution": "openai.com"
+                    },
+                    {
+                      "title": "OpenAI rolls out GPT-4.1 and GPT-4.1 mini",
+                      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-rolls-out-gpt-4-1-and-gpt-4-1-mini/articleshow/121178770.cms?utm_source=chatgpt.com",
+                      "pub_date": 1747287825,
+                      "snippet": " OpenAI has started rolling out two new artificial intelligence models, GPT-4.1 and GPT-4.1 mini, in ChatGPT, the company said in a post on X on Wednesday.",
+                      "attribution": "economictimes.indiatimes.com"
+                    },
+                    {
+                      "title": "Sam Altman says OpenAI deserves to be mocked for its confusing AI names &mdash; and a 'fix' is coming",
+                      "url": "https://www.businessinsider.com/sam-altman-openai-fix-confusing-ai-model-names-gpt-2025-4?utm_source=chatgpt.com",
+                      "pub_date": 1744734452,
+                      "snippet": "Sam Altman with a microphone GPT-4o. o1 mini. GPT-4.1. Confused about the names of the various AI models powering ChatGPT? You're not alone. Even CEO Sam Altman says the AI giant deserves to be mocke...",
+                      "attribution": "businessinsider.com"
+                    },
+                    {
+                      "title": "How to check gpt-4 model version? - OpenAI Developer Community",
+                      "url": "https://community.openai.com/t/how-to-check-gpt-4-model-version/339259?utm_source=chatgpt.com",
+                      "pub_date": 1693267200,
+                      "snippet": "Based on developer feedback, we are extending support for gpt-3.5-turbo-0301 and gpt-4-0314 models in the OpenAI API until at least June 13, ...",
+                      "attribution": "community.openai.com"
+                    },
+                    {
+                      "title": "GPT-4 vs GPT-4o? Which is the better? - Community",
+                      "url": "https://community.openai.com/t/gpt-4-vs-gpt-4o-which-is-the-better/746991?utm_source=chatgpt.com",
+                      "pub_date": 1715644800,
+                      "snippet": "GPT-4 is still much better for our complex tasks that require careful reading and proper prompt following. GPT-4-Turbo was OK for remedial tasks ...",
+                      "attribution": "community.openai.com"
+                    },
+                    {
+                      "title": "Azure OpenAI in Azure AI Foundry Models - Learn Microsoft",
+                      "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?utm_source=chatgpt.com",
+                      "pub_date": null,
+                      "snippet": "You can distinguish between the GPT-4 and Turbo models by examining the model version. gpt-4 Version 0314; gpt-4 Version 0613; gpt-4-32k Version 0613. You can ...",
+                      "attribution": "learn.microsoft.com"
+                    },
+                    {
+                      "title": "ChatGPT Plus vs. GPT-4 Turbo Comparison - SourceForge",
+                      "url": "https://sourceforge.net/software/compare/ChatGPT-Plus-vs-GPT-4-Turbo/?utm_source=chatgpt.com",
+                      "pub_date": null,
+                      "snippet": "Compare ChatGPT Plus vs. GPT-4 Turbo using this comparison chart. Compare price, features, and reviews of the software side-by-side to make the best choice ...",
+                      "attribution": "sourceforge.net"
+                    }
+                  ],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "news",
+                      "ref_index": 24
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 30
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "news",
+                      "ref_index": 21
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "news",
+                      "ref_index": 19
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "news",
+                      "ref_index": 22
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "news",
+                      "ref_index": 20
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null,
+                  "attribution": "reuters.com"
+                }
+              ],
+              "fallback_items": [
+                {
+                  "title": "OpenAI launches new GPT-4.1 models with improved coding, long context comprehension",
+                  "url": "https://www.reuters.com/technology/artificial-intelligence/openai-launches-new-gpt-41-models-with-improved-coding-long-context-2025-04-14/?utm_source=chatgpt.com",
+                  "pub_date": 1744653691,
+                  "snippet": "On April 14, 2025, OpenAI announced the release of its latest AI models: GPT-4.1, GPT-4.1 mini, and GPT-4.1 nano. These models offer significant advancements in coding capabilities, long context comprehension, and instruction following. GPT-4.1 notably surpasses previous models, with coding performance improving by 21% compared to GPT-4o and 27% over GPT-4.5. One major enhancement is the increased context window, supporting up to 1 million tokens, facilitating deeper understanding of large data sets. The models, updated with knowledge through June 2024, are accessible exclusively via OpenAI's API and are designed to be more effective for powering AI agents. Additionally, OpenAI highlighted the models\u2019 reduced operational cost compared to GPT-4.5 and announced it would discontinue the GPT-4.5 preview in the API by July. CEO Sam Altman emphasized the models' strong performance in practical applications and positive feedback from developers.",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "news",
+                      "ref_index": 24
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                },
+                {
+                  "title": "GPT-4.1",
+                  "url": "https://en.wikipedia.org/wiki/GPT-4.1?utm_source=chatgpt.com",
+                  "pub_date": 1747387427,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 30
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": "v2"
+            },
+            {
+              "matched_text": "**ChatGPT Plus ($20/mo)** and **Pro ($229+/mo)** grant **interactive access** to models like GPT\u20114 Turbo, GPT\u20114o, GPT\u20114.1 variants, etc.\u2014for use via the web/mobile interface",
+              "start_idx": 1229,
+              "end_idx": 1402,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "**ChatGPT Plus ($20/mo)** and **Pro ($229+/mo)** grant **interactive access** to models like GPT\u20114 Turbo, GPT\u20114o, GPT\u20114.1 variants, etc.\u2014for use via the web/mobile interface",
+              "prompt_text": null,
+              "type": "attribution",
+              "attributable_index": "1173-0",
+              "attributions": null,
+              "attributions_debug": null
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0search5\ue202turn0search28\ue202turn0news22\ue201",
+              "start_idx": 1403,
+              "end_idx": 1448,
+              "safe_urls": [],
+              "refs": [],
+              "alt": null,
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Pricing - ChatGPT - OpenAI",
+                  "url": "https://openai.com/chatgpt/pricing/?utm_source=chatgpt.com",
+                  "pub_date": null,
+                  "snippet": "Everything in Plus \u00b7 Unlimited access to all reasoning models and GPT\u20114o \u00b7 Unlimited access to advanced voice, with higher limits for video and screensharing.",
+                  "attribution_segments": [
+                    "1173-0"
+                  ],
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null,
+                  "attribution": "openai.com"
+                }
+              ],
+              "fallback_items": [
+                {
+                  "title": "Pricing - ChatGPT - OpenAI",
+                  "url": "https://openai.com/chatgpt/pricing/?utm_source=chatgpt.com",
+                  "pub_date": null,
+                  "snippet": "Everything in Plus \u00b7 Unlimited access to all reasoning models and GPT\u20114o \u00b7 Unlimited access to advanced voice, with higher limits for video and screensharing.",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                },
+                {
+                  "title": "ChatGPT",
+                  "url": "https://en.wikipedia.org/wiki/ChatGPT?utm_source=chatgpt.com",
+                  "pub_date": 1749755566,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 28
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                },
+                {
+                  "title": "OpenAI rolls out GPT-4.1 and GPT-4.1 mini",
+                  "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-rolls-out-gpt-4-1-and-gpt-4-1-mini/articleshow/121178770.cms?utm_source=chatgpt.com",
+                  "pub_date": 1747287825,
+                  "snippet": "OpenAI has announced the rollout of two new AI models, GPT-4.1 and GPT-4.1 mini, which are now integrated into ChatGPT, according to a statement shared on the platform X on Wednesday. These advancements represent the latest iteration in OpenAI\u2019s series of generative pre-trained transformers, aiming to enhance user experience with improved performance and efficiency. The introduction of both a standard and a mini version suggests an effort to broaden accessibility and cater to varying computational resource needs or user requirements. This release marks another significant step in the evolution of OpenAI\u2019s language models and their application across digital platforms.",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "news",
+                      "ref_index": 22
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": "v2"
+            },
+            {
+              "matched_text": "The API gives **programmatic access** to the **same underlying models**, often with broader options (such as GPT\u20114.1-mini/nano) and longer context windows (up to 1\u202fM tokens).",
+              "start_idx": 1452,
+              "end_idx": 1626,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "The API gives **programmatic access** to the **same underlying models**, often with broader options (such as GPT\u20114.1-mini/nano) and longer context windows (up to 1\u202fM tokens).",
+              "prompt_text": null,
+              "type": "attribution",
+              "attributable_index": "1448-0",
+              "attributions": null,
+              "attributions_debug": null
+            },
+            {
+              "matched_text": "**Feature parity**: Anything you can use in ChatGPT (Turbo, GPT\u20114o, GPT\u20114.1) is accessible via the API\u2014assuming your API plan has access (some newer models may need membership or invite).",
+              "start_idx": 1629,
+              "end_idx": 1816,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "**Feature parity**: Anything you can use in ChatGPT (Turbo, GPT\u20114o, GPT\u20114.1) is accessible via the API\u2014assuming your API plan has access (some newer models may need membership or invite).",
+              "prompt_text": null,
+              "type": "attribution",
+              "attributable_index": "1448-1",
+              "attributions": null,
+              "attributions_debug": null
+            },
+            {
+              "matched_text": "Choose e.g. `\"model\": \"gpt-4\"`, or for vision/audio, `\"gpt-4o\"` or `\"gpt-4o-mini\"`.",
+              "start_idx": 1978,
+              "end_idx": 2061,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "Choose e.g. `\"model\": \"gpt-4\"`, or for vision/audio, `\"gpt-4o\"` or `\"gpt-4o-mini\"`.",
+              "prompt_text": null,
+              "type": "attribution",
+              "attributable_index": "1448-2",
+              "attributions": null,
+              "attributions_debug": null
+            },
+            {
+              "matched_text": "For coding-intensive workloads, use `\"gpt-4.1\"` which isn\u2019t yet available in ChatGPT but is accessible via API with enhanced efficiency/cost (~80% cheaper and much faster than GPT\u20114o)",
+              "start_idx": 2064,
+              "end_idx": 2247,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "For coding-intensive workloads, use `\"gpt-4.1\"` which isn\u2019t yet available in ChatGPT but is accessible via API with enhanced efficiency/cost (~80% cheaper and much faster than GPT\u20114o)",
+              "prompt_text": null,
+              "type": "attribution",
+              "attributable_index": "1448-3",
+              "attributions": null,
+              "attributions_debug": null
+            },
+            {
+              "matched_text": "\ue200cite\ue202turn0news19\ue202turn0news24\ue201",
+              "start_idx": 2248,
+              "end_idx": 2278,
+              "safe_urls": [],
+              "refs": [],
+              "alt": null,
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "GPT-4o explained: Everything you need to know - TechTarget",
+                  "url": "https://www.techtarget.com/whatis/feature/GPT-4o-explained-Everything-you-need-to-know?utm_source=chatgpt.com",
+                  "pub_date": 1737504000,
+                  "snippet": "GPT-4o goes beyond GPT-4 Turbo in terms of both capabilities and performance. ... It is also an option for ChatGPT Plus, Pro, Enterprise and Team ...",
+                  "attribution_segments": [
+                    "1448-2"
+                  ],
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 15
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null,
+                  "attribution": "techtarget.com"
+                },
+                {
+                  "title": "OpenAI's New GPT 4.1 Models Excel at Coding",
+                  "url": "https://www.wired.com/story/openai-announces-4-1-ai-model-coding?utm_source=chatgpt.com",
+                  "pub_date": 1744652426.719,
+                  "snippet": "OpenAI\u2019s New GPT 4.1 Models Excel at Coding Date: Mon Apr 14 17:40:26 2025 UTC  OpenAI announced today that it is releasing a new family of artificial intelligence models optimized to excel at coding,...",
+                  "attribution_segments": [
+                    "1448-3"
+                  ],
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "news",
+                      "ref_index": 19
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null,
+                  "attribution": "wired.com"
+                }
+              ],
+              "fallback_items": [
+                {
+                  "title": "OpenAI's New GPT 4.1 Models Excel at Coding",
+                  "url": "https://www.wired.com/story/openai-announces-4-1-ai-model-coding?utm_source=chatgpt.com",
+                  "pub_date": 1744652426.719,
+                  "snippet": "OpenAI has unveiled a new suite of GPT-4.1 AI models\u2014GPT-4.1, GPT-4.1 Mini, and GPT-4.1 Nano\u2014designed to excel at coding tasks, surpassing its previous models like GPT-4o and GPT-4.5 in key areas. These models are now accessible to developers via its API and have demonstrated superior performance on coding benchmarks like SWE-Bench. They can analyze eight times more code simultaneously, follow complex instructions better, and reduce the need for repeated commands. GPT-4.1 is also 40% faster and 80% cheaper per query than GPT-4o. OpenAI showcased the model's capabilities by developing apps such as language flashcards during a demo. Companies like Windsurf found GPT-4.1 had 60% fewer errors than prior models. Despite OpenAI's rapid growth\u2014it now boasts over 500 million weekly active users\u2014it continues to face stiff competition from Google, Anthropic, and others. The company is investing heavily in infrastructure, including a planned $500 billion Stargate project. OpenAI also plans to release an open-weight model this summer to further support developers and encourage customization. Industry experts anticipate a diverse ecosystem of specialized models moving forward, rather than dominance by a single platform.",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "news",
+                      "ref_index": 19
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                },
+                {
+                  "title": "OpenAI launches new GPT-4.1 models with improved coding, long context comprehension",
+                  "url": "https://www.reuters.com/technology/artificial-intelligence/openai-launches-new-gpt-41-models-with-improved-coding-long-context-2025-04-14/?utm_source=chatgpt.com",
+                  "pub_date": 1744653691,
+                  "snippet": "On April 14, 2025, OpenAI announced the release of its latest AI models: GPT-4.1, GPT-4.1 mini, and GPT-4.1 nano. These models offer significant advancements in coding capabilities, long context comprehension, and instruction following. GPT-4.1 notably surpasses previous models, with coding performance improving by 21% compared to GPT-4o and 27% over GPT-4.5. One major enhancement is the increased context window, supporting up to 1 million tokens, facilitating deeper understanding of large data sets. The models, updated with knowledge through June 2024, are accessible exclusively via OpenAI's API and are designed to be more effective for powering AI agents. Additionally, OpenAI highlighted the models\u2019 reduced operational cost compared to GPT-4.5 and announced it would discontinue the GPT-4.5 preview in the API by July. CEO Sam Altman emphasized the models' strong performance in practical applications and positive feedback from developers.",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "news",
+                      "ref_index": 24
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "status": "done",
+              "error": null,
+              "style": "v2"
+            },
+            {
+              "matched_text": " ",
+              "start_idx": 4048,
+              "end_idx": 4048,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "",
+              "prompt_text": null,
+              "type": "sources_footnote",
+              "sources": [
+                {
+                  "title": "Pricing - ChatGPT - OpenAI",
+                  "url": "https://openai.com/chatgpt/pricing/?utm_source=chatgpt.com",
+                  "attribution": "openai.com"
+                },
+                {
+                  "title": "OpenAI GPT-4 API: What is the difference between ... - Stack Overflow",
+                  "url": "https://stackoverflow.com/questions/75810740/openai-gpt-4-api-what-is-the-difference-between-gpt-4-and-gpt-4-0314-or-gpt-4-0?utm_source=chatgpt.com",
+                  "attribution": "stackoverflow.com"
+                },
+                {
+                  "title": "GPT-4o explained: Everything you need to know - TechTarget",
+                  "url": "https://www.techtarget.com/whatis/feature/GPT-4o-explained-Everything-you-need-to-know?utm_source=chatgpt.com",
+                  "attribution": "techtarget.com"
+                },
+                {
+                  "title": "OpenAI launches new GPT-4.1 models with improved coding, long context comprehension",
+                  "url": "https://www.reuters.com/technology/artificial-intelligence/openai-launches-new-gpt-41-models-with-improved-coding-long-context-2025-04-14/?utm_source=chatgpt.com",
+                  "attribution": "reuters.com"
+                },
+                {
+                  "title": "OpenAI's New GPT 4.1 Models Excel at Coding",
+                  "url": "https://www.wired.com/story/openai-announces-4-1-ai-model-coding?utm_source=chatgpt.com",
+                  "attribution": "wired.com"
+                }
+              ],
+              "has_images": false
+            }
+          ],
+          "safe_urls": [],
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "openai.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://platform.openai.com/docs/models?utm_source=chatgpt.com",
+                  "title": "OpenAI Platform Models",
+                  "snippet": "Explore resources, tutorials, API docs, and dynamic examples to get the most out of OpenAI's developer platform.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://community.openai.com/t/how-to-check-gpt-4-model-version/339259?utm_source=chatgpt.com",
+                  "title": "How to check gpt-4 model version? - OpenAI Developer Community",
+                  "snippet": "Based on developer feedback, we are extending support for gpt-3.5-turbo-0301 and gpt-4-0314 models in the OpenAI API until at least June 13, ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": 1693267200,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://community.openai.com/t/gpt-4-vs-gpt-4o-which-is-the-better/746991?utm_source=chatgpt.com",
+                  "title": "GPT-4 vs GPT-4o? Which is the better? - Community",
+                  "snippet": "GPT-4 is still much better for our complex tasks that require careful reading and proper prompt following. GPT-4-Turbo was OK for remedial tasks ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "pub_date": 1715644800,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4?utm_source=chatgpt.com",
+                  "title": "GPT-4-Turbo-2024-04-09 - OpenAI Platform",
+                  "snippet": "Explore resources, tutorials, API docs, and dynamic examples to get the most out of OpenAI's developer platform.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://community.openai.com/t/how-can-i-find-out-the-gpt-4-model-version-when-using-openai-python-library-and-azure-openai/629016?utm_source=chatgpt.com",
+                  "title": "How can I find out the GPT-4 model version when using openai ...",
+                  "snippet": "You can verify this by looking at the response object after sending a request. The response will include the specific model version used.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 12
+                  },
+                  "pub_date": 1708041600,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://community.openai.com/t/did-you-compare-the-cost-of-using-a-gpt-plus-subscription-and-just-use-gpt-by-api/578397?utm_source=chatgpt.com",
+                  "title": "Did you compare the cost of using a GPT plus subscription and just ...",
+                  "snippet": "I would use the API with the Playground interface (built-in) and probably spend less than $1 to $5 per month. Which is cheaper than ChatGPT.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 13
+                  },
+                  "pub_date": 1704412800,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://platform.openai.com/docs/models/gpt-4?utm_source=chatgpt.com",
+                  "title": "com/docs/models/gpt-4 - OpenAI Platform",
+                  "snippet": "Explore resources, tutorials, API docs, and dynamic examples to get the most out of OpenAI's developer platform.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 14
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://community.openai.com/t/differences-between-chatgpt4-and-chatgpt4-plus/421301?utm_source=chatgpt.com",
+                  "title": "Differences between chatgpt4 and chatgpt4-Plus? - ChatGPT",
+                  "snippet": "GPT-4 model AI is now available for you to use exclusively within Plus with your $20/MO subscription.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 17
+                  },
+                  "pub_date": 1696809600,
+                  "attribution": "openai.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "reddit.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.reddit.com/r/ChatGPT/comments/13enu5n/exploring_costeffectiveness_gpt4_api_vs_chatgpt/?utm_source=chatgpt.com",
+                  "title": "Exploring Cost-Effectiveness: GPT-4 API vs. ChatGPT Premium",
+                  "snippet": "The GPT-4-API is crazy expensive, compared to ChatGPT Plus. I would strongly advise against using the API, since you will 100% pay more when ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": 1683763200,
+                  "attribution": "reddit.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.reddit.com/r/OpenAI/comments/1aipsq4/whats_the_best_gpt4_version_to_select_to_use_with/?utm_source=chatgpt.com",
+                  "title": "What's the best GPT-4 version to select to use with the API ? : r/OpenAI",
+                  "snippet": "I use OpenPlayground and I can choose between GPT-4-32K which is very expensive, and GPT-4-1106-preview which is a lot cheaper.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 16
+                  },
+                  "pub_date": 1707004800,
+                  "attribution": "reddit.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "sourceforge.net",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://sourceforge.net/software/compare/ChatGPT-Plus-vs-GPT-4-Turbo/?utm_source=chatgpt.com",
+                  "title": "ChatGPT Plus vs. GPT-4 Turbo Comparison - SourceForge",
+                  "snippet": "Compare ChatGPT Plus vs. GPT-4 Turbo using this comparison chart. Compare price, features, and reviews of the software side-by-side to make the best choice ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": null,
+                  "attribution": "sourceforge.net"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "microsoft.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?utm_source=chatgpt.com",
+                  "title": "Azure OpenAI in Azure AI Foundry Models - Learn Microsoft",
+                  "snippet": "You can distinguish between the GPT-4 and Turbo models by examining the model version. gpt-4 Version 0314; gpt-4 Version 0613; gpt-4-32k Version 0613. You can ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": null,
+                  "attribution": "microsoft.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/api-version-lifecycle?utm_source=chatgpt.com",
+                  "title": "Azure OpenAI in Azure AI Foundry Models API version lifecycle",
+                  "snippet": "Azure OpenAI API version 2024-10-21 is currently the latest GA API release. This API version is the replacement for the previous 2024-06-01 GA ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 18
+                  },
+                  "pub_date": 1748476800,
+                  "attribution": "microsoft.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "slashdot.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://slashdot.org/software/comparison/ChatGPT-Plus-vs-GPT-4-Turbo/?utm_source=chatgpt.com",
+                  "title": "Compare ChatGPT Plus vs. GPT-4 Turbo in 2025 - Slashdot",
+                  "snippet": "What's the difference between ChatGPT Plus and GPT-4 Turbo? Compare ChatGPT Plus vs. GPT-4 Turbo in 2025 by cost, reviews, features, integrations, and more.",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "pub_date": null,
+                  "attribution": "slashdot.org"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "youtube.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.youtube.com/watch?pp=0gcJCdgAo7VqN5tD&v=GIgfhv7fehU&utm_source=chatgpt.com",
+                  "title": "Free GPT-4o vs. ChatGPT Plus: What's The Difference? - YouTube",
+                  "snippet": "Curious about the real differences between Free GPT-4o and ChatGPT Plus? Wondering if ChatGPT Plus is worth the $20 monthly fee?",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "pub_date": 1715731200,
+                  "attribution": "youtube.com"
+                }
+              ]
+            }
+          ],
+          "citations": [],
+          "search_turns_count": 1,
+          "search_source": "composer_auto",
+          "client_reported_search_source": "composer_auto",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "d9e1e453-9714-47a8-81a6-63ef7b9a2b54",
+          "request_id": "94ebd5731eb07ba1-ORD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d9e1e453-9714-47a8-81a6-63ef7b9a2b54",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "4e190d0d-35ea-42fd-a08c-a2abb882e141",
+  "plugin_ids": null,
+  "conversation_id": "684b2dbb-7324-8008-a868-4e738d9aaf74",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "http://localhost:9999/services/galyleo//publish",
+    "http://localhost:9011"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-4o",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "684b2dbb-7324-8008-a868-4e738d9aaf74"
+}

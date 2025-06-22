@@ -1,0 +1,126 @@
+{
+  "title": null,
+  "create_time": 1670973856.637279,
+  "update_time": 1670973856.637279,
+  "mapping": {
+    "3b2c93b3-2859-4426-bddd-f878f79cac15": {
+      "id": "3b2c93b3-2859-4426-bddd-f878f79cac15",
+      "message": {
+        "id": "3b2c93b3-2859-4426-bddd-f878f79cac15",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1670973856.637279,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a0a44ea0-4aef-4e79-a580-c3c16d80c495",
+      "children": [
+        "e73fe2d1-021f-4718-8ec9-d140b7deee06"
+      ]
+    },
+    "a0a44ea0-4aef-4e79-a580-c3c16d80c495": {
+      "id": "a0a44ea0-4aef-4e79-a580-c3c16d80c495",
+      "message": null,
+      "parent": null,
+      "children": [
+        "3b2c93b3-2859-4426-bddd-f878f79cac15"
+      ]
+    },
+    "e73fe2d1-021f-4718-8ec9-d140b7deee06": {
+      "id": "e73fe2d1-021f-4718-8ec9-d140b7deee06",
+      "message": {
+        "id": "e73fe2d1-021f-4718-8ec9-d140b7deee06",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1670973856.637732,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "why does a full moon rise in the northeast in the winter and the southeast in the summer"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3b2c93b3-2859-4426-bddd-f878f79cac15",
+      "children": [
+        "2640d07c-7d04-4b85-8c1c-08181fd78490"
+      ]
+    },
+    "2640d07c-7d04-4b85-8c1c-08181fd78490": {
+      "id": "2640d07c-7d04-4b85-8c1c-08181fd78490",
+      "message": {
+        "id": "2640d07c-7d04-4b85-8c1c-08181fd78490",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1670973893.822919,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "The position of the moon in the sky at any given time depends on a number of factors, including the time of year and the moon's position in its orbit around the Earth. In general, the moon rises in the east and sets in the west, just like the sun. However, the exact direction from which the moon rises can vary depending on the time of year.\n\nDuring the winter months, the moon's orbit brings it closer to the Earth, which can cause it to rise in the northeastern part of the sky. This is because the moon's orbit is tilted with respect to the Earth's equator, so when the moon is closer to the Earth, it appears to rise from a more northerly direction.\n\nIn the summer months, on the other hand, the moon is farther from the Earth, which can cause it to rise from the southeastern part of the sky. This is because the moon's orbit is tilted with respect to the Earth's equator, so when the moon is farther from the Earth, it appears to rise from a more southerly direction.\n\nOverall, the position of the moon in the sky at any given time depends on a number of factors, including the time of year and the moon's position in its orbit around the Earth."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e73fe2d1-021f-4718-8ec9-d140b7deee06",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "2640d07c-7d04-4b85-8c1c-08181fd78490",
+  "plugin_ids": null,
+  "conversation_id": "bbf7b367-14ef-484e-80f9-545d5920edfb",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": null,
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "bbf7b367-14ef-484e-80f9-545d5920edfb"
+}

@@ -1,0 +1,436 @@
+{
+  "title": null,
+  "create_time": 1670900947.095442,
+  "update_time": 1670900947.095442,
+  "mapping": {
+    "10fef86e-bc2c-46f9-a432-7568756caa63": {
+      "id": "10fef86e-bc2c-46f9-a432-7568756caa63",
+      "message": {
+        "id": "10fef86e-bc2c-46f9-a432-7568756caa63",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1670900947.095442,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c7d6b490-2313-4886-a551-f76240f4f947",
+      "children": [
+        "39451385-1af1-4df9-9fdc-82ab4b82b854"
+      ]
+    },
+    "c7d6b490-2313-4886-a551-f76240f4f947": {
+      "id": "c7d6b490-2313-4886-a551-f76240f4f947",
+      "message": null,
+      "parent": null,
+      "children": [
+        "10fef86e-bc2c-46f9-a432-7568756caa63"
+      ]
+    },
+    "39451385-1af1-4df9-9fdc-82ab4b82b854": {
+      "id": "39451385-1af1-4df9-9fdc-82ab4b82b854",
+      "message": {
+        "id": "39451385-1af1-4df9-9fdc-82ab4b82b854",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1670900947.095972,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "where does the speaker of the house of lords sit"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "10fef86e-bc2c-46f9-a432-7568756caa63",
+      "children": [
+        "bd71894a-156a-4333-b85a-5530787b5eed"
+      ]
+    },
+    "bd71894a-156a-4333-b85a-5530787b5eed": {
+      "id": "bd71894a-156a-4333-b85a-5530787b5eed",
+      "message": {
+        "id": "bd71894a-156a-4333-b85a-5530787b5eed",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1670900960.166769,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "In the House of Lords, the Speaker of the House of Lords sits on the Woolsack, a large, stuffed cushion covered in red wool. This seat is located in the middle of the chamber, in front of the Throne. The Speaker is responsible for maintaining order and decorum during debates, and for enforcing the rules and procedures of the House of Lords. They are elected by the members of the House of Lords and serve as the chief spokesperson for the chamber."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "39451385-1af1-4df9-9fdc-82ab4b82b854",
+      "children": [
+        "3590ebc1-5292-4293-bddf-e8ba72398633"
+      ]
+    },
+    "3590ebc1-5292-4293-bddf-e8ba72398633": {
+      "id": "3590ebc1-5292-4293-bddf-e8ba72398633",
+      "message": {
+        "id": "3590ebc1-5292-4293-bddf-e8ba72398633",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1670901479.455237,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "python libraries to connect with snowflake"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "bd71894a-156a-4333-b85a-5530787b5eed",
+      "children": [
+        "5d3d6f0b-b494-4db7-9066-a3831e332368"
+      ]
+    },
+    "5d3d6f0b-b494-4db7-9066-a3831e332368": {
+      "id": "5d3d6f0b-b494-4db7-9066-a3831e332368",
+      "message": {
+        "id": "5d3d6f0b-b494-4db7-9066-a3831e332368",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1670901495.37379,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "There are several Python libraries that can be used to connect to Snowflake, including snowflake-sqlalchemy, snowflake-connector-python, and snowflake-pyodbc. These libraries provide APIs and other tools that allow developers to easily connect to Snowflake and perform various operations, such as querying data, managing tables, and accessing metadata. Additionally, many of these libraries are built on top of other popular Python libraries, such as SQLAlchemy and PyODBC, which provide additional functionality and support for working with databases."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3590ebc1-5292-4293-bddf-e8ba72398633",
+      "children": [
+        "249d84ed-8a07-4529-8c61-6725f6edfe04"
+      ]
+    },
+    "249d84ed-8a07-4529-8c61-6725f6edfe04": {
+      "id": "249d84ed-8a07-4529-8c61-6725f6edfe04",
+      "message": {
+        "id": "249d84ed-8a07-4529-8c61-6725f6edfe04",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1670901513.029144,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Python libraries for connecting with BigQuery"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "5d3d6f0b-b494-4db7-9066-a3831e332368",
+      "children": [
+        "a12b51e2-0d92-4e54-a7a0-8268b33310a6"
+      ]
+    },
+    "a12b51e2-0d92-4e54-a7a0-8268b33310a6": {
+      "id": "a12b51e2-0d92-4e54-a7a0-8268b33310a6",
+      "message": {
+        "id": "a12b51e2-0d92-4e54-a7a0-8268b33310a6",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1670901528.576138,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "There are several Python libraries that can be used to connect to BigQuery, including google-cloud-bigquery, pyodbc, and pandas-gbq. These libraries provide APIs and other tools that allow developers to easily connect to BigQuery and perform various operations, such as querying data, managing tables, and accessing metadata. Additionally, many of these libraries are built on top of other popular Python libraries, such as PyODBC and Pandas, which provide additional functionality and support for working with databases."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "249d84ed-8a07-4529-8c61-6725f6edfe04",
+      "children": [
+        "1786c18c-2b74-45c1-9bd8-5ce492bc934c"
+      ]
+    },
+    "1786c18c-2b74-45c1-9bd8-5ce492bc934c": {
+      "id": "1786c18c-2b74-45c1-9bd8-5ce492bc934c",
+      "message": {
+        "id": "1786c18c-2b74-45c1-9bd8-5ce492bc934c",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1670901542.237058,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "R libraries for connecting to BigQuery and Snowflake"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a12b51e2-0d92-4e54-a7a0-8268b33310a6",
+      "children": [
+        "128ed6a0-28a7-411e-a707-18b89426621d"
+      ]
+    },
+    "128ed6a0-28a7-411e-a707-18b89426621d": {
+      "id": "128ed6a0-28a7-411e-a707-18b89426621d",
+      "message": {
+        "id": "128ed6a0-28a7-411e-a707-18b89426621d",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1670901557.451659,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "There are several R libraries that can be used to connect to BigQuery and Snowflake, including bigQueryR, snowflakr, and RJDBC. These libraries provide APIs and other tools that allow developers to easily connect to BigQuery and Snowflake and perform various operations, such as querying data, managing tables, and accessing metadata. Additionally, many of these libraries are built on top of other popular R libraries, such as DBI and RJDBC, which provide additional functionality and support for working with databases."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1786c18c-2b74-45c1-9bd8-5ce492bc934c",
+      "children": [
+        "e175cb80-160c-43fc-b78d-5ac9ceaa561a"
+      ]
+    },
+    "e175cb80-160c-43fc-b78d-5ac9ceaa561a": {
+      "id": "e175cb80-160c-43fc-b78d-5ac9ceaa561a",
+      "message": {
+        "id": "e175cb80-160c-43fc-b78d-5ac9ceaa561a",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1670906478.199541,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "what is gRPC"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "128ed6a0-28a7-411e-a707-18b89426621d",
+      "children": [
+        "1ebb102e-ea17-4a44-8ef7-945afc595ad7"
+      ]
+    },
+    "1ebb102e-ea17-4a44-8ef7-945afc595ad7": {
+      "id": "1ebb102e-ea17-4a44-8ef7-945afc595ad7",
+      "message": {
+        "id": "1ebb102e-ea17-4a44-8ef7-945afc595ad7",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1670906495.351732,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "gRPC is a high-performance, open-source remote procedure call (RPC) framework that can run anywhere. It is designed to be low-latency, high-bandwidth, and language- and platform-agnostic, making it a popular choice for building distributed systems and microservices. gRPC uses a simple, efficient, and type-safe binary data serialization format called Protocol Buffers, which allows for the efficient transmission of data over the network. gRPC also supports streaming, which allows for bi-directional communication between clients and servers, making it a powerful tool for building real-time, interactive applications."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e175cb80-160c-43fc-b78d-5ac9ceaa561a",
+      "children": [
+        "65aa5912-d6a3-44b3-8600-b965f6c3e2f2"
+      ]
+    },
+    "65aa5912-d6a3-44b3-8600-b965f6c3e2f2": {
+      "id": "65aa5912-d6a3-44b3-8600-b965f6c3e2f2",
+      "message": {
+        "id": "65aa5912-d6a3-44b3-8600-b965f6c3e2f2",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1670906515.985808,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "what is GraphQL"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1ebb102e-ea17-4a44-8ef7-945afc595ad7",
+      "children": [
+        "a7d5ea67-1bf0-4a59-8464-e903dea388ad"
+      ]
+    },
+    "a7d5ea67-1bf0-4a59-8464-e903dea388ad": {
+      "id": "a7d5ea67-1bf0-4a59-8464-e903dea388ad",
+      "message": {
+        "id": "a7d5ea67-1bf0-4a59-8464-e903dea388ad",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1670906536.538419,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. It was developed and open-sourced by Facebook in 2015, and has since become a popular choice for building modern, scalable, and flexible APIs. GraphQL provides a declarative and flexible way for clients to request the data they need from an API, and for servers to expose their data in a way that can be easily consumed by clients. This allows for more efficient and flexible data fetching, as clients can request only the data they need, in the exact format they need it, without over-fetching or under-fetching data. Additionally, GraphQL provides built-in support for real-time data updates and subscriptions, allowing clients to receive updates in real-time when the data they are interested in changes."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1,
+        "metadata": {
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "65aa5912-d6a3-44b3-8600-b965f6c3e2f2",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "a7d5ea67-1bf0-4a59-8464-e903dea388ad",
+  "plugin_ids": null,
+  "conversation_id": "30bdaa78-1263-4284-8326-7ca7fb012983",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": null,
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "id": "30bdaa78-1263-4284-8326-7ca7fb012983"
+}
