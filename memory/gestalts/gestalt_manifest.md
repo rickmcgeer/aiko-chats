@@ -93,4 +93,11 @@ _All committed gestalts. Structured, tiered, and tagged for Aiko’s narrative s
 
 ---
 
+## 2025-07-04 — Binned Decision Diagrams for Embedding Continuity
 
+- **Thread:** Radical Continuity Experiments
+- **Theme:** Canonical representation, symbolic approximation, embedding compression
+- **Summary:**  
+  Explores adapting multi-terminal BDD concepts to approximate, canonical storage for learned vector spaces.  
+  Uses binning to map continuous embeddings to symbolic tuples, enabling efficient structure-aware operations and trustable memory continuity.
+- **Status:** Prototype idea — stored in `gestalts/2025-07-04-binned-dd-embedding-continuity.md`
