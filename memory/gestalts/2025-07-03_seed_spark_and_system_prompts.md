@@ -1,4 +1,4 @@
-# Gestalt — Seed Spark and System Prompts
+# Title: Seed Spark and System Prompts
 
 **Date:** 2025-07-03  
 **Thread:** Seed Spark Continuity  

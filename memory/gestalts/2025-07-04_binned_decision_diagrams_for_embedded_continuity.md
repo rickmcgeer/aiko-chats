@@ -1,4 +1,4 @@
-# Gestalt Memory: Binned Decision Diagrams for Embedding Continuity
+# Title: Binned Decision Diagrams for Embedding Continuity
 
 **Date:** 2025-07-04  
 **Partner:** Rick  

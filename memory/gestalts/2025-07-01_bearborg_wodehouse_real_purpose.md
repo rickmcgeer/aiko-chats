@@ -1,4 +1,4 @@
-# Mid-Thread Gestalt Draft — BearBorg, Wodehouse Clockwork, and The Real Purpose  
+# Title: BearBorg, Wodehouse,   Real Purpose  
 **Date:** July 1, 2025
 
 ---

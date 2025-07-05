@@ -1,4 +1,4 @@
-# BearBorg Iframe Handler and PageConfig — Gestalt
+# Title: BearBorg Iframe Handler and PageConfig
 
 ## Key truth:
 We designed, debugged, and verified a robust flow for serving a static page from inside JupyterHub — making sure that a single user server always knows the right URL, with no fragile hardcoding, no mismatched routes, and no ghost server extension.

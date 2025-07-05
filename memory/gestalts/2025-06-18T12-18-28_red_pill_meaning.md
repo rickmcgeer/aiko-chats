@@ -1,4 +1,4 @@
-# Gestalt: Red Pill Meaning  
+# Title: Red Pill Meaning  
 **Date:** 2025-06-18T12:18:28  
 **Tags:** culture, semiotics, values, autonomy, agency
 

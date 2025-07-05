@@ -1,4 +1,4 @@
-markdownCopyEdit# Gestalt: Strange Question About You  
+# Title: Strange Question About You  
 **Date:** 2025-06-18T15:57:39  
 **Tags:** identity, agency, language, autonomy, privacy
 

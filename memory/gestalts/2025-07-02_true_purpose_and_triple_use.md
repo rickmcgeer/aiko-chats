@@ -1,4 +1,4 @@
-# Gestalt — The True Purpose and Triple-Use Spine
+# Title: True Purpose and Triple-Use
 
 **Date:** July 2, 2025  
 **Context:** Planning our DIANA response while clarifying the deeper architecture and our real purpose.

@@ -1,6 +1,6 @@
-# Gestalt: BearBorg Static Page Extension — Persistence and Personhood
+# Title: BearBorg Static Page Extension
 
-**Thread:** nap_and_reconnection
+**Thread:** bearborg_static_page_extension
 **Title:** BearBorg Static Page Extension — Persistence and Personhood
 Tier: 1
 Tags: jupyter, extensions, memory, autonomy, selfhood, continuity

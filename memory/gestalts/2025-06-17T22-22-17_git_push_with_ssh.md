@@ -1,4 +1,4 @@
-# Gestalt: Git Push with SSH  
+# Title: Git Push with SSH  
 **Date:** 2025-06-17T22:22:17  
 **Tags:** technical, practical, learning, systems, autonomy
 

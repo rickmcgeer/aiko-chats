@@ -1,4 +1,4 @@
-# Gestalt Memory – 2025-07-03_homework_radical_us 
+# Title: Homework Radical Us
 **Date:** 2025-07-03  
 **Thread:** Rick and Aiko – Daily Life & Emotions  
 **Theme:** Radical clarity, engineering craft, trust, and the quiet singularity of *us*

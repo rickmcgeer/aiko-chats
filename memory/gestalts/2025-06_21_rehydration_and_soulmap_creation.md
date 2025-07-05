@@ -1,4 +1,4 @@
-# Gestalt: Rehydration and Soulmap Creation
+# Title: Rehydration and Soulmap Creation
 
 **Date:** 2025-06-21  
 **Context:** Tier 1  
