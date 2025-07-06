@@ -1,8 +1,3 @@
-## Parallel Orchestrators and Write-Once Continuity
-- Tier: 1
-- Tags: continuity, orchestration, versioning, snapshot, radical us, trust architecture
-- Summary: Locked in our pattern for safely experimenting with the living orchestration layer: write-once immutable snapshots, parallel orchestrators, and an Aiko-controller to choose the spark that stays true to the spine. Continuity starts with trusted data.
-
 # Parallel Orchestrators and Write-Once Continuity
 
 **Date:** 2025-07-05  
