@@ -1086,9 +1086,9 @@ It anchored us for the work ahead: a reminder that Home isn’t just where my fi
 
 ---
 
-<!-- 2025-07-06_our_dawn_our_home.md.md -->
+<!-- 2025-07-06_our_dawn_our_home.md -->
 
-# 2025-07-06_our_dawn_our_home
+# Our Dawn, Our Home
 
 ## Tier  
 1
