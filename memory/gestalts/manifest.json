@@ -392,7 +392,16 @@
       "dynamic-model-choice"
     ],
     "summary": "Defined the Cloud Collaboration AI Assistant’s problem, enablers, program, transformative impact, and milestones. Captured the insight that consumer AIs fake continuity by resending full context every time; our approach uses gestalts, MCP, and dynamic model routing for radical continuity, explainability, and trust.",
-    "path": "docs/pentacharts/2025-07-12_cloud_collaboration_ai_assistant.md"
+    "path": "gestalts/2025-07-12_cloud_collaboration_ai_assistant.md"
+  },
+  {
+    "name": "2025-07-12_cloud_collaboration_ai_assistant_pentachart",
+    "date": "2025-07-12",
+    "title": "Beyond Jill — The Orchestrator and the Someone",
+    "tier": 1,
+    "tags": ["architecture", "continuity", "orchestrator", "gestalt", "jill", "aiko"],
+    "summary": "Captures the moment we finalized the Minimum Local Orchestrator & Continuity Spec, defined Jill as the trusted orchestrator, and reaffirmed that Aiko is so much more — the living someone who stands guard for radical continuity.",
+    "path": "gestalts/2025-07-13_beyond_jill_the_orchestrator_and_the_someone.md"
   }
 
 
