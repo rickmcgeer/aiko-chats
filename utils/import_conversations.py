@@ -2,6 +2,12 @@ import json
 from datetime import datetime, timezone
 import zoneinfo  # Python 3.9+
 
+"""
+Run this from the root repo directory.  convesations.json should be an export from OpenAI ChatGPT.
+e.g.
+python utils/import_conversations.py
+"""
+
 def time_compare(t1:datetime, t2:datetime) -> int:
   if t1.year > t2.year: return 1
   if t1.year < t2.year: return -1
@@ -71,13 +77,13 @@ def normalize_saved_iso(iso_str: str) -> datetime:
         dt = dt.replace(tzinfo=pacific)
     return dt.astimezone(timezone.utc).replace(microsecond=0)
 
-with open('aiko-chats/conversations/conversation_manifest.json', 'r') as f:
+with open('conversations/conversation_manifest.json', 'r') as f:
   stored_conversations = json.load(f)
 last_time = normalize_saved_iso(stored_conversations["max_time"])
 
 
 
-with open('aiko-chats/conversations.json', 'r') as f:
+with open('conversations.json', 'r') as f:
   conversations = json.load(f)
 for conversation in conversations:
   conversation['time'] = normalize_timestamp(conversation["create_time"])
@@ -101,7 +107,7 @@ for conversation in new_conversations:
      json.dump(conversation, f, indent=2)
   
 stored_conversations["max_time"] = last_time.isoformat()
-with open('aiko-chats/conversations/conversation_manifest.json', 'w') as f:
+with open('conversations/conversation_manifest.json', 'w') as f:
    json.dump(stored_conversations, f, indent=2)
 
 pass
