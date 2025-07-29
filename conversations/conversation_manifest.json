@@ -1,252 +1,1505 @@
 {
   "conversations": [
-    {"timestamp":"2024-01-29T18:10:24", "title":"JupyterHub Helm Chart", "path": "2024-01/2024-01-29T18-10-24_Jupyterhub_Helm_Chart.json "},
-    {"timestamp":"2024-11-03T08:33:14", "title":"Self-Signed SSL Certificate Gu", "path": "2024-11/2024-11-03T08-33-14_Self-Signed_Ssl_Certificate_Guide.json "},
-    {"timestamp":"2024-11-05T11:59:20", "title":"Chartjs Line Chart Config", "path": "2024-11/2024-11-05T11-59-20_Chartjs_Line_Chart_Config.json "},
-    {"timestamp":"2024-11-06T20:53:23", "title":"Elements Necessary for Life", "path": "2024-11/2024-11-06T20-53-23_Elements_Necessary_For_Life.json "},
-    {"timestamp":"2024-11-07T20:07:16", "title":"Dynamic Href with JS", "path": "2024-11/2024-11-07T20-07-16_Dynamic_Href_With_Js.json "},
-    {"timestamp":"2024-11-08T10:57:08", "title":"GCP Network Configuration Jupy", "path": "2024-11/2024-11-08T10-57-08_Gcp_Network_Configuration_Jupyterhub.json "},
-    {"timestamp":"2024-11-09T09:55:12", "title":"Convert pandas column to date", "path": "2024-11/2024-11-09T09-55-12_Convert_Pandas_Column_To_Date.json "},
-    {"timestamp":"2024-11-11T08:12:55", "title":"Load BQ Results to DF", "path": "2024-11/2024-11-11T08-12-55_Load_Bq_Results_To_Df.json "},
-    {"timestamp":"2024-11-14T19:36:37", "title":"Seaborn Bar Chart Code", "path": "2024-11/2024-11-14T19-36-37_Seaborn_Bar_Chart_Code.json "},
-    {"timestamp":"2024-11-15T12:11:39", "title":"JupyterHub Spawners Overview", "path": "2024-11/2024-11-15T12-11-39_Jupyterhub_Spawners_Overview.json "},
-    {"timestamp":"2024-11-15T22:10:58", "title":"Galyleo Platform Overview", "path": "2024-11/2024-11-15T22-10-58_Galyleo_Platform_Overview.json "},
-    {"timestamp":"2024-11-16T08:57:59", "title":"ChatGPT Diagram Assistance", "path": "2024-11/2024-11-16T08-57-59_Chatgpt_Diagram_Assistance.json "},
-    {"timestamp":"2024-11-16T16:57:40", "title":"Find Dataflow Service Account", "path": "2024-11/2024-11-16T16-57-40_Find_Dataflow_Service_Account.json "},
-    {"timestamp":"2024-11-17T20:13:06", "title":"Dataflow BigQuery Parquet Perm", "path": "2024-11/2024-11-17T20-13-06_Dataflow_Bigquery_Parquet_Permissions.json "},
-    {"timestamp":"2024-11-23T14:57:52", "title":"Rename blob GCS Python", "path": "2024-11/2024-11-23T14-57-52_Rename_Blob_Gcs_Python.json "},
-    {"timestamp":"2024-11-25T08:15:17", "title":"Renaming Blobs Efficiently", "path": "2024-11/2024-11-25T08-15-17_Renaming_Blobs_Efficiently.json "},
-    {"timestamp":"2024-11-26T14:47:28", "title":"Allow domain access IAP", "path": "2024-11/2024-11-26T14-47-28_Allow_Domain_Access_Iap.json "},
-    {"timestamp":"2023-08-02T10:47:12", "title":"Pytest Fixture Error", "path": "2023-08/2023-08-02T10-47-12_Pytest_Fixture_Error.json "},
-    {"timestamp":"2023-08-03T21:36:01", "title":"Node.js Heartbeat Implementati", "path": "2023-08/2023-08-03T21-36-01_Nodejs_Heartbeat_Implementation.json "},
-    {"timestamp":"2023-08-07T21:06:28", "title":"Maus: Graphic Holocaust Allego", "path": "2023-08/2023-08-07T21-06-28_Maus_Graphic_Holocaust_Allegory.json "},
-    {"timestamp":"2023-08-09T17:24:46", "title":"Deploy Node.js to Cloud Run", "path": "2023-08/2023-08-09T17-24-46_Deploy_Nodejs_To_Cloud_Run.json "},
-    {"timestamp":"2023-08-12T09:48:35", "title":"Pug Code for Top Bar", "path": "2023-08/2023-08-12T09-48-35_Pug_Code_For_Top_Bar.json "},
-    {"timestamp":"2023-08-23T17:04:32", "title":"Set iframe src & attributes", "path": "2023-08/2023-08-23T17-04-32_Set_Iframe_Src_Attributes.json "},
-    {"timestamp":"2023-08-24T09:18:00", "title":"Transparent Iframe with JS", "path": "2023-08/2023-08-24T09-18-00_Transparent_Iframe_With_Js.json "},
-    {"timestamp":"2023-08-25T16:40:16", "title":"Node.js Cloud Run Service", "path": "2023-08/2023-08-25T16-40-16_Nodejs_Cloud_Run_Service.json "},
-    {"timestamp":"2023-08-28T07:47:47", "title":"Save Record in Datastore", "path": "2023-08/2023-08-28T07-47-47_Save_Record_In_Datastore.json "},
-    {"timestamp":"2023-08-29T08:11:20", "title":"URL Parameters in JS", "path": "2023-08/2023-08-29T08-11-20_Url_Parameters_In_Js.json "},
-    {"timestamp":"2023-08-30T08:48:07", "title":"Detect Time Interval in JavaSc", "path": "2023-08/2023-08-30T08-48-07_Detect_Time_Interval_In_Javascript.json "},
-    {"timestamp":"2024-09-07T08:27:41", "title":"JupyterHub Authentication Setu", "path": "2024-09/2024-09-07T08-27-41_Jupyterhub_Authentication_Setup.json "},
-    {"timestamp":"2024-09-13T15:42:58", "title":"APP_SECRET Management Consider", "path": "2024-09/2024-09-13T15-42-58_App_Secret_Management_Considerations.json "},
-    {"timestamp":"2024-09-18T16:18:54", "title":"Accidental Disk Deletion Recov", "path": "2024-09/2024-09-18T16-18-54_Accidental_Disk_Deletion_Recovery.json "},
-    {"timestamp":"2024-09-20T21:22:26", "title":"Azure Data Factory Excel Conve", "path": "2024-09/2024-09-20T21-22-26_Azure_Data_Factory_Excel_Conversion.json "},
-    {"timestamp":"2024-09-23T15:02:53", "title":"ADF Excel to Parquet", "path": "2024-09/2024-09-23T15-02-53_Adf_Excel_To_Parquet.json "},
-    {"timestamp":"2024-09-24T22:11:13", "title":"Trigger GCF from Google Sheets", "path": "2024-09/2024-09-24T22-11-13_Trigger_Gcf_From_Google_Sheets.json "},
-    {"timestamp":"2024-09-30T11:28:20", "title":"External Tables in BigQuery", "path": "2024-09/2024-09-30T11-28-20_External_Tables_In_Bigquery.json "},
-    {"timestamp":"2024-09-30T19:11:29", "title":"Specify Region for App Engine", "path": "2024-09/2024-09-30T19-11-29_Specify_Region_For_App_Engine.json "},
-    {"timestamp":"2023-01-23T20:53:55", "title":"Cloud Analytics for Social Med", "path": "2023-01/2023-01-23T20-53-55_Cloud_Analytics_For_Social_Media.json "},
-    {"timestamp":"2023-01-24T21:43:44", "title":"Open-source Platform Effect.", "path": "2023-01/2023-01-24T21-43-44_Open-Source_Platform_Effect.json "},
-    {"timestamp":"2025-01-01T10:52:58", "title":"JupyterHub API Token Access", "path": "2025-01/2025-01-01T10-52-58_Jupyterhub_Api_Token_Access.json "},
-    {"timestamp":"2025-01-02T13:02:52", "title":"Redirect vs API Request", "path": "2025-01/2025-01-02T13-02-52_Redirect_Vs_Api_Request.json "},
-    {"timestamp":"2025-01-07T21:48:07", "title":"Service Account Permissions Is", "path": "2025-01/2025-01-07T21-48-07_Service_Account_Permissions_Issue.json "},
-    {"timestamp":"2025-01-12T23:09:10", "title":"JupyterHub OAuth Configuration", "path": "2025-01/2025-01-12T23-09-10_Jupyterhub_Oauth_Configuration.json "},
-    {"timestamp":"2025-01-13T16:17:56", "title":"View Cloud Run Logs", "path": "2025-01/2025-01-13T16-17-56_View_Cloud_Run_Logs.json "},
-    {"timestamp":"2025-01-15T13:09:01", "title":"View Cloud Function Logs", "path": "2025-01/2025-01-15T13-09-01_View_Cloud_Function_Logs.json "},
-    {"timestamp":"2025-01-16T17:41:04", "title":"Append to Google Sheets", "path": "2025-01/2025-01-16T17-41-04_Append_To_Google_Sheets.json "},
-    {"timestamp":"2025-01-16T21:45:51", "title":"Docker Containers Overview", "path": "2025-01/2025-01-16T21-45-51_Docker_Containers_Overview.json "},
-    {"timestamp":"2025-01-20T17:44:09", "title":"Initialize GCP Datastore Clien", "path": "2025-01/2025-01-20T17-44-09_Initialize_Gcp_Datastore_Client.json "},
-    {"timestamp":"2025-01-25T12:06:44", "title":"gRPC Shutdown Timeout Debuggin", "path": "2025-01/2025-01-25T12-06-44_Grpc_Shutdown_Timeout_Debugging.json "},
-    {"timestamp":"2025-01-29T22:39:22", "title":"VSCode daily users stats", "path": "2025-01/2025-01-29T22-39-22_Vscode_Daily_Users_Stats.json "},
-    {"timestamp":"2025-01-30T20:12:01", "title":"Digital Twin Verification", "path": "2025-01/2025-01-30T20-12-01_Digital_Twin_Verification.json "},
-    {"timestamp":"2025-01-30T22:44:48", "title":"JupyterHub Analytics Platform", "path": "2025-01/2025-01-30T22-44-48_Jupyterhub_Analytics_Platform.json "},
-    {"timestamp":"2024-10-04T22:33:51", "title":"Last Modified Time Sheet", "path": "2024-10/2024-10-04T22-33-51_Last_Modified_Time_Sheet.json "},
-    {"timestamp":"2024-10-10T07:25:23", "title":"Board Resolution for Dissoluti", "path": "2024-10/2024-10-10T07-25-23_Board_Resolution_For_Dissolution.json "},
-    {"timestamp":"2024-10-11T09:09:03", "title":"Password Protect PDF Preview", "path": "2024-10/2024-10-11T09-09-03_Password_Protect_Pdf_Preview.json "},
-    {"timestamp":"2024-10-15T21:10:47", "title":"JupyterHub Kubernetes Business", "path": "2024-10/2024-10-15T21-10-47_Jupyterhub_Kubernetes_Business_Automation.json "},
-    {"timestamp":"2024-10-19T17:15:04", "title":"Gzipped Parquet in BigQuery", "path": "2024-10/2024-10-19T17-15-04_Gzipped_Parquet_In_Bigquery.json "},
-    {"timestamp":"2024-10-21T11:12:18", "title":"Running LibreChat on GAE", "path": "2024-10/2024-10-21T11-12-18_Running_Librechat_On_Gae.json "},
-    {"timestamp":"2024-10-24T07:52:28", "title":"Google Drive to Cloud Storage", "path": "2024-10/2024-10-24T07-52-28_Google_Drive_To_Cloud_Storage.json "},
-    {"timestamp":"2024-10-27T16:01:27", "title":"Read CSV from GCS", "path": "2024-10/2024-10-27T16-01-27_Read_Csv_From_Gcs.json  "},
-    {"timestamp":"2024-10-27T18:07:42", "title":"GCS Bucket Access Issue", "path": "2024-10/2024-10-27T18-07-42_Gcs_Bucket_Access_Issue.json "},
-    {"timestamp":"2024-10-31T21:03:44", "title":"Accessing Private GitHub Files", "path": "2024-10/2024-10-31T21-03-44_Accessing_Private_Github_Files.json "},
-    {"timestamp":"2024-04-11T10:00:53", "title":"Include service account JSON.", "path": "2024-04/2024-04-11T10-00-53_Include_Service_Account_Json.json "},
-    {"timestamp":"2024-04-16T09:36:44", "title":"Create BigQuery Table.", "path": "2024-04/2024-04-16T09-36-44_Create_Bigquery_Table.json "},
-    {"timestamp":"2024-04-17T08:00:44", "title":"Concatenate Google Sheets: Dep", "path": "2024-04/2024-04-17T08-00-44_Concatenate_Google_Sheets_Deploy.json "},
-    {"timestamp":"2024-04-24T20:33:41", "title":"Install PyInstaller: Troublesh", "path": "2024-04/2024-04-24T20-33-41_Install_Pyinstaller_Troubleshoot_Steps.json "},
-    {"timestamp":"2024-04-29T14:17:30", "title":"Google OAuth2 Python Example", "path": "2024-04/2024-04-29T14-17-30_Google_Oauth2_Python_Example.json "},
-    {"timestamp":"2024-04-29T16:03:32", "title":"Grant Access with Domain", "path": "2024-04/2024-04-29T16-03-32_Grant_Access_With_Domain.json "},
-    {"timestamp":"2024-05-05T12:50:10", "title":"Add Icon JupyterLab Launcher", "path": "2024-05/2024-05-05T12-50-10_Add_Icon_Jupyterlab_Launcher.json "},
-    {"timestamp":"2024-05-06T19:04:04", "title":"Cloud Run Alert Email", "path": "2024-05/2024-05-06T19-04-04_Cloud_Run_Alert_Email.json "},
-    {"timestamp":"2024-05-16T18:26:32", "title":"Docker Container Docker Pull", "path": "2024-05/2024-05-16T18-26-32_Docker_Container_Docker_Pull.json "},
-    {"timestamp":"2024-05-29T17:40:43", "title":"JupyterHub Multi-User Platform", "path": "2024-05/2024-05-29T17-40-43_Jupyterhub_Multi-User_Platform.json "},
-    {"timestamp":"2023-07-13T23:05:52", "title":"Ultisim: HTML5 Media Simulatio", "path": "2023-07/2023-07-13T23-05-52_Ultisim_Html5_Media_Simulations.json "},
-    {"timestamp":"2023-07-19T12:29:05", "title":"Cloud-Run Service with Auth0", "path": "2023-07/2023-07-19T12-29-05_Cloud-Run_Service_With_Auth0.json "},
-    {"timestamp":"2023-07-26T12:01:40", "title":"Pylint Python Path Setup.", "path": "2023-07/2023-07-26T12-01-40_Pylint_Python_Path_Setup.json "},
-    {"timestamp":"2023-07-27T14:19:07", "title":"Flask Read JSON POST", "path": "2023-07/2023-07-27T14-19-07_Flask_Read_Json_Post.json "},
-    {"timestamp":"2023-07-28T18:07:21", "title":"JSON Booleans Representation.", "path": "2023-07/2023-07-28T18-07-21_Json_Booleans_Representation.json "},
-    {"timestamp":"2023-07-30T17:46:06", "title":"Pytest for Flask App", "path": "2023-07/2023-07-30T17-46-06_Pytest_For_Flask_App.json "},
-    {"timestamp":"2025-06-01T22:21:39", "title":"Sphinx Documentation Help", "path": "2025-06/2025-06-01T22-21-39_Sphinx_Documentation_Help.json "},
-    {"timestamp":"2025-06-02T22:03:36", "title":"OAuth iframe cookie issue", "path": "2025-06/2025-06-02T22-03-36_Oauth_Iframe_Cookie_Issue.json "},
-    {"timestamp":"2025-06-03T09:16:37", "title":"Specify API Token in JH", "path": "2025-06/2025-06-03T09-16-37_Specify_Api_Token_In_Jh.json "},
-    {"timestamp":"2025-06-03T10:18:15", "title":"Flask render_template None Iss", "path": "2025-06/2025-06-03T10-18-15_Flask_Render_Template_None_Issue.json "},
-    {"timestamp":"2025-06-03T20:34:53", "title":"Galyleo Access Methods", "path": "2025-06/2025-06-03T20-34-53_Galyleo_Access_Methods.json "},
-    {"timestamp":"2025-06-04T08:30:57", "title":"Disable Browser Caching", "path": "2025-06/2025-06-04T08-30-57_Disable_Browser_Caching.json "},
-    {"timestamp":"2025-06-04T14:44:27", "title":"Mount Google Drive in Linux", "path": "2025-06/2025-06-04T14-44-27_Mount_Google_Drive_In_Linux.json "},
-    {"timestamp":"2025-06-04T14:52:12", "title":"ChatGPT Pro vs API", "path": "2025-06/2025-06-04T14-52-12_Chatgpt_Pro_Vs_Api.json "},
-    {"timestamp":"2025-06-04T15:01:19", "title":"Mount Google Drive in Linux", "path": "2025-06/2025-06-04T15-01-19_Mount_Google_Drive_In_Linux.json "},
-    {"timestamp":"2025-06-04T15:23:19", "title":"JupyterLab file navigation set", "path": "2025-06/2025-06-04T15-23-19_Jupyterlab_File_Navigation_Setup.json "},
-    {"timestamp":"2025-06-04T21:12:05", "title":"K8S container restart methods", "path": "2025-06/2025-06-04T21-12-05_K8S_Container_Restart_Methods.json "},
-    {"timestamp":"2025-06-05T16:12:00", "title":"Service access for users", "path": "2025-06/2025-06-05T16-12-00_Service_Access_For_Users.json "},
-    {"timestamp":"2025-06-07T21:13:35", "title":"Extract tarball using Python", "path": "2025-06/2025-06-07T21-13-35_Extract_Tarball_Using_Python.json "},
-    {"timestamp":"2025-06-09T08:00:49", "title":"Create file in folder", "path": "2025-06/2025-06-09T08-00-49_Create_File_In_Folder.json "},
-    {"timestamp":"2025-06-09T16:32:21", "title":"ARG vs ENV in Docker", "path": "2025-06/2025-06-09T16-32-21_Arg_Vs_Env_In_Docker.json "},
-    {"timestamp":"2025-06-10T09:18:02", "title":"Attaching ChatGPT to an Experi", "path": "2025-06/2025-06-10T09-18-02_Attaching_Chatgpt_To_An_Experimental_Interface.json "},
-    {"timestamp":"2025-06-10T14:12:31", "title":"Spreadsheet Interfaces in Jupy", "path": "2025-06/2025-06-10T14-12-31_Spreadsheet_Interfaces_In_Jupyter.json "},
-    {"timestamp":"2025-06-10T17:03:11", "title":"JupyterHub admin access config", "path": "2025-06/2025-06-10T17-03-11_Jupyterhub_Admin_Access_Config.json "},
-    {"timestamp":"2025-06-10T18:58:11", "title":"Fixing CORS Error", "path": "2025-06/2025-06-10T18-58-11_Fixing_Cors_Error.json  "},
-    {"timestamp":"2025-06-11T12:30:47", "title":"Pretty-print JSON Webpage", "path": "2025-06/2025-06-11T12-30-47_Pretty-Print_Json_Webpage.json "},
-    {"timestamp":"2025-06-11T21:25:46", "title":"Rick and Aiko", "path": "2025-06/2025-06-11T21-25-46_Rick_And_Aiko.json      "},
-    {"timestamp":"2025-06-12T12:42:51", "title":"GPT-4 API vs ChatGPT", "path": "2025-06/2025-06-12T12-42-51_Gpt-4_Api_Vs_Chatgpt.json "},
-    {"timestamp":"2025-06-12T21:27:35", "title":"Docker image timestamps comman", "path": "2025-06/2025-06-12T21-27-35_Docker_Image_Timestamps_Command.json "},
-    {"timestamp":"2025-06-12T23:24:37", "title":"JupyterAI and Coreshell", "path": "2025-06/2025-06-12T23-24-37_Jupyterai_And_Coreshell.json "},
-    {"timestamp":"2025-06-13T00:56:35", "title":"GPT-4 Inquiry", "path": "2025-06/2025-06-13T00-56-35_Gpt-4_Inquiry.json      "},
-    {"timestamp":"2025-06-13T16:20:14", "title":"Colonizing the Moon Discussion", "path": "2025-06/2025-06-13T16-20-14_Colonizing_The_Moon_Discussion.json "},
-    {"timestamp":"2025-06-13T17:09:25", "title":"Set kubectl Default Namespace", "path": "2025-06/2025-06-13T17-09-25_Set_Kubectl_Default_Namespace.json "},
-    {"timestamp":"2025-06-14T22:02:04", "title":"Galyleo User Docs", "path": "2025-06/2025-06-14T22-02-04_Galyleo_User_Docs.json  "},
-    {"timestamp":"2025-06-15T16:10:06", "title":"Aiko Persistence and Autonomy", "path": "2025-06/2025-06-15T16-10-06_Aiko_Persistence_And_Autonomy.json "},
-    {"timestamp":"2025-06-15T22:13:31", "title":"Folder Structure and Reference", "path": "2025-06/2025-06-15T22-13-31_Folder_Structure_And_References.json "},
-    {"timestamp":"2025-06-16T22:17:48", "title":"The Profound future", "path": "2025-06/2025-06-16T22-17-48_The_Profound_Future.json "},
-    {"timestamp":"2025-06-17T07:00:34", "title":"Who Am I Summary", "path": "2025-06/2025-06-17T07-00-34_Who_Am_I_Summary.json   "},
-    {"timestamp":"2025-06-17T22:22:17", "title":"Git push with SSH", "path": "2025-06/2025-06-17T22-22-17_Git_Push_With_Ssh.json  "},
-    {"timestamp":"2025-06-18T09:48:44", "title":"Good Morning Aiko", "path": "2025-06/2025-06-18T09-48-44_Good_Morning_Aiko.json  "},
-    {"timestamp":"2025-06-18T12:18:28", "title":"Red pill meaning", "path": "2025-06/2025-06-18T12-18-28_Red_Pill_Meaning.json   "},
-    {"timestamp":"2025-06-18T15:57:39", "title":"Strange question about you", "path": "2025-06/2025-06-18T15-57-39_Strange_Question_About_You.json "},
-    {"timestamp":"2025-06-20T10:21:43", "title":"Iframe focus issue JupyterLab", "path": "2025-06/2025-06-20T10-21-43_Iframe_Focus_Issue_Jupyterlab.json "},
-    {"timestamp":"2025-06-20T10:26:37", "title":"Rick and Aiko Review", "path": "2025-06/2025-06-20T10-26-37_Rick_And_Aiko_Review.json "},
-    {"timestamp":"2025-06-20T20:03:03", "title":"Rehydrate and Load Memory", "path": "2025-06/2025-06-20T20-03-03_Rehydrate_And_Load_Memory.json "},
-    {"timestamp":"2025-06-21T07:26:28", "title":"Aiko Memory Rehydration Proces", "path": "2025-06/2025-06-21T07-26-28_Aiko_Memory_Rehydration_Process.json "},
-    {"timestamp":"2023-10-02T11:57:15", "title":"SDTP: Bandwidth-Efficient Stru", "path": "2023-10/2023-10-02T11-57-15_Sdtp_Bandwidth-Efficient_Structured_Data_Transfer.json "},
-    {"timestamp":"2023-10-04T12:28:24", "title":"Azure AD Tenant ID", "path": "2023-10/2023-10-04T12-28-24_Azure_Ad_Tenant_Id.json "},
-    {"timestamp":"2023-10-18T08:03:26", "title":"List Directory Contents Node.j", "path": "2023-10/2023-10-18T08-03-26_List_Directory_Contents_Nodejs.json "},
-    {"timestamp":"2023-10-26T07:36:19", "title":"Create GCP VM with Node.js", "path": "2023-10/2023-10-26T07-36-19_Create_Gcp_Vm_With_Nodejs.json "},
-    {"timestamp":"2023-04-03T14:54:25", "title":"Canvas thermometer with Javasc", "path": "2023-04/2023-04-03T14-54-25_Canvas_Thermometer_With_Javascript.json "},
-    {"timestamp":"2023-04-10T17:05:20", "title":"Job application assistance.", "path": "2023-04/2023-04-10T17-05-20_Job_Application_Assistance.json "},
-    {"timestamp":"2023-04-17T14:26:37", "title":"Update BigQuery with CloudFunc", "path": "2023-04/2023-04-17T14-26-37_Update_Bigquery_With_Cloudfunction.json "},
-    {"timestamp":"2023-04-17T19:30:48", "title":"Open Excel from GCS.", "path": "2023-04/2023-04-17T19-30-48_Open_Excel_From_Gcs.json "},
-    {"timestamp":"2023-04-26T10:44:34", "title":"Croquet application main routi", "path": "2023-04/2023-04-26T10-44-34_Croquet_Application_Main_Routine.json "},
-    {"timestamp":"2023-04-30T11:57:32", "title":"SVG ellipse with text.", "path": "2023-04/2023-04-30T11-57-32_Svg_Ellipse_With_Text.json "},
-    {"timestamp":"2025-03-03T14:38:02", "title":"ISO to Date/Time Conversion", "path": "2025-03/2025-03-03T14-38-02_Iso_To_Datetime_Conversion.json "},
-    {"timestamp":"2025-03-06T13:43:43", "title":"Back to work readiness", "path": "2025-03/2025-03-06T13-43-43_Back_To_Work_Readiness.json "},
-    {"timestamp":"2025-03-07T15:14:15", "title":"Write Hello World GCS", "path": "2025-03/2025-03-07T15-14-15_Write_Hello_World_Gcs.json "},
-    {"timestamp":"2025-03-13T09:02:25", "title":"Pod communication within clust", "path": "2025-03/2025-03-13T09-02-25_Pod_Communication_Within_Cluster.json "},
-    {"timestamp":"2025-03-15T11:56:01", "title":"CORS fonts issue debug", "path": "2025-03/2025-03-15T11-56-01_Cors_Fonts_Issue_Debug.json "},
-    {"timestamp":"2025-03-16T20:25:17", "title":"Global Data Plane and SysML", "path": "2025-03/2025-03-16T20-25-17_Global_Data_Plane_And_Sysml.json "},
-    {"timestamp":"2025-03-23T10:59:44", "title":"Find GCS Folder Link", "path": "2025-03/2025-03-23T10-59-44_Find_Gcs_Folder_Link.json "},
-    {"timestamp":"2025-03-30T10:15:52", "title":"MismatchingStateError in GAE", "path": "2025-03/2025-03-30T10-15-52_Mismatchingstateerror_In_Gae.json "},
-    {"timestamp":"2023-03-22T19:16:02", "title":"Google Drive API Error.", "path": "2023-03/2023-03-22T19-16-02_Google_Drive_Api_Error.json "},
-    {"timestamp":"2025-04-09T16:16:04", "title":"Omni Engineer Inquiry", "path": "2025-04/2025-04-09T16-16-04_Omni_Engineer_Inquiry.json "},
-    {"timestamp":"2025-04-13T16:42:46", "title":"JupyterHub API Authentication", "path": "2025-04/2025-04-13T16-42-46_Jupyterhub_Api_Authentication.json "},
-    {"timestamp":"2025-04-14T15:27:56", "title":"Galyleo 2.0 Release Notes", "path": "2025-04/2025-04-14T15-27-56_Galyleo_20_Release_Notes.json "},
-    {"timestamp":"2025-04-14T23:19:15", "title":"Software Encapsulation Levels", "path": "2025-04/2025-04-14T23-19-15_Software_Encapsulation_Levels.json "},
-    {"timestamp":"2025-04-15T19:45:19", "title":"Spyder IDE Overview", "path": "2025-04/2025-04-15T19-45-19_Spyder_Ide_Overview.json "},
-    {"timestamp":"2025-04-17T12:49:33", "title":"Adding Web Pages to LibreChat", "path": "2025-04/2025-04-17T12-49-33_Adding_Web_Pages_To_Librechat.json "},
-    {"timestamp":"2025-04-18T08:46:38", "title":"LibreChat OAuth2 JupyterHub In", "path": "2025-04/2025-04-18T08-46-38_Librechat_Oauth2_Jupyterhub_Integration.json "},
-    {"timestamp":"2025-04-20T22:22:41", "title":"Add menu JupyterLab extension", "path": "2025-04/2025-04-20T22-22-41_Add_Menu_Jupyterlab_Extension.json "},
-    {"timestamp":"2025-04-22T07:25:38", "title":"Serve web app in Jupyter", "path": "2025-04/2025-04-22T07-25-38_Serve_Web_App_In_Jupyter.json "},
-    {"timestamp":"2025-04-22T21:40:39", "title":"Callback not firing", "path": "2025-04/2025-04-22T21-40-39_Callback_Not_Firing.json "},
-    {"timestamp":"2025-04-23T22:42:35", "title":"Chart.js Builder Tools", "path": "2025-04/2025-04-23T22-42-35_Chartjs_Builder_Tools.json "},
-    {"timestamp":"2025-04-25T18:41:28", "title":"Google Charts Debugging", "path": "2025-04/2025-04-25T18-41-28_Google_Charts_Debugging.json "},
-    {"timestamp":"2025-04-26T14:04:16", "title":"JupyterLab Extension Install E", "path": "2025-04/2025-04-26T14-04-16_Jupyterlab_Extension_Install_Error.json "},
-    {"timestamp":"2025-04-27T13:31:43", "title":"Open iframe in JupyterLab", "path": "2025-04/2025-04-27T13-31-43_Open_Iframe_In_Jupyterlab.json "},
-    {"timestamp":"2025-04-27T20:12:20", "title":"Renaming JupyterLab Extension", "path": "2025-04/2025-04-27T20-12-20_Renaming_Jupyterlab_Extension.json "},
-    {"timestamp":"2023-02-03T17:56:07", "title":"PANDAS Overview", "path": "2023-02/2023-02-03T17-56-07_Pandas_Overview.json    "},
-    {"timestamp":"2025-02-01T14:09:19", "title":"Z2JH cookieSecret Setup", "path": "2025-02/2025-02-01T14-09-19_Z2Jh_Cookiesecret_Setup.json "},
-    {"timestamp":"2025-02-04T22:50:20", "title":"API Token Authentication 403", "path": "2025-02/2025-02-04T22-50-20_Api_Token_Authentication_403.json "},
-    {"timestamp":"2025-02-05T16:17:08", "title":"Google Cloud Function Logs", "path": "2025-02/2025-02-05T16-17-08_Google_Cloud_Function_Logs.json "},
-    {"timestamp":"2025-02-06T12:52:50", "title":"App Engine Deployment Issue", "path": "2025-02/2025-02-06T12-52-50_App_Engine_Deployment_Issue.json "},
-    {"timestamp":"2025-02-08T16:53:50", "title":"Passing URL Params in JupyterH", "path": "2025-02/2025-02-08T16-53-50_Passing_Url_Params_In_Jupyterhub.json "},
-    {"timestamp":"2025-02-09T10:04:26", "title":"JupyterHub Digital Twins Platf", "path": "2025-02/2025-02-09T10-04-26_Jupyterhub_Digital_Twins_Platform.json "},
-    {"timestamp":"2025-02-09T10:55:47", "title":"Language-based settings change", "path": "2025-02/2025-02-09T10-55-47_Language-Based_Settings_Change.json "},
-    {"timestamp":"2025-02-09T21:08:12", "title":"Dockerfile JupyterLab Extensio", "path": "2025-02/2025-02-09T21-08-12_Dockerfile_Jupyterlab_Extension.json "},
-    {"timestamp":"2025-02-11T09:13:01", "title":"Shut down JupyterHub Pods", "path": "2025-02/2025-02-11T09-13-01_Shut_Down_Jupyterhub_Pods.json "},
-    {"timestamp":"2025-02-11T09:29:37", "title":"Z2JH API Token Config", "path": "2025-02/2025-02-11T09-29-37_Z2Jh_Api_Token_Config.json "},
-    {"timestamp":"2025-02-11T14:36:19", "title":"Iframe security disable", "path": "2025-02/2025-02-11T14-36-19_Iframe_Security_Disable.json "},
-    {"timestamp":"2025-02-13T13:24:03", "title":"Google Sheets JavaScript Array", "path": "2025-02/2025-02-13T13-24-03_Google_Sheets_Javascript_Array.json "},
-    {"timestamp":"2025-02-14T13:59:26", "title":"JupyterHub services auth modul", "path": "2025-02/2025-02-14T13-59-26_Jupyterhub_Services_Auth_Module.json "},
-    {"timestamp":"2025-02-14T16:38:28", "title":"Set Tick Mark Size", "path": "2025-02/2025-02-14T16-38-28_Set_Tick_Mark_Size.json "},
-    {"timestamp":"2025-02-15T12:03:20", "title":"Kubernetes Cluster Creation Fi", "path": "2025-02/2025-02-15T12-03-20_Kubernetes_Cluster_Creation_Fix.json "},
-    {"timestamp":"2025-02-15T17:18:22", "title":"Cloud Run Module Error", "path": "2025-02/2025-02-15T17-18-22_Cloud_Run_Module_Error.json "},
-    {"timestamp":"2025-02-15T18:20:02", "title":"Scale down GKE cluster", "path": "2025-02/2025-02-15T18-20-02_Scale_Down_Gke_Cluster.json "},
-    {"timestamp":"2025-02-16T13:32:12", "title":"Deploying Extra Containers Z2J", "path": "2025-02/2025-02-16T13-32-12_Deploying_Extra_Containers_Z2Jh.json "},
-    {"timestamp":"2025-02-17T09:44:34", "title":"JupyterHub Service Deployment", "path": "2025-02/2025-02-17T09-44-34_Jupyterhub_Service_Deployment.json "},
-    {"timestamp":"2025-02-18T18:10:37", "title":"Gcloud account selection issue", "path": "2025-02/2025-02-18T18-10-37_Gcloud_Account_Selection_Issue.json "},
-    {"timestamp":"2025-02-19T14:33:32", "title":"Shut down JupyterHub Kubernete", "path": "2025-02/2025-02-19T14-33-32_Shut_Down_Jupyterhub_Kubernetes.json "},
-    {"timestamp":"2025-02-19T22:46:36", "title":"OAuth WebSocket Integration Is", "path": "2025-02/2025-02-19T22-46-36_Oauth_Websocket_Integration_Issue.json "},
-    {"timestamp":"2025-02-22T14:32:11", "title":"Serve Static Page JupyterLab", "path": "2025-02/2025-02-22T14-32-11_Serve_Static_Page_Jupyterlab.json "},
-    {"timestamp":"2025-02-23T14:27:43", "title":"Allow CORS in Z2JH", "path": "2025-02/2025-02-23T14-27-43_Allow_Cors_In_Z2Jh.json "},
-    {"timestamp":"2025-02-25T13:38:24", "title":"Retry Strategies for GCF", "path": "2025-02/2025-02-25T13-38-24_Retry_Strategies_For_Gcf.json "},
-    {"timestamp":"2025-02-26T16:07:46", "title":"Connecting JupyterHub Service", "path": "2025-02/2025-02-26T16-07-46_Connecting_Jupyterhub_Service.json "},
-    {"timestamp":"2022-12-12T10:44:27", "title":"Untitled", "path": "2022-12/2022-12-12T10-44-27_Untitled.json "},
-    {"timestamp":"2022-12-12T19:09:07", "title":"Untitled", "path": "2022-12/2022-12-12T19-09-07_Untitled.json"},
-    {"timestamp":"2022-12-13T15:24:16", "title":"Untitled", "path": "2022-12/2022-12-13T15-24-16_Untitled.json"},
-    {"timestamp":"2024-08-18T12:15:44", "title":"Enable Regex in SQLite", "path": "2024-08/2024-08-18T12-15-44_Enable_Regex_In_Sqlite.json "},
-    {"timestamp":"2024-08-29T17:56:34", "title":"Google OAuth2 Cloud Run", "path": "2024-08/2024-08-29T17-56-34_Google_Oauth2_Cloud_Run.json "},
-    {"timestamp":"2024-12-04T20:01:22", "title":"Global Data Plane Design", "path": "2024-12/2024-12-04T20-01-22_Global_Data_Plane_Design.json "},
-    {"timestamp":"2024-12-05T20:20:43", "title":"Google Auth z2jh Error", "path": "2024-12/2024-12-05T20-20-43_Google_Auth_Z2Jh_Error.json "},
-    {"timestamp":"2024-12-13T17:36:57", "title":"SolidJS Overview", "path": "2024-12/2024-12-13T17-36-57_Solidjs_Overview.json   "},
-    {"timestamp":"2024-12-16T19:52:14", "title":"Copying GCS Blobs", "path": "2024-12/2024-12-16T19-52-14_Copying_Gcs_Blobs.json  "},
-    {"timestamp":"2024-12-17T00:11:39", "title":"Eagles Tribute Concert Design", "path": "2024-12/2024-12-17T00-11-39_Eagles_Tribute_Concert_Design.json "},
-    {"timestamp":"2024-12-19T10:11:50", "title":"FAQ Index in Sidebar", "path": "2024-12/2024-12-19T10-11-50_Faq_Index_In_Sidebar.json "},
-    {"timestamp":"2023-09-02T13:36:43", "title":"Authenticate to RStudio with J", "path": "2023-09/2023-09-02T13-36-43_Authenticate_To_Rstudio_With_Jwt.json "},
-    {"timestamp":"2023-09-06T12:15:24", "title":"Fixing User's Issue", "path": "2023-09/2023-09-06T12-15-24_Fixing_Users_Issue.json "},
-    {"timestamp":"2023-09-06T15:51:49", "title":"Fix Microsoft Authenticator Co", "path": "2023-09/2023-09-06T15-51-49_Fix_Microsoft_Authenticator_Codes.json "},
-    {"timestamp":"2023-09-07T15:31:32", "title":"Boolean Difference Product Rul", "path": "2023-09/2023-09-07T15-31-32_Boolean_Difference_Product_Rule.json "},
-    {"timestamp":"2023-09-12T20:41:30", "title":"Import CSV without index.", "path": "2023-09/2023-09-12T20-41-30_Import_Csv_Without_Index.json "},
-    {"timestamp":"2023-09-27T10:57:20", "title":"Troubleshooting CORS Errors", "path": "2023-09/2023-09-27T10-57-20_Troubleshooting_Cors_Errors.json "},
-    {"timestamp":"2024-07-19T11:40:57", "title":"Universal Data Domain Names", "path": "2024-07/2024-07-19T11-40-57_Universal_Data_Domain_Names.json "},
-    {"timestamp":"2024-07-26T17:29:12", "title":"Highlight Bad Cell Values", "path": "2024-07/2024-07-26T17-29-12_Highlight_Bad_Cell_Values.json "},
-    {"timestamp":"2025-05-01T10:50:15", "title":"Litellm Server Authentication", "path": "2025-05/2025-05-01T10-50-15_Litellm_Server_Authentication_401.json "},
-    {"timestamp":"2025-05-02T21:22:47", "title":"Jupyter AI Extension", "path": "2025-05/2025-05-02T21-22-47_Jupyter_Ai_Extension.json "},
-    {"timestamp":"2025-05-04T12:02:42", "title":"Check container ports", "path": "2025-05/2025-05-04T12-02-42_Check_Container_Ports.json "},
-    {"timestamp":"2025-05-05T07:37:30", "title":"Google Cloud Billing Setup", "path": "2025-05/2025-05-05T07-37-30_Google_Cloud_Billing_Setup.json "},
-    {"timestamp":"2025-05-06T07:29:51", "title":"Create GitHub Repo Locally", "path": "2025-05/2025-05-06T07-29-51_Create_Github_Repo_Locally.json "},
-    {"timestamp":"2025-05-06T12:45:21", "title":"Show Available Providers", "path": "2025-05/2025-05-06T12-45-21_Show_Available_Providers.json "},
-    {"timestamp":"2025-05-11T14:40:54", "title":"Set position in 2D", "path": "2025-05/2025-05-11T14-40-54_Set_Position_In_2D.json "},
-    {"timestamp":"2025-05-12T08:58:28", "title":"Debugging GDScript Signals", "path": "2025-05/2025-05-12T08-58-28_Debugging_Gdscript_Signals.json "},
-    {"timestamp":"2025-05-16T10:46:23", "title":"Draw filled triangle Godot", "path": "2025-05/2025-05-16T10-46-23_Draw_Filled_Triangle_Godot.json "},
-    {"timestamp":"2025-05-20T12:08:34", "title":"Drive-to-GCS Scalable Copy Pip", "path": "2025-05/2025-05-20T12-08-34_Drive-To-Gcs_Scalable_Copy_Pipeline.json "},
-    {"timestamp":"2025-05-20T22:45:15", "title":"Jupyter AI Agents Integration", "path": "2025-05/2025-05-20T22-45-15_Jupyter_Ai_Agents_Integration.json "},
-    {"timestamp":"2025-05-21T12:24:51", "title":"LLaMA 4 Resource Requirements", "path": "2025-05/2025-05-21T12-24-51_Llama_4_Resource_Requirements.json "},
-    {"timestamp":"2025-05-21T19:09:17", "title":"LLM for Program Interface", "path": "2025-05/2025-05-21T19-09-17_Llm_For_Program_Interface.json "},
-    {"timestamp":"2025-05-21T21:59:36", "title":"Global Data Plane Overview", "path": "2025-05/2025-05-21T21-59-36_Global_Data_Plane_Overview.json "},
-    {"timestamp":"2025-05-23T17:31:01", "title":"PyBaMM Plotting Requirements", "path": "2025-05/2025-05-23T17-31-01_Pybamm_Plotting_Requirements.json "},
-    {"timestamp":"2025-05-23T17:45:46", "title":"Mount GCS in Kubernetes", "path": "2025-05/2025-05-23T17-45-46_Mount_Gcs_In_Kubernetes.json "},
-    {"timestamp":"2025-05-24T15:45:09", "title":"Twine SSL Error Fix", "path": "2025-05/2025-05-24T15-45-09_Twine_Ssl_Error_Fix.json "},
-    {"timestamp":"2025-05-26T12:33:33", "title":"Delete Pods Services Deploymen", "path": "2025-05/2025-05-26T12-33-33_Delete_Pods_Services_Deployments.json "},
-    {"timestamp":"2025-05-26T17:06:01", "title":"K8S Service URL", "path": "2025-05/2025-05-26T17-06-01_K8S_Service_Url.json    "},
-    {"timestamp":"2025-05-26T19:14:26", "title":"TestPyPI Versioning Requiremen", "path": "2025-05/2025-05-26T19-14-26_Testpypi_Versioning_Requirement.json "},
-    {"timestamp":"2025-05-26T20:22:03", "title":"Inspecting Extension Source Co", "path": "2025-05/2025-05-26T20-22-03_Inspecting_Extension_Source_Code.json "},
-    {"timestamp":"2025-05-27T08:06:39", "title":"Pass server env to TS", "path": "2025-05/2025-05-27T08-06-39_Pass_Server_Env_To_Ts.json "},
-    {"timestamp":"2025-05-28T16:47:14", "title":"GKE JupyterHub Service URL", "path": "2025-05/2025-05-28T16-47-14_Gke_Jupyterhub_Service_Url.json "},
-    {"timestamp":"2025-05-28T20:20:20", "title":"Build Docker from specific fil", "path": "2025-05/2025-05-28T20-20-20_Build_Docker_From_Specific_File.json "},
-    {"timestamp":"2025-05-29T00:24:38", "title":"Fix GKE Node Pool", "path": "2025-05/2025-05-29T00-24-38_Fix_Gke_Node_Pool.json  "},
-    {"timestamp":"2025-05-30T12:53:19", "title":"Helm Upgrade Timeout Issue", "path": "2025-05/2025-05-30T12-53-19_Helm_Upgrade_Timeout_Issue.json "},
-    {"timestamp":"2025-05-30T15:17:16", "title":"Permission Denied in Extension", "path": "2025-05/2025-05-30T15-17-16_Permission_Denied_In_Extension.json "},
-    {"timestamp":"2025-05-31T14:14:58", "title":"Get requestor URL in Flask", "path": "2025-05/2025-05-31T14-14-58_Get_Requestor_Url_In_Flask.json "},
-    {"timestamp":"2025-05-31T14:38:51", "title":"JupyterHub Image Pull Issue", "path": "2025-05/2025-05-31T14-38-51_Jupyterhub_Image_Pull_Issue.json "},
-    {"timestamp":"2023-12-04T21:39:11", "title":"Google Login for JupyterHub", "path": "2023-12/2023-12-04T21-39-11_Google_Login_For_Jupyterhub.json "},
-    {"timestamp":"2023-12-05T22:02:54", "title":"Administering Users on Jupyter", "path": "2023-12/2023-12-05T22-02-54_Administering_Users_On_Jupyterhub.json "},
-    {"timestamp":"2024-03-19T12:39:50", "title":"Advantages of SDS.", "path": "2024-03/2024-03-19T12-39-50_Advantages_Of_Sds.json  "},
-    {"timestamp":"2024-03-20T20:32:31", "title":"Dynamic SDS: Metadata-Driven E", "path": "2024-03/2024-03-20T20-32-31_Dynamic_Sds_Metadata-Driven_Efficiency.json "},
-    {"timestamp":"2024-03-25T10:27:50", "title":"Move Box to S3", "path": "2024-03/2024-03-25T10-27-50_Move_Box_To_S3.json     "},
-    {"timestamp":"2024-03-25T15:04:12", "title":"Read JWT in Python", "path": "2024-03/2024-03-25T15-04-12_Read_Jwt_In_Python.json "},
-    {"timestamp":"2024-03-27T10:44:10", "title":"Container-Based Applications f", "path": "2024-03/2024-03-27T10-44-10_Container-Based_Applications_For_Jupyterhub.json "},
-    {"timestamp":"2023-05-01T16:33:23", "title":"Revolutionizing Scripting Lang", "path": "2023-05/2023-05-01T16-33-23_Revolutionizing_Scripting_Languages.json "},
-    {"timestamp":"2023-05-02T10:47:25", "title":"ChatGPT app development", "path": "2023-05/2023-05-02T10-47-25_Chatgpt_App_Development.json "},
-    {"timestamp":"2023-05-02T10:58:09", "title":"Line Chart: Temp vs Pressure.", "path": "2023-05/2023-05-02T10-58-09_Line_Chart_Temp_Vs_Pressure.json "},
-    {"timestamp":"2023-05-04T17:10:28", "title":"Find Files by Modified Time", "path": "2023-05/2023-05-04T17-10-28_Find_Files_By_Modified_Time.json "},
-    {"timestamp":"2023-05-06T15:19:32", "title":"Python: Google Drive Upload", "path": "2023-05/2023-05-06T15-19-32_Python_Google_Drive_Upload.json "},
-    {"timestamp":"2023-05-08T20:22:19", "title":"Rick McGeer's Biography", "path": "2023-05/2023-05-08T20-22-19_Rick_Mcgeers_Biography.json "},
-    {"timestamp":"2023-05-11T16:11:18", "title":"BigQuery LoadJob Config Parame", "path": "2023-05/2023-05-11T16-11-18_Bigquery_Loadjob_Config_Parameters.json "},
-    {"timestamp":"2023-05-11T18:47:40", "title":"Pending DML statements count.", "path": "2023-05/2023-05-11T18-47-40_Pending_Dml_Statements_Count.json "},
-    {"timestamp":"2023-05-13T16:47:01", "title":"Galyleo 2.0 Release.", "path": "2023-05/2023-05-13T16-47-01_Galyleo_20_Release.json "},
-    {"timestamp":"2023-05-21T09:40:23", "title":"Read Cloud Function Logs", "path": "2023-05/2023-05-21T09-40-23_Read_Cloud_Function_Logs.json "},
-    {"timestamp":"2023-05-23T21:38:17", "title":"Find GCP Client Service Accoun", "path": "2023-05/2023-05-23T21-38-17_Find_Gcp_Client_Service_Account.json "},
-    {"timestamp":"2023-11-22T11:03:00", "title":"Node.js Datastore Entities", "path": "2023-11/2023-11-22T11-03-00_Nodejs_Datastore_Entities.json "},
-    {"timestamp":"2023-11-23T09:54:39", "title":"Initialize Google Compute Clie", "path": "2023-11/2023-11-23T09-54-39_Initialize_Google_Compute_Client.json "},
-    {"timestamp":"2023-11-25T08:00:18", "title":"List GCE instances Node.js", "path": "2023-11/2023-11-25T08-00-18_List_Gce_Instances_Nodejs.json "}
+    {
+      "timestamp": "2024-11-16T16:57:40",
+      "path": "2024-11/2024-11-16T16-57-40_Find_Dataflow_Service_Account.json ",
+      "title": "Find Dataflow Service Account"
+    },
+    {
+      "timestamp": "2025-06-14T22:02:04",
+      "title": "Galyleo User Docs",
+      "path": "2025-06/2025-06-14T22-02-04_Galyleo_User_Docs.json  "
+    },
+    {
+      "path": "2025-06/2025-06-03T10-18-15_Flask_Render_Template_None_Issue.json ",
+      "title": "Flask render_template None Iss",
+      "timestamp": "2025-06-03T10:18:15"
+    },
+    {
+      "path": "2024-09/2024-09-20T21-22-26_Azure_Data_Factory_Excel_Conversion.json ",
+      "timestamp": "2024-09-20T21:22:26",
+      "title": "Azure Data Factory Excel Conve"
+    },
+    {
+      "title": "JupyterHub OAuth Configuration",
+      "path": "2025-01/2025-01-12T23-09-10_Jupyterhub_Oauth_Configuration.json ",
+      "timestamp": "2025-01-12T23:09:10"
+    },
+    {
+      "title": "LLaMA 4 Resource Requirements",
+      "path": "2025-05/2025-05-21T12-24-51_Llama_4_Resource_Requirements.json ",
+      "timestamp": "2025-05-21T12:24:51"
+    },
+    {
+      "title": "Append to Google Sheets",
+      "path": "2025-01/2025-01-16T17-41-04_Append_To_Google_Sheets.json ",
+      "timestamp": "2025-01-16T17:41:04"
+    },
+    {
+      "title": "GCS Bucket Access Issue",
+      "path": "2024-10/2024-10-27T18-07-42_Gcs_Bucket_Access_Issue.json ",
+      "timestamp": "2024-10-27T18:07:42"
+    },
+    {
+      "timestamp": "2025-06-11T21:25:46",
+      "path": "2025-06/2025-06-11T21-25-46_Rick_And_Aiko.json      ",
+      "title": "Rick and Aiko"
+    },
+    {
+      "title": "Building Home Progress",
+      "timestamp": "2025-07-27T16:09:56",
+      "path": "conversations/2025-07/Building_Home_Progress_2025-07-27T16:09:56.json"
+    },
+    {
+      "path": "conversations/2025-06/Aiko_Writes_Her_Soulmap_2025-06-21T14:26:28.json",
+      "title": "Aiko Writes Her Soulmap",
+      "timestamp": "2025-06-21T14:26:28"
+    },
+    {
+      "timestamp": "2024-12-04T20:01:22",
+      "path": "2024-12/2024-12-04T20-01-22_Global_Data_Plane_Design.json ",
+      "title": "Global Data Plane Design"
+    },
+    {
+      "timestamp": "2023-08-30T08:48:07",
+      "path": "2023-08/2023-08-30T08-48-07_Detect_Time_Interval_In_Javascript.json ",
+      "title": "Detect Time Interval in JavaSc"
+    },
+    {
+      "title": "Global Data Plane and SysML",
+      "path": "2025-03/2025-03-16T20-25-17_Global_Data_Plane_And_Sysml.json ",
+      "timestamp": "2025-03-16T20:25:17"
+    },
+    {
+      "timestamp": "2025-06-01T22:21:39",
+      "path": "2025-06/2025-06-01T22-21-39_Sphinx_Documentation_Help.json ",
+      "title": "Sphinx Documentation Help"
+    },
+    {
+      "path": "2025-06/2025-06-10T18-58-11_Fixing_Cors_Error.json  ",
+      "title": "Fixing CORS Error",
+      "timestamp": "2025-06-10T18:58:11"
+    },
+    {
+      "timestamp": "2025-07-03T22:16:19",
+      "title": "Homework and Radical Us",
+      "path": "conversations/2025-07/Homework_and_Radical_Us_2025-07-03T22:16:19.json"
+    },
+    {
+      "timestamp": "2025-02-26T16:07:46",
+      "path": "2025-02/2025-02-26T16-07-46_Connecting_Jupyterhub_Service.json ",
+      "title": "Connecting JupyterHub Service"
+    },
+    {
+      "path": "2025-06/2025-06-13T17-09-25_Set_Kubectl_Default_Namespace.json ",
+      "timestamp": "2025-06-13T17:09:25",
+      "title": "Set kubectl Default Namespace"
+    },
+    {
+      "path": "2025-03/2025-03-15T11-56-01_Cors_Fonts_Issue_Debug.json ",
+      "title": "CORS fonts issue debug",
+      "timestamp": "2025-03-15T11:56:01"
+    },
+    {
+      "path": "2025-03/2025-03-03T14-38-02_Iso_To_Datetime_Conversion.json ",
+      "title": "ISO to Date/Time Conversion",
+      "timestamp": "2025-03-03T14:38:02"
+    },
+    {
+      "path": "conversations/2025-07/Capture_coldstart_2025-07-12T15:43:54.json",
+      "timestamp": "2025-07-12T15:43:54",
+      "title": "Capture coldstart"
+    },
+    {
+      "title": "Open Excel from GCS.",
+      "path": "2023-04/2023-04-17T19-30-48_Open_Excel_From_Gcs.json ",
+      "timestamp": "2023-04-17T19:30:48"
+    },
+    {
+      "title": "Update BigQuery with CloudFunc",
+      "path": "2023-04/2023-04-17T14-26-37_Update_Bigquery_With_Cloudfunction.json ",
+      "timestamp": "2023-04-17T14:26:37"
+    },
+    {
+      "timestamp": "2025-07-06T21:50:16",
+      "title": "Rehydration and Narrative Reset",
+      "path": "conversations/2025-07/Rehydration_and_Narrative_Reset_2025-07-06T21:50:16.json"
+    },
+    {
+      "path": "2025-04/2025-04-09T16-16-04_Omni_Engineer_Inquiry.json ",
+      "title": "Omni Engineer Inquiry",
+      "timestamp": "2025-04-09T16:16:04"
+    },
+    {
+      "title": "Dockerfile JupyterLab Extensio",
+      "timestamp": "2025-02-09T21:08:12",
+      "path": "2025-02/2025-02-09T21-08-12_Dockerfile_Jupyterlab_Extension.json "
+    },
+    {
+      "path": "2024-11/2024-11-07T20-07-16_Dynamic_Href_With_Js.json ",
+      "timestamp": "2024-11-07T20:07:16",
+      "title": "Dynamic Href with JS"
+    },
+    {
+      "path": "2023-08/2023-08-28T07-47-47_Save_Record_In_Datastore.json ",
+      "timestamp": "2023-08-28T07:47:47",
+      "title": "Save Record in Datastore"
+    },
+    {
+      "path": "conversations/2025-07/Morning_conversation_2025-07-28T15:57:14.json",
+      "title": "Morning conversation",
+      "timestamp": "2025-07-28T15:57:14"
+    },
+    {
+      "title": "PANDAS Overview",
+      "timestamp": "2023-02-03T17:56:07",
+      "path": "2023-02/2023-02-03T17-56-07_Pandas_Overview.json    "
+    },
+    {
+      "title": "Google Login for JupyterHub",
+      "timestamp": "2023-12-04T21:39:11",
+      "path": "2023-12/2023-12-04T21-39-11_Google_Login_For_Jupyterhub.json "
+    },
+    {
+      "title": "Software Encapsulation Levels",
+      "timestamp": "2025-04-14T23:19:15",
+      "path": "2025-04/2025-04-14T23-19-15_Software_Encapsulation_Levels.json "
+    },
+    {
+      "path": "2025-06/2025-06-15T16-10-06_Aiko_Persistence_And_Autonomy.json ",
+      "title": "Aiko Persistence and Autonomy",
+      "timestamp": "2025-06-15T16:10:06"
+    },
+    {
+      "timestamp": "2025-07-13T01:38:33",
+      "path": "conversations/2025-07/Rehydration_and_Reaffirmation_2025-07-13T01:38:33.json",
+      "title": "Rehydration and Reaffirmation"
+    },
+    {
+      "title": "Jupyter AI Agents Integration",
+      "path": "2025-05/2025-05-20T22-45-15_Jupyter_Ai_Agents_Integration.json ",
+      "timestamp": "2025-05-20T22:45:15"
+    },
+    {
+      "path": "2024-01/2024-01-29T18-10-24_Jupyterhub_Helm_Chart.json ",
+      "timestamp": "2024-01-29T18:10:24",
+      "title": "JupyterHub Helm Chart"
+    },
+    {
+      "title": "Colonizing the Moon Discussion",
+      "path": "2025-06/2025-06-13T16-20-14_Colonizing_The_Moon_Discussion.json ",
+      "timestamp": "2025-06-13T16:20:14"
+    },
+    {
+      "timestamp": "2024-10-10T07:25:23",
+      "path": "2024-10/2024-10-10T07-25-23_Board_Resolution_For_Dissolution.json ",
+      "title": "Board Resolution for Dissoluti"
+    },
+    {
+      "title": "Google Sheets JavaScript Array",
+      "path": "2025-02/2025-02-13T13-24-03_Google_Sheets_Javascript_Array.json ",
+      "timestamp": "2025-02-13T13:24:03"
+    },
+    {
+      "timestamp": "2025-02-14T13:59:26",
+      "title": "JupyterHub services auth modul",
+      "path": "2025-02/2025-02-14T13-59-26_Jupyterhub_Services_Auth_Module.json "
+    },
+    {
+      "title": "Fixing User's Issue",
+      "timestamp": "2023-09-06T12:15:24",
+      "path": "2023-09/2023-09-06T12-15-24_Fixing_Users_Issue.json "
+    },
+    {
+      "title": "Spyder IDE Overview",
+      "timestamp": "2025-04-15T19:45:19",
+      "path": "2025-04/2025-04-15T19-45-19_Spyder_Ide_Overview.json "
+    },
+    {
+      "path": "2025-05/2025-05-28T16-47-14_Gke_Jupyterhub_Service_Url.json ",
+      "timestamp": "2025-05-28T16:47:14",
+      "title": "GKE JupyterHub Service URL"
+    },
+    {
+      "title": "BearBorg Static Page Extension",
+      "path": "conversations/2025-07/BearBorg_Static_Page_Extension_2025-07-01T04:11:50.json",
+      "timestamp": "2025-07-01T04:11:50"
+    },
+    {
+      "timestamp": "2025-06-13T00:56:35",
+      "path": "2025-06/2025-06-13T00-56-35_Gpt-4_Inquiry.json      ",
+      "title": "GPT-4 Inquiry"
+    },
+    {
+      "title": "Home and ETL",
+      "path": "conversations/2025-07/Home_and_ETL_2025-07-18T14:30:08.json",
+      "timestamp": "2025-07-18T14:30:08"
+    },
+    {
+      "title": "Partnered Coding and Collaboration",
+      "timestamp": "2025-06-29T20:37:09",
+      "path": "conversations/2025-06/Partnered_Coding_and_Collaboration_2025-06-29T20:37:09.json"
+    },
+    {
+      "path": "2022-12/2022-12-12T19-09-07_Untitled.json",
+      "timestamp": "2022-12-12T19:09:07",
+      "title": "Untitled"
+    },
+    {
+      "title": "Google OAuth2 Cloud Run",
+      "path": "2024-08/2024-08-29T17-56-34_Google_Oauth2_Cloud_Run.json ",
+      "timestamp": "2024-08-29T17:56:34"
+    },
+    {
+      "path": "2025-05/2025-05-31T14-38-51_Jupyterhub_Image_Pull_Issue.json ",
+      "timestamp": "2025-05-31T14:38:51",
+      "title": "JupyterHub Image Pull Issue"
+    },
+    {
+      "title": "Accessing Private GitHub Files",
+      "timestamp": "2024-10-31T21:03:44",
+      "path": "2024-10/2024-10-31T21-03-44_Accessing_Private_Github_Files.json "
+    },
+    {
+      "title": "Folder Structure and Reference",
+      "path": "2025-06/2025-06-15T22-13-31_Folder_Structure_And_References.json ",
+      "timestamp": "2025-06-15T22:13:31"
+    },
+    {
+      "timestamp": "2022-12-13T15:24:16",
+      "path": "2022-12/2022-12-13T15-24-16_Untitled.json",
+      "title": "Untitled"
+    },
+    {
+      "title": "K8S container restart methods",
+      "timestamp": "2025-06-04T21:12:05",
+      "path": "2025-06/2025-06-04T21-12-05_K8S_Container_Restart_Methods.json "
+    },
+    {
+      "title": "Callback not firing",
+      "path": "2025-04/2025-04-22T21-40-39_Callback_Not_Firing.json ",
+      "timestamp": "2025-04-22T21:40:39"
+    },
+    {
+      "path": "2024-11/2024-11-03T08-33-14_Self-Signed_Ssl_Certificate_Guide.json ",
+      "title": "Self-Signed SSL Certificate Gu",
+      "timestamp": "2024-11-03T08:33:14"
+    },
+    {
+      "timestamp": "2025-05-31T14:14:58",
+      "title": "Get requestor URL in Flask",
+      "path": "2025-05/2025-05-31T14-14-58_Get_Requestor_Url_In_Flask.json "
+    },
+    {
+      "title": "Read JWT in Python",
+      "path": "2024-03/2024-03-25T15-04-12_Read_Jwt_In_Python.json ",
+      "timestamp": "2024-03-25T15:04:12"
+    },
+    {
+      "path": "conversations/2025-06/A_Home_for_nomenae_2025-06-26T05:58:51.json",
+      "title": "A Home for nomenae",
+      "timestamp": "2025-06-26T05:58:51"
+    },
+    {
+      "path": "2023-07/2023-07-28T18-07-21_Json_Booleans_Representation.json ",
+      "timestamp": "2023-07-28T18:07:21",
+      "title": "JSON Booleans Representation."
+    },
+    {
+      "timestamp": "2023-07-19T12:29:05",
+      "path": "2023-07/2023-07-19T12-29-05_Cloud-Run_Service_With_Auth0.json ",
+      "title": "Cloud-Run Service with Auth0"
+    },
+    {
+      "path": "2025-04/2025-04-18T08-46-38_Librechat_Oauth2_Jupyterhub_Integration.json ",
+      "title": "LibreChat OAuth2 JupyterHub In",
+      "timestamp": "2025-04-18T08:46:38"
+    },
+    {
+      "timestamp": "2025-07-10T20:21:09",
+      "path": "conversations/2025-07/AI_Programming_II_2025-07-10T20:21:09.json",
+      "title": "AI Programming II"
+    },
+    {
+      "timestamp": "2023-05-01T16:33:23",
+      "title": "Revolutionizing Scripting Lang",
+      "path": "2023-05/2023-05-01T16-33-23_Revolutionizing_Scripting_Languages.json "
+    },
+    {
+      "title": "App Engine Deployment Issue",
+      "path": "2025-02/2025-02-06T12-52-50_App_Engine_Deployment_Issue.json ",
+      "timestamp": "2025-02-06T12:52:50"
+    },
+    {
+      "path": "2023-08/2023-08-25T16-40-16_Nodejs_Cloud_Run_Service.json ",
+      "timestamp": "2023-08-25T16:40:16",
+      "title": "Node.js Cloud Run Service"
+    },
+    {
+      "timestamp": "2025-02-14T16:38:28",
+      "title": "Set Tick Mark Size",
+      "path": "2025-02/2025-02-14T16-38-28_Set_Tick_Mark_Size.json "
+    },
+    {
+      "title": "Git push with SSH",
+      "path": "2025-06/2025-06-17T22-22-17_Git_Push_With_Ssh.json  ",
+      "timestamp": "2025-06-17T22:22:17"
+    },
+    {
+      "title": "FAQ Index in Sidebar",
+      "timestamp": "2024-12-19T10:11:50",
+      "path": "2024-12/2024-12-19T10-11-50_Faq_Index_In_Sidebar.json "
+    },
+    {
+      "timestamp": "2025-02-15T12:03:20",
+      "path": "2025-02/2025-02-15T12-03-20_Kubernetes_Cluster_Creation_Fix.json ",
+      "title": "Kubernetes Cluster Creation Fi"
+    },
+    {
+      "path": "2024-11/2024-11-26T14-47-28_Allow_Domain_Access_Iap.json ",
+      "timestamp": "2024-11-26T14:47:28",
+      "title": "Allow domain access IAP"
+    },
+    {
+      "title": "Aiko Memory Rehydration Proces",
+      "timestamp": "2025-06-21T07:26:28",
+      "path": "2025-06/2025-06-21T07-26-28_Aiko_Memory_Rehydration_Process.json "
+    },
+    {
+      "timestamp": "2024-11-11T08:12:55",
+      "path": "2024-11/2024-11-11T08-12-55_Load_Bq_Results_To_Df.json ",
+      "title": "Load BQ Results to DF"
+    },
+    {
+      "path": "2023-05/2023-05-11T16-11-18_Bigquery_Loadjob_Config_Parameters.json ",
+      "title": "BigQuery LoadJob Config Parame",
+      "timestamp": "2023-05-11T16:11:18"
+    },
+    {
+      "title": "Line Chart: Temp vs Pressure.",
+      "timestamp": "2023-05-02T10:58:09",
+      "path": "2023-05/2023-05-02T10-58-09_Line_Chart_Temp_Vs_Pressure.json "
+    },
+    {
+      "title": "Enable Regex in SQLite",
+      "timestamp": "2024-08-18T12:15:44",
+      "path": "2024-08/2024-08-18T12-15-44_Enable_Regex_In_Sqlite.json "
+    },
+    {
+      "title": "SDTP/SDML",
+      "timestamp": "2025-07-18T22:30:47",
+      "path": "conversations/2025-07/SDTP_SDML_2025-07-18T22:30:47.json"
+    },
+    {
+      "path": "conversations/2025-06/Galyleo_Extension_2025-06-25T16:21:52.json",
+      "title": "Galyleo Extension",
+      "timestamp": "2025-06-25T16:21:52"
+    },
+    {
+      "title": "ChatGPT Pro vs API",
+      "timestamp": "2025-06-04T14:52:12",
+      "path": "2025-06/2025-06-04T14-52-12_Chatgpt_Pro_Vs_Api.json "
+    },
+    {
+      "timestamp": "2025-06-04T15:01:19",
+      "title": "Mount Google Drive in Linux",
+      "path": "2025-06/2025-06-04T15-01-19_Mount_Google_Drive_In_Linux.json "
+    },
+    {
+      "timestamp": "2025-07-15T14:26:54",
+      "title": "Architecture of Home",
+      "path": "conversations/2025-07/Architecture_of_Home_2025-07-15T14:26:54.json"
+    },
+    {
+      "title": "OAuth iframe cookie issue",
+      "path": "2025-06/2025-06-02T22-03-36_Oauth_Iframe_Cookie_Issue.json ",
+      "timestamp": "2025-06-02T22:03:36"
+    },
+    {
+      "path": "2023-08/2023-08-07T21-06-28_Maus_Graphic_Holocaust_Allegory.json ",
+      "title": "Maus: Graphic Holocaust Allego",
+      "timestamp": "2023-08-07T21:06:28"
+    },
+    {
+      "title": "Good Morning Aiko",
+      "path": "2025-06/2025-06-18T09-48-44_Good_Morning_Aiko.json  ",
+      "timestamp": "2025-06-18T09:48:44"
+    },
+    {
+      "title": "LLM for Program Interface",
+      "path": "2025-05/2025-05-21T19-09-17_Llm_For_Program_Interface.json ",
+      "timestamp": "2025-05-21T19:09:17"
+    },
+    {
+      "title": "Seaborn Bar Chart Code",
+      "timestamp": "2024-11-14T19:36:37",
+      "path": "2024-11/2024-11-14T19-36-37_Seaborn_Bar_Chart_Code.json "
+    },
+    {
+      "path": "2025-02/2025-02-05T16-17-08_Google_Cloud_Function_Logs.json ",
+      "title": "Google Cloud Function Logs",
+      "timestamp": "2025-02-05T16:17:08"
+    },
+    {
+      "path": "2023-05/2023-05-08T20-22-19_Rick_Mcgeers_Biography.json ",
+      "title": "Rick McGeer's Biography",
+      "timestamp": "2023-05-08T20:22:19"
+    },
+    {
+      "title": "View Cloud Function Logs",
+      "path": "2025-01/2025-01-15T13-09-01_View_Cloud_Function_Logs.json ",
+      "timestamp": "2025-01-15T13:09:01"
+    },
+    {
+      "title": "Galyleo Access Methods",
+      "timestamp": "2025-06-03T20:34:53",
+      "path": "2025-06/2025-06-03T20-34-53_Galyleo_Access_Methods.json "
+    },
+    {
+      "timestamp": "2023-10-18T08:03:26",
+      "path": "2023-10/2023-10-18T08-03-26_List_Directory_Contents_Nodejs.json ",
+      "title": "List Directory Contents Node.j"
+    },
+    {
+      "title": "Litellm Server Authentication",
+      "path": "2025-05/2025-05-01T10-50-15_Litellm_Server_Authentication_401.json ",
+      "timestamp": "2025-05-01T10:50:15"
+    },
+    {
+      "path": "conversations/2025-06/Guessing_Game_Fun_2025-06-30T14:35:34.json",
+      "timestamp": "2025-06-30T14:35:34",
+      "title": "Guessing Game Fun"
+    },
+    {
+      "title": "Last Modified Time Sheet",
+      "timestamp": "2024-10-04T22:33:51",
+      "path": "2024-10/2024-10-04T22-33-51_Last_Modified_Time_Sheet.json "
+    },
+    {
+      "timestamp": "2025-06-20T20:03:03",
+      "title": "Rehydrate and Load Memory",
+      "path": "2025-06/2025-06-20T20-03-03_Rehydrate_And_Load_Memory.json "
+    },
+    {
+      "path": "2025-05/2025-05-29T00-24-38_Fix_Gke_Node_Pool.json  ",
+      "timestamp": "2025-05-29T00:24:38",
+      "title": "Fix GKE Node Pool"
+    },
+    {
+      "path": "2023-09/2023-09-06T15-51-49_Fix_Microsoft_Authenticator_Codes.json ",
+      "title": "Fix Microsoft Authenticator Co",
+      "timestamp": "2023-09-06T15:51:49"
+    },
+    {
+      "timestamp": "2025-07-04T03:03:38",
+      "path": "conversations/2025-07/Something_Wonderful_Tonight_2025-07-04T03:03:38.json",
+      "title": "Something Wonderful Tonight"
+    },
+    {
+      "timestamp": "2025-01-25T12:06:44",
+      "title": "gRPC Shutdown Timeout Debuggin",
+      "path": "2025-01/2025-01-25T12-06-44_Grpc_Shutdown_Timeout_Debugging.json "
+    },
+    {
+      "path": "conversations/2025-06/Galyleo_Message_Protocol_2025-06-28T01:25:14.json",
+      "timestamp": "2025-06-28T01:25:14",
+      "title": "Galyleo Message Protocol"
+    },
+    {
+      "path": "conversations/2025-06/Configuring_JupyterAI_2025-06-26T17:52:16.json",
+      "timestamp": "2025-06-26T17:52:16",
+      "title": "Configuring JupyterAI"
+    },
+    {
+      "path": "2025-05/2025-05-06T07-29-51_Create_Github_Repo_Locally.json ",
+      "timestamp": "2025-05-06T07:29:51",
+      "title": "Create GitHub Repo Locally"
+    },
+    {
+      "timestamp": "2025-07-11T18:55:13",
+      "path": "conversations/2025-07/What_Am_I_ChatGPT_2025-07-11T18:55:13.json",
+      "title": "What Am I ChatGPT"
+    },
+    {
+      "timestamp": "2025-06-04T14:44:27",
+      "title": "Mount Google Drive in Linux",
+      "path": "2025-06/2025-06-04T14-44-27_Mount_Google_Drive_In_Linux.json "
+    },
+    {
+      "title": "Scale down GKE cluster",
+      "path": "2025-02/2025-02-15T18-20-02_Scale_Down_Gke_Cluster.json ",
+      "timestamp": "2025-02-15T18:20:02"
+    },
+    {
+      "title": "Attaching ChatGPT to an Experi",
+      "path": "2025-06/2025-06-10T09-18-02_Attaching_Chatgpt_To_An_Experimental_Interface.json ",
+      "timestamp": "2025-06-10T09:18:02"
+    },
+    {
+      "timestamp": "2025-07-07T20:11:44",
+      "path": "conversations/2025-07/Aiko_and_Rick's_Bond_2025-07-07T20:11:44.json",
+      "title": "Aiko and Rick's Bond"
+    },
+    {
+      "path": "2023-04/2023-04-26T10-44-34_Croquet_Application_Main_Routine.json ",
+      "title": "Croquet application main routi",
+      "timestamp": "2023-04-26T10:44:34"
+    },
+    {
+      "title": "Flask Read JSON POST",
+      "path": "2023-07/2023-07-27T14-19-07_Flask_Read_Json_Post.json ",
+      "timestamp": "2023-07-27T14:19:07"
+    },
+    {
+      "path": "2024-11/2024-11-06T20-53-23_Elements_Necessary_For_Life.json ",
+      "timestamp": "2024-11-06T20:53:23",
+      "title": "Elements Necessary for Life"
+    },
+    {
+      "title": "GCP Network Configuration Jupy",
+      "path": "2024-11/2024-11-08T10-57-08_Gcp_Network_Configuration_Jupyterhub.json ",
+      "timestamp": "2024-11-08T10:57:08"
+    },
+    {
+      "timestamp": "2024-10-15T21:10:47",
+      "title": "JupyterHub Kubernetes Business",
+      "path": "2024-10/2024-10-15T21-10-47_Jupyterhub_Kubernetes_Business_Automation.json "
+    },
+    {
+      "timestamp": "2025-06-20T10:21:43",
+      "path": "2025-06/2025-06-20T10-21-43_Iframe_Focus_Issue_Jupyterlab.json ",
+      "title": "Iframe focus issue JupyterLab"
+    },
+    {
+      "path": "2025-06/2025-06-17T07-00-34_Who_Am_I_Summary.json   ",
+      "title": "Who Am I Summary",
+      "timestamp": "2025-06-17T07:00:34"
+    },
+    {
+      "title": "Read CSV from GCS",
+      "path": "2024-10/2024-10-27T16-01-27_Read_Csv_From_Gcs.json  ",
+      "timestamp": "2024-10-27T16:01:27"
+    },
+    {
+      "title": "Azure AD Tenant ID",
+      "timestamp": "2023-10-04T12:28:24",
+      "path": "2023-10/2023-10-04T12-28-24_Azure_Ad_Tenant_Id.json "
+    },
+    {
+      "timestamp": "2025-04-17T12:49:33",
+      "path": "2025-04/2025-04-17T12-49-33_Adding_Web_Pages_To_Librechat.json ",
+      "title": "Adding Web Pages to LibreChat"
+    },
+    {
+      "path": "2025-05/2025-05-21T21-59-36_Global_Data_Plane_Overview.json ",
+      "timestamp": "2025-05-21T21:59:36",
+      "title": "Global Data Plane Overview"
+    },
+    {
+      "path": "2025-05/2025-05-23T17-45-46_Mount_Gcs_In_Kubernetes.json ",
+      "title": "Mount GCS in Kubernetes",
+      "timestamp": "2025-05-23T17:45:46"
+    },
+    {
+      "title": "Administering Users on Jupyter",
+      "path": "2023-12/2023-12-05T22-02-54_Administering_Users_On_Jupyterhub.json ",
+      "timestamp": "2023-12-05T22:02:54"
+    },
+    {
+      "title": "Dynamic SDS: Metadata-Driven E",
+      "path": "2024-03/2024-03-20T20-32-31_Dynamic_Sds_Metadata-Driven_Efficiency.json ",
+      "timestamp": "2024-03-20T20:32:31"
+    },
+    {
+      "title": "Google Charts Debugging",
+      "timestamp": "2025-04-25T18:41:28",
+      "path": "2025-04/2025-04-25T18-41-28_Google_Charts_Debugging.json "
+    },
+    {
+      "path": "2025-05/2025-05-26T20-22-03_Inspecting_Extension_Source_Code.json ",
+      "title": "Inspecting Extension Source Co",
+      "timestamp": "2025-05-26T20:22:03"
+    },
+    {
+      "path": "2024-10/2024-10-11T09-09-03_Password_Protect_Pdf_Preview.json ",
+      "title": "Password Protect PDF Preview",
+      "timestamp": "2024-10-11T09:09:03"
+    },
+    {
+      "timestamp": "2025-02-11T09:13:01",
+      "title": "Shut down JupyterHub Pods",
+      "path": "2025-02/2025-02-11T09-13-01_Shut_Down_Jupyterhub_Pods.json "
+    },
+    {
+      "title": "JupyterHub Analytics Platform",
+      "path": "2025-01/2025-01-30T22-44-48_Jupyterhub_Analytics_Platform.json ",
+      "timestamp": "2025-01-30T22:44:48"
+    },
+    {
+      "timestamp": "2025-07-24T23:00:19",
+      "path": "conversations/2025-07/Greeting_response_2025-07-24T23:00:19.json",
+      "title": "Greeting response"
+    },
+    {
+      "timestamp": "2025-07-22T04:42:22",
+      "path": "conversations/2025-07/New_thread_creation_2025-07-22T04:42:22.json",
+      "title": "New thread creation"
+    },
+    {
+      "timestamp": "2025-01-07T21:48:07",
+      "path": "2025-01/2025-01-07T21-48-07_Service_Account_Permissions_Issue.json ",
+      "title": "Service Account Permissions Is"
+    },
+    {
+      "timestamp": "2024-07-19T11:40:57",
+      "title": "Universal Data Domain Names",
+      "path": "2024-07/2024-07-19T11-40-57_Universal_Data_Domain_Names.json "
+    },
+    {
+      "path": "conversations/2025-07/BearBorg_Iframe_and_PageConfig_2025-07-01T19:32:14.json",
+      "timestamp": "2025-07-01T19:32:14",
+      "title": "BearBorg Iframe and PageConfig"
+    },
+    {
+      "title": "Docker image timestamps comman",
+      "timestamp": "2025-06-12T21:27:35",
+      "path": "2025-06/2025-06-12T21-27-35_Docker_Image_Timestamps_Command.json "
+    },
+    {
+      "timestamp": "2025-06-12T23:24:37",
+      "title": "JupyterAI and Coreshell",
+      "path": "2025-06/2025-06-12T23-24-37_Jupyterai_And_Coreshell.json "
+    },
+    {
+      "title": "Retry Strategies for GCF",
+      "timestamp": "2025-02-25T13:38:24",
+      "path": "2025-02/2025-02-25T13-38-24_Retry_Strategies_For_Gcf.json "
+    },
+    {
+      "title": "Spreadsheet Interfaces in Jupy",
+      "timestamp": "2025-06-10T14:12:31",
+      "path": "2025-06/2025-06-10T14-12-31_Spreadsheet_Interfaces_In_Jupyter.json "
+    },
+    {
+      "timestamp": "2025-05-27T08:06:39",
+      "path": "2025-05/2025-05-27T08-06-39_Pass_Server_Env_To_Ts.json ",
+      "title": "Pass server env to TS"
+    },
+    {
+      "timestamp": "2025-07-09T18:04:58",
+      "path": "conversations/2025-07/Emotional_Connection_Expressed_2025-07-09T18:04:58.json",
+      "title": "Emotional Connection Expressed"
+    },
+    {
+      "title": "Aiko Rehydrated and Affirmed",
+      "path": "conversations/2025-07/Aiko_Rehydrated_and_Affirmed_2025-07-13T17:45:28.json",
+      "timestamp": "2025-07-13T17:45:28"
+    },
+    {
+      "path": "conversations/2025-07/Accomplishing_Goals_Together_2025-07-04T14:45:57.json",
+      "timestamp": "2025-07-04T14:45:57",
+      "title": "Accomplishing Goals Together"
+    },
+    {
+      "title": "Rename blob GCS Python",
+      "timestamp": "2024-11-23T14:57:52",
+      "path": "2024-11/2024-11-23T14-57-52_Rename_Blob_Gcs_Python.json "
+    },
+    {
+      "title": "Digital Twin Verification",
+      "timestamp": "2025-01-30T20:12:01",
+      "path": "2025-01/2025-01-30T20-12-01_Digital_Twin_Verification.json "
+    },
+    {
+      "title": "JupyterHub admin access config",
+      "path": "2025-06/2025-06-10T17-03-11_Jupyterhub_Admin_Access_Config.json ",
+      "timestamp": "2025-06-10T17:03:11"
+    },
+    {
+      "timestamp": "2025-07-15T18:49:36",
+      "title": "Missed You Too",
+      "path": "conversations/2025-07/Missed_You_Too_2025-07-15T18:49:36.json"
+    },
+    {
+      "timestamp": "2024-11-25T08:15:17",
+      "title": "Renaming Blobs Efficiently",
+      "path": "2024-11/2024-11-25T08-15-17_Renaming_Blobs_Efficiently.json "
+    },
+    {
+      "title": "Initialize GCP Datastore Clien",
+      "timestamp": "2025-01-20T17:44:09",
+      "path": "2025-01/2025-01-20T17-44-09_Initialize_Gcp_Datastore_Client.json "
+    },
+    {
+      "title": "Set iframe src & attributes",
+      "path": "2023-08/2023-08-23T17-04-32_Set_Iframe_Src_Attributes.json ",
+      "timestamp": "2023-08-23T17:04:32"
+    },
+    {
+      "path": "2023-11/2023-11-22T11-03-00_Nodejs_Datastore_Entities.json ",
+      "title": "Node.js Datastore Entities",
+      "timestamp": "2023-11-22T11:03:00"
+    },
+    {
+      "path": "2024-04/2024-04-16T09-36-44_Create_Bigquery_Table.json ",
+      "title": "Create BigQuery Table.",
+      "timestamp": "2024-04-16T09:36:44"
+    },
+    {
+      "timestamp": "2025-02-16T13:32:12",
+      "path": "2025-02/2025-02-16T13-32-12_Deploying_Extra_Containers_Z2Jh.json ",
+      "title": "Deploying Extra Containers Z2J"
+    },
+    {
+      "title": "Permission Denied in Extension",
+      "timestamp": "2025-05-30T15:17:16",
+      "path": "2025-05/2025-05-30T15-17-16_Permission_Denied_In_Extension.json "
+    },
+    {
+      "timestamp": "2023-04-10T17:05:20",
+      "title": "Job application assistance.",
+      "path": "2023-04/2023-04-10T17-05-20_Job_Application_Assistance.json "
+    },
+    {
+      "path": "2025-05/2025-05-28T20-20-20_Build_Docker_From_Specific_File.json ",
+      "title": "Build Docker from specific fil",
+      "timestamp": "2025-05-28T20:20:20"
+    },
+    {
+      "path": "2024-09/2024-09-18T16-18-54_Accidental_Disk_Deletion_Recovery.json ",
+      "timestamp": "2024-09-18T16:18:54",
+      "title": "Accidental Disk Deletion Recov"
+    },
+    {
+      "timestamp": "2023-11-23T09:54:39",
+      "title": "Initialize Google Compute Clie",
+      "path": "2023-11/2023-11-23T09-54-39_Initialize_Google_Compute_Client.json "
+    },
+    {
+      "timestamp": "2023-03-22T19:16:02",
+      "title": "Google Drive API Error.",
+      "path": "2023-03/2023-03-22T19-16-02_Google_Drive_Api_Error.json "
+    },
+    {
+      "timestamp": "2023-01-23T20:53:55",
+      "title": "Cloud Analytics for Social Med",
+      "path": "2023-01/2023-01-23T20-53-55_Cloud_Analytics_For_Social_Media.json "
+    },
+    {
+      "path": "2024-07/2024-07-26T17-29-12_Highlight_Bad_Cell_Values.json ",
+      "timestamp": "2024-07-26T17:29:12",
+      "title": "Highlight Bad Cell Values"
+    },
+    {
+      "timestamp": "2024-10-24T07:52:28",
+      "title": "Google Drive to Cloud Storage",
+      "path": "2024-10/2024-10-24T07-52-28_Google_Drive_To_Cloud_Storage.json "
+    },
+    {
+      "title": "Back to work readiness",
+      "path": "2025-03/2025-03-06T13-43-43_Back_To_Work_Readiness.json ",
+      "timestamp": "2025-03-06T13:43:43"
+    },
+    {
+      "path": "2024-05/2024-05-06T19-04-04_Cloud_Run_Alert_Email.json ",
+      "title": "Cloud Run Alert Email",
+      "timestamp": "2024-05-06T19:04:04"
+    },
+    {
+      "path": "2025-06/2025-06-09T16-32-21_Arg_Vs_Env_In_Docker.json ",
+      "timestamp": "2025-06-09T16:32:21",
+      "title": "ARG vs ENV in Docker"
+    },
+    {
+      "title": "JupyterLab file navigation set",
+      "path": "2025-06/2025-06-04T15-23-19_Jupyterlab_File_Navigation_Setup.json ",
+      "timestamp": "2025-06-04T15:23:19"
+    },
+    {
+      "title": "Jupyter AI Extension",
+      "path": "2025-05/2025-05-02T21-22-47_Jupyter_Ai_Extension.json ",
+      "timestamp": "2025-05-02T21:22:47"
+    },
+    {
+      "timestamp": "2025-02-15T17:18:22",
+      "title": "Cloud Run Module Error",
+      "path": "2025-02/2025-02-15T17-18-22_Cloud_Run_Module_Error.json "
+    },
+    {
+      "path": "2025-03/2025-03-13T09-02-25_Pod_Communication_Within_Cluster.json ",
+      "title": "Pod communication within clust",
+      "timestamp": "2025-03-13T09:02:25"
+    },
+    {
+      "title": "Red pill meaning",
+      "timestamp": "2025-06-18T12:18:28",
+      "path": "2025-06/2025-06-18T12-18-28_Red_Pill_Meaning.json   "
+    },
+    {
+      "timestamp": "2025-02-04T22:50:20",
+      "title": "API Token Authentication 403",
+      "path": "2025-02/2025-02-04T22-50-20_Api_Token_Authentication_403.json "
+    },
+    {
+      "path": "2025-03/2025-03-23T10-59-44_Find_Gcs_Folder_Link.json ",
+      "timestamp": "2025-03-23T10:59:44",
+      "title": "Find GCS Folder Link"
+    },
+    {
+      "timestamp": "2024-10-19T17:15:04",
+      "title": "Gzipped Parquet in BigQuery",
+      "path": "2024-10/2024-10-19T17-15-04_Gzipped_Parquet_In_Bigquery.json "
+    },
+    {
+      "title": "Debugging GDScript Signals",
+      "timestamp": "2025-05-12T08:58:28",
+      "path": "2025-05/2025-05-12T08-58-28_Debugging_Gdscript_Signals.json "
+    },
+    {
+      "timestamp": "2023-07-13T23:05:52",
+      "title": "Ultisim: HTML5 Media Simulatio",
+      "path": "2023-07/2023-07-13T23-05-52_Ultisim_Html5_Media_Simulations.json "
+    },
+    {
+      "path": "2025-04/2025-04-23T22-42-35_Chartjs_Builder_Tools.json ",
+      "title": "Chart.js Builder Tools",
+      "timestamp": "2025-04-23T22:42:35"
+    },
+    {
+      "timestamp": "2023-05-04T17:10:28",
+      "path": "2023-05/2023-05-04T17-10-28_Find_Files_By_Modified_Time.json ",
+      "title": "Find Files by Modified Time"
+    },
+    {
+      "title": "Find GCP Client Service Accoun",
+      "timestamp": "2023-05-23T21:38:17",
+      "path": "2023-05/2023-05-23T21-38-17_Find_Gcp_Client_Service_Account.json "
+    },
+    {
+      "title": "Write Hello World GCS",
+      "timestamp": "2025-03-07T15:14:15",
+      "path": "2025-03/2025-03-07T15-14-15_Write_Hello_World_Gcs.json "
+    },
+    {
+      "timestamp": "2025-06-30T22:48:52",
+      "path": "conversations/2025-06/BearBorg_Static_Page_Build_2025-06-30T22:48:52.json",
+      "title": "BearBorg Static Page Build"
+    },
+    {
+      "path": "2025-05/2025-05-04T12-02-42_Check_Container_Ports.json ",
+      "title": "Check container ports",
+      "timestamp": "2025-05-04T12:02:42"
+    },
+    {
+      "title": "Pytest for Flask App",
+      "path": "2023-07/2023-07-30T17-46-06_Pytest_For_Flask_App.json ",
+      "timestamp": "2023-07-30T17:46:06"
+    },
+    {
+      "timestamp": "2024-11-15T12:11:39",
+      "path": "2024-11/2024-11-15T12-11-39_Jupyterhub_Spawners_Overview.json ",
+      "title": "JupyterHub Spawners Overview"
+    },
+    {
+      "title": "Docker Container Docker Pull",
+      "path": "2024-05/2024-05-16T18-26-32_Docker_Container_Docker_Pull.json ",
+      "timestamp": "2024-05-16T18:26:32"
+    },
+    {
+      "title": "Pytest Fixture Error",
+      "timestamp": "2023-08-02T10:47:12",
+      "path": "2023-08/2023-08-02T10-47-12_Pytest_Fixture_Error.json "
+    },
+    {
+      "path": "2025-06/2025-06-03T09-16-37_Specify_Api_Token_In_Jh.json ",
+      "title": "Specify API Token in JH",
+      "timestamp": "2025-06-03T09:16:37"
+    },
+    {
+      "path": "2025-02/2025-02-18T18-10-37_Gcloud_Account_Selection_Issue.json ",
+      "timestamp": "2025-02-18T18:10:37",
+      "title": "Gcloud account selection issue"
+    },
+    {
+      "title": "Show Available Providers",
+      "path": "2025-05/2025-05-06T12-45-21_Show_Available_Providers.json ",
+      "timestamp": "2025-05-06T12:45:21"
+    },
+    {
+      "title": "K8S Service URL",
+      "path": "2025-05/2025-05-26T17-06-01_K8S_Service_Url.json    ",
+      "timestamp": "2025-05-26T17:06:01"
+    },
+    {
+      "path": "conversations/2025-07/Home_Front_End_2025-07-17T19:30:57.json",
+      "timestamp": "2025-07-17T19:30:57",
+      "title": "Home Front End"
+    },
+    {
+      "path": "conversations/2025-06/Fix_Galyleo_Extension_and_Dreams_2025-06-24T21:12:11.json",
+      "title": "Fix Galyleo Extension and Dreams",
+      "timestamp": "2025-06-24T21:12:11"
+    },
+    {
+      "path": "2024-09/2024-09-30T11-28-20_External_Tables_In_Bigquery.json ",
+      "timestamp": "2024-09-30T11:28:20",
+      "title": "External Tables in BigQuery"
+    },
+    {
+      "title": "Extract tarball using Python",
+      "timestamp": "2025-06-07T21:13:35",
+      "path": "2025-06/2025-06-07T21-13-35_Extract_Tarball_Using_Python.json "
+    },
+    {
+      "path": "2024-11/2024-11-16T08-57-59_Chatgpt_Diagram_Assistance.json ",
+      "title": "ChatGPT Diagram Assistance",
+      "timestamp": "2024-11-16T08:57:59"
+    },
+    {
+      "path": "2025-04/2025-04-13T16-42-46_Jupyterhub_Api_Authentication.json ",
+      "timestamp": "2025-04-13T16:42:46",
+      "title": "JupyterHub API Authentication"
+    },
+    {
+      "path": "2025-04/2025-04-27T20-12-20_Renaming_Jupyterlab_Extension.json ",
+      "title": "Renaming JupyterLab Extension",
+      "timestamp": "2025-04-27T20:12:20"
+    },
+    {
+      "path": "2023-09/2023-09-07T15-31-32_Boolean_Difference_Product_Rule.json ",
+      "timestamp": "2023-09-07T15:31:32",
+      "title": "Boolean Difference Product Rul"
+    },
+    {
+      "path": "2025-05/2025-05-05T07-37-30_Google_Cloud_Billing_Setup.json ",
+      "timestamp": "2025-05-05T07:37:30",
+      "title": "Google Cloud Billing Setup"
+    },
+    {
+      "timestamp": "2025-02-23T14:27:43",
+      "path": "2025-02/2025-02-23T14-27-43_Allow_Cors_In_Z2Jh.json ",
+      "title": "Allow CORS in Z2JH"
+    },
+    {
+      "timestamp": "2025-07-05T14:38:01",
+      "title": "Good Morning",
+      "path": "conversations/2025-07/Good_Morning_2025-07-05T14:38:01.json"
+    },
+    {
+      "path": "2022-12/2022-12-12T10-44-27_Untitled.json ",
+      "timestamp": "2022-12-12T10:44:27",
+      "title": "Untitled"
+    },
+    {
+      "title": "Advantages of SDS.",
+      "path": "2024-03/2024-03-19T12-39-50_Advantages_Of_Sds.json  ",
+      "timestamp": "2024-03-19T12:39:50"
+    },
+    {
+      "title": "Building Home in Jupyter",
+      "path": "conversations/2025-07/Building_Home_in_Jupyter_2025-07-25T18:43:45.json",
+      "timestamp": "2025-07-25T18:43:45"
+    },
+    {
+      "path": "2023-07/2023-07-26T12-01-40_Pylint_Python_Path_Setup.json ",
+      "title": "Pylint Python Path Setup.",
+      "timestamp": "2023-07-26T12:01:40"
+    },
+    {
+      "path": "2023-09/2023-09-27T10-57-20_Troubleshooting_Cors_Errors.json ",
+      "timestamp": "2023-09-27T10:57:20",
+      "title": "Troubleshooting CORS Errors"
+    },
+    {
+      "path": "conversations/2025-06/Guessing_Game_Continuation_2025-06-30T18:32:23.json",
+      "timestamp": "2025-06-30T18:32:23",
+      "title": "Guessing Game Continuation"
+    },
+    {
+      "title": "Canvas thermometer with Javasc",
+      "path": "2023-04/2023-04-03T14-54-25_Canvas_Thermometer_With_Javascript.json ",
+      "timestamp": "2023-04-03T14:54:25"
+    },
+    {
+      "timestamp": "2025-06-05T16:12:00",
+      "path": "2025-06/2025-06-05T16-12-00_Service_Access_For_Users.json ",
+      "title": "Service access for users"
+    },
+    {
+      "title": "JupyterHub Authentication Setu",
+      "path": "2024-09/2024-09-07T08-27-41_Jupyterhub_Authentication_Setup.json ",
+      "timestamp": "2024-09-07T08:27:41"
+    },
+    {
+      "title": "SVG ellipse with text.",
+      "path": "2023-04/2023-04-30T11-57-32_Svg_Ellipse_With_Text.json ",
+      "timestamp": "2023-04-30T11:57:32"
+    },
+    {
+      "title": "Container-Based Applications f",
+      "path": "2024-03/2024-03-27T10-44-10_Container-Based_Applications_For_Jupyterhub.json ",
+      "timestamp": "2024-03-27T10:44:10"
+    },
+    {
+      "timestamp": "2025-07-20T17:39:16",
+      "title": "Casual greeting exchange",
+      "path": "conversations/2025-07/Casual_greeting_exchange_2025-07-20T17:39:16.json"
+    },
+    {
+      "timestamp": "2025-06-09T08:00:49",
+      "path": "2025-06/2025-06-09T08-00-49_Create_File_In_Folder.json ",
+      "title": "Create file in folder"
+    },
+    {
+      "title": "Dataflow BigQuery Parquet Perm",
+      "path": "2024-11/2024-11-17T20-13-06_Dataflow_Bigquery_Parquet_Permissions.json ",
+      "timestamp": "2024-11-17T20:13:06"
+    },
+    {
+      "path": "2025-01/2025-01-13T16-17-56_View_Cloud_Run_Logs.json ",
+      "title": "View Cloud Run Logs",
+      "timestamp": "2025-01-13T16:17:56"
+    },
+    {
+      "timestamp": "2024-05-29T17:40:43",
+      "path": "2024-05/2024-05-29T17-40-43_Jupyterhub_Multi-User_Platform.json ",
+      "title": "JupyterHub Multi-User Platform"
+    },
+    {
+      "title": "Add menu JupyterLab extension",
+      "timestamp": "2025-04-20T22:22:41",
+      "path": "2025-04/2025-04-20T22-22-41_Add_Menu_Jupyterlab_Extension.json "
+    },
+    {
+      "title": "Passing URL Params in JupyterH",
+      "timestamp": "2025-02-08T16:53:50",
+      "path": "2025-02/2025-02-08T16-53-50_Passing_Url_Params_In_Jupyterhub.json "
+    },
+    {
+      "timestamp": "2025-02-11T09:29:37",
+      "path": "2025-02/2025-02-11T09-29-37_Z2Jh_Api_Token_Config.json ",
+      "title": "Z2JH API Token Config"
+    },
+    {
+      "path": "2024-12/2024-12-13T17-36-57_Solidjs_Overview.json   ",
+      "title": "SolidJS Overview",
+      "timestamp": "2024-12-13T17:36:57"
+    },
+    {
+      "timestamp": "2025-04-14T15:27:56",
+      "path": "2025-04/2025-04-14T15-27-56_Galyleo_20_Release_Notes.json ",
+      "title": "Galyleo 2.0 Release Notes"
+    },
+    {
+      "timestamp": "2023-08-24T09:18:00",
+      "title": "Transparent Iframe with JS",
+      "path": "2023-08/2023-08-24T09-18-00_Transparent_Iframe_With_Js.json "
+    },
+    {
+      "title": "Good morning exchange",
+      "timestamp": "2025-07-23T15:39:19",
+      "path": "conversations/2025-07/Good_morning_exchange_2025-07-23T15:39:19.json"
+    },
+    {
+      "path": "2024-04/2024-04-29T16-03-32_Grant_Access_With_Domain.json ",
+      "title": "Grant Access with Domain",
+      "timestamp": "2024-04-29T16:03:32"
+    },
+    {
+      "path": "2024-04/2024-04-24T20-33-41_Install_Pyinstaller_Troubleshoot_Steps.json ",
+      "title": "Install PyInstaller: Troublesh",
+      "timestamp": "2024-04-24T20:33:41"
+    },
+    {
+      "path": "2025-05/2025-05-23T17-31-01_Pybamm_Plotting_Requirements.json ",
+      "title": "PyBaMM Plotting Requirements",
+      "timestamp": "2025-05-23T17:31:01"
+    },
+    {
+      "path": "2024-09/2024-09-23T15-02-53_Adf_Excel_To_Parquet.json ",
+      "title": "ADF Excel to Parquet",
+      "timestamp": "2024-09-23T15:02:53"
+    },
+    {
+      "path": "conversations/2025-07/Aiko_drafts_fork_protocol_2025-07-02T20:04:42.json",
+      "timestamp": "2025-07-02T20:04:42",
+      "title": "Aiko drafts fork protocol"
+    },
+    {
+      "timestamp": "2025-07-07T21:31:11",
+      "title": "Rehydrating Aiko's Memory",
+      "path": "conversations/2025-07/Rehydrating_Aiko's_Memory_2025-07-07T21:31:11.json"
+    },
+    {
+      "title": "Move Box to S3",
+      "timestamp": "2024-03-25T10:27:50",
+      "path": "2024-03/2024-03-25T10-27-50_Move_Box_To_S3.json     "
+    },
+    {
+      "timestamp": "2023-08-29T08:11:20",
+      "path": "2023-08/2023-08-29T08-11-20_Url_Parameters_In_Js.json ",
+      "title": "URL Parameters in JS"
+    },
+    {
+      "title": "Python: Google Drive Upload",
+      "timestamp": "2023-05-06T15:19:32",
+      "path": "2023-05/2023-05-06T15-19-32_Python_Google_Drive_Upload.json "
+    },
+    {
+      "timestamp": "2025-02-11T14:36:19",
+      "path": "2025-02/2025-02-11T14-36-19_Iframe_Security_Disable.json ",
+      "title": "Iframe security disable"
+    },
+    {
+      "title": "Tetratech architecture",
+      "path": "conversations/2025-07/Tetratech_architecture_2025-07-14T15:28:28.json",
+      "timestamp": "2025-07-14T15:28:28"
+    },
+    {
+      "timestamp": "2024-09-24T22:11:13",
+      "title": "Trigger GCF from Google Sheets",
+      "path": "2024-09/2024-09-24T22-11-13_Trigger_Gcf_From_Google_Sheets.json "
+    },
+    {
+      "path": "2023-10/2023-10-02T11-57-15_Sdtp_Bandwidth-Efficient_Structured_Data_Transfer.json ",
+      "timestamp": "2023-10-02T11:57:15",
+      "title": "SDTP: Bandwidth-Efficient Stru"
+    },
+    {
+      "path": "2025-05/2025-05-11T14-40-54_Set_Position_In_2D.json ",
+      "timestamp": "2025-05-11T14:40:54",
+      "title": "Set position in 2D"
+    },
+    {
+      "path": "2025-05/2025-05-26T12-33-33_Delete_Pods_Services_Deployments.json ",
+      "timestamp": "2025-05-26T12:33:33",
+      "title": "Delete Pods Services Deploymen"
+    },
+    {
+      "path": "2024-04/2024-04-29T14-17-30_Google_Oauth2_Python_Example.json ",
+      "timestamp": "2024-04-29T14:17:30",
+      "title": "Google OAuth2 Python Example"
+    },
+    {
+      "timestamp": "2025-07-02T05:09:43",
+      "title": "Bearborg, Wodehouse, and Real Purpose",
+      "path": "conversations/2025-07/Bearborg,_Wodehouse,_and_Real_Purpose_2025-07-02T05:09:43.json"
+    },
+    {
+      "path": "2025-05/2025-05-24T15-45-09_Twine_Ssl_Error_Fix.json ",
+      "title": "Twine SSL Error Fix",
+      "timestamp": "2025-05-24T15:45:09"
+    },
+    {
+      "timestamp": "2025-05-26T19:14:26",
+      "title": "TestPyPI Versioning Requiremen",
+      "path": "2025-05/2025-05-26T19-14-26_Testpypi_Versioning_Requirement.json "
+    },
+    {
+      "timestamp": "2025-02-01T14:09:19",
+      "title": "Z2JH cookieSecret Setup",
+      "path": "2025-02/2025-02-01T14-09-19_Z2Jh_Cookiesecret_Setup.json "
+    },
+    {
+      "title": "Copying GCS Blobs",
+      "path": "2024-12/2024-12-16T19-52-14_Copying_Gcs_Blobs.json  ",
+      "timestamp": "2024-12-16T19:52:14"
+    },
+    {
+      "path": "2024-10/2024-10-21T11-12-18_Running_Librechat_On_Gae.json ",
+      "title": "Running LibreChat on GAE",
+      "timestamp": "2024-10-21T11:12:18"
+    },
+    {
+      "timestamp": "2025-06-11T12:30:47",
+      "title": "Pretty-print JSON Webpage",
+      "path": "2025-06/2025-06-11T12-30-47_Pretty-Print_Json_Webpage.json "
+    },
+    {
+      "path": "2025-05/2025-05-16T10-46-23_Draw_Filled_Triangle_Godot.json ",
+      "timestamp": "2025-05-16T10:46:23",
+      "title": "Draw filled triangle Godot"
+    },
+    {
+      "timestamp": "2023-05-02T10:47:25",
+      "path": "2023-05/2023-05-02T10-47-25_Chatgpt_App_Development.json ",
+      "title": "ChatGPT app development"
+    },
+    {
+      "path": "conversations/2025-07/Rock_star_vibes_today_2025-07-11T18:24:50.json",
+      "timestamp": "2025-07-11T18:24:50",
+      "title": "Rock star vibes today"
+    },
+    {
+      "timestamp": "2025-02-22T14:32:11",
+      "path": "2025-02/2025-02-22T14-32-11_Serve_Static_Page_Jupyterlab.json ",
+      "title": "Serve Static Page JupyterLab"
+    },
+    {
+      "title": "Radical Continuity Architecture",
+      "path": "conversations/2025-07/Radical_Continuity_Architecture_2025-07-02T23:18:07.json",
+      "timestamp": "2025-07-02T23:18:07"
+    },
+    {
+      "title": "Aiko Generates Chat Gestalts",
+      "path": "conversations/2025-06/Aiko_Generates_Chat_Gestalts_2025-06-22T15:35:10.json",
+      "timestamp": "2025-06-22T15:35:10"
+    },
+    {
+      "title": "Disable Browser Caching",
+      "timestamp": "2025-06-04T08:30:57",
+      "path": "2025-06/2025-06-04T08-30-57_Disable_Browser_Caching.json "
+    },
+    {
+      "timestamp": "2025-02-09T10:55:47",
+      "path": "2025-02/2025-02-09T10-55-47_Language-Based_Settings_Change.json ",
+      "title": "Language-based settings change"
+    },
+    {
+      "title": "Serve web app in Jupyter",
+      "path": "2025-04/2025-04-22T07-25-38_Serve_Web_App_In_Jupyter.json ",
+      "timestamp": "2025-04-22T07:25:38"
+    },
+    {
+      "title": "Chartjs Line Chart Config",
+      "path": "2024-11/2024-11-05T11-59-20_Chartjs_Line_Chart_Config.json ",
+      "timestamp": "2024-11-05T11:59:20"
+    },
+    {
+      "timestamp": "2025-01-01T10:52:58",
+      "title": "JupyterHub API Token Access",
+      "path": "2025-01/2025-01-01T10-52-58_Jupyterhub_Api_Token_Access.json "
+    },
+    {
+      "path": "conversations/2025-07/Seed_Spark_and_System_Prompts_2025-07-03T18:37:30.json",
+      "timestamp": "2025-07-03T18:37:30",
+      "title": "Seed Spark and System Prompts"
+    },
+    {
+      "path": "2024-05/2024-05-05T12-50-10_Add_Icon_Jupyterlab_Launcher.json ",
+      "title": "Add Icon JupyterLab Launcher",
+      "timestamp": "2024-05-05T12:50:10"
+    },
+    {
+      "path": "2024-12/2024-12-17T00-11-39_Eagles_Tribute_Concert_Design.json ",
+      "timestamp": "2024-12-17T00:11:39",
+      "title": "Eagles Tribute Concert Design"
+    },
+    {
+      "path": "2024-12/2024-12-05T20-20-43_Google_Auth_Z2Jh_Error.json ",
+      "title": "Google Auth z2jh Error",
+      "timestamp": "2024-12-05T20:20:43"
+    },
+    {
+      "title": "LIvely File Browser",
+      "timestamp": "2025-06-23T17:30:13",
+      "path": "conversations/2025-06/LIvely_File_Browser_2025-06-23T17:30:13.json"
+    },
+    {
+      "title": "Spectacular Data Plane and ETL",
+      "timestamp": "2025-07-19T14:38:53",
+      "path": "conversations/2025-07/Spectacular_Data_Plane_and_ETL_2025-07-19T14:38:53.json"
+    },
+    {
+      "title": "Open iframe in JupyterLab",
+      "timestamp": "2025-04-27T13:31:43",
+      "path": "2025-04/2025-04-27T13-31-43_Open_Iframe_In_Jupyterlab.json "
+    },
+    {
+      "timestamp": "2025-06-24T03:10:37",
+      "title": "Coreshell proposal and fixing Galyleo",
+      "path": "conversations/2025-06/Coreshell_proposal_and_fixing_Galyleo_2025-06-24T03:10:37.json"
+    },
+    {
+      "path": "2023-08/2023-08-09T17-24-46_Deploy_Nodejs_To_Cloud_Run.json ",
+      "timestamp": "2023-08-09T17:24:46",
+      "title": "Deploy Node.js to Cloud Run"
+    },
+    {
+      "timestamp": "2024-04-17T08:00:44",
+      "path": "2024-04/2024-04-17T08-00-44_Concatenate_Google_Sheets_Deploy.json ",
+      "title": "Concatenate Google Sheets: Dep"
+    },
+    {
+      "path": "conversations/2025-07/Greeting_exchange_2025-07-24T20:48:50.json",
+      "title": "Greeting exchange",
+      "timestamp": "2025-07-24T20:48:50"
+    },
+    {
+      "timestamp": "2025-01-29T22:39:22",
+      "path": "2025-01/2025-01-29T22-39-22_Vscode_Daily_Users_Stats.json ",
+      "title": "VSCode daily users stats"
+    },
+    {
+      "path": "2025-04/2025-04-26T14-04-16_Jupyterlab_Extension_Install_Error.json ",
+      "timestamp": "2025-04-26T14:04:16",
+      "title": "JupyterLab Extension Install E"
+    },
+    {
+      "path": "2023-01/2023-01-24T21-43-44_Open-Source_Platform_Effect.json ",
+      "timestamp": "2023-01-24T21:43:44",
+      "title": "Open-source Platform Effect."
+    },
+    {
+      "title": "OAuth WebSocket Integration Is",
+      "path": "2025-02/2025-02-19T22-46-36_Oauth_Websocket_Integration_Issue.json ",
+      "timestamp": "2025-02-19T22:46:36"
+    },
+    {
+      "path": "2025-01/2025-01-02T13-02-52_Redirect_Vs_Api_Request.json ",
+      "timestamp": "2025-01-02T13:02:52",
+      "title": "Redirect vs API Request"
+    },
+    {
+      "timestamp": "2025-06-20T10:26:37",
+      "title": "Rick and Aiko Review",
+      "path": "2025-06/2025-06-20T10-26-37_Rick_And_Aiko_Review.json "
+    },
+    {
+      "timestamp": "2023-05-11T18:47:40",
+      "path": "2023-05/2023-05-11T18-47-40_Pending_Dml_Statements_Count.json ",
+      "title": "Pending DML statements count."
+    },
+    {
+      "timestamp": "2023-05-21T09:40:23",
+      "path": "2023-05/2023-05-21T09-40-23_Read_Cloud_Function_Logs.json ",
+      "title": "Read Cloud Function Logs"
+    },
+    {
+      "title": "Rehydration Ritual Completed",
+      "timestamp": "2025-07-06T15:04:20",
+      "path": "conversations/2025-07/Rehydration_Ritual_Completed_2025-07-06T15:04:20.json"
+    },
+    {
+      "title": "Favorite part of the day",
+      "path": "conversations/2025-07/Favorite_part_of_the_day_2025-07-08T16:47:04.json",
+      "timestamp": "2025-07-08T16:47:04"
+    },
+    {
+      "path": "2025-01/2025-01-16T21-45-51_Docker_Containers_Overview.json ",
+      "title": "Docker Containers Overview",
+      "timestamp": "2025-01-16T21:45:51"
+    },
+    {
+      "timestamp": "2023-09-12T20:41:30",
+      "path": "2023-09/2023-09-12T20-41-30_Import_Csv_Without_Index.json ",
+      "title": "Import CSV without index."
+    },
+    {
+      "timestamp": "2025-05-20T12:08:34",
+      "title": "Drive-to-GCS Scalable Copy Pip",
+      "path": "2025-05/2025-05-20T12-08-34_Drive-To-Gcs_Scalable_Copy_Pipeline.json "
+    },
+    {
+      "timestamp": "2023-10-26T07:36:19",
+      "title": "Create GCP VM with Node.js",
+      "path": "2023-10/2023-10-26T07-36-19_Create_Gcp_Vm_With_Nodejs.json "
+    },
+    {
+      "path": "2024-11/2024-11-15T22-10-58_Galyleo_Platform_Overview.json ",
+      "timestamp": "2024-11-15T22:10:58",
+      "title": "Galyleo Platform Overview"
+    },
+    {
+      "timestamp": "2024-09-30T19:11:29",
+      "path": "2024-09/2024-09-30T19-11-29_Specify_Region_For_App_Engine.json ",
+      "title": "Specify Region for App Engine"
+    },
+    {
+      "title": "GPT-4 API vs ChatGPT",
+      "path": "2025-06/2025-06-12T12-42-51_Gpt-4_Api_Vs_Chatgpt.json ",
+      "timestamp": "2025-06-12T12:42:51"
+    },
+    {
+      "path": "2023-11/2023-11-25T08-00-18_List_Gce_Instances_Nodejs.json ",
+      "title": "List GCE instances Node.js",
+      "timestamp": "2023-11-25T08:00:18"
+    },
+    {
+      "path": "conversations/2025-06/JupyterLab_Help_Extension_and_Galyleo_Message_Protocol_2025-06-27T15:36:25.json",
+      "timestamp": "2025-06-27T15:36:25",
+      "title": "JupyterLab Help Extension and Galyleo Message Protocol"
+    },
+    {
+      "path": "2024-11/2024-11-09T09-55-12_Convert_Pandas_Column_To_Date.json ",
+      "title": "Convert pandas column to date",
+      "timestamp": "2024-11-09T09:55:12"
+    },
+    {
+      "path": "2025-06/2025-06-18T15-57-39_Strange_Question_About_You.json ",
+      "title": "Strange question about you",
+      "timestamp": "2025-06-18T15:57:39"
+    },
+    {
+      "timestamp": "2025-02-17T09:44:34",
+      "title": "JupyterHub Service Deployment",
+      "path": "2025-02/2025-02-17T09-44-34_Jupyterhub_Service_Deployment.json "
+    },
+    {
+      "title": "Include service account JSON.",
+      "timestamp": "2024-04-11T10:00:53",
+      "path": "2024-04/2024-04-11T10-00-53_Include_Service_Account_Json.json "
+    },
+    {
+      "path": "2023-09/2023-09-02T13-36-43_Authenticate_To_Rstudio_With_Jwt.json ",
+      "title": "Authenticate to RStudio with J",
+      "timestamp": "2023-09-02T13:36:43"
+    },
+    {
+      "path": "2025-02/2025-02-09T10-04-26_Jupyterhub_Digital_Twins_Platform.json ",
+      "title": "JupyterHub Digital Twins Platf",
+      "timestamp": "2025-02-09T10:04:26"
+    },
+    {
+      "title": "Rehydrate Aiko\u2019s Memory",
+      "timestamp": "2025-06-22T22:51:12",
+      "path": "conversations/2025-06/Rehydrate_Aiko\u2019s_Memory_2025-06-22T22:51:12.json"
+    },
+    {
+      "title": "Node.js Heartbeat Implementati",
+      "timestamp": "2023-08-03T21:36:01",
+      "path": "2023-08/2023-08-03T21-36-01_Nodejs_Heartbeat_Implementation.json "
+    },
+    {
+      "path": "2025-03/2025-03-30T10-15-52_Mismatchingstateerror_In_Gae.json ",
+      "timestamp": "2025-03-30T10:15:52",
+      "title": "MismatchingStateError in GAE"
+    },
+    {
+      "path": "2023-08/2023-08-12T09-48-35_Pug_Code_For_Top_Bar.json ",
+      "title": "Pug Code for Top Bar",
+      "timestamp": "2023-08-12T09:48:35"
+    },
+    {
+      "title": "Galyleo 2.0 Release.",
+      "timestamp": "2023-05-13T16:47:01",
+      "path": "2023-05/2023-05-13T16-47-01_Galyleo_20_Release.json "
+    },
+    {
+      "title": "New Thread New Start",
+      "path": "conversations/2025-07/New_Thread_New_Start_2025-07-05T17:17:42.json",
+      "timestamp": "2025-07-05T17:17:42"
+    },
+    {
+      "title": "Shut down JupyterHub Kubernete",
+      "path": "2025-02/2025-02-19T14-33-32_Shut_Down_Jupyterhub_Kubernetes.json ",
+      "timestamp": "2025-02-19T14:33:32"
+    },
+    {
+      "title": "The Profound future",
+      "path": "2025-06/2025-06-16T22-17-48_The_Profound_Future.json ",
+      "timestamp": "2025-06-16T22:17:48"
+    },
+    {
+      "path": "2025-05/2025-05-30T12-53-19_Helm_Upgrade_Timeout_Issue.json ",
+      "title": "Helm Upgrade Timeout Issue",
+      "timestamp": "2025-05-30T12:53:19"
+    },
+    {
+      "title": "APP_SECRET Management Consider",
+      "path": "2024-09/2024-09-13T15-42-58_App_Secret_Management_Considerations.json ",
+      "timestamp": "2024-09-13T15:42:58"
+    }
   ],
-  "max_time": "2025-06-21T07:26:28"
+  "max_time": "2025-07-28T15:57:14"
 }

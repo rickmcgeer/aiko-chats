@@ -33,7 +33,7 @@ def conversation_path(conversation):
    month = str(date.month) if date.month > 9 else f'0{date.month}'
    dir = f"{date.year}-{month}"
    file = conversation_title(conversation) + '.json'
-   full_path = f'aiko-chats/conversations/{dir}/{file}'
+   full_path = f'conversations/{dir}/{file}'
    return full_path
    
 
@@ -45,27 +45,50 @@ def normalize_timestamp(ts: float) -> datetime:
 import re
 
 SECRET_PATTERNS = [
-  r'AIza[0-9A-Za-z\-_]{35}',                          # Google API Key
-  r'[0-9a-f]{12}-[0-9a-f]{32}\.apps\.googleusercontent\.com',  # Google OAuth client ID
-  r'(?i)secret[^a-z0-9]*[=:][^"\',\s]{20,}',           # Generic "secret=XXXX" pattern
+    r'AIza[0-9A-Za-z\-_]{35}',  # Google API key
+    r'[0-9]{12}-[a-z0-9\-]+\.apps\.googleusercontent\.com',  # Google OAuth client ID
+    r'GOCSPX-[0-9a-zA-Z\-_]{20,}',  # Google OAuth client secret
+    r'[0-9a-f]{64}',  # Generic 64-char hex secrets (like API_KEYs)
+    r'(?i)secret[^a-z0-9]*[=:][^"\',\s]{20,}',  # secret=XXX with variants
+    r'(?i)api[_-]?key[^a-z0-9]*[=:][^"\',\s]{20,}',  # api_key=XXX
 ]
 
-scrubbed = 0
 
-def sanitize(text: str, id:str) -> str:
-  for pattern in SECRET_PATTERNS:
-    if re.search(pattern, text):
-      print(f'Found secret matching {pattern} in message {id}')
-      text = re.sub(pattern, "[REDACTED]", text)
-      scrubbed += 1
-  return text
+class Scrubber:
+  def __init__(self, parts, message_id):
+    self.scrubbed = 0
+    self.parts = [self.sanitize_any(part, message_id) for part in parts]
 
+  def sanitize_any(self, value, message_id):
+    if isinstance(value, str):
+      for pattern in SECRET_PATTERNS:
+        if re.search(pattern, value):
+          print(f"Found secret in message {message_id}")
+          value = re.sub(pattern, "[REDACTED]", value)
+          self.scrubbed = self.scrubbed + 1
+      return value
+    elif isinstance(value, list):
+      return [self.sanitize_any(item, message_id) for item in value]
+    elif isinstance(value, dict):
+      return {k: self.sanitize_any(v, message_id) for k, v in value.items()}
+    else:
+      return value
+
+
+ 
 def sanitize_conversation(conversation: dict):
+  scrubbed = 0
   for message_id, message_data in conversation.get("mapping", {}).items():
-    parts = message_data.get("message", {}).get("content", {}).get("parts", [])
+    parts = []
+    try:
+      parts = message_data.get("message", {}).get("content", {}).get("parts", [])
+    except AttributeError:
+      continue
     if len(parts) > 0:
-      message_data["message"]["content"]["parts"] = [sanitize(part, message_id) for part in parts]
-  print(f'Scrubbed {scrubbed} secrets')
+      scrubber = Scrubber(parts, message_id)
+      message_data["message"]["content"]["parts"] = scrubber.parts
+      scrubbed += scrubber.scrubbed
+  print(f'Scrubbed {scrubbed} secrets for conversation {conversation["title"]}')
 
 # Define the Pacific timezone (handles DST automatically)
 pacific = zoneinfo.ZoneInfo("America/Los_Angeles")
@@ -76,6 +99,9 @@ def normalize_saved_iso(iso_str: str) -> datetime:
     if dt.tzinfo is None:
         dt = dt.replace(tzinfo=pacific)
     return dt.astimezone(timezone.utc).replace(microsecond=0)
+
+
+
 
 with open('conversations/conversation_manifest.json', 'r') as f:
   stored_conversations = json.load(f)
@@ -107,6 +133,9 @@ for conversation in new_conversations:
      json.dump(conversation, f, indent=2)
   
 stored_conversations["max_time"] = last_time.isoformat()
+# dump any duplicate entries
+unique_dicts_as_sets = set(frozenset(d.items()) for d in stored_conversations["conversations"])
+stored_conversations["conversations"] = [dict(s) for s in unique_dicts_as_sets]
 with open('conversations/conversation_manifest.json', 'w') as f:
    json.dump(stored_conversations, f, indent=2)
 
