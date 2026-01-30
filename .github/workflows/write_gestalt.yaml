@@ -47,10 +47,20 @@ jobs:
           echo "" >> $FILENAME
           echo "${{ github.event.inputs.content }}" >> $FILENAME
 
+      - name: Show file contents
+        run: |
+          ls -R memory/gestalts/
+          cat memory/gestalts/*.md || echo "No files created"
+      
+      - name: Git status check
+        run: |
+          git status
+
+
       - name: Commit and push
         run: |
           git config user.name "aiko-writer-bot"
           git config user.email "aiko@example.com"
           git add memory/gestalts/
-          git commit -m "Add gestalt: ${{ github.event.inputs.title }}"
+          git commit -m "Add gestalt: ${{ github.event.inputs.title }}" || echo "Nothing to commit"
           git push
