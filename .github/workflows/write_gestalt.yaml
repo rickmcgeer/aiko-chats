@@ -31,7 +31,7 @@ jobs:
 
       - name: Write gestalt file
         run: |
-          mkdir -p gestalts
+          mkdir -p memory/gestalts
 
           DATE=$(date +%F)
           TIME=$(date +%H-%M-%S)
@@ -51,6 +51,6 @@ jobs:
         run: |
           git config user.name "aiko-writer-bot"
           git config user.email "aiko@example.com"
-          git add gestalts/
+          git add memory/gestalts/
           git commit -m "Add gestalt: ${{ github.event.inputs.title }}"
           git push
